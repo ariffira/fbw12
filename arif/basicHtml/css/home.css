@@ -1,0 +1,92 @@
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    background-color: burlywood;
+}
+a {
+    color: white;
+    font-size: 32px;
+    background-color: brown;
+    text-decoration: underline;
+    text-decoration-color: yellowgreen;
+}
+a:visited {
+    color: red;
+    background-color: white;
+}
+a:hover {
+    color: black;
+    background-color: wheat;
+    text-decoration: none;
+}
+
+#div3 {
+    background-color: turquoise;
+    color: lightcoral;
+}
+
+#flagId {
+    background-color: tomato;
+    width: 600px;
+    height: 300px;
+    border: 1px solid white;
+}
+#blackId {
+    background-color: black;
+    height: 100px;
+}
+#redId {
+    background-color: red;
+    height: 100px;
+}
+#goldId {
+    background-color: goldenrod;
+    height: 100px;
+}
+#rectangleId {
+    width: 600px;
+    height: 300px;
+    background-color: green;
+}
+#redCircleId {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    margin-left: 150px;
+    /*margin-bottom: 25px;*/
+    margin-right: 150px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    /*padding: 40px 20px 0px 20px;*/
+    /* padding: top right bottom left;*/
+}
+
+/* class */
+.text_color {
+   color: darkgreen;
+   font-size: 20px;
+}
+.bg_color {
+    background-color: indianred;
+    border: 2px solid dotted;
+}
+.testId {
+    text-transform: uppercase;
+}
+.apple {
+    border-radius: 50%;
+    float: right;
+    width: 100px;
+    height: 80px;
+}
+.box1 {
+    width: 100px;
+    background-color: beige;
+    color: red;
+    box-sizing: content-box;
+}
