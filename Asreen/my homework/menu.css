@@ -1,0 +1,139 @@
+
+ li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+              }
+
+
+div .secondmenu   {
+  list-style-type: none;                
+     width: 100px;
+     background-color: #c22222;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display:flex;
+     flex-flow:row-reverse;
+     text-decoration: none; 
+     color:white;
+     text-shadow: 2px 4px 4px #000000;
+     border-block-start-style: groove;
+
+  }
+li a  {background-color: rgb(99, 94, 94);width: 100px; 
+       margin: 10px;height: 20px;
+       text-align: center;
+       text-decoration: none;
+       list-style-type:none;
+       color:white;  
+     
+     border-block-start-style: groove;
+
+    }
+ 
+
+
+body{
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    background-image: url(images/welcom.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+
+   .transition {
+        width: 200px;
+        height: 130px;
+        background:gray;
+        transition: width 2s;
+        margin-left:50px;
+        color:black;
+        border-radius: 10%;
+        display:flex;
+        flex-direction:row;    
+        text-shadow: 2px 4px 4px #000000;
+        overflow: hidden;
+  
+}
+.transition:hover {
+  width: 600px;background-color: skyblue;
+}
+h4{color:blue;  text-shadow: 2px 4px 4px #000000;}
+img{width:300px;height: 200px;margin-left: 500px;margin-bottom: 50px;}
+.secondmenu{display:flex;
+            flex-flow:column;}
+ .active {
+       background-color: rgb(32, 39, 32);
+              }
+            
+ div .secondmenu {
+  list-style-type: none;
+  margin: auto;
+  padding: 10px;
+  width: 200px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+div ul .secondmenu a {
+  display: block;
+  color: #000;
+  padding-top: 10px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+   
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color:black;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+div .topmenu{
+    border:3px white;
+     width:100%;
+     height: 48px;
+     margin-top: 2px;
+     list-style-type: none;
+     display: inline-flex;
+     margin-left: 10x;
+     justify-items: centr;
+     flex-wrap: wrap;
+     color:white;
+     font-size: 20pt;
+     text-align: center;
+     
+     }
+li a:hover:not(.active) {
+     background-color: #555;
+     color: white;
+       }
+

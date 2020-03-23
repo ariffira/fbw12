@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{background-color:dimgray;}
+   .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color:lightslategray;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: rgb(97, 82, 82);
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: rgb(109, 96, 96);
+            color: black;
+        }
+
+        /* image */
+        img {margin-top: 10px;
+            background-color: rgb(109, 94, 94);
+            width:1000px;
+            height: 600px;
+            padding: 20px;
+            margin-left: 230px;
+        }
+       
+        /*active home*/
+        .active{ background-color: darkseagreen;}
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+    
+        }
+        button{ border-block-start-style: groove;
+            text-align: center;
+            background-color: rgb(218, 99, 99);
+            margin-left:700px;
+            height: 30px;color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Save the Nature</h1>
+        <p>Save the World.</p>
+    </div>
+    <div class="topnav">
+        <a class="active" href="menu.html">Home</a>
+        <a href="profile.html">About us</a>
+        <a href="profile.html">profile</a>
+        <a href="gallery.html" style="float:right">See more Fotos</a>
+    </div>
+    <div >
+        <img src="images/save the world.jpg">
+    </div>
+    <div >
+        <div ></div><img src="images/save and protect.jpg" >
+    </div>
+    <div>
+        <div ><img src="images/water.jpg"> </div>
+    </div>
+    <div>
+        <div ><img src="images/Bicycle.jpg"> </div>
+    </div>
+    <div>
+        <div ><img src="images/plant a tree.jpg"> </div>
+    </div>
+    <div>
+        <div ><img src="images/earth (1).jpg"> </div>
+    </div>
+   
+<div> <button ><a href="https://www.50waystohelp.com/"> More Infos </a> </button></div>
+</body>
+
+</html>
