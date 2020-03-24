@@ -1,0 +1,91 @@
+* {
+    color: snow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    border: 15px solid black;
+    border-collapse: separate;
+    border-spacing: 3px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 0 2px brown;
+    background-image: url(images/download__1_.0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+caption {
+    font-size: 120px;
+    font-weight: bold;
+    color: darkred;
+    text-shadow: gold 0 0 8px;
+}
+
+thead {
+    background-color: rgb(88, 13, 13);
+}
+
+th {
+    padding: 15px;
+    color: silver;
+    font-weight: bold;
+    text-shadow: 0 0 3px darkgoldenrod;
+}
+
+th img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: groove;
+    border-color: darkred darkred darkorange darkorange;
+    box-shadow: darkred 0 0 4px;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(88, 13, 13, 0.596);
+    font-weight: 600;
+}
+
+td {
+    height: 50px;
+    font-size: large;
+    vertical-align: middle;
+    padding: 5px 0;
+    color: darkgoldenrod;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+}
+
+body {
+    background-image: url(images/old-953394_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: groove;
+    border-color: darkred darkred darkorange darkorange;
+    box-shadow: darkred 0 0 4px;
+    vertical-align: middle;
+}
+
+button {
+    text-align: center;
+    padding: 4px;
+    background-color: darkred;
+    border-radius: 5px;
+    border: darkorange 1px solid;
+    cursor: pointer;
+}
+
+.favorite {
+    text-align: center;
+}
