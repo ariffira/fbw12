@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <meta name="autdor" content="Giampaolo">
+    <meta name="description" content="Exercise of tde HTML Table">
+    <script src="https://kit.fontawesome.com/d30f23d271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/list.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>HTML Table</title>
+</head>
+
+<body>
+    <table>
+        <caption>Heroes list</caption>
+        <thead>
+            <tr>
+                <th><img src="images/Champions.jpg" alt="Champions"> Champion</th>
+                <th><img src="images/lane.jpg" alt="Lane"> Role</th>
+                <th><img src="images/great_mentor_icon.jpg" alt="played"> Used</th>
+                <th><img src="images/Time.jpg" alt="time"> favorite</i>
+                    Release Date</th>
+                <th><img src="images/Thumbs_Up_Emote.png" alt="Like"> Favorite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img title="Aatrox" src="images/Aatrox.jpg" alt="Aatrox"> Aatrox</td>
+                <td class="role"><i class="fas fa-fist-raised"></i> Fighter</td>
+                <td class="favorite">
+                    <input type="radio" id="played" name="used" value="positive"><label for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label>
+                </td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 12/12/12</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Cassiopeia" src="images/Cassiopeia.jpg" alt="Cassiopeia"> Cassiopeia</td>
+                <td class="role"><i class="fas fa-hat-wizard"></i> Mage</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 01/08/18</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Ekko" src="images/Ekko.jpg" alt="Ekko"> Ekko</td>
+                <td class="role"><i class="fas fa-skull-crossbones"></i> Assassin <i class="fas fa-hat-wizard"></i> Mage</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 18/10/16</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Gangplank" src="images/Gangplank.jpg" alt="Gangplank"> Gangplank</td>
+                <td class="role"><i class="fas fa-angle-double-right"></i> Adc</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 22/09/02</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Garen" src="images/Garen.jpg" alt="Garen"> Garen</td>
+                <td class="role"><i class="fas fa-shield-alt"></i> Tank</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 23/01/15</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Graves" src="images/Graves.jpg" alt="Gravesn"> Graves</td>
+                <td class="role"><i class="fas fa-angle-double-right"></i> Adc</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 11/10/08</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Hekarim" src="images/Hekarim.jpg" alt="Hekarim"> Hekarim</td>
+                <td class="role"><i class="fab fa-pagelines"></i> Jungle</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 10/12/98</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Janna" src="images/Janna.jpg" alt="Janna"> Janna</td>
+                <td class="role"><i class="fab fa-magento"></i> Support</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 31/03/06</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Jayce" src="images/Jayce.jpg" alt="Jayce"> Jayce</td>
+                <td class="role"><i class="fas fa-angle-double-right"></i> Adc</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 14/02/14</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Kassadin" src="images/Kassadin.jpg" alt="Kassadin"> Kassadin</td>
+                <td class="role"><i class="fas fa-hat-wizard"></i> Mage</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 17/09/19</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Le Blanc" src="images/LeBlanc.jpg" alt="LeBlanc"> Le Blanc</td>
+                <td class="role"><i class="fas fa-hat-wizard"></i> Mage</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 09/07/03</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Lux" src="images/Lux.jpg" alt="Lux"> Lux</td>
+                <td class="role"><i class="fas fa-hat-wizard"></i> Mage</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 27/05/11</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Malzahar" src="images/Malzahar.jpg" alt="Malzahar"> Malzahar</td>
+                <td class="role"><i class="fas fa-hat-wizard"></i> Mage</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 30/09/00</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Dr. Mundo" src="images/Mundo.jpg" alt="Dr. Mundo"> Dr. Mundo</td>
+                <td class="role"><i class="fas fa-shield-alt"></i> Tank</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 24/08/19</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Nautilus" src="images/Nautilus.jpg" alt="Nautilus"> Nautilus</td>
+                <td class="role"><i class="fab fa-magento"></i> Support <i class="fas fa-shield-alt"></i> Tank</td>
+                <td class="favorite"><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form>
+                <td class="date"><i class="fas fa-calendar-day"></i> 19/11/11</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+            <tr>
+                <td><img title="Nunu" src="images/Nunu.jpg" alt="Nunu"> Nunu</td>
+                <td class="role"><i class="fab fa-pagelines"></i> Jungle</td>
+                <td class="favorite"><form><form><input type="radio" id="played" name="used" value="positive"><label
+                        for="played">Played</label>
+                    <input type="radio" id="not-played" name="used" value="negative"><label for="not-played">Didn't
+                        played</label></form></form></td>
+                <td class="date"><i class="fas fa-calendar-day"></i> 18/01/01</td>
+                <td class="favorite"><button><i class="fas fa-star"></i> Add to Favorite</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <div class="footer-box"></div>
+        <div class="footer-box"></div>
+        <div class="footer-box"></div>
+    </footer>
+</body>
+
+</html>
