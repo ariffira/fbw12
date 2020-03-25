@@ -32,3 +32,10 @@ img{
 width: 70px; 
 height: 100px;
 }
+ .material-icons {
+     width: 20px;
+ }
+ .topmenu{
+     width: 100;
+     height: 20;
+ }
