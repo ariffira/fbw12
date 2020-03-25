@@ -1,0 +1,78 @@
+.fa {
+  
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background-attachment: fixed;
+}
+
+.fa-facebook {
+    background: rgb(127, 160, 231);
+    color: rgb(9, 7, 121);
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+body {background-image: url(images/paul-talbot-pQDBGxtiDEo-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(134, 218, 172);
+    background-size: cover;
+    width: 100%;
+}
+
+.dot {
+    padding: 5px;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.fa {
+    opacity: 0.9;
+}
+
+ol li {
+    font-size: x-large;
+    padding: 5px;
+}
+.footer {display:flex;justify-self: center;flex-flow: column-reverse;margin-bottom: 10px;
+  padding-left: 100px;
+}
+
+
+
+button {height: 40px;
+        background-color: gray;
+        text-decoration: none;
+         margin-left: 750px;
+}
+
+#middle {
+    flex-basis: 300px;
+    display: flex;
+    flex-flow: wrap;
+    resize: horizontal;
+    overflow: auto;
+}
+h3{float:left;}
