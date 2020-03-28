@@ -1,0 +1,36 @@
+body{background-color: teal;}
+thead {border:3px blue bold;
+            font-family: arial, sans-serif;
+            width: 70%;
+            margin-left: 200px;}
+table     {border :3px red;
+            background-color: aqua;
+            font-family: arial, sans-serif;
+            width: 70%;
+            margin-left: 220px;
+  }
+  
+  td{
+          border: 1px solid blue;
+          text-align: left;
+          padding: 3px;
+  }
+  th{border: 1px solid blue;
+    padding:10px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  h1{ margin-left: 600px;
+      font-size: 30pt;
+      color:white;
+    }
+  tbody{ 
+        padding:0px;
+  }
+
+ .icon {margin-left: 10px;
+        
+  
+  }
+ button .loc-icon{background-color:skyblue;}

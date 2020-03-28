@@ -1,0 +1,25 @@
+body {
+    background-color: darkgreen;
+    font-weight: bold;
+}
+
+h1 + div {
+    background-color: darkred;
+    color: white;
+}
+
+div ~ div {
+    background-color: black;
+    color: white;
+}
+
+p > img {
+    border-radius: 50%;
+    border: 2px solid silver;
+}
+
+div + img {
+    border-radius: 20px;
+    box-shadow: red 0 0 18px;
+    background-color: red;
+}

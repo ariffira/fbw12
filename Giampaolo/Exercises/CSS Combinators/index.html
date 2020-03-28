@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CSS Combinators</h1>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, in quis incidunt voluptatibus ab ut
+            suscipit numquam itaque voluptatum consequuntur impedit dolores tempora odit quas voluptate quam fugiat
+            ullam corrupti.</p>
+        <div>
+            <p>This is a div inside a div, it doesn't work with the CSS 'div ~ div' because is not a sibling but is a
+                child of 1 div</p>
+        </div>
+    </div> <!-- this div will be effected from the CSS because is a div element after the h1 -->
+
+    <div>
+        <p>This is a second div that is not included in the previous div element, here and in the div next to this the
+            CSS 'div ~ div' works because this div is a sibling and not a child.
+        </p>
+    </div><!-- This div is effected from the CSS because is a sibling of a div  -->
+
+    <p>This is a paragraph, it will not be effected from the CSS</p>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, in quis incidunt voluptatibus ab ut
+            suscipit numquam itaque voluptatum consequuntur impedit dolores tempora odit quas voluptate quam fugiat
+            ullam corrupti.</p>
+    </div><!-- This div will be effected from the CSS because is a sibling of a div  -->
+
+    <div>
+        <p><img src="images/book.png" alt="Test"><!-- This image is effected from CSS because img is a child of p -->Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero eos facere consectetur dolores reprehenderit non optio ipsam quisquam molestiae modi id, voluptatibus culpa impedit quis dolor maiores? Nemo, ex assumenda!</p>
+    </div>
+
+    <div>
+        <p><img src="images/book.png" alt="Test"><!-- This image is effected from CSS because img is a child of p -->Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatibus quis architecto! Repudiandae veniam, natus magnam quod ab ratione doloremque illum quis vel. Cum sed, explicabo fuga quis ullam laudantium.</p>
+    </div>
+
+    <img src="images/book.png" alt="Test"> <!-- This image is effected from the second img CSS because is an elemtn that is after a div  -->
+
+    <img src="images/book.png" alt="Test"><!-- This image is not effected from the CSS because is not an img after a div but an img after another img  -->
+
+</body>
+
+</html>
