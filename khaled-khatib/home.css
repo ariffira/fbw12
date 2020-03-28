@@ -1,0 +1,57 @@
+body {
+    background-color: burlywood;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+img {
+    width: 300px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.top-menu {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: red;
+    position:  fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.top-menu ul li{
+    display: block;
+    float: right;
+}
+a {
+    text-decoration: none;
+    color: cornsilk;
+    border: 1px solid grey;
+    border-radius: 20%;
+}
+a:hover {
+    background-color: tomato;
+    color: black;
+}
+div>ul>li.website-name {
+    float: left;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.left-menu {
+    background-color: brown;
+    color: white;
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    float: left;
+    margin-top: 40px;
+}
+.main {
+    height: auto;
+    margin-top: 60px;
+}
