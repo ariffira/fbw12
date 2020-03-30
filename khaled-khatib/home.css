@@ -1,57 +1,175 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: burlywood;
     color:black;
     font-family: 'Courier New', Courier, monospace;
 }
-img {
+
+/* --------------------The head container -----------------------*/
+
+
+.head{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(201, 229, 236);
+    height: 105px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    
+}
+/* --------------------The navbar container -----------------------*/
+
+ 
+.top-menu {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: red;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.top-menu>ul {
+    float: right;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    }
+.top-menu ul li{
+    display: block;
+    float: right;
+}
+.top-menu ul li a {
+    display: inline-block;       
+    padding:15px 30px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(157, 148, 184);
+    text-align: center;
+
+}
+.top-menu ul li a:hover {
+    color: dodgerblue;
+              background-color:#ff0055;
+              font-size: 20px;
+}
+ 
+/* -----------menu logo --------------- */
+
+.logo 
+    {
+        float: left;
+        padding:15px 30px;
+        line-height:30px;
+        font-size:30px;
+        height:30px;     
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+ /* -----------------------------------------------------  */
+ /* --------------------The left-menu container -----------------------*/
+
+ /* left-menu   */
+
+.left-menu {
+    padding:1px;
+    margin: 1px;
+    float: left;
+    color: white;
+    width: 15%;
+    height: 300px;
+}
+
+.left-menu ul {
+    background-color: rgb(13, 14, 12);
+}
+ 
+/* img  */
+
+.main{ 
+    
+    width: 30%;
+    height: 80%;
+    margin: 60px auto;
+    background-color: rgb(18, 236, 55);
+}
+
+
+.main img {
+    border: 2px solid black;
+    border-radius: 50px;
     width: 300px;
     height: 200px;
     margin-top: 5px;
     margin-left: 20%;
     margin-right: 20%;
 }
-.top-menu {
-    height: 60px;
-    width: 100%;
-    background-color: black;
-    color: red;
-    position:  fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-.top-menu ul li{
-    display: block;
-    float: right;
-}
-a {
+.left-menu ul a {
+    display: inline-block;       
+    padding:15px 30px;
+    height: 30px;
+    line-height: 30px;
     text-decoration: none;
-    color: cornsilk;
-    border: 1px solid grey;
-    border-radius: 20%;
+    color: rgb(157, 148, 184);
+    text-align: center;
+
 }
-a:hover {
-    background-color: tomato;
-    color: black;
+
+
+/* Change color anf font and background on hover */
+.left-menu ul a:hover {
+    color: dodgerblue;
+              background-color:#ff0055;
+              font-size: 20px;
 }
-div>ul>li.website-name {
+
+
+
+ /* -----------------------------------------------------  */
+ /* --------------------The footer container -----------------------*/
+ 
+
+footer{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.div1 {
+   
+    margin: 0;
+    width: 1600px;
+    height:210px ;
+    background-color: rgb(236, 80, 18);
+    border: 3 solid rgb(2, 2, 2);
+}
+.div2 {
+   
+    padding:0px;
+    margin: 0px;
+    width: 1200px;
+    height:210px ;
+    background-color: rgb(236, 80, 18);
+    border: 3 solid rgb(2, 2, 2);
+}
+.div3 {
+    margin: 0;
+    width: 1200px;
+    height:210px ;
+    background-color: rgb(148, 180, 105);
+    border: 3 solid rgb(2, 2, 2);
+}
+.call{
     float: left;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.left-menu {
-    background-color: brown;
-    color: white;
-    width: 20%;
+    width: 200px;
     height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    float: left;
-    margin-top: 40px;
-}
-.main {
-    height: auto;
-    margin-top: 60px;
+    margin-left: 5px;
 }
