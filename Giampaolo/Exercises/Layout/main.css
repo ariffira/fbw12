@@ -1,0 +1,126 @@
+/*                          General                      */
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+/*                             Header                     */
+header {
+    background-color: black;
+    color: white;
+}
+
+/*                         Top navbar                     */
+header > nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#home {
+    background-color: rgba(139, 0, 0, 0.7);
+}
+
+#home:hover {
+    background-color: rgba(139, 0, 0, 1);
+}
+
+/*                           Main container               */
+.container {
+    background-color: honeydew;
+    color: black;
+    margin: 20px;
+}
+
+main {
+    height: 600px;
+}
+
+/*                           Sidebar                     */
+aside {
+   background-color: black;
+   color: white;
+   float: left;
+   height: inherit;
+   width: 15%;
+}
+/*                        Sidebar Navbar                    */
+aside nav {
+    display: flex;
+    justify-content: center;
+}
+
+aside nav a {
+    color: white;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 25px;
+}
+
+li a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px silver solid;
+}
+
+li a:hover {
+    background-color: rgba(139, 0, 0, 0.7);
+}
+
+/*                     Content-box                    */
+section {
+    width: 85%;
+    height: inherit;
+    float: left;
+}
+
+/*                        Footer                       */
+footer {
+    border-top: 1px solid black;
+    background-color: rgba(139, 0, 0, 1);
+    color: snow;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.copyright {
+    float: right;
+}
+
+/*                       Headings                        */
+h1 {
+    padding: 25px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+/*                   Text Formattation                     */
+p {
+    padding-left: 5px;
+}
