@@ -1,0 +1,385 @@
+/*                          General                      */
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: grey;
+}
+
+/*                             Header                     */
+header {
+    background-color: black;
+    color: white;
+}
+
+/*                         Top navbar                     */
+header > nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#home {
+    background-color: rgba(139, 0, 0, 0.7);
+}
+
+#home:hover {
+    background-color: rgba(139, 0, 0, 1);
+}
+
+#toppage {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/*                           Main container               */
+.container {
+    background-color: honeydew;
+    color: black;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+}
+
+/*                           Sidebar                     */
+aside {
+   background-color: black;
+   color: white;
+   height: inherit;
+   width: 15%;
+}
+
+/*                        Sidebar Navbar                    */
+aside nav {
+    display: flex;
+    justify-content: center;
+}
+
+aside nav a {
+    color: white;
+}
+
+aside ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+aside li {
+    padding: 25px;
+}
+
+aside li a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px silver solid;
+}
+
+aside li a:hover {
+    background-color: rgba(139, 0, 0, 0.7);
+    transition: 1s;
+}
+
+/*                     Content-box                    */
+section {
+    width: 85%;
+    height: inherit;
+    padding-bottom: 15px;
+}
+
+.profile-box {
+    display: flex;
+}
+
+.code-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe {
+    width: 85%;
+    height: 800px;
+}
+
+/*                        Footer                       */
+footer {
+    border-top: 1px solid black;
+    background-color: rgba(139, 0, 0, 1);
+    color: snow;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.copyright {
+    float: right;
+    margin: 0;
+}
+
+/*                       Headings                        */
+h1 {
+    padding: 25px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-left: 10px;
+    padding-top: 20px;
+    color: darkred;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+}
+
+/*                   Text Formattation                     */
+p {
+    padding-left: 5px;
+    font-size: large;
+}
+
+li {
+    list-style-type: none;
+}
+
+label {
+    margin-left: 20px;
+    font-weight: 900;
+}
+
+input,
+textarea {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid teal;
+}
+
+small{    
+    margin-left: 20px;
+    font-style: italic;
+}
+
+span {
+    vertical-align: bottom;
+}
+
+/*                          Images                           */
+img {
+    border-radius: 50%;
+    border: 1px solid;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+}
+
+/* Table */
+table {
+    margin: 50px;
+    border: 1px black outset;
+    border-collapse: collapse;
+    border-radius: 25px;
+}
+
+table > caption {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+thead {
+    border-bottom: 1px solid black;
+    background-color: darkred;
+    font-weight: bold;
+}
+
+td:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+tr:nth-child(even) {
+    background-color: darkgray;
+}
+
+form table > caption {
+    text-align: left;
+    text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
+}
+
+form table td:nth-child(even) {
+    background-color: initial;
+}
+
+form table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+/* Button */
+button {
+    margin: 20px;
+	box-shadow: inset 0px 0px 0px 0px #f7c5c0;
+	background: linear-gradient(to bottom, hsl(5, 73%, 45%) 5%, #50140e 100%);
+	border-radius: 21px;
+	border: 3px solid #d83526;
+	cursor: pointer;
+	color: black;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 12px 27px;
+    text-shadow: 0px -1px 0px #b41b10;
+}
+
+.submit {
+    text-shadow: 0px -1px 0px #1eb410;
+    border: 3px solid #3bd826;
+    background: linear-gradient(to bottom, hsl(113, 73%, 45%) 5%, #19500e 100%);
+}
+
+.submit:hover {
+    background: linear-gradient(to bottom, hsl(113, 100%, 55%) 5%, #1f880a 100%);
+}
+
+button:hover {
+	background: linear-gradient(to bottom, rgb(255, 41, 21) 5%, #8f0e02 100%);
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-width: 1200px) {
+    aside {
+        width: 20%;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    img {
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    aside {
+        width: 25%;
+    }
+
+    section {
+        width: 75%;
+    }
+
+    .profile-box {
+        flex-direction: column;
+    }
+
+    img {
+        width: 300px;
+        height: 220px;
+        margin: 28px;
+    }
+}
+
+@media (max-width: 850px) {
+    #home {
+        flex: 1;
+        text-align: center;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    section {
+        width: 70%;
+    }
+
+    img {
+        width: 200px;
+        height: 160px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    *,
+    .container {
+        margin: 0;
+    }
+
+    header > nav {
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        height: initial;
+    }
+
+    aside {
+        width: 35%;
+    }
+
+    aside li {
+        padding: 0;
+        line-height: 5;
+    }
+
+    section {
+        width: 65%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: inherit;
+    }
+
+    #home {
+        flex: none;
+        text-align: left;
+    }
+
+    footer {
+        display: flex;
+        text-align: center;
+        font-size: smaller;
+    }
+
+    footer > p {
+        padding: 0;
+        flex: 1;
+    }
+
+    .copyright {
+        float: none;
+        order: 1;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
