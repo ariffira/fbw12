@@ -33,10 +33,12 @@ a {
     text-decoration: none;
     font-size: x-large;
     color: darkred;
+    font-weight: bold;
 }
 
 nav > a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: lime;
+    transition: 800ms;
 }
 
 nav > a.active {
@@ -44,7 +46,9 @@ nav > a.active {
 }
 
 nav > a.active:hover {
-    background-color: rgb(95, 124, 255)
+    color: white;
+    background-color: rgb(0, 0, 88);
+    transition: 800ms;
 }
 
 main {
