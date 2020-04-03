@@ -1,0 +1,76 @@
+body {
+    background-color: chocolate;
+}
+
+/* Header */
+.header {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    padding: 70px 0;
+}
+
+h2 {
+    padding: 20px;
+    margin: auto;
+}
+
+/* Main content Table */
+table.main {
+    width: 100%;
+    border-spacing: 15px;
+}
+
+.main th {
+    height: 67px;
+    text-align: left;
+}
+
+.main td {
+    height: inherit;
+    border: 1px solid;
+}
+
+.main tr {
+    height: 90px;
+    background-color: khaki;
+}
+
+.main .aside {
+    background-color: darkviolet;
+    width: 25%;
+    vertical-align: initial;
+}
+
+.main .nav {
+    height: 50px;
+    background-color: coral;
+}
+
+.main .nav  a {
+    background-color: darkgreen;
+    color: darkorange;
+    padding: 25px;
+}
+
+/* Table section */
+.section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lawngreen;
+    height: 300px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    margin: 15px auto 0 auto;
+    background-color: red;
+    height: 150px;
+}
