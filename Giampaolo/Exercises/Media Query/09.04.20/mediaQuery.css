@@ -1,0 +1,409 @@
+/*
+ media query format
+ @media only|not media-type and (some size) { ....}
+*/
+/* common code */
+@media all 
+{
+    .container {
+       background-color: lightgrey;
+       color: black;
+    }
+
+    .top-menu {
+        background-color: chocolate;
+    }
+
+    a {
+        border: 1px solid black;
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0px;
+        background-color: chocolate;
+    }
+
+    a:hover {
+        background-color: hotpink;
+        color: white;
+    }
+
+    li:hover {
+        background-color: hotpink;
+        color: white;
+    }
+
+    .photo {
+        border-radius: 50%;
+        margin: 5%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .footer {
+        background-color: cornsilk;
+        color: gray;
+        font-size: 8px;
+        text-align: center;
+    }
+
+}
+
+
+/* Smallest resolution */
+@media only screen 
+and (min-device-width: 0px)
+and (max-device-width: 114px) {
+
+    * {
+        font-size: xx-small !important;
+    }
+
+    body {
+        margin: 0;
+        text-align: center;
+    }
+
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu a {
+        padding: 5%;
+        font-size: x-large;
+    }
+
+    .photo {
+        max-width: 80%;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .left-menu a {
+        border: none;
+        padding: inherit;
+    }
+
+    li {
+        text-align: center;
+        font-size: x-large;
+        padding: 5% 0;
+        margin: 5px 0;
+    }
+}
+
+/* Very small devices */
+@media only screen 
+and (min-device-width: 115px)
+and (max-device-width: 180px) {
+
+    body {
+        margin: 0;
+    }
+
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu a {
+        padding: 5%;
+        font-size: x-large;
+    }
+
+    .photo {
+        max-width: 50%;
+        float: left;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .left-menu a {
+        border: none;
+        padding: inherit;
+    }
+
+    li {
+        text-align: center;
+        font-size: x-large;
+        padding: 5% 0;
+        margin: 5px 0;
+    }
+}
+
+
+/*
+  Smartphone  very small
+*/
+@media only screen 
+and (min-device-width: 181px)
+and (max-device-width: 319px) {
+
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu a {
+        padding: 5%;
+        font-size: x-large;
+    }
+
+    .photo {
+        max-width: 50%;
+        float: left;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .left-menu a {
+        border: none;
+        padding: inherit;
+    }
+
+    li {
+        text-align: center;
+        font-size: x-large;
+        padding: 5% 0;
+        margin: 5px 0;
+    }
+}
+
+/*
+  Smartphone 
+*/
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu a {
+        padding: 5%;
+        font-size: xx-large;
+    }
+
+    .top-menu a + a {
+        border-top: 0;
+    }
+
+    .photo {
+        max-width: 50%;
+        float: left;
+    }
+
+    p {
+        font-size: larger;
+    }
+
+    .left-menu {
+        width: 100%;
+    }
+
+    .left-menu a {
+        border: none;
+        padding: inherit;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    li {
+        width: 32%;
+        text-align: center;
+        font-size: x-large;
+        padding: 5% 0;
+        margin: 5px 0;
+        display: inline-block;
+    }
+
+    li a {
+        padding: 5%;
+    }
+}
+
+/* Tablet */
+@media only screen 
+and (min-device-width: 481px)
+and (max-device-width: 880px) {
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'top-menu' 
+        'content' 
+        'footer';
+        gap: 5px;
+        margin: 2%;
+    }
+
+    .top-menu {
+        display: flex;
+    }
+
+    .top-menu a {
+        padding: 20px;
+    }
+
+    .top-menu a + a {
+        border-left: 0;
+    } 
+
+    .photo {
+        float: left;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        'left-menu' 
+        'main'
+        ;
+        gap: 5px
+    }
+
+    .left-menu {
+        grid-area: left-menu;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    a {
+        padding: 5%;
+        width: 100%;
+    }
+
+    ul {
+        text-align: center;
+    }
+
+    li {
+        width: 32%;
+        display: inline-flex;
+    }
+
+    p {
+        font-size: larger;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+
+/* Laptop */
+@media only screen 
+and (min-device-width: 881px)
+and (max-device-width: 1823px) {
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'top-menu' 
+        'content' 
+        'footer';
+        gap: 5px;
+        margin: 2%;
+    }
+
+    .top-menu {
+        display: flex;
+    }
+
+    .top-menu a {
+        padding: 20px;
+        font-size: x-large;
+    }
+
+    .top-menu a + a {
+        border-left: 0;
+    } 
+
+    .photo {
+        margin: 2%;
+        float: left;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: 
+        'left-menu main'
+        ;
+        gap: 5px
+    }
+
+    .left-menu {
+        grid-area: left-menu;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    
+    ul {
+        position: sticky;
+        top: 0;
+    }
+
+    li {
+        text-align: center;
+        margin: 0 5%;
+        border-radius: 25px;
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+    }
+
+    li > a {
+        padding: 5%;
+        width: 90%;
+        border-radius: 25px;
+        font-size: larger;
+    }
+
+    p {
+        font-size: larger;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* Larger Devices*/
+@media only screen 
+and (min-width: 1824px) {
+    /* your code */
+}
