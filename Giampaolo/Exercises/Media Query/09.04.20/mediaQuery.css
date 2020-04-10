@@ -42,11 +42,12 @@
 
     .photo {
         border-radius: 50%;
-        margin: 5%;
+        margin: 2%;
     }
 
     p {
         text-align: justify;
+        margin: 2%;
     }
 
     .footer {
@@ -59,7 +60,9 @@
 }
 
 
-/* Smallest resolution */
+/* 
+ ------------------------------------------------------------ Smallest resolution 
+*/
 @media only screen 
 and (min-device-width: 0px)
 and (max-device-width: 114px) {
@@ -147,7 +150,7 @@ and (max-device-width: 180px) {
 
 
 /*
-  Smartphone  very small
+ ------------------------------------------------------ Smartphone  very small
 */
 @media only screen 
 and (min-device-width: 181px)
@@ -186,7 +189,7 @@ and (max-device-width: 319px) {
 }
 
 /*
-  Smartphone 
+  ------------------------------------------------------------------ Smartphone 
 */
 @media only screen 
 and (min-device-width: 320px)
@@ -241,7 +244,9 @@ and (max-device-width: 480px) {
     }
 }
 
-/* Tablet */
+/* 
+ ----------------------------------------------------------   Tablet
+*/
 @media only screen 
 and (min-device-width: 481px)
 and (max-device-width: 880px) {
@@ -317,10 +322,12 @@ and (max-device-width: 880px) {
     }
 }
 
-/* Laptop */
+/* 
+  ---------------------------------------------------------------   Laptop
+*/
 @media only screen 
-and (min-device-width: 881px)
-and (max-device-width: 1823px) {
+and (min-width: 881px)
+and (max-width: 1920px) {
 
     body {
         margin: 0;
@@ -328,47 +335,14 @@ and (max-device-width: 1823px) {
 
     .container {
         display: grid;
+        grid-template-rows: 100% 100% 100%;
         grid-template-areas: 
         'top-menu' 
         'content' 
         'footer';
         gap: 5px;
-        margin: 2%;
+        margin: 10px;
     }
-
-    /* .contact-box {
-        display: grid;
-    } */
-
-    form {
-        display: grid;
-        grid-template-rows: 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 5% 2.5% 30% 10%;
-        grid-template-columns: 20% 80%;{}
-    }
-
-    .row-1 {}
-    .row-2 {}
-    .row-3 {}
-    .row-4 {}
-    .row-5 {}
-    .row-6 {}
-    .row-7 {}
-    .row-8 {}
-    .row-9 {}
-    .row-10 {}
-    .row-11 {}
-    .row-12 {}
-
-/*     
-    .row-13
-    .row-14
-    .row-15 */
-
-
-
-
-
-
 
     .top-menu {
         display: flex;
@@ -384,7 +358,7 @@ and (max-device-width: 1823px) {
     } 
 
     .photo {
-        margin: 2%;
+        margin: 1% 1% 1% 0;
         float: left;
     }
 
@@ -392,9 +366,7 @@ and (max-device-width: 1823px) {
         display: grid;
         grid-template-columns: 15% 85%;
         grid-template-areas: 
-        'left-menu main'
-        ;
-        gap: 5px
+        'left-menu main';
     }
 
     .left-menu {
@@ -416,7 +388,6 @@ and (max-device-width: 1823px) {
         margin: 0 5%;
         border-radius: 25px;
         margin-top: 30px;
-        width: 100%;
         display: flex;
     }
 
@@ -431,6 +402,14 @@ and (max-device-width: 1823px) {
         font-size: larger;
     }
 
+    textarea {
+        resize: none;
+    }
+
+    fieldset {
+        width: max-content;
+    }
+
     .footer {
         font-size: 12px;
     }
@@ -438,6 +417,6 @@ and (max-device-width: 1823px) {
 
 /* Larger Devices*/
 @media only screen 
-and (min-width: 1824px) {
+and (min-width: 1921px) {
     /* your code */
 }
