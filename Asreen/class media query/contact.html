@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="mediaQuery.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    
+
+        /* Style inputs */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container1 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+            /*responsive topmenu*/
+            .top-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border:1px solid blue;
+    }
+    .top-menu a {
+        text-align: center;
+        width:100%; 
+  
+        /* responsive left-menu*/
+    }
+    .left-menu{
+        background-color: rgb(231, 118, 118);
+        width:100%;
+        
+    }
+    .left-menu ul li > a{
+        display: block;
+         width: 100%;
+        background-color: tomato;
+    }
+          
+        }
+    @media screen
+     and  (min-device-width: 600px)
+   {
+        
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Media Query means Finding devices or machines with different size -->
+    <div class="container">
+        <div class="top-menu">
+            <a href="mediaQuery.html">Home</a>
+            <a href="contact.html">Contact me</a>
+            <a href="experience.html">My Experience</a>
+            <a href="experience.html">About me</a>
+        </div>
+        <div class="content">
+            <div class="left-menu">
+                <ul>
+                    <li><a href="#">Left menu 1</a></li>
+                    <li><a href="#">Left menu 2</a></li>
+                    <li><a href="#">Left menu 3</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="container1">
+                    <div style="text-align:center">
+                        <h2>Contact Us</h2>
+                        <p>Swing by for a cup of coffee, or leave us a message:</p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                        </div>
+                        <div class="column">
+                            <form action="/action_page.php">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="germany">Germany</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.."
+                                    style="height:170px"></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+               <div class="footer">
+                    <p>asreen@example email.com</p>
+                </div>
+            </div>
+</body>
+
+</html>

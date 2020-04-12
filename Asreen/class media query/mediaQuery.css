@@ -1,0 +1,192 @@
+/*
+ media query format
+ @media only|not media-type and (some size) { ....}
+*/
+/* common code */
+@media all 
+{
+    .container {
+       background-color: lightgrey;
+       color: black;
+    }
+    .top-menu {
+        background-color: chocolate;
+    }
+    a {
+        border: 1px solid black;
+        text-decoration: none;
+        color: white;
+    }
+    ul {
+        padding-inline-start: 0px;
+    }
+    li {
+        list-style-type: none;
+        margin: 0px;
+        background-color: chocolate;
+    }
+    a:hover {
+        background-color: hotpink;
+        color: white;
+    }
+    li:hover {
+        background-color: hotpink;
+        color: white;
+    }
+    .photo {
+        border-radius: 50%;
+    }
+    .footer {
+        background-color: cornsilk;
+        color: gray;
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+
+/*
+  Smartphone  very small
+*/
+@media only screen 
+and (min-device-width: 200px)
+and (max-device-width: 319px) {
+    /* write your code here*/
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border:1px solid blue;
+    }
+    .top-menu a {
+        text-align: center;
+        width:100%; 
+  
+    }
+    .container{
+        display: flex;
+        font-size: small;
+        flex-direction: column;
+
+    }
+    .container >div{
+        border:2px solid green;
+      
+       }
+    .left-menu{
+        background-color: rgb(231, 118, 118);
+        width:100%;
+        
+    }
+    .left-menu ul li > a{
+        display: block;
+         width: 100%;
+        background-color: tomato;
+    }
+    /*
+    .aside2 > a{
+        display: block;
+        width: 100%;
+        background-color: tomato;
+        
+    }
+    .aside2{
+        display: block;
+        width: 100%;
+        background-color: rgb(138, 248, 243);
+        border:1px solid red;
+    } */
+   }
+   
+   
+    .photo{
+        width:100px;
+        height: 100px;
+        margin-left: 75px;
+        border-radius: 50%;
+    }
+    .footer{
+        font-size: larger;
+        background-color: tomato;
+        color:black;
+    }
+
+
+/*
+  Smartphone 
+*/
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+   /*your code*/
+   .top-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:1px solid blue;
+}
+.top-menu a {
+    text-align: center;
+    width:100%; 
+
+}
+.container{
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+
+}
+.container >div{
+    border:2px solid green;
+  
+   }
+.left-menu{
+    background-color: rgb(231, 118, 118);
+    width:100%;
+    
+}
+.left-menu ul li > a{
+    display: block;
+     width: 100%;
+    background-color: tomato;
+}
+}
+
+/* Laptop */
+@media only screen 
+and (min-device-width: 481px)
+and (max-device-width: 1823px) {
+    .container {
+        display: grid;
+        grid-template-areas: 'top-menu' 'content' 'footer';
+        gap: 5px;
+        margin: 5%;
+    }
+    .top-menu {
+        display: flex;
+    }
+    .top-menu a {
+        margin-right: 10px;
+    }
+    .photo {
+        float: left;
+    }
+    .content {
+        display: grid;
+        grid-template-areas: 'left-menu main' ;
+        grid-template-columns: max-content auto;
+        gap: 5px
+    }
+    .left-menu {
+        grid-area: left-menu;
+    }
+    .main {
+        grid-area: main;
+    }
+}
+
+/* Larger Devices*/
+@media only screen 
+and (min-width: 1824px) {
+    /* your code */
+}
