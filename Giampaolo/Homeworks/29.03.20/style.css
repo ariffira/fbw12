@@ -165,6 +165,10 @@ footer a img {
     height: 25px;
 }
 
+div.copyright {
+    width: 20% !important;
+}
+
 /* Home Side Bar */
 aside {
     width: 20%;

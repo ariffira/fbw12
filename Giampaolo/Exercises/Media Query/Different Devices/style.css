@@ -1,0 +1,178 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: lightgray;
+    display: flex;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+}
+
+#Home {
+    background-color: darkred;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightseagreen;
+}
+
+aside > a {
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 50px 0;
+    background-color: lightgray;
+    color: black;
+}
+
+aside > a:hover {
+    background-color: lawngreen;
+}
+
+section {
+    width: 80%;
+}
+
+article {
+    overflow: auto;
+}
+
+article img {
+    max-width: 30%;
+    float: right;
+    margin: 15px;
+    border: 5px double black;
+}
+
+h2 {
+    color: darkred;
+    margin-left: 5px;
+}
+
+p {
+    margin-left: 3px;
+}
+
+footer {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer h2 {
+    color: white;
+    margin: 0 5px 10px 0;
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    p {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    aside > a {
+        padding: 20px 0;
+        font-size: x-large;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        height: 20%;
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        font-size: xxx-large;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav > a {
+        text-align: center;
+        padding: auto 0;
+        font-size: x-large;
+    }
+
+    main {
+        flex-direction: column;
+        height: initial;
+    }
+
+    aside {
+        flex-direction: row;
+        width: initial;
+    }
+
+    aside > a {
+        text-align: center;
+        font-size: larger;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    aside > a:hover {
+        background-color: lawngreen;
+    }
+
+    section {
+        width: initial;
+    }
+
+    article img {
+        max-width: 50%;
+    }
+
+    p {
+        margin: 0 15px;
+        font-size: x-large;
+        text-align: justify;
+    }
+
+    footer {
+        margin-top: 10px;
+        height: 100px;
+    }
+
+    footer h2 {
+        font-size: initial;
+    }
+}
