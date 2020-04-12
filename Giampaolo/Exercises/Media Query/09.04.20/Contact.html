@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Query test</title>
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+
+<body>
+
+    <!-- Media Query means Finding devices or machines with different size -->
+    <div class="container">
+
+        <div class="top-menu">
+            <a href="mediaQuery.html">Home</a>
+            <a href="Contact.html">Contact me</a>
+            <a href="#">My Experience</a>
+            <a href="#">My pictures</a>
+        </div>
+
+        <div class="content">
+            <div class="left-menu">
+                <ul>
+                    <li><a href="#">Left menu 1</a></li>
+                    <li><a href="#">Left menu 2</a></li>
+                    <li><a href="#">Left menu 3</a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <form action="" method="get">
+                    <fieldset>
+                        <legend>Main Infos</legend>
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="Name" id="firstName" placeholder="Name"><br><br>
+
+                        <label for="secondName">Second Name</label><br>
+                        <input type="text" name="Surname" id="secondName" placeholder="Surname"><br><br>
+
+                        <label for="t-num">Telefon Number</label><br>
+                        <input type="text" name="TelefonNumber" id="t-num" placeholder="0123456789">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Address</legend>
+                        <label for="street">Street</label>
+                        <input type="text" name="Street" id="street" placeholder="Address">
+
+                        <label for="postCode">Postal Code</label>
+                        <input type="text" name="Postal Code" id="address" placeholder="Postal Code">
+                        <br>
+                        <br>
+                        <label for="city">City</label><br>
+                        <select name="City" id="city">
+                            <option value="Krefeld">Krefeld</option>
+                            <option value="Duisburg" selected>Duisburg</option>
+                            <option value="Düsseldorf">Düsseldorf</option>
+                            <option value="Moers">Moers</option>
+                        </select>
+                    </fieldset><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea name="Message" id="message" cols="40" rows="10"></textarea><br><br>
+
+                    <input type="submit" value="Submit"> <input type="reset" value="Reset">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illo.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

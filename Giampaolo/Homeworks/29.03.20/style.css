@@ -1,0 +1,191 @@
+/* General */
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    scrollbar-color: brown;
+}
+
+body {
+    margin: 0;
+    background-color: burlywood;
+}
+
+hr {
+    color: darkgoldenrod;
+}
+
+.bg-pizza {
+    background-image: url(images/pizza_fresca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    margin: 0 15px;
+}
+
+/* Headings */
+h1 {
+    color: red;
+    font-size: 70px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h2 {
+    text-align: center;
+    color: burlywood;
+    font-size: 20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    background-color: black;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav li {
+    float: right;
+}
+
+nav li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+nav .left-side {
+    font-size: 20px;
+    float: left;
+    color: red;
+    display: block;
+    padding: 18px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-right: 0.5px black solid;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: brown;
+}
+
+.active {
+    background-color: brown;
+}
+
+.active:hover {
+    background-color: rgba(189, 49, 49, 0.575);
+}
+
+/* Footer */
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+}
+
+footer .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+}
+
+footer .info {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+footer .info > div {
+    width: 15%;
+}
+
+footer img {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+.info .box {
+    display: flex;
+    margin-left: 100px
+}
+
+.box .section-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-box .stars {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stars img {
+    width: 25px;
+    height: 25px;
+}
+
+div.copyright {
+    width: 20% !important;
+}
+
+/* Home Side Bar */
+aside {
+    width: 20%;
+    float: left;
+    height: 800px;
+    background-color: brown;
+}
+
+aside > p {
+    padding-left: 5px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Home Main */
+section {
+    width: 80%;
+    float: left;
+    height: 800px;
+}

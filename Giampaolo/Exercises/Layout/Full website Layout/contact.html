@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Header Part-->
+        <header id="header">
+            <h1>Www.Yourwebsite-name.com</h1>
+            <!--Top Menu navigation-->
+            <nav>
+                <a id="home" href="index.html"><span class="material-icons">home_work</span></a>
+                <a href="profile.html"><span class="material-icons">person</span> Profile</a>
+                <a href="index.html#work"><span class="material-icons">card_travel</span> My Works</a>
+                <a href="contact.html"><span class="material-icons">call</span> Contact Me</a>
+                <a href="code.html"><span class="material-icons">code</span> My Code</a>
+            </nav>
+        </header>
+        <!-- End Header Part-->
+
+        <!-- Start Main Content Part-->
+        <main>
+            <!--left side menu-->
+            <aside>
+                <nav id="toppage">
+                    <ul>
+                        <li>
+                            <a href="#header">To the top</a>
+                        </li>
+                        <li>
+                            <a href="table.html">Travel History</a>
+                        </li>
+                        <h3>Layouts</h3>
+                        <li>
+                            <a href="../Table/index.html">Table</a>
+                        </li>
+                        <li>
+                            <a href="../Flex/index.html">Flex</a>
+                        </li>
+                        <li>
+                            <a href="../Float/index.html">Float</a>
+                        </li>
+                        <li>
+                            <a href="../Grid/index.html">Grid</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- content here-->
+            <section>
+                <!-- Contact Form -->
+                <h3>Contact Form</h3>
+                <form>
+                    <label for="name">First Name: </label><br>
+                    <input type="text" name="Name" id="name" placeholder="Ex. Giampaolo">
+                    <br>
+                    <label for="surname">Last Name: </label><br>
+                    <input type="text" name="Surname" id="surname" placeholder="Ex. Lo Cascio">
+                    <br>
+                    <label for="e-mail">Email: </label><br>
+                    <input type="email" name="E-mail" id="e-mail" placeholder="Ex. example@mail.com">
+                    <br>
+                    <label for="address">Address: </label><br>
+                    <input type="text" name="Address" id="address" placeholder="Ex. Green street 7">
+                    <br>
+                    <label for="telefon">Phone Number: </label><br>
+                    <input type="number" name="Phone Number" id="telefon" placeholder="+49 123 654 9876">
+                    <br>
+                    <br>
+                    <button class="submit" type="submit">Submit <span class="material-icons">
+                        send
+                        </span></button>
+                    <button type="reset">Reset <span class="material-icons">
+                        backspace
+                        </span></button>
+                </form>
+
+                <!-- Table form -->
+                <form id="form2" action="">
+                    <table>
+                        <caption>Table Form</caption>
+                        <tr>
+                            <td><label for="name"><span style="color: red;">*</span>First Name:</label></td>
+                            <td><input type="text" name="Name" id="name" placeholder="Ex. Giampaolo" required></td>
+                            <td><label for="surname"><span style="color: red;">*</span>Last Name:</label></td>
+                            <td><input type="text" name="Surname" id="surname" placeholder="Ex. Lo Cascio" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="e-mail"><span style="color: red;">*</span>Email:</label></td>
+                            <td colspan="3"><input type="email" name="E-mail" id="e-mail" placeholder="Ex. example@mail.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address"><span style="color: red;">*</span>Address:</label></td>
+                            <td><input type="text" name="Address" id="address" placeholder="Ex. Green street" required></td>
+                            <td><label for="N"><span style="color: red;">*</span>N:</label></td>
+                            <td><input type="number" name="House Number" id="N" placeholder="Ex. 47" maxlength="5" minlength="5" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="CAP"><span style="color: red;">*</span>Postal Code:</label></td>
+                            <td colspan="3"><input type="text" name="Postal Code" id="CAP" placeholder="Ex. 47087" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telefon">Phone Number:</label></td>
+                            <td colspan="3"><input type="number" name="Phone Number" id="telefon" placeholder="+49 123 654 9876 (Optional)"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><label for="comment">Your Message:</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <textarea form="form2" name="Message" id="comment" cols="60" rows="10" placeholder="Hi, Thank you for your message! (Optional)" maxlength="200"></textarea><br>
+                                <small>Max. 200 letters</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><small><span style="color: red;">*</span>This field is required</small></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="submit" type="submit">Submit <span class="material-icons">
+                                send
+                                </span></button></td>
+                            <td colspan="2"><button type="reset">Reset <span class="material-icons">
+                                backspace
+                                </span></button></td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+        </main>
+        <!-- End Main Content Part -->
+
+        <!-- Start Footer Part -->
+        <footer>
+            <p>Welcome to my website. This is a test layout site</p>
+            <p class="copyright">© Copyright @Giampaolo 2020</p>
+            <p>Contact me: <span>Facebook icon</span></p>
+        </footer>
+        <!-- End of Footer Part -->
+    </div>
+</body>
+
+</html>

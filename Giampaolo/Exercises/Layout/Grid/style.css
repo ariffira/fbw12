@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    background-color: tan;
+    display: grid;
+    grid-template-rows: [header] 250px [nav] 50px [section-part] repeat(5, 150px) [section-box] 150px [footer] 200px;
+    grid-template-columns: [margin-left] 5% repeat(9, [col] 10%) [margin-rigth] 5%;
+    grid-row-gap: 5px;
+    grid-template-areas: 
+    "header header header header header header header header header header header"
+    "nav nav nav nav nav nav nav nav nav nav nav"
+    ". aside aside aside content content content content content content ."
+    ". aside aside aside content content content content content content ."
+    ". aside aside aside content content content content content content ."
+    ". aside aside aside content content content content content content ."
+    ". aside aside aside content content content content content content ."
+    ". . section-box section-box section-box section-box section-box section-box section-box . ."
+    "footer footer footer footer footer footer footer footer footer footer footer"; 
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 5px;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Top Nav */
+nav {
+    background-color: chocolate;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(10, [menu] 1fr);
+    justify-content: start;
+}
+
+/* Sidebar */
+aside {
+    margin-right: 5px;
+    background-color: cornflowerblue;
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 5% 40% 10% 40% 5%;
+}
+
+aside .box2 {
+    background-color: blueviolet;
+    grid-area: 4 / 2 / 5 / 4 ;
+}
+
+aside .box {
+    background-color: olive;
+    grid-area: 2 / 2 / 3 / 4 ;
+}
+
+/* Mainbox */
+.content {
+    background-color: limegreen;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 5% 40% 10% 40% 5%;
+}
+
+.content div.sectionbox1{
+    background-color: brown;
+    grid-area: 2 / 2 / 3 / 3 ;
+}
+
+.content div.sectionbox2 {
+    background-color: yellow;
+    grid-area: 4 / 2 / 5 / 3 ;
+}
+
+/* Section-box */
+.section-box {
+    background-color: mediumorchid;
+    grid-area: section-box;
+}
+
+/* Footer */
+footer {
+    background-color: mediumvioletred;
+    grid-area: footer;
+}
+
+/* Anchor */
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    color: darkorange;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+a:hover {
+    background-color: lime;
+    transition: 800ms;
+    color: red;
+}
+
+a.active {
+    background-color: rgb(61, 0, 122);
+    color: orangered;
+}
+
+a.active:hover {
+    background-color: rgb(0, 0, 88);
+    transition: 800ms;
+}

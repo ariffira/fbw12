@@ -8,7 +8,7 @@ h1 + div {
     color: white;
 }
 
-div ~ div {
+main ~ div {
     background-color: black;
     color: white;
 }
