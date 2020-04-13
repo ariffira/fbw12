@@ -17,8 +17,8 @@
         <div class="top-menu">
             <a href="mediaQuery.html">Home</a>
             <a href="Contact.html">Contact me</a>
-            <a href="#">My Experience</a>
-            <a href="#">My pictures</a>
+            <a href="experience.html">My Experience</a>
+            <a href="gallery.html">My pictures</a>
         </div>
 
         <div class="content">
@@ -35,24 +35,27 @@
                     <fieldset>
                         <legend>Main Infos</legend>
                         <label for="firstName">First Name</label><br>
-                        <input type="text" name="Name" id="firstName" placeholder="Name"><br><br>
+                        <input type="text" name="Name" id="firstName" placeholder="Name" required><br><br>
 
                         <label for="secondName">Second Name</label><br>
-                        <input type="text" name="Surname" id="secondName" placeholder="Surname"><br><br>
+                        <input type="text" name="Surname" id="secondName" placeholder="Surname" required><br><br>
 
                         <label for="t-num">Telefon Number</label><br>
-                        <input type="text" name="TelefonNumber" id="t-num" placeholder="0123456789">
-                    </fieldset>
-                    <br>
+                        <input type="text" name="TelefonNumber" id="t-num" placeholder="0123456789"><br><br>
+
+                        <label for="e-mail">E-mail</label><br>
+                        <input type="email" name="E-mail" id="e-mail" placeholder="example.beispiel@mail.com"><br>
+                    </fieldset><br>
+
                     <fieldset>
                         <legend>Address</legend>
-                        <label for="street">Street</label>
-                        <input type="text" name="Street" id="street" placeholder="Address">
+                        <label for="street">Street</label><br>
+                        <input type="text" name="Street" id="street" placeholder="Address" required><br><br>
 
-                        <label for="postCode">Postal Code</label>
-                        <input type="text" name="Postal Code" id="address" placeholder="Postal Code">
-                        <br>
-                        <br>
+                        <label for="postCode">Postal Code</label><br>
+                        <input type="text" name="Postal Code" id="address" placeholder="Postal Code" maxlength="5"
+                            minlength="5" required><br><br>
+
                         <label for="city">City</label><br>
                         <select name="City" id="city">
                             <option value="Krefeld">Krefeld</option>
@@ -62,10 +65,20 @@
                         </select>
                     </fieldset><br>
 
-                    <label for="message">Message</label><br>
-                    <textarea name="Message" id="message" cols="40" rows="10"></textarea><br><br>
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <label for="message">Write here your message:</label><br>
+                        <textarea name="Message" id="message" cols="40" rows="10"></textarea><br>
+                        <small>Max 500 letters.</small><br><br>
 
-                    <input type="submit" value="Submit"> <input type="reset" value="Reset">
+                        <input type="checkbox" name="Subscrition" id="newmember" checked="true">
+                        <label for="newmember">Receive our newsletter</label><br>
+                        <input type="checkbox" name="Conditions" id="agree" required>
+                        <label for="agree"> I have read, understood and accepted the <a href="http://" target="_blank"
+                                rel="noopener noreferrer">Terms and Conditions</a>.</label>
+                    </fieldset><br>
+
+                    <input type="submit" value="Submit Form"> <input type="reset" value="Reset all values">
                 </form>
             </div>
 
