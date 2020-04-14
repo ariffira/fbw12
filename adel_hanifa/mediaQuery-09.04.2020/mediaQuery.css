@@ -1,0 +1,581 @@
+/*
+ media query format
+ @media only|not media-type and (some size) { ....}
+*/
+/* common code */
+@media all 
+{
+    .container {
+       background-color: lightgrey;
+       color: black;
+    }
+    .top-menu {
+        grid-area: top-menu;
+        background-color: brown;
+    }
+    .top-menu a, .left-menu a {
+        border: 1px solid black;
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+    li {
+        list-style-type: none;
+        margin: 0px;
+        background-color: chocolate;
+    }
+    .top-menu a:hover, .left-menu a:hover {
+        background-color: hotpink;
+        color: white;
+    }
+
+    li:hover {
+        background-color: hotpink;
+        color: white;
+    }
+    .photo {
+        border-radius: 50%;
+        padding: 5%;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: brown;
+        color: black;
+        font-size: 12px;
+        text-align: center;
+    }
+    .left-menu {
+        grid-area: left-menu;
+    }
+    .main {
+        grid-area: main;
+    }
+
+    .box1 {
+        grid-area: box1;
+    }
+    .box3 {
+        grid-area: box3;
+    }
+    .box5 {
+        grid-area: box5;
+    }
+    .box7 {
+        grid-area: box7;
+    }
+    .box9 {
+        grid-area: box9;
+    }
+    .box11 {
+        grid-area: box11;
+    }
+    .box2 {
+        grid-area: box2;
+    }
+    .box4 {
+        grid-area: box4;
+    }
+    .box6 {
+        grid-area: box6;
+    }
+    .box8 {
+        grid-area: box8;
+    }
+    .box10 {
+        grid-area: box10;
+    }
+    .box12 {
+        grid-area: box12;
+    }
+    .box13 {
+        grid-area: box13;
+    }
+    .box14 {
+        grid-area: box14;
+    }
+    .jobs {
+        border: 1px solid black;
+        border-radius: 25%;
+        width: 100px;
+    }
+    
+
+}
+
+
+/*
+  Smartphone  very small
+*/
+@media only screen 
+and (max-device-width: 319px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'top-menu top-menu' 
+        'left-menu left-menu' 
+        'main main' 
+        'footer footer';
+        gap: 5px;
+        margin: 5%;
+    }
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+    }
+
+    .photo {
+        width: 100%;
+        padding: 0;
+    }
+    .left-menu ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .left-menu {
+        width: 100%;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "box1 ." 
+        "box2 box2"
+        "box3 ." 
+        "box4 box4"
+        "box5 ." 
+        "box6 box6"
+        "box7 ." 
+        "box8 box8"
+        "box9 ." 
+        "box10 box10"
+        "box11 ." 
+        "box12 box12"
+        "box13 box14";
+        gap: 5px;
+        margin: 2%;   
+    }
+    label, input, textarea, button {
+        padding: 1%;
+    } 
+    .works{
+        display: grid;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+        "box11"
+        "box12";
+        gap: 5px;  
+    }
+    .jobs {
+        width: 98%;
+    }
+    .experience{
+        display: grid;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6";
+        gap: 5px;
+        margin: 2%;  
+    }
+    .exper {
+        border: 1px solid black;
+        background-color: grey;
+    }
+    .exper p{
+        color: honeydew;
+        text-align: justify;
+    }
+}
+
+
+/*
+  Smartphone 
+*/
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 425px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'top-menu top-menu' 
+        'left-menu left-menu' 
+        'main main' 
+        'footer footer';
+        gap: 5px;
+        margin: 4%;
+    }
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+    }
+    .photo {
+        width: 100%;
+        padding: 0;
+    }
+    .left-menu ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .left-menu {
+        width: 30%;
+        margin: 0 35%;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2 box2"
+        "box3 box4 box4"
+        "box5 box6 box6"
+        "box7 box8 box8"
+        "box9 box10 box10"
+        "box11 box12 box12"
+        ". box13 box14";
+        gap: 5px;
+        margin: 2%;   
+    }
+    label, input, textarea, button {
+        padding: 1%;
+    } 
+    .works{
+        display: grid;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+        "box11"
+        "box12";
+        gap: 5px;
+        margin: 2%;  
+    }
+    .jobs {
+        width: 90%;
+        margin: 5%;
+    }
+    .experience{
+        display: grid;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6";
+        gap: 5px;
+        margin: 2%;  
+    }
+    .exper {
+        border: 1px solid black;
+        background-color: grey;
+    }
+    .exper p{
+        color: honeydew;
+        text-align: justify;
+    }
+    .exper .photo{
+        width: 20%;
+        float: left;
+    }
+}
+
+/* tablet*/
+@media only screen 
+and (min-device-width: 426px)
+and (max-device-width: 768px) {
+      .container {
+        display: grid;
+        grid-template-areas: 
+        'top-menu top-menu' 
+        'left-menu left-menu' 
+        'main main' 
+        'footer footer';
+        gap: 5px;
+        margin: 2%;
+    }
+    .top-menu {
+        display: flex;
+    }
+    .top-menu a {
+        margin-right: 10px;
+    }
+    .photo {
+        float: left;
+    }
+    .left-menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .left-menu {
+        width: 100%;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "box1 box3"
+        "box2 box4"
+        "box5 box7"
+        "box6 box8"
+        "box9 ."
+        "box10 ."
+        "box11 ."
+        "box12 box12"
+        "box13 box14";
+        gap: 5px;
+        margin: 2%;   
+    }
+    label, input, textarea, button {
+        padding: 1%;
+    }
+    .works{
+        display: grid;
+        grid-template-areas: 
+        "box1 box3"
+        "box2 box4"
+        "box5 box7" 
+        "box6 box8" 
+        "box9 box11"
+        "box10 box12";
+        gap: 5px;
+        margin: 5%;  
+    }
+    .jobs {
+        width: 90%;
+        margin: 5%;
+    }
+    .experience{
+        display: grid;
+        grid-template-areas: 
+        "box1 box3"
+        "box2 box4"
+        "box5 box6";
+        gap: 5px;
+        margin: 2%;  
+    }
+    .exper {
+        border: 1px solid black;
+        background-color: grey;
+    }
+    .exper p{
+        color: honeydew;
+        text-align: justify;
+    }
+    .exper .photo{
+        width: 40%;
+    }
+}
+
+/* Laptop */
+@media only screen 
+and (min-device-width: 769px)
+and (max-device-width: 1920px) {
+    .container {
+        display: grid;
+        grid-template-columns: 10% auto;
+        grid-template-areas: 
+        'top-menu top-menu' 
+        'left-menu main' 
+        'footer footer';
+        gap: 5px;
+        margin: 2%;
+    }
+    .top-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    .top-menu a {
+        margin-right: 10px;
+    }
+    .left-menu ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .photo {
+        float: left;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr;
+        grid-template-areas: 
+        "box1 box2 box5 box6"
+        " box3 box4 box7 box8"
+        "box9 box10 . ."
+        "box11 box12 box12 box12"
+        ". box13 . box14 ";
+        gap: 5px;
+        margin: 2%;   
+    }
+    label, input, textarea, button {
+        padding: 1%;
+    }
+    .works{
+        display: grid;
+        grid-template-areas: 
+        "box1 box3 box5"
+        "box2 box4 box6"
+        "box7 box9 box11"
+        "box8 box10 box12";
+        gap: 5px;
+        margin: 2%;  
+    }
+    .jobs {
+        width: 90%;
+        margin: 5%;
+    }
+    .experience{
+        display: grid;
+        grid-template-areas: 
+        "box1 box3 box5"
+        "box2 box4 box6";
+        gap: 5px;
+        margin: 5%;  
+    }
+    .exper {
+        border: 1px solid black;
+        background-color: grey;
+    }
+    .exper p{
+        color: honeydew;
+        text-align: justify;
+    }
+    .exper .photo{
+        width: 40%;
+    }
+
+
+}
+
+/* 4k */
+@media only screen 
+and (min-device-width: 1921px)
+ {
+    *{
+        margin: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 20% auto;
+        grid-template-areas: 
+        'top-menu top-menu' 
+        'left-menu main' 
+        'footer footer';
+        gap: 5px;
+        width: 100%;
+    }
+    .top-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-menu ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .top-menu a, li {
+       font-size: 75px;
+    }
+    .photo {
+        float: left;
+        width: 35%;
+    }
+    p {
+        font-size: 50px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr;
+        grid-template-areas: 
+        "box1 box2 box5 box6"
+        " box3 box4 box7 box8"
+        "box9 box10 . ."
+        "box11 box12 box12 box12"
+        ". box13 . box14 ";
+        gap: 5px;
+        margin: 2%;   
+    }
+    h1 {
+        font-size: 100px;
+    }
+    label, input, textarea, button {
+        font-size: 60px;
+        padding: 1%;
+    } 
+    .works{
+        display: grid;
+        grid-template-areas: 
+        "box1 box3 box5"
+        "box2 box4 box6"
+        "box7 box9 box11"
+        "box8 box10 box12";
+        gap: 5px;
+        margin: 2%;  
+    }
+    .jobs {
+        width: 90%;
+        margin: 5%;
+    }
+    h3{
+        font-size: 50px;
+        background-color: gray;
+    }
+    .experience{
+        display: grid;
+        grid-template-areas: 
+        "box1 box3 box5"
+        "box2 box4 box6";
+        gap: 5px;
+        margin: 5%;  
+    }
+    .exper {
+        border: 1px solid black;
+        background-color: grey;
+    }
+    .exper p{
+        color: honeydew;
+        text-align: justify;
+    }
+}
+
