@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tests</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Responsive meta-tag Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/bootstrap-logo.png" type="image/png">
+    <style>
+        .page-link,
+        .page-item.disabled .page-link {
+            background-color: black;
+            color: lightblue;
+        }
+
+        .page-link:hover {
+            background-color: darkblue;
+            color: snow;
+        }
+
+        .list-group-item.active {
+	    background-color: #003063;
+	    border-color: #004085;
+}
+    </style>
+</head>
+
+<body style="background-color: black; color: snow;">
+    <div class="container mt-2">
+
+        <!-- Alert -->
+        <div class="alert alert-info" role="alert">
+            This is a Test with only Bootstrap CSS
+        </div>
+
+        <h1>Bootstrap CSS Style</h1>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" focusable="false" role="img" width="30"
+                    height="30">
+                    <title>Bootstrap</title>
+                    <path fill="#563d7c"
+                        d="M612 510c0 56.1-45.9 102-102 102H102C45.9 612 0 566.1 0 510V102C0 45.9 45.9 0 102 0h408c56.1 0 102 45.9 102 102v408z" />
+                    <path fill="#fff"
+                        d="M166.3 133h173.5c32 0 57.7 7.3 77 22s29 36.8 29 66.5c0 18-4.4 33.4-13.2 46.2-8.8 12.8-21.4 22.8-37.8 29.8v1c22 4.7 38.7 15.1 50 31.2 11.3 16.2 17 36.4 17 60.8 0 14-2.5 27.1-7.5 39.2-5 12.2-12.8 22.7-23.5 31.5s-24.3 15.8-41 21-36.5 7.8-59.5 7.8h-164V133zm62.5 149.5h102c15 0 27.5-4.2 37.5-12.8s15-20.8 15-36.8c0-18-4.5-30.7-13.5-38s-22-11-39-11h-102v98.6zm0 156.5h110.5c19 0 33.8-4.9 44.2-14.8 10.5-9.8 15.8-23.8 15.8-41.8 0-17.7-5.2-31.2-15.8-40.8s-25.2-14.2-44.2-14.2H228.8V439z" />
+                </svg>
+            </a>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light">
+                            Notifications <span class="badge badge-dark">4</span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light">
+                            Profile <span class="badge badge-dark">9</span>
+                            <span class="sr-only">unread messages</span>
+                        </button>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- List group -->
+        <ul class="list-group mt-3">
+            <li class="list-group-item active">Cras justo odio</li>
+            <li class="list-group-item list-group-item-dark">Dapibus ac facilisis in</li>
+            <li class="list-group-item list-group-item-dark">Morbi leo risus</li>
+            <li class="list-group-item list-group-item-dark">Porta ac consectetur ac</li>
+            <li class="list-group-item list-group-item-dark">Vestibulum at eros</li>
+        </ul>
+
+        <!-- Spinners -->
+        <div class="m-2 d-flex justify-content-around">
+            <div class="spinner-grow text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Media list -->
+        <ul class="list-unstyled mt-3">
+            <li class="media">
+                <img src="images/bootstrap-logo.png" width="64" height="64" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img src="images/bootstrap-logo.png" width="64" height="64" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li class="media">
+                <img src="images/bootstrap-logo.png" width="64" height="64" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+        </ul>
+
+        <!-- Card -->
+        <div class="d-flex">
+            <div class="card-dark m-1" style="width: 25%;">
+                <img class="card-img-top" src="images/bootstrap-logo.png">
+                <div class="card-body">
+                    <h4 class="card-title">Card</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos aperiam
+                        reiciendis cumque voluptas quia amet non aliquam pariatur. Beatae sunt sit a, atque doloremque
+                        cum adipisci porro quia ipsum!
+                        Placeat, voluptas aspernatur! Cum doloremqu idunt rem pariatur assumenda sit, quod deserunt in
+                        fugiat ab nobis? Ipsum nobis in cupiditate quibusdam placeat quidem, veritatis architecto illo?
+                        Atque distinctio hic dolore.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card-dark m-1" style="width: 25%;">
+                <img class="card-img-top" src="images/bootstrap-logo.png">
+                <div class="card-body">
+                    <h4 class="card-title">Card</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos aperiam
+                        reiciendis cumque voluptas quia amet non aliquam pariatur. Beatae sunt sit a, atque doloremque
+                        cum adipisci porro quia ipsum!
+                        Placeat, voluptas aspernatur! Cum doloremqu idunt rem pariatur assumenda sit, quod deserunt in
+                        fugiat ab nobis? Ipsum nobis in cupiditate quibusdam placeat quidem, veritatis architecto illo?
+                        Atque distinctio hic dolore.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 13 mins ago</small></p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card-dark m-1" style="width: 25%;">
+                <img class="card-img-top" src="images/bootstrap-logo.png">
+                <div class="card-body">
+                    <h4 class="card-title">Card</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos aperiam
+                        reiciendis cumque voluptas quia amet non aliquam pariatur. Beatae sunt sit a, atque doloremque
+                        cum adipisci porro quia ipsum!
+                        Placeat, voluptas aspernatur! Cum doloremqu idunt rem pariatur assumenda sit, quod deserunt in
+                        fugiat ab nobis? Ipsum nobis in cupiditate quibusdam placeat quidem, veritatis architecto illo?
+                        Atque distinctio hic dolore.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card-dark m-1" style="width: 25%;">
+                <img class="card-img-top" src="images/bootstrap-logo.png">
+                <div class="card-body">
+                    <h4 class="card-title">Card</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos aperiam
+                        reiciendis cumque voluptas quia amet non aliquam pariatur. Beatae sunt sit a, atque doloremque
+                        cum adipisci porro quia ipsum!
+                        Placeat, voluptas aspernatur! Cum doloremqu idunt rem pariatur assumenda sit, quod deserunt in
+                        fugiat ab nobis? Ipsum nobis in cupiditate quibusdam placeat quidem, veritatis architecto illo?
+                        Atque distinctio hic dolore.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 13 days ago</small></p>
+                        <a href="#" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pagination -->
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                </li>
+                <li class="page-item active" aria-current="page"> <span class="page-link">1<span
+                            class="sr-only">(current)</span></span></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
