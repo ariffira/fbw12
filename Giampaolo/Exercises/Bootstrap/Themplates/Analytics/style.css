@@ -1,0 +1,121 @@
+.myNavLogo {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/images2/Navy-Blue-Wallpapers-1920x1200.jpg);
+}
+
+.sidenav {
+	height: auto !important;
+}
+
+.myNavLogo i {
+    vertical-align: middle;
+    font-size: 21px;
+}
+
+.myNavLogo span {
+    margin-left: 2px;
+}
+
+.dashboardBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboardBoxElement {
+    flex: 0 0 23%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.dashboardBoxElement i{
+    font-size: xxx-large;
+    margin-top: 0;
+    color: white;
+}
+
+.dashboardBoxElement h5{
+    font-size: xx-large;
+    margin-top: 0;
+    color: white;
+    float: right;
+    padding: 5px;
+}
+
+.dashboardBoxElement h6{
+    font-size: xx-large;
+    margin-top: 20px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-brown {
+    background-color: brown;
+}
+
+.bg-darkgrey {
+	color: white;
+	background-color: rgb(78, 78, 78);
+}
+
+.bg-gray {
+    border-radius: 10px;
+    color: snow;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.bg-red {
+    border-radius: inherit;
+    background-color: #f44336;
+}
+
+.bg-blue {
+    border-radius: inherit;
+    background-color: #347bff;
+}
+
+.bg-green {
+    border-radius: inherit;
+    background-color: #4CAF50;
+}
+
+.bg-orange {
+    background-color: #ff9800;
+}
+
+.border-b {
+	border-bottom: 6px solid #ccc;
+}
+
+.border-b-green {
+	border-color: #4CAF50;
+}
+
+.border-b-red {
+	border-color: #f44336;
+}
+
+.border-b-orange {
+	border-color: #ff9800;
+}
+
+.padding {
+	padding: 8px 16px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+.center-img {
+    padding: 0 33%;
+}
+

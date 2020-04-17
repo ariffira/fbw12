@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d30f23d271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 550px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* On small screens, set height to 'auto' for the grid */
+        @media screen and (max-width: 767px) {
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse visible-xs">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-toggle="collapse" data-target="#devicenav" href="#section1"><i
+                                class="fa fa-dashboard"></i>
+                            Dashboard <span class="caret"></span></a></li>
+                    <ul class="collpase" id="devicenav">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <li><a href="#section2"><i class='fa fa-area-chart fa-fw'></i> Overview</a></li>
+                    <li><a href="#section3"><i class='fa fa-eye fa-fw'></i> Visitors</a></li>
+                    <li><a href="#section3"><i class='fa fa-area-chart fa-fw'></i> Traffic</a></li>
+                    <li><a href="#section3"><i class='fa fa-map-o fa-fw'></i> Map</a></li>
+                    <li><a href="#section3"><i class='fa fa fa-bell fa-fw'></i> News</a></li>
+                    <li><a href="#section3"><i class='fa fa-diamond fa-fw'></i> Orders</a></li>
+                    <li><a href="#section3"><i class='fa fa-history fa-fw'></i> History</a></li>
+                    <li><a href="#section3"><i class='fa fa-institution fa-fw'></i> General</a></li>
+                    <li><a href="#section3"><i class='fa fa-cog fa-fw'></i> Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Bootstrap Analytics</h1>
+        </div>
+        <div class="row content">
+
+            <div class="col-sm-2 sidenav hidden-xs">
+                <div class="myNavLogo">
+                    <img src="images/businessman.png">
+                    <div style="margin-left: 10px;">
+                        <h3>Welcome Giampaolo</h3>
+                        <a href=""><i class="fa fa-user"></i><span class="badge">5</span></a>
+                        <a href=""><i class="fa fa-envelope"></i><span class="badge">7</span></a>
+                        <a href=""><i class="fa fa-cog"></i><span class="badge">2</span></a>
+                        <br>
+                        <br>
+                        <a href="">Log-out <i class="glyphicon glyphicon-log-out" style="vertical-align: bottom;"></i></a>
+                    </div>
+                </div>
+                <hr style="border-color: black;">
+
+                <h2>Global Panel</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a data-toggle="collapse" data-target="#demo" href="#section1"><i
+                                class="fa fa-dashboard"></i>
+                            Dashboard <span class="caret"></span></a></li>
+                    <ul class="collpase" id="demo">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <li><a href="#section2"><i class='fa fa-area-chart fa-fw'></i> Overview</a></li>
+                    <li><a href="#section3"><i class='fa fa-eye fa-fw'></i> Visitors</a></li>
+                    <li><a href="#section3"><i class='fa fa-area-chart fa-fw'></i> Traffic</a></li>
+                    <li><a href="#section3"><i class='fa fa-map-o fa-fw'></i> Map</a></li>
+                    <li><a href="#section3"><i class='fa fa fa-bell fa-fw'></i> News</a></li>
+                    <li><a href="#section3"><i class='fa fa-diamond fa-fw'></i> Orders</a></li>
+                    <li><a href="#section3"><i class='fa fa-history fa-fw'></i> History</a></li>
+                    <li><a href="#section3"><i class='fa fa-institution fa-fw'></i> General</a></li>
+                    <li><a href="#section3"><i class='fa fa-cog fa-fw'></i> Settings</a></li>
+                </ul><br>
+
+                <hr style="border-color: black;">
+                <h2><i class="fab fa-playstation"></i> Playstation</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#section2"><i class='fa fa-area-chart fa-fw'></i> Overview</a></li>
+                    <li><a href="#section3"><i class='fa fa-eye fa-fw'></i> Visitors</a></li>
+                    <li><a href="#section3"><i class='fa fa-area-chart fa-fw'></i> Traffic</a></li>
+                    <li><a href="#section3"><i class='fa fa-map-o fa-fw'></i> Map</a></li>
+                    <li><a href="#section3"><i class='fa fa fa-bell fa-fw'></i> News</a></li>
+                    <li><a href="#section3"><i class='fa fa-diamond fa-fw'></i> Orders</a></li>
+                    <li><a href="#section3"><i class='fa fa-history fa-fw'></i> History</a></li>
+
+                </ul><br>
+
+                <hr style="border-color: black;">
+                <h2><i class="fab fa-xbox"></i> Xbox</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#section2"><i class='fa fa-area-chart fa-fw'></i> Overview</a></li>
+                    <li><a href="#section3"><i class='fa fa-eye fa-fw'></i> Visitors</a></li>
+                    <li><a href="#section3"><i class='fa fa-area-chart fa-fw'></i> Traffic</a></li>
+                    <li><a href="#section3"><i class='fa fa-map-o fa-fw'></i> Map</a></li>
+                    <li><a href="#section3"><i class='fa fa fa-bell fa-fw'></i> News</a></li>
+                    <li><a href="#section3"><i class='fa fa-diamond fa-fw'></i> Orders</a></li>
+                    <li><a href="#section3"><i class='fa fa-history fa-fw'></i> History</a></li>
+
+                </ul><br>
+
+                <hr style="border-color: black;">
+                <h2><i class="fas fa-desktop"></i> PC</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#section2"><i class='fa fa-area-chart fa-fw'></i> Overview</a></li>
+                    <li><a href="#section3"><i class='fa fa-eye fa-fw'></i> Visitors</a></li>
+                    <li><a href="#section3"><i class='fa fa-area-chart fa-fw'></i> Traffic</a></li>
+                    <li><a href="#section3"><i class='fa fa-map-o fa-fw'></i> Map</a></li>
+                    <li><a href="#section3"><i class='fa fa fa-bell fa-fw'></i> News</a></li>
+                    <li><a href="#section3"><i class='fa fa-diamond fa-fw'></i> Orders</a></li>
+                    <li><a href="#section3"><i class='fa fa-history fa-fw'></i> History</a></li>
+
+                </ul>
+                <br>
+
+            </div>
+            <br>
+
+            <div class="col-sm-10">
+
+                <div class="alert alert-warning alert-dismissible">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Info!</strong> These datas are just for example.
+                </div>
+
+                <div class="well">
+                    <h4><i class="fa fa-dashboard"></i> My Dashboard</h4>
+                    <div class="dashboardBox">
+                        <a class="dashboardBoxElement bg-green" href="">
+                            <div>
+                                <i class='fa fa-comment'></i>
+                                <h5>7</h5>
+                                <h6>Messages</h6>
+                            </div>
+                        </a>
+
+                        <a class="dashboardBoxElement bg-blue" href="">
+                            <div>
+                                <i class='fa fa-eye'></i>
+                                <h5>1</h5>
+                                <h6>Views</h6>
+                            </div>
+                        </a>
+
+                        <a class="dashboardBoxElement bg-orange" href="">
+                            <div>
+                                <i class='fa fa-bookmark'></i>
+                                <h5>13</h5>
+                                <h6>Bookmarks</h6>
+                            </div>
+                        </a>
+
+                        <a class="dashboardBoxElement bg-brown" href="">
+                            <div>
+                                <i class='fa fa-pie-chart'></i>
+                                <h5>3</h5>
+                                <h6>Diagrams</h6>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><i class='fa fa-users'></i> Global Users</h4>
+                            <p>1.8 Billion</p>
+                            <div class="bg-gray">
+                                <div class="bg-red text-center" style="display: flex;">
+                                    <div class="padding bg-blue text-center"
+                                        style="width: 21%; border-end-end-radius: 0; border-top-right-radius: 0;">PS
+                                    </div>
+                                    <div class="padding bg-green text-center" style="width: 18%; border-radius: 0;">X
+                                    </div>
+                                    <div class="padding text-center" style="width: 61%; border-radius: 0;">PC</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><i class="fas fa-desktop"></i> PC</h4>
+                            <p>1.2 Billion</p>
+                            <div class="bg-gray">
+                                <div class="padding bg-red text-center"
+                                    style="width: 61%; border-end-end-radius: 0; border-top-right-radius: 0;">61%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><i class="fab fa-playstation"></i> Playstation</h4>
+                            <p>350 Millions</p>
+                            <div class="bg-gray">
+                                <div class="padding bg-blue text-center"
+                                    style="width: 21%; border-end-end-radius: 0; border-top-right-radius: 0;">21%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <h4><i class="fab fa-xbox"></i> Xbox</h4>
+                            <p>250 Millions</p>
+                            <div class="bg-gray">
+                                <div class="padding bg-green text-center"
+                                    style="width: 18%; border-end-end-radius: 0; border-top-right-radius: 0;">18%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <img src="images/map.png">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h2 style="margin-top: 0;">Countries with the most users number</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-info">China <span class="badge"><i
+                                            class="fas fa-user"></i> 200 Millions</span></li>
+                                <li class="list-group-item">India <span class="badge"><i class="fas fa-user"></i> 120
+                                        Millions</span></li>
+                                <li class="list-group-item">USA <span class="badge"><i class="fas fa-user"></i> 70
+                                        Millions</span></li>
+                                <li class="list-group-item">Japan <span class="badge"><i class="fas fa-user"></i> 45
+                                        Millions</span></li>
+                                <li class="list-group-item">South Korea <span class="badge"><i class="fas fa-user"></i>
+                                        38 Millions</span></li>
+                                <li class="list-group-item">Germany <span class="badge"><i class="fas fa-user"></i> 22
+                                        Millions</span></li>
+                                <li class="list-group-item">Spain <span class="badge"><i class="fas fa-user"></i> 19
+                                        Millions</span></li>
+                                <li class="list-group-item">Italy <span class="badge"><i class="fas fa-user"></i> 14
+                                        Millions</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 style="color: snow;">Users Statistics</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h3>Age</h3>
+                            <img class="center-img" src="images/Age.png">
+                            <h4>Statistics</h4>
+                            <ul>
+                                <li><strong>26%</strong> under 18 years</li>
+                                <li><strong>17%</strong> 36-49 years</li>
+                                <li><strong>30%</strong> 18-35 years</li>
+                                <li><strong>27%</strong> 50+ years</li>
+                            </ul>
+                            <div class="alert alert-info">
+                                <strong>Average age:</strong> The average age of the players is 35 years old.
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h3>Gender</h3>
+                            <img class="center-img" src="images/Gemder.png">
+                            <h4>Statistics</h4>
+                            <ul>
+                                <li><strong>56%</strong> Male</li>
+                                <li><strong>44%</strong> Female</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h3>Hours per Week</h3>
+                            <img class="center-img" src="images/Age.png">
+                            <h4>Statistics</h4>
+                            <ul>
+                                <li><strong>26%</strong> 1-8 hours</li>
+                                <li><strong>17%</strong> 9-15 hours</li>
+                                <li><strong>30%</strong> 16-20 hours</li>
+                                <li><strong>27%</strong> 21+ hours</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid bg-darkgrey" style="padding: 32px;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h5 class="border-b border-b-green">Demographic</h5>
+                            <p>Language</p>
+                            <p>Country</p>
+                            <p>Region</p>
+                            <p>City</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="border-b border-b-red">System</h5>
+                            <p>PS4</p>
+                            <p>PS3</p>
+                            <p>XboxOne</p>
+                            <p>Xbox360</p>
+                            <p>Mac</p>
+                            <p>Microsoft</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 class="border-b border-b-orange">Target</h5>
+                            <p>Users</p>
+                            <p>Active</p>
+                            <p>Age</p>
+                            <p>Interests</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
