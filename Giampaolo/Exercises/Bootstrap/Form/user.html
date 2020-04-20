@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center mb-0">
+            <h1>Bootstrap Form</h1>
+        </div>
+
+        <form>
+            <!--                                       Main Information                         -->
+            <fieldset>
+                <h2 class="m-5">Main Informations</h2>
+                <div class="form-group">
+                    <label for="sName">Second Name</label>
+                    <input type="text" class="form-control" id="sName" name="secondName"
+                        placeholder="Write your second name." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fName">First Name</label>
+                    <input type="text" class="form-control" id="fName" name="firstName"
+                        placeholder="Write your first name." aria-describedby="fNameDescribe" required>
+                    <small id="fNameDescribe" class="form-text text-muted">In case that you have more names you can
+                        write just one of them.</small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <input type="text" id="age" class="form-control" name="Age" placeholder="Write here your age."
+                            required>
+                    </div>
+
+                    <div class="form-group col-sm-2">
+                        <label for="birthday">Date of birth</label>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-3 col-lg-2 ">
+                        <input type="date" id="birthday" class="form-control" name="Date of birth" required
+                            min="20-04-2002">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <legend class="col-form-label col-sm-2 p-0">Gender</legend>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Gender" id="man" value="man" required>
+                            <label class="form-check-label" for="man">Man</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Gender" id="woman" value="woman"
+                                required>
+                            <label class="form-check-label" for="woman">Woman</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!--                        Contact Informations           -->
+            <fieldset>
+                <h2 class="m-5">Contact Informations</h2>
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <label for="e-mail">Email</label>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input class="form-control" type="email" id="e-mail" name="E-mail"
+                            placeholder="example@mail.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                        <input class="form-control" type="password" name="Password" id="password" minlength="8"
+                            maxlength="15" aria-describedby="pDescribe" required>
+                        <small class="text-muted form-text" id="pDescribe">Your password must container a number and a
+                            special characters (@%$/!)<br>Min. 8 characters Max. 15 characters</small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <label for="phoneNum">Telefon number</label>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" name="TelefonNumber" id="phoneNum" class="form-control" value="+49 "
+                            required pattern="[+]{1}[0-9]{>=2}">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!--                  Address                 -->
+            <fieldset>
+                <h2 class="m-5">Address</h2>
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <label for="country">Country</label>
+                    </div>
+
+                    <div class="form-group col-sm-3">
+                        <select type="text" class="form-control" id="country" name="Country" required>
+                            <option selected disabled>Select your country</option>
+                            <option value="UK">UK</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Spain">Spain</option>
+                            <option value="France">France</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Belgium">Belgium</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-sm-1">
+                        <label for="city">City</label>
+                    </div>
+
+                    <div class="form-group col-sm-3">
+                        <input type="text" id="city" name="City" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <label for="zipCode">ZIP</label>
+                    </div>
+                    <div class="form-group col-sm-2 col-lg-1">
+                        <input type="text" minlength="5" maxlength="5" required class="form-control" name="ZipCode"
+                            id="zipCode" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!--                        About Me               -->
+            <fieldset>
+                <h2 class="m-5">About Me</h2>
+                <label for="comment">Write something about you</label>
+                <textarea class="form-control" name="Comment" id="comment" rows="5" maxlength="500"
+                    placeholder="Hello World!"></textarea>
+                <small class="form-text text-muted">Max. 500 characters</small>
+            </fieldset>
+
+            <fieldset class="mt-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="profileImage">
+                    <label class="custom-file-label" for="profileImage" data-browse="Select a profile picture"></label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="SaveForm" id="saveForm" class="custom-control-input" value="remind">
+                    <label class="custom-control-label" for="saveForm">Save this form</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="Policy" id="policy" class="custom-control-input" value="accepted" required>
+                    <label class="custom-control-label" for="policy">I have read and accepted the <a href="#" target="_blank">Terms and Conditions</a>.</label>
+                </div>
+            </fieldset>
+
+            <!--                       Submit Buttons                -->
+            <fieldset>
+                <h2 class="my-4">Submit Form</h2>
+                <div class="form-row">
+                    <div class="form-group col-sm-2">
+                        <button type="submit" class="btn btn-primary mb-2">Send data</button>
+                    </div>
+                    <div class="form-group col-sm-2">
+                        <button type="reset" class="btn btn-danger mb-2">Reset form</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
