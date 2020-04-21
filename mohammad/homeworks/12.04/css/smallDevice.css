@@ -1,0 +1,86 @@
+@media only screen and (min-device-width: 200px) and (max-device-width: 319px) {
+    /* write your code here*/
+    .container {
+        display: grid;
+        grid-template-areas: 'top-menu' 'content' 'footer';
+        gap: 5px;
+        margin: 5%;
+    }
+    li {
+        border: 1px solid black;
+        list-style-type: none;
+        margin: 0px;
+        background-color: orangered;
+    }
+    li:hover {
+        background-color: hotpink;
+        color: white;
+    }
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .photo {
+        width: 70%;
+        margin-left: 10%;
+    }
+    .content {
+        border: 4px solid orangered;
+        display: grid;
+        grid-template-areas: 'left-menu' 'main';
+        grid-area: content;
+        gap: 5px
+    }
+    li {
+        border: 1px solid black;
+        list-style-type: none;
+        margin: 0px;
+        background-color: orangered;
+    }
+    .left-menu {
+        grid-area: left-menu;
+        text-align: center;
+    }
+    .artical {
+        display: flex;
+        flex-direction: column;
+    }
+    .myEXPhoto {
+        margin-right: 2%;
+        width: 40%;
+        height: 40%;
+    }
+    .articalForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* start form */
+    /* end form */
+    /* start images */
+    .images {
+        display: grid;
+        grid-template-areas: 'firstImg' 'secundImg' 'thirdImg';
+        margin-left: 2%;
+    }
+    .firstImg {
+        grid-area: firstImg;
+    }
+    .secundImg {
+        grid-area: secundImg;
+    }
+    .thirdImg {
+        grid-area: thirdImg;
+    }
+    .imag {
+        margin-bottom: 2%;
+        margin-right: 2%;
+        width: 100%;
+        height: 10em;
+    }
+    /* end images */
+    .footer {
+        grid-area: footer;
+    }
+}
