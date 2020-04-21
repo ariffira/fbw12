@@ -1,0 +1,25 @@
+
+
+
+.card1{
+    padding-top: 150px;
+    display: flex;
+   justify-content: space-around;
+
+
+    
+}
+@media screen and (max-width: 768px) 
+{
+    .card1{
+        display: block;
+          }
+          .card{
+            padding:  auto;
+            margin: auto; 
+          }
+          #naccoll{
+              display: none;
+          }
+
+}
