@@ -1,0 +1,12 @@
+#nav-menu{
+    justify-content: space-around;
+}
+
+#side-menu{
+    flex-direction: column;
+    
+}
+.row {
+    width: 100%;
+    margin: 0;
+}

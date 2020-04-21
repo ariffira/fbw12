@@ -1,0 +1,165 @@
+body {
+    background-color: #3d2c32;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #f9ad5a;
+    color: #3d2c32;
+    position: fixed;
+    z-index: 0; 
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+
+div {
+    padding: 5% 0 5% 0;
+}
+
+.div {
+    padding: 0 30px 0 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 100px;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.left {
+    height: 100%;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+table{
+    order: 1;
+    display: flex;
+    width: 80%;
+}
+
+
+
+h1 {
+    color: #f9ad5a;
+    font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    text-align: center;
+}
+
+a {
+    float: center;
+    font-size: 150%;
+    background-color: #f9ad5a;
+    border: 1px solid #f9ad5a;
+    float: center;
+    display: table-cell;
+    color: #3d2c32;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #f9ad5a;
+    /*يغير لون a لما يقف المؤشر فوقه */
+}
+
+.aktiv{
+    background-color: #3d2c32;
+    color: #f9ad5a;
+    border: 1px solid #3d2c32;
+}
+.logo {
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(../photos/111.png);
+    background-size: contain;
+    padding: 22px 15px;
+    
+}
+
+footer {
+    background-color: #f9ad5a;
+    color: #3d2c32;
+    padding: 0.1em;
+}
+
+img {
+    width: 50%;
+    border: 3px solid #f9ad5a;
+    border-radius: 50px;
+}
+
+img:hover {
+    transform: scale(1.7);
+    background-color: blanchedalmond;
+}
+
+.img {
+    border: 3px solid #3d2c32;
+}
+
+.imghome {
+    width: 40%;
+    border: 5px solid #f9ad5a;
+    border-radius: 4px;
+}
+.imghome:hover{
+    transform: unset;
+}
+
+table {
+    border: 0.5px solid #f9ad5a;
+    text-align: center;
+}
+
+td {
+    padding: 5px 0 3px 0;
+}
+
+.tr1 {
+    background-color: #f9ad5a;
+}
+
+h2 {
+    color: #f9ad5a;
+    font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    padding: 0 10px 0 10px;
+}
+
+.h2 {
+    color: #3d2c32;
+}
+
+h3 {
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    font-size: initial;
+    padding: 0 10px 0 10px;
+}
+
+.h3 {
+    color: black;
+}
+
+.h3align {
+    text-align: center;
+    font-size: x-large;
+}
+
