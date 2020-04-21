@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bootstrap Test</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .row {
+            margin: 0 0;
+        }
+
+        .btn, thead>tr{
+            background-color: brown;
+            color: white;
+        }
+
+        .list-group {
+            width: auto;
+            margin: auto;
+            height: 100%;
+        }
+
+
+
+        .list-group-item-action:hover {
+            color: blanchedalmond;
+            background-color: #6c757d;
+        }
+
+        .card {
+            margin: auto;
+        }
+
+        .col {
+            margin: 5% auto;
+        }
+
+        h2 {
+            margin: 2% 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body style="background-color: darkgray;" class="container-fluid">
+
+    <!-- top nav  -->
+    <header class="row">
+        <a href="#" class="btn btn-secondary col-lg-2 col-md-4 col-sm-6 col-xs-12">Home</a>
+        <a href="#" class="btn btn-secondary col-lg-2 col-md-4 col-sm-6 col-xs-12">Gallery</a>
+        <a href="test.html" class="btn btn-secondary col-lg-2 col-md-4 col-sm-6 col-xs-12">My works</a>
+        <a href="tabel.html" class="btn btn-secondary col-lg-2 col-md-4 col-sm-6 col-xs-12 active">Tabel</a>
+        <a href="#" class="btn btn-secondary col-lg-2 col-md-4 col-sm-6 col-xs-12">Gallery</a>
+        <a href="#" class="btn btn-secondary col-lg-2 col-md-4 col-sm-6 col-xs-12">abut me</a>
+    </header>
+
+
+    <!-- main  -->
+    <div class="row">
+
+        <!-- left nav  -->
+        <div class="list-group text-center col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <nav style="margin: 0; padding: 0;" class="row navbar  navbar-expand-md  navbar-light bg-light">
+                <button class="navbar-toggler list-group-item-action list-group-item " type="button"
+                    data-toggle="collapse" data-target="#side-menu" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><span class="navbar-toggler-icon"></span> Open Side Menu</span>
+                </button>
+
+                <div class="collapse navbar-collapse nav" id="side-menu">
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 1</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 2</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 3</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 4</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 5</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 6</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 7</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 8</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 9</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 10</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 11</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 12</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 13</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 14</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 15</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Menu 16</a>
+                </div>
+        </div>
+
+        <!-- main containt -->
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+
+            <div class="row text-center">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="text-center table-responsive">DCI_#düs_fbw12</h2>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-responsive">
+                    <table class="table table-bordered  table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nr.</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-primary">
+                                <td>01</td>
+                                <td>Arif</td>
+                                <td>Fira</td>
+                                <td>Arif@fira.com</td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>02</td>
+                                <td>Adel</td>
+                                <td>Leda</td>
+                                <td>Adel@leda.com</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>03</td>
+                                <td>Asreen</td>
+                                <td>Neesa</td>
+                                <td>Asreen@neesa.com</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>04</td>
+                                <td>Cagri</td>
+                                <td>Irgac</td>
+                                <td>Cagri@irgac.com</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>05</td>
+                                <td>Chuling</td>
+                                <td>Gniluhc</td>
+                                <td>Chuling@gniluhc.com</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td>06</td>
+                                <td>Daniel</td>
+                                <td>Leinad</td>
+                                <td>daniel@leinad.com</td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>07</td>
+                                <td>Gampaolo</td>
+                                <td>Oloapmag</td>
+                                <td>Gampaolo@oloapmag.com</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>08</td>
+                                <td>Jessica</td>
+                                <td>Acissej</td>
+                                <td>Jessica@acissej.com</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>09</td>
+                                <td>Carlos</td>
+                                <td>Solrac</td>
+                                <td>Carlos@solrac.com</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td>10</td>
+                                <td>Khaled</td>
+                                <td>Delahk</td>
+                                <td>Khaled@delahk.com</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <td>11</td>
+                                <td>Joumah</td>
+                                <td>Hamuoj</td>
+                                <td>Joumah@hamuoj.com</td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>12</td>
+                                <td>Peter</td>
+                                <td>Retep</td>
+                                <td>Peter@retep.com</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td>13</td>
+                                <td>Sujatha</td>
+                                <td>Ahtajus</td>
+                                <td>Sujatha@ahtajus.com</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="text-center table-responsive">DCI_#düs_fbw12_Dark</h2>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-responsive">
+                    <table class="table border table table-dark table-striped table-hover">
+                        <thead>
+                            <tr class="thead-dark">
+                                <th>Nr.</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Arif</td>
+                                <td>Fira</td>
+                                <td>Arif@fira.com</td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Adel</td>
+                                <td>Leda</td>
+                                <td>Adel@leda.com</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>Asreen</td>
+                                <td>Neesa</td>
+                                <td>Asreen@neesa.com</td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Cagri</td>
+                                <td>Irgac</td>
+                                <td>Cagri@irgac.com</td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>Chuling</td>
+                                <td>Gniluhc</td>
+                                <td>Chuling@gniluhc.com</td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>Daniel</td>
+                                <td>Leinad</td>
+                                <td>daniel@leinad.com</td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>Gampaolo</td>
+                                <td>Oloapmag</td>
+                                <td>Gampaolo@oloapmag.com</td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>Jessica</td>
+                                <td>Acissej</td>
+                                <td>Jessica@acissej.com</td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>Carlos</td>
+                                <td>Solrac</td>
+                                <td>Carlos@solrac.com</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Khaled</td>
+                                <td>Delahk</td>
+                                <td>Khaled@delahk.com</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Joumah</td>
+                                <td>Hamuoj</td>
+                                <td>Joumah@hamuoj.com</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Peter</td>
+                                <td>Retep</td>
+                                <td>Peter@retep.com</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Sujatha</td>
+                                <td>Ahtajus</td>
+                                <td>Sujatha@ahtajus.com</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- footer  -->
+    <footer class="row text-center responsive" style="width: 100%; background-color: brown; margin: auto;">
+        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="color: darkseagreen;">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Possimus, tempore
+            voluptate nam repellendus dolorum suscipit.</p>
+    </footer>
+
+
+
+
+
+
+    <!-- java script link  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
