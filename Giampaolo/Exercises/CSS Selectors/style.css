@@ -1,0 +1,68 @@
+body {
+    font-size: xx-large;
+}
+
+a[title] {
+    color: red;
+}
+
+a[target]{
+    color: blue;
+}
+
+a[href="index.html"] {
+    color: orange;
+}
+
+a[href="#"] {
+    color: orchid;
+}
+
+input[type="email"] {
+    border: orangered 23px ridge;
+}
+
+input[type="password"] {
+    border: peru 12px inset;
+}
+
+input[type="date"] {
+    border: darkmagenta 4px outset;
+}
+
+input[type="text"] {
+    background-color: darksalmon;
+}
+
+input[type] {
+    margin: 50px 0;
+    box-shadow: goldenrod 0 0 22px 10px;
+}
+
+ul li {
+    font-size: x-large;
+}
+
+ul li:first-child {
+    color: goldenrod;
+}
+
+ul li:nth-child(4) {
+    margin: 50px;
+}
+
+ul li:last-child {
+    color: darkolivegreen;
+}
+
+ul li:nth-child(odd) {
+    font-style: italic;
+}
+
+ul li:nth-child(even) {
+    text-decoration: underline;
+}
+
+div > :not(h3) {
+    background-color: orange;
+}
