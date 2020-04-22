@@ -66,3 +66,56 @@ ul li:nth-child(even) {
 div > :not(h3) {
     background-color: orange;
 }
+
+p::first-letter {
+    color: palevioletred;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p::after {
+    content: " - Content added after";
+}
+
+p::before {
+    content: "Content added before - ";
+}
+
+p:empty {
+    display: none;
+}
+
+q:lang(no) {
+    quotes: "&" "&";
+    vertical-align: super;
+}
+
+.bg-gradient {
+    background: linear-gradient(red, green, blue, black, yellow);
+}
+
+.bg-gradient1 {
+    background: linear-gradient(to bottom right, red 10%, green 25%, blue 40%, black 70%, yellow 100%);
+}
+
+.bg-gradient2 {
+    background: linear-gradient(red, green, blue, black, yellow);
+}
+
+.bg-gradient3 {
+    background: radial-gradient(red, green, blue, black, yellow);
+}
+
+.bg-gradient4 {
+    background: radial-gradient(red 10%, green 30%, blue 50%, black 70%, yellow 100%);
+}
+
+.bg-images {
+    /* background-image: url(images/Amarok-logo-small.png), url(images/5871150cb8261606d1c86410.png);
+    background-position: left, bottom right;
+    background-size: contain, cover;
+    background-repeat: no-repeat, repeat; */
+
+    background: url(images/Amarok-logo-small.png) left no-repeat, url(images/5871150cb8261606d1c86410.png) bottom right no-repeat;
+    background-size: contain, cover;
+}
