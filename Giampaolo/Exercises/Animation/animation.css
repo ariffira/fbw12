@@ -46,6 +46,7 @@ img:nth-child(5) {
                rotate 7s infinite both ease-in;              
 }
 
+/* Clouds */
 img:nth-child(6) {
     top: 0;
     animation: move 80s infinite both ease-out;          
@@ -70,7 +71,7 @@ img:nth-child(8) {
     0% {top: 310px}
     40% {top: 310px}
     50% {top: 220px}
-    60% {top: 310px;}
+    60% {top: 310px}
     100% {top: 310px}
 }
 
@@ -78,7 +79,7 @@ img:nth-child(8) {
     0% {top: 450px}
     40% {top: 450px}
     50% {top: 340px}
-    60% {top: 450px;}
+    60% {top: 450px}
     100% {top: 450px}
 }
 
@@ -86,7 +87,7 @@ img:nth-child(8) {
     0% {top: 550px}
     250% {top: 550px}
     50% {top: 460px}
-    80% {top: 550px;}
+    80% {top: 550px}
     100% {top: 550px}
 }
 
@@ -94,7 +95,7 @@ img:nth-child(8) {
     0% {top: 670px}
     40% {top: 670px}
     50% {top: 580px}
-    60% {top: 670px;}
+    60% {top: 670px}
     100% {top: 670px}
 }
 
@@ -102,11 +103,27 @@ img:nth-child(8) {
     0% {top: 750px}
     40% {top: 750px}
     50% {top: 660px}
-    60% {top: 750px;}
+    60% {top: 750px}
     100% {top: 750px}
 }
 
 @keyframes rotate {
     from {transform: translateX(-100px) rotateZ(0deg)}
     to {transform: translateX(1980px) rotateZ(360deg)}
+}
+
+.example-object {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lawngreen;
+    animation-name: exampleframe;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes exampleframe {
+    from {transform: translate(200px)}
+    to {transform: translate(400px)}
 }
