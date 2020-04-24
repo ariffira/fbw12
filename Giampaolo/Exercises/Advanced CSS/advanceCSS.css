@@ -1,0 +1,38 @@
+body {
+    margin: 10%;
+}
+
+.div1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transform: translate(150px, 150px);
+    transition: 2s;
+}
+
+.div2 {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    transform: translate(650px, 350px) scale(4 , 2);
+    font-size: small;
+    /* font-size: x-small; */
+    /* font-size: xx-small; */
+}
+
+.skew {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    transform: skew(20deg, 20deg);
+    font-size: small;
+    /* font-size: x-small; */
+    /* font-size: xx-small; */
+}
+
+.trans3D {
+    background: linear-gradient(green, blue, yellow, violet, brown);
+    height: 400px;
+    width: 400px;
+    transform: rotate3d(1, 1, 1, 45deg);
+}
