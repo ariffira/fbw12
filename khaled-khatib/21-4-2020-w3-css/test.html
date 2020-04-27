@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link   rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <style>
+      img{
+          width: 150px;
+          height: 105px;
+          border: black solid 1px;
+      }
+  </style>
+</head>
+<body style="background-color: cornflowerblue;">
+   <div class="container">
+      
+     <ul>
+       <li> 1</li>
+       <li> 2</li>
+       <li> 3</li>
+       <li>4 </li>
+     </ul>
+     
+  <div class="container">
+    <div style="background-image: url('/ko.jpg');" class="needs-validation" novalidate>
+        <label style="font-size: 20px;" for="validationTooltip01">ENTER YOUR INFORMATION </label><br>
+        <div class="form-row"> 
+
+          <div class="col-md-4 mb-4">
+            <label for="validationTooltip01">First name</label>
+            <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+           
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label for="validationTooltip02">Last name</label>
+            <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+           
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label for="validationTooltip02">birthday</label>
+            <input type="date" class="form-control" id="validationTooltip02" value="Otto" required>
+          </div>
+        </div>
+
+<!-- -------------------------------------- -->
+
+<br><br>
+
+
+
+        <div class="form-row"> 
+
+            <div class="col-md-4 mb-4">
+            <label for="phone">Enter a phone number:</label><br>
+            <input type="tel" id="phone"  placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+          </div>
+
+         
+          <div class="col-md-4 mb-4">
+            <label for="validationTooltip02">AGE</label>
+            <input type="number" id="validationTooltip02" value="Otto" required>
+            
+          </div>
+          <div class="col-md-4 mb-4">
+            <label for="validationTooltipUsername">gender </label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">female</label>
+              </div>
+
+              
+            </div>
+
+            <div class="col-md-4 mb-4">
+            <label for="validationTooltip02">  your country</label>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">syria</option>
+                <option value="2">german</option>
+                <option value="3">bulgaria</option>
+            </select>
+          </div>
+       
+
+
+
+        <div class="col-md-4 mb-">
+            <label for="phone">Enter your foto:</label><br>
+           <input type="file" >
+          </div>
+        </div>
+
+
+                      <!-- ----------------------- -->
+        <label style="font-size: 20px;" for="validationTooltip01">ENTER YOUR ADDRESS  </label><br>
+        <div class="form-row">
+            
+          <div class="col-md-6 mb-3">
+            <label for="validationTooltip03">City</label>
+            <input type="text" class="form-control" id="validationTooltip03" required>
+            <div class="invalid-tooltip">
+              Please provide a valid city.
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip04">State</label>
+            <select class="custom-select" id="validationTooltip04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+              <option>BERLIN</option>
+              <option>NRW</option>
+
+            </select>
+            
+          </div>
+
+
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip05">Zip</label>
+            <input type="text" class="form-control" id="validationTooltip05" required>
+        </div>
+        </div>
+<!-- -------------------------------------- -->
+<div class="form-row">
+
+<div class="col-md-12 mb-12">
+    <label for="validationTextarea">ABOUT YOU:</label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="WRITE ABOUT YOU" required></textarea>
+  </div>
+<br>
+<!-- -------------------------------------- -->
+        
+          <div class="col-md-4 mb-4">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+            
+          </div>
+          <div class="col-md-4 mb-4">
+            <label for="inputPassword4">Password</label>
+             <input type="password" class="form-control" id="inputPassword4">
+            
+          </div>   
+          
+        </div>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label><br>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary" type="submit">restart form</button>
+      </form>
+
+
+</div>
+</div> 
+</body>
+</html>

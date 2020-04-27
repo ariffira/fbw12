@@ -1,0 +1,159 @@
+.container{
+            background-color: aquamarine;
+            border:2px solid black;
+            display: grid;
+            grid-template-areas: 
+            " mauard     header          header  header"
+            " nav        nav             nav      nav "
+            " left-menu  main-contentr   main-contentr right-menu "
+            " footer     footer          footer      footer";
+         }
+    /* ----------------logo ------------*/
+.mauard{
+            grid-area:mauard ;
+            background-color: rgb(217, 222, 223);
+         }
+.mauard img{
+             width: 190px;
+             height: 100px;
+         }
+         /* ----------------HEDER---------------- */
+.div1{
+        grid-area:header ;
+        background-color: rgb(217, 222, 223);
+    }
+/* ----------------NAV------------- */
+
+.div2{
+     padding-right: 20px;
+     
+        grid-area:nav ;
+        background-color: rgb(151, 71, 127);
+   
+    }
+    .div2 a{
+        font-size: 30px;
+        margin: 40px;
+        text-decoration: none;
+    }
+    /*-------------------- left-menu ------------------*/
+.div3{
+    color: white; 
+    grid-area:left-menu ;
+    background-color: rgb(230, 233, 36);
+    padding-left: 100px; 
+     }
+     .div3 ul {
+        list-style-type: none;   
+    }
+
+     li {
+    padding-top: 20px;
+    }
+    .div3 ul a {
+        font-size: 30px;
+        text-decoration: none; 
+   
+    }
+     a:hover {
+           background-color: rgb(241, 9, 55); 
+    }
+/* ---------------MAIN_CONTINER---------------------- */
+
+.div4{
+        grid-area:main-contentr ;
+        background-color: rgb(29, 216, 23);
+    }
+
+     /* ---------------------RIGHT-MENU----------------------------------- */
+.div5{
+        grid-area:right-menu ;
+        display: grid;
+        grid-template-areas: 
+        "backimg1" 
+        "backimg2"
+        "backimg3" 
+        ;
+    }
+    .backimg1{
+        grid-area:backimg1 ;
+        background-image: url(/img/download\ \(1\).jfif);
+    }
+
+    .backimg2{
+        grid-area:backimg2 ;
+        background-image: url(/img/download\ \(2\).jfif);
+    }
+    .backimg3{
+        grid-area:backimg3 ;
+        background-image: url(/img/huawei-p30-blueapple_front_big.png);
+    }
+    /* ----------------------FOOTER------------------- */
+.div6{
+        grid-area:footer ;
+        background-color: rgb(61, 33, 216);
+       display: flex;
+    }
+ .footer1{
+    /* justify-content: footr1; */
+     background-color: rgb(180, 70, 27);
+ }
+ .footer2{
+    /* justify-content: footr2; */
+    background-color: rgb(85, 79, 97);
+}
+.footer3{
+    /* justify-content: footr3; */
+    background-color: rgb(74, 167, 82);
+}
+ /* -------------------imeg-------------- */
+    img{
+        width: 220px;
+        height: 350px;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+
+
+    /* ---------------------media query------------------- */
+    @media  only screen 
+       and (max-width:452px)    and (min-width:200px)
+{
+        .container{
+            background-color: rgb(198, 214, 52);
+            border:2px solid rgb(230, 9, 9);
+            display: grid;
+            grid-template-areas: 
+            " mauard  "
+            " header  "
+            " nav   "
+            " left-menu    "
+            " main-contentr"
+            " footer "   ;
+         }
+.mauard  {
+             display: grid;
+             justify-content: center;
+         }
+.div2 {
+                 padding-left: 100px;             
+      }
+.div3{
+                padding-left: 100px;      
+     }
+.div4 img{
+    padding-left: 90px;
+}
+
+.div6{
+   display: grid;         
+}
+    
+}
+ @media  only screen 
+and (max-width: 340px)    and (min-width: 150px)
+ { 
+  
+
+
+} 
