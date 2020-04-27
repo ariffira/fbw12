@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+h1 {
+    background-color: blue;
+    color: brown;
+    font-size: 75px;
+}
+
+h1:hover {
+    background-color: brown;
+    color: blue;
+    font-size: 80px;
+}
+div:hover {
+    color: black;
+    font-weight: bold;
+}
+#div3 {
+    background-color: yellowgreen;
+
+}
+a {
+    color: white;
+    font-size: 32px;
+    background-color: brown;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    font-size: 34px;
+    background-color: yellowgreen;
+    text-decoration: solid;
+}
+
+#flagId {
+    background-color: white;
+    border: 2px solid white;
+    width: 600px;
+    height: 300px;
+}
+#blackId {
+    background-color: black;
+    height: 100px;
+}
+#redId {
+    height: 100px;
+    color: green;
+    text-align: center;
+    font-size: 90px;
+
+}
+#goldId {
+    background-color: red;
+    height: 100px;
+}
+
+
+#flagId2 {
+    background-color: darkolivegreen;
+    border: 2px solid white;
+    width: 600px;
+    height: 300px;
+    
+    ;
+}
+
+#redId2 {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 75px 225px;
+}
+
+#flagId3 {
+    background-color: white;
+    border: 2px solid white;
+    width: 600px;
+    height: 300px;
+}
+#blackId3 {
+    background-color: black;
+    height: 100px;
+}
+#redId3 {
+    height: 100px;
+    background-color: red;
+    font-size: 90px;
+
+}
+#goldId3 {
+    background-color: gold;
+    height: 100px;
+}
+
+.text_color {
+    color: red;
+    font-size: 20px;
+}
+.bg_color {
+    background-color: indianred;
+    border: 2px solid dotted;
+}

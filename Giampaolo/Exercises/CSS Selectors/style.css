@@ -1,0 +1,121 @@
+body {
+    font-size: xx-large;
+}
+
+a[title] {
+    color: red;
+}
+
+a[target]{
+    color: blue;
+}
+
+a[href="index.html"] {
+    color: orange;
+}
+
+a[href="#"] {
+    color: orchid;
+}
+
+input[type="email"] {
+    border: orangered 23px ridge;
+}
+
+input[type="password"] {
+    border: peru 12px inset;
+}
+
+input[type="date"] {
+    border: darkmagenta 4px outset;
+}
+
+input[type="text"] {
+    background-color: darksalmon;
+}
+
+input[type] {
+    margin: 50px 0;
+    box-shadow: goldenrod 0 0 22px 10px;
+}
+
+ul li {
+    font-size: x-large;
+}
+
+ul li:first-child {
+    color: goldenrod;
+}
+
+ul li:nth-child(4) {
+    margin: 50px;
+}
+
+ul li:last-child {
+    color: darkolivegreen;
+}
+
+ul li:nth-child(odd) {
+    font-style: italic;
+}
+
+ul li:nth-child(even) {
+    text-decoration: underline;
+}
+
+div > :not(h3) {
+    background-color: orange;
+}
+
+p::first-letter {
+    color: palevioletred;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p::after {
+    content: " - Content added after";
+}
+
+p::before {
+    content: "Content added before - ";
+}
+
+p:empty {
+    display: none;
+}
+
+q:lang(no) {
+    quotes: "&" "&";
+    vertical-align: super;
+}
+
+.bg-gradient {
+    background: linear-gradient(red, green, blue, black, yellow);
+}
+
+.bg-gradient1 {
+    background: linear-gradient(to bottom right, red 10%, green 25%, blue 40%, black 70%, yellow 100%);
+}
+
+.bg-gradient2 {
+    background: linear-gradient(red, green, blue, black, yellow);
+}
+
+.bg-gradient3 {
+    background: radial-gradient(red, green, blue, black, yellow);
+}
+
+.bg-gradient4 {
+    background: radial-gradient(red 10%, green 30%, blue 50%, black 70%, yellow 100%);
+}
+
+.bg-images {
+    /* background-image: url(images/Amarok-logo-small.png), url(images/5871150cb8261606d1c86410.png);
+    background-position: left, bottom right;
+    background-size: contain, cover;
+    background-repeat: no-repeat, repeat; */
+
+    background: url(images/Amarok-logo-small.png) left no-repeat, url(images/5871150cb8261606d1c86410.png) bottom right no-repeat;
+    background-size: contain, cover;
+}

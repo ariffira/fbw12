@@ -1,0 +1,115 @@
+body {
+    background-color: skyblue;
+}
+caption {
+    font-size: xx-large;
+    margin: 10px;
+    font-family: fantasy;
+}
+
+table {
+    border: 4px solid steelblue;
+    padding: 3px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    margin: 6px;
+    font-weight: bolder;
+}
+td:hover {
+    color: brown;
+    font-weight: bold;
+}
+
+thead {
+    background-color: rgb(127, 80, 172);
+    color: whitesmoke;
+}
+a {
+    padding: 2px;
+    margin: 2px;
+}
+a:hover {
+    color: honeydew;
+}
+
+#tr {
+    background-color: steelblue;
+}
+#img {
+    width: 40px;
+    height: 40px;
+}
+img:hover {
+    transform: scale(3.0);
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+br {
+    padding: 20px;
+    margin: 20px;
+}
+.material-icons, .fas {
+    font-size: 20px;
+    color: brown;
+}
+.material-icons:hover, .fas:hover {
+    color: white;
+}
+
+.blue {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+}
+.green {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    z-index: -1;
+}
+.yellow {
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+    position: absolute;
+    z-index: -1;
+    
+}
+.red {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+}
+
+div {
+    border: 1px solid black;
+    margin-top: 2px;
+    width: 100px;
+}
+
+  div > p {
+    background-color: blue;
+  }
+
+  div pre {
+    background-color: red;
+  }
+
+  div + p {
+    background-color: green;
+  }
+
+  img ~ p {
+    background-color: yellow;
+  }
+
