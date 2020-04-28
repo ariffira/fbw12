@@ -2,12 +2,14 @@ body {
     margin: 0;
     background-color: lightgreen;
     overflow-x: hidden;
+    animation: day-night-grass 90s linear infinite both alternate;
 }
 
 .sky {
     background-color: lightskyblue;
     height: 400px;
     width: 100%;
+    animation: day-night 90s linear infinite both alternate;
 }
 
 img {
@@ -43,23 +45,23 @@ img:nth-child(4) {
 img:nth-child(5) {
     top: 750px;
     animation: jump5 3s infinite linear,
-               rotate 7s infinite both ease-in;              
+               rotate 7s infinite both ease-in;
 }
 
 /* Clouds */
 img:nth-child(6) {
     top: 0;
-    animation: move 80s infinite both ease-out;          
+    animation: move 80s infinite both ease-out;
 }
 
 img:nth-child(7) {
     top: 150px;
-    animation: move 90s infinite both ease-in alternate-reverse;     
+    animation: move 90s infinite both ease-in alternate-reverse;
 }
 
 img:nth-child(8) {
     top: 50px;
-    animation: move 67s infinite both linear alternate;           
+    animation: move 67s infinite both linear alternate;
 }
 
 @keyframes move {
@@ -113,6 +115,8 @@ img:nth-child(8) {
 }
 
 .example-object {
+    border: green 2px outset;
+    margin: 10px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -120,10 +124,25 @@ img:nth-child(8) {
     animation-name: exampleframe;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
     z-index: -1;
 }
 
 @keyframes exampleframe {
-    from {transform: translate(200px)}
-    to {transform: translate(400px)}
+    from {transform: translate(200px, 0) rotateY(180deg) scale3d(1, 1, 1)}
+    to {transform: translate(400px, 150px) rotateY(360deg) scale3d(2, 2, 2)}
+}
+
+@keyframes day-night {
+    0% { background-color: lightskyblue;}
+    50% { background-color: rgb(255, 144, 101);}
+    100% { background-color: rgb(0, 0, 44)}
+}
+
+@keyframes day-night-grass {
+    0% { background-color: lightgreen;}
+    50% { background-color: greenyellow;}
+    100% { background-color: green;}
 }

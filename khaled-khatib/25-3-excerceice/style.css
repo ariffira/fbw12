@@ -1,0 +1,146 @@
+
+*, body, html {
+    padding: 0;
+    margin: 0;
+}
+body {
+background-color: gray;
+
+}
+
+caption{
+  
+    font-size: 35px;
+    color: violet;
+}
+table {
+    
+    border: 20px ridge rgb(226, 15, 15);
+   
+    margin: 2px 20% 12px ;   
+}
+thead {
+    background-color: black;
+    color: white;  
+    
+}
+tbody{
+    background-color: skyblue;
+    color: tomato;  
+   
+}
+td{
+    border: 2px groove rgb(207, 70, 189);
+}
+img{
+width: 70px; 
+height: 100px;
+}
+ .material-icons {
+     width: 20px;
+ }
+ .topmenu{
+     width: 100;
+     height: 20;
+ }
+ 
+ /*      menu */ 
+ /*      menu */
+  /*      menu */
+
+
+
+
+ 
+
+/* ---------------------------------------------- */  
+
+/*  */  
+.menu {
+width: 100%;
+height:60px;
+background-color:rgb(174, 214, 226);
+color: rgb(233, 53, 53);
+position: fixed;
+}
+.menu #logo {            /* menu logo  */
+float: left;
+padding:15px 30px;
+line-height:30px;
+font-size:20px;
+height:30px;             
+}
+.menu>ul {
+float:left;
+margin:0;
+padding:0;
+list-style-type: none;
+}
+
+.menu>ul>li {    
+float: left;
+}       
+.menu-item {      /* <a> */
+display: inline-block;       
+padding:15px 30px;
+height: 30px;
+line-height: 30px;
+text-decoration: none;
+color: rgb(157, 148, 184);
+text-align: center;
+}
+.menu-item:hover {     /* mouse  moving in menu  */
+              color: dodgerblue;
+              background-color:#ff0055;
+              font-size: 20px;
+              }
+
+/*       */
+.sup-contact{  background-color:rgb(174, 214, 226);
+ overflow: hidden;
+ top: 60px;
+ position: absolute;
+ max-height: 0;     /* popo up hiding  */
+
+}
+.sup-contact a {
+ text-decoration: none;
+ color: rgb(157, 148, 184);
+}
+
+.bub-drop    {
+   padding: 0;
+       }  
+.bub-drop ul   {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                list-style-type: none;
+}  
+.bub-drop ul li a { display: inline-block; /* <a> in pop up  */ 
+                  padding: 10px 20px;
+
+} 
+              
+.bub-drop ul li:hover {
+color: dodgerblue;
+background-color:#ff0055;
+font-size: 20px;
+}
+ 
+/*   control for bob ab menu     */
+
+.menu-item:focus {
+   background-color: #ff0055;
+ }
+ .menu ul li:hover .sup-contact{
+  max-height: 400px;
+  transition: max-height  0.5s  ease-in;
+}
+.index{
+    background-color: rgb(228, 65, 25);
+    width: 360px;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+}
