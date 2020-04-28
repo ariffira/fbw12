@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coronavirus News</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+     <!-- Sidebar -->
+     <ul class="navbar-nav bg-gradient-danger  sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - logo -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img src="img/logo.png" width="60">
+        </div>
+        <div class="sidebar-brand-text mx-3">COVID-19</div>
+      </a>
+
+      <!-- Divider space-->
+      <hr class="sidebar-divider">
+
+      <!-- Nav Item - News -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="news.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>News</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Stay Safe -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="stay-safe.html">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>Stay Safe</span>
+        </a>
+      </li>
+
+      <!-- Divider space-->
+      <hr class="sidebar-divider">
+
+      <!-- Global Cases -->
+      <div class="sidebar-heading">
+        Global Cases
+      </div>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Charts</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Numbers</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) يصغر القائمة الجانبية لما الشاشة كبيرة -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) يصغر القائمة الجانبية لما الشاشة صغيرة-->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars text-danger"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-danger" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-danger" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - comments -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" title="Contact">
+                <i class="fas fa-comments fa-fw"></i>
+              </a>
+            </li>
+
+            <!-- Nav Item - languages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" title="Change the language">
+                <i class="fas fa-globe fa-fw"></i>
+              </a>
+            </li>
+
+            <!-- Nav Item - cast -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" title="Cast to a device">
+                <i class="fab fa-chromecast fa-fw"></i>
+              </a>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - sign in -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" title="Login">
+                <i class="fas fa-sign-in-alt"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">COVID-19 Last News</h1>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- last news 1 -->
+            <div class="col-xl-6 col-md-12 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="font-weight-bold text-info text-uppercase mb-1">Austria removes strict exit restrictions</div>
+                      <div class="h5 mb-0 text-gray-800 text-justify mt-2 float-left">
+                        <img src="img/news0001.jpg" class="mb-4 w-100">
+                        From May 1st, Austria only has to keep a minimum distance of one meter from people who do not live in the same household. With this, the country lifts the strict exit restrictions after almost seven weeks. Rudolf Anschober, green health minister, said on Tuesday in Vienna: " We can let the exit restrictions expire , we do not need to continue them." <a href="https://www.sueddeutsche.de/politik/coronavirus-weltweit-news-1.4830581" target="-blank">>>read_more>></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- last news 2 -->
+            <div class="col-xl-6 col-md-12 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="font-weight-bold text-warning text-uppercase mb-1">"The system has collapsed" - how Brazil is becoming a corona hotspot</div>
+                      <div class="h5 mb-0 text-gray-800 text-justify mt-2 float-left">
+                        <img src="img/news0002.jpg" class="mb-4 w-100">
+                        In Brazil, more than 66,500 people have been infected with the corona virus - hospitals are reaching their limits, and there is a lack of equipment and protective materials. President Jair Bolsonaro does not believe in restrictions. The members of Dona Amalia are desperate. "Won't you take us on?" They plead. "The woman dies in the car!" But the paramedics behind the locked front door of the hospital do not respond. Finally a man comes out. "We can't do anything," he says. Then the dramatic video from the Brazilian Amazon city of Manaus breaks off. <a href="https://www.welt.de/vermischtes/article207565161/Coronavirus-Wie-Brasilien-gerade-zum-Hotspot-wird-System-kollabiert.html" target="-blank">>>read_more>></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- last news 3 -->
+            <div class="col-xl-12 col-md-12 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="font-weight-bold text-danger text-uppercase mb-1">in Italy: More than 150 doctors died</div>
+                      <div class="h5 mb-0 text-gray-800 text-justify mt-2 float-left">
+                        <img src="img/news0003.jpg" class=" ml-4 w-25 float-right">
+                        The first outbreak was reported on February 21 in the city of Codogno in Lombardy - however experts believe that the virus has been circulating in Italy for a long time. The search for  “Patient Zero” in Italy was unsuccessful. Meanwhile, research for a drug and a vaccine is advancing worldwide .Since then, almost 200,000 people in Italy have been infected with the coronavirus, according to current figures from Johns Hopkins University. Almost 27,000 people did not win the fight against the virus and died from the consequences of an infection. According to Bild.de , referring to the surgeon association FNOMCEO ,  <a href="https://www.merkur.de/welt/coronavirus-italien-lombardei-news-aktuell-lockdown-conte-reproduktionszahl-zr-13732208.html" target="-blank">>>read_more>></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- last news 4 -->
+            <div class="col-xl-6 col-md-12 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="font-weight-bold text-primary text-uppercase mb-1">Summer vacation 2020 - where can I still go?</div>
+                      <div class="h5 mb-0 text-gray-800 text-justify mt-2 float-left">
+                        <img src="img/news0004.jpg" class="mb-4 w-100">
+                        Many holidaymakers wait and see
+                        "There will be a wait-and-see attitude in the next few weeks, and I think that's very reasonable," says tourism researcher Prof. Martin Lohmann. "In all likelihood, however, we will have a normal summer in which you can travel beautifully." <a href="https://www.t-online.de/leben/reisen/id_87447888/coronavirus-sommerurlaub-2020-wohin-kann-ich-ueberhaupt-noch-reisen-.html" target="-blank">>>read_more>></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- last news 5 -->
+            <div class="col-xl-6 col-md-12 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="font-weight-bold text-success text-uppercase mb-1">Almost 200 residents of nursing homes infected</div>
+                      <div class="h5 mb-0 text-gray-800 text-justify mt-2 float-left">
+                        <img src="img/news0005.jpg" class="mb-4 w-100">
+                        In Berlin's old people's homes, 186 residents and 98 employees have been proven to be infected with the new corona virus. 38 residents died of an illness, the spokesman for the health administration, Moritz Quiske, told the German Press Agency on Tuesday. According to him, 48 institutions are affected. There was currently a major outbreak in a senior citizen's home in Lichtenberg-Fennpfuhl.<a href="https://www.morgenpost.de/berlin/article229002735/Coronavirus-Fast-200-Bewohner-von-Seniorenheimen-infiziert.html" target="-blank">>>read_more>></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; MY-Website 2020</span>
+            </div>
+          </div>
+        </footer>
+
+
+      </div>
+      <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-double-up"></i>
+    </a>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
