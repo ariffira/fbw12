@@ -48,22 +48,50 @@ ul {
 
 
 ul.example {
+    list-style: {
+        type: none;
+    };
 
     li.list-item {
         color: $text-light-bg;
 
         a {
             color: $bg-p;
+            
+            font: {
+                size: 70px;
+                family: Arial;
+                weight: bold;
+            }
+
+            text: {
+                decoration: none;
+            }
         }
 
         a.special {
             color: $text-light-bg;
         }
 
-        a.special:hover,
-        a:hover {
+        a.special:hover {
             text-decoration: none;
         }
 
+    }
+}
+
+section {
+    height: 700px;
+
+    > div {
+        width: 100%;
+        height: 800px;
+        background: {
+            color: yellow;
+        }; 
+        max: {
+            width: 100%;
+            height: 20%;
+        };
     }
 }
