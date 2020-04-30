@@ -1,0 +1,69 @@
+// Backgrounds
+$bg-body:#bd0000;
+$bg-p: #1919d8;
+// Colors
+$text-light-bg: #000000;
+$text-dark-bg: snow;
+$h1: 5em;
+$h2: 4em;
+$h3: 2em;
+
+body {
+    background-color: $bg-body;
+}
+
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+p {
+    background-color: $bg-p;
+    color: $text-dark-bg;
+}
+
+ul {
+    li {
+        border: 1px solid greenyellow;
+
+        a {
+            color: white;
+            font-size: $h3;
+        }
+
+        a:hover {
+            color: $text-light-bg;
+            font-size: $h2;
+        }
+        
+    }
+}
+
+
+ul.example {
+
+    li.list-item {
+        color: $text-light-bg;
+
+        a {
+            color: $bg-p;
+        }
+
+        a.special {
+            color: $text-light-bg;
+        }
+
+        a.special:hover,
+        a:hover {
+            text-decoration: none;
+        }
+
+    }
+}

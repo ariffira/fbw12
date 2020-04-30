@@ -1,0 +1,51 @@
+body {
+  background-color: #bd0000;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  background-color: #1919d8;
+  color: snow;
+}
+
+ul li {
+  border: 1px solid greenyellow;
+}
+
+ul li a {
+  color: white;
+  font-size: 2em;
+}
+
+ul li a:hover {
+  color: #000000;
+  font-size: 4em;
+}
+
+ul.example li.list-item {
+  color: #000000;
+}
+
+ul.example li.list-item a {
+  color: #1919d8;
+}
+
+ul.example li.list-item a.special {
+  color: #000000;
+}
+
+ul.example li.list-item a.special:hover,
+ul.example li.list-item a:hover {
+  text-decoration: none;
+}
