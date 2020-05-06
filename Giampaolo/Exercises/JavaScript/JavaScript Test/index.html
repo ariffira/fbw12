@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ~ Test</title>
+    <style>
+        #JS {
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        #test {
+            background-color: black;
+            color: blanchedalmond;
+        }
+
+        body {
+            transition: 5s;
+        }
+
+        .image {
+            transition: 5s
+        }
+
+        img {
+            animation: opacity 15s both;
+        }
+
+        @keyframes opacity {
+            from {opacity: 0; transform: scale(0); max-width: 0%; max-height: 0%;}
+            to {opacity: 1; transform: scale(1); max-width: 100%; max-height: 100%;}
+        }
+    </style>
+</head>
+
+<body>
+    <div id="JS"></div>
+    <div id="test"></div>
+    <div class="image"></div>
+
+    <button onclick="imgFunction()">Get img</button>
+    <button onclick="styleFunction()">Add margin</button>
+    <button onclick="backgroundColor()">Add background color</button>
+    <button onclick="backgroundColor2()">Add background color 2</button>
+    <br>
+
+    <!-- JavaScript -->
+    <script>
+
+        // JavaScript comment type 1
+
+        /*
+        JavaScript comment type 2, multilines
+        */
+
+        alert('Hello JavaScript, finally we meet each other ;)');
+        alert("Let's do some test!");
+        alert(200 + 6 + " That was easy.");
+        alert(4 * 5 + (20 / 5) - (1200 % 97) * (1 * 0.5) + ' You should see this.');
+        alert('Another simple test 2 + 2 = ' + 2 + 2);
+        alert("Ok, stop making tests now.");
+        document.write('Hello JS!<hr>');
+        document.write('<ol><li>Nest HTML</li><li>Calculations</li><li>Something else that i\'ll know</li></ol>');
+
+        var x = 10;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("JS").innerHTML = "The value of Z is " + z + ".";
+        document.getElementById("test").innerHTML = "Value X is " + x + " and value Y is " + y + ".";
+
+        function imgFunction() {
+            var x = document.getElementsByClassName("image");
+            x[0].innerHTML = '<img src="images/game3.png" alt="simple_pic">';
+        }
+
+        function styleFunction() {
+            var i = 5;
+            var x = document.getElementsByClassName("image");
+            x[0].style.margin = i + "em";
+        }
+
+        function backgroundColor() {
+            var x = document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "#CCCCFF";
+        }
+
+        function backgroundColor2() {
+            var x = document.getElementsByTagName("body");
+            x[0].style.backgroundColor = "#D4AF37";
+        }
+
+        console.log(z);
+
+        // variable: place where u can put something;
+        var a = 100;
+        var b = 400;
+        // operators +, -, /, *
+        console.log(a + b); //500
+        console.log(a - b); //-300
+        console.log(a / b); //100/400=1/4=0.25
+        console.log(a * b); //40000
+        var name1 = 'Giampaolo';
+        var name2 = 'Lo Cascio';
+        console.log(name1 + " " + name2);//Giampaolo Lo Cascio
+        console.log(a - name1); //NaN
+        console.log(name1 + 100); //Giampaolo100
+
+        // Declare
+        var l; // undefined
+
+        // Declare and initialized
+        var m = 10;
+
+        //Declare undefined multi-variables
+        var n, o, p, q;
+
+        //Initialize variables
+        n = 4;
+        o = 2;
+        p = n - (o * 2);
+        q = 0 + (n + o);
+
+        // way to write variable
+        // not allowed in first letter: numbers, special character, sign
+        // operators are not allowed(+,-,*,/,%)
+        // no space
+        // allowed in first letter: characters(a-z), Hiphen(_), dollar sign($)
+        // use camelCase
+        // js variable is case sensetive
+        var firstName, last_name, age, phone;
+        firstName = 'Arif';
+        console.log('My First name: ' + firstName);
+
+    </script>
+</body>
+
+</html>
