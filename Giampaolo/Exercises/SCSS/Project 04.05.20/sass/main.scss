@@ -1,0 +1,320 @@
+// Backgrounds classes
+// BG-colors
+$bg-body: #1c2a45;
+$bg-nav: linear-gradient(to bottom, #5d7dbe, transparent);
+$bg-section: #364d7a;
+$bg-footer: #101e3a;
+
+
+// BG-colors Hover
+$bg-a-hover: linear-gradient(to bottom, #1a2f5a, transparent);
+
+// BG-Images
+$bg-title: url(images/Valoran.jpeg);
+
+// Images
+@mixin cover {
+    background: {
+        size: cover;
+        repeat: no-repeat;
+    }
+}
+
+//
+// Text Colors classes
+$text-light: #fffafa;
+$anchor: #daa520;
+
+//
+// Shadow classes
+$blue-shadow: 0 0 8px #0031d1;
+$gold-shadow: 0 0 8px #ffd700;
+$white-shadow: 0 0 8px #fffafa;
+$red-shadow: 0 0 8px #cf0000;
+
+
+
+
+//
+// 
+// Style
+// 
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-body;
+    color: $text-light;
+    text-shadow: $red-shadow;
+    margin: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+// Navbar CSS
+nav {
+    background: $bg-nav;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    border: {
+        top: 1px solid goldenrod;
+        left: 1px solid goldenrod;
+        right: 1px solid goldenrod;
+        image: linear-gradient(to bottom, rgb(158, 114, 3), transparent) 1 1%;
+    }
+}
+
+nav > a {
+    text-decoration: none;
+    color: $anchor;
+    padding: 1em;
+    &:hover {
+        background: $bg-a-hover;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        background-color: $bg-body;
+    }
+
+}
+
+// section CSS
+section {    
+    box-sizing: border-box;    
+    border: {
+        bottom: 1px ridge goldenrod;
+    }
+}
+
+.med-section {
+    height: 30em;
+}
+
+.big-section {
+    height: 50em;
+}
+
+@media only screen and (max-width: 500px) {
+    .med-section {
+        height: max-content;
+    }
+}
+
+// Flex CSS
+.d-flex {
+    display: flex;
+}
+
+.flex-c {
+    justify-content: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-align-c {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.push-end {
+    align-self: flex-end;
+}
+
+// Grid CSS
+.gridrow {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-col-1 {
+    grid-area: 1 / 1 / 2 / 6;
+    padding: 2em 5em;
+}
+
+.grid-col-2 {
+    grid-area: 1 / 6 / 2 / 13;
+    padding: 2em;
+}
+
+.grid-box {
+    height: 100%;
+    border: 2px ridge goldenrod;
+}
+
+@media only screen and (max-width: 500px) {
+    .gridrow {
+        grid-template-rows: repeat(10, 2fr);
+        grid-template-columns: 1fr;
+    }
+
+    .grid-col-1 {
+        grid-area: 5 / 1 / 11 / 2;
+        padding: 1em;
+    }
+
+    .grid-col-2 {
+        grid-area: 1 / 1 / 5 / 2;
+        padding: 1em;
+    }
+}
+
+// Styling
+.rounded {
+    border-radius: 1em;
+}
+
+.bord-1 {
+    border-left: 1px solid silver;
+    &:nth-child(2) {
+        border-left: none;
+    }
+}
+
+.low-opacity {
+    opacity: 0.8;
+    z-index: -1;
+}
+
+// Positions
+.ab-c {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+    transform: translateY(100px);
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.pr-1 {
+    padding: {
+        right: 1em;
+    }
+    &:last-child {
+        padding: 0;
+    }
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.s-only {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .s-only {
+        display: flex;
+    }
+
+    .h-100 {
+        height: unset;
+    }
+
+    .lg-only {
+        display: none;
+    }
+}
+
+// Footer
+footer {
+    background-color: $bg-footer;
+    padding: 2em;
+    ul {
+        list-style-type: none;
+        padding: unset;
+        margin: unset;
+        li {
+            margin: 1em 0;
+            a {
+                color: $anchor;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// Backgrounds
+.bg-title {
+    background-image: url(../images/Valoran.jpg);
+    @include cover;
+}
+
+.bg-map {
+    background-image: url(../images/Map.jpg);
+    @include cover;
+}
+
+.bg-end {
+    background-image: url(../images/Runeterra.jpg);
+    @include cover;
+    background-position: center;
+}
+
+// IDs
+#title {
+    font: {
+        size: 500%;
+        weight: bolder;
+    }
+    text-align: center;
+}
+
+#end-title {
+    @extend #title;
+}
+
+@media only screen and (max-width: 500px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    color: $anchor;
+}
+
+h2 {
+    font-size: 250%;
+}
