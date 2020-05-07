@@ -40,6 +40,8 @@
     <div id="JS"></div>
     <div id="test"></div>
     <div class="image"></div>
+    <div id="resultId"></div>
+
 
     <button onclick="imgFunction()">Get img</button>
     <button onclick="styleFunction()">Add margin</button>
@@ -131,8 +133,94 @@
         // use camelCase
         // js variable is case sensetive
         var firstName, last_name, age, phone;
-        firstName = 'Arif';
+        firstName = 'Giampaolo';
+        last_name = 'Lo Cascio';
+        age = '26'
+        phone = '183456278654'
         console.log('My First name: ' + firstName);
+        console.log('My second name: ' + last_name);
+        console.log('My age is: ' + age);
+        console.log('My phone number: ' + phone);
+
+        // variable: value data types
+        // left = right
+        // variable_name = value
+        // Strings/integer/text: in qotation
+        var firstName, country, age, email; //declare
+        firstName = 'Jessica';
+        country = 'Argentina';
+        age = '20'; // string
+        email = 'js@gmail.com(wird in einem neuem Tab geöffnet)';
+        console.log('Strings: ', firstName, country, age, email);
+        // Number: no qotation
+        firstName = 200.034;
+        age = 30; //number
+        console.log('Number: ', firstName, age);
+        // boolean: true/false (yes/no)
+        var isLogIn = true; // 1
+        var logOut = false; // 0
+        console.log('Boolean: ', isLogIn, logOut);
+        var x=5,y=10;
+        console.log(x==y); //false
+
+
+        // Booleans
+        var q, r, s, t;
+        q = 10;
+        r = 5;
+        s = q > r;
+        t = r > q;
+        console.log('Booleans tests');
+        console.log('Boolean s is ',s);
+        console.log('Boolean t is ',t);
+
+        // Array and Objects
+        var myArray, myObject;
+        myArray = ['Giampaolo', 'Cagri', 'Arif', 'Jessica', 12, true]
+        myObject = {
+            name: 'Giampaolo',
+            secondName: 'Lo Cascio',
+            age: 22,
+            city: 'Duisburg'
+        }
+        console.log(myArray);
+        console.log(myObject);
+
+        // how to create variable:
+        // 1. write type of variable:var/let/const
+        // 2. write name of variable/declare: var varibaleName
+        // 3. Assign a value(string, number, array, object, boolean) to the variable
+        // variables types: var, let, const
+        // var/let/const
+        // var: this types are old and not recommended anymore, can override
+        var myVar1 = 10;
+        myVar1 = 30;
+        console.log(myVar1);
+        // let: latest variable type and recommended, can override
+        let myVar2 = 10;
+        myVar2 = 40;
+        console.log(myVar2);
+        // const: means constant which is fixed value, can not override
+        const myVar3 = 10;
+        //myVar3 = 50;// can not reassign o override with new data
+        console.log(myVar3);
+
+        console.log(" ");
+        let number1 = 100;
+        let string1 = '500';
+        console.log(number1+Number(string1));// 400
+        document.getElementById('resultId').innerHTML += (number1+Number(string1)) + '<br>';
+        console.log(string1+number1);//400
+        document.getElementById('resultId').innerHTML += (string1+number1) + '<br>' + 'test ';
+        // increment add extra 1 with old value
+        let viewers = 100;
+        viewers++; // 101
+        viewers++;
+        viewers++;
+        viewers++;
+        ++viewers; // 105
+        console.log('viewers: ' + (++viewers /* 106 */) + " " + (viewers++ /* 106 - this effect is not showed in this console log*/));
+        console.log(viewers) // 107
 
     </script>
 </body>
