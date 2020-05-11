@@ -65,3 +65,49 @@ let myObject2 = {
     companyName: 'DCI'
 };
 console.log(myObject2);
+
+// Complex Objects with any kind of datas
+let movies = ['Avatar', 'Dark Knight', 'Lord of The Rings']
+let user = {
+    firstName: 'Giampaolo',
+    age: '27',
+    country: 'Germany',
+    isAStudent: true,
+    favoriteMovies: movies,
+    favoriteFood: ['Apple', 'Strawbeeryes', 'Watermelon'],
+    games: [
+        {
+            name: 'League of Legends',
+            gender: 'MOBA',
+            releaseDate: '2013'
+        },
+        {
+            name: 'DOTA',
+            gender: 'MOBA',
+            releaseDate: '2011'
+        },
+        {
+            name: 'Lineage 2',
+            gender: 'MMORPG',
+            releaseDate: '2007'
+        }
+    ],
+    books: [
+        {
+            author: 'J.K. Rowling',
+            title: 'Harry Potter 1',
+            numberOfPages: 330,
+            capitols: [
+                'Intro',
+                'Capitol 1',
+                'Capitol 2',
+                'Capitol 3',
+                'Capitol 4',
+                'Capitol 5',
+                'Capitol 6',
+                'Capitol 7',
+            ]
+        }
+    ]
+}
+console.log(user);
