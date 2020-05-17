@@ -10,8 +10,8 @@ var myPieChart = new Chart(ctx, {
     labels: ["Total Deaths", "Total Recovered", "Active Cases"],
     datasets: [{
       data: [211780, 924987, 1938335],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+      backgroundColor: ['#e74a3b', '#1cc88a', '#4e73df'],
+      hoverBackgroundColor: ['#ff0000', '#17a673', '#2e59d9'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },

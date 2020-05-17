@@ -1,0 +1,364 @@
+/* line 20, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.a, header a, div a, .main .left a {
+  font-size: 150%;
+  background-color: #f9ad5a;
+  border: 1px solid #f9ad5a;
+  display: table-cell;
+  color: #3d2c32;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* line 36, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.a:hover, header a:hover, div a:hover, .main .left a:hover {
+  background-color: #3d2c32;
+  color: #f9ad5a;
+  border: 1px solid #3d2c32;
+}
+
+/* line 42, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.a.aktiv, header a.aktiv, div a.aktiv, .main .left a.aktiv {
+  background-color: black;
+  color: blanchedalmond;
+  border: 1px solid blanchedalmond;
+}
+
+/* line 51, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+body {
+  background-color: #3d2c32;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* line 64, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+header {
+  width: 100%;
+  background-color: #f9ad5a;
+  color: #3d2c32;
+  position: fixed;
+  z-index: 0;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 74, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+header .div {
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 0;
+}
+
+/* line 83, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+header .logo {
+  width: 25px;
+  border-radius: 50%;
+  background-image: url(../photos/111.png);
+  background-size: contain;
+  padding-top: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 22px;
+}
+
+/* line 103, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+div {
+  padding-top: 5%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5%;
+}
+
+/* line 111, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+div .imghome {
+  width: 40%;
+  border: 5px solid #f9ad5a;
+  border-radius: 4px;
+}
+
+/* line 116, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+div .imghome:hover {
+  transform: unset;
+}
+
+/* line 121, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+div h1 {
+  color: #f9ad5a;
+  text-align: center;
+  font-family: "Dancing Script", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 500%;
+}
+
+/* line 135, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 100px;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+/* line 143, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .left {
+  height: 100%;
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+/* line 155, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1,
+.main .style2 {
+  order: 1;
+  display: flex;
+  width: 80%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 163, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card,
+.main .style2 .card {
+  width: 30%;
+  border: 1px solid blanchedalmond;
+}
+
+/* line 167, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card .container,
+.main .style2 .card .container {
+  padding: 2px 16px;
+  margin-top: 20px;
+}
+
+/* line 171, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card .container h2,
+.main .style2 .card .container h2 {
+  font-family: "Dancing Script", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+}
+
+/* line 187, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(even) img {
+  border: 3px solid #f9ad5a;
+}
+
+/* line 191, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(even) h2 {
+  color: #f9ad5a;
+}
+
+/* line 195, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(even) h3 {
+  color: blanchedalmond;
+}
+
+/* line 199, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(odd) {
+  background-color: #f9ad5a;
+}
+
+/* line 202, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(odd) img {
+  border: 3px solid #3d2c32;
+}
+
+/* line 206, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(odd) h2 {
+  color: #3d2c32;
+}
+
+/* line 210, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style1 .card:nth-child(odd) h3 {
+  color: black;
+}
+
+/* line 218, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(odd) img {
+  border: 3px solid #f9ad5a;
+}
+
+/* line 222, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(odd) h2 {
+  color: #f9ad5a;
+}
+
+/* line 226, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(odd) h3 {
+  color: blanchedalmond;
+}
+
+/* line 230, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(even) {
+  background-color: #f9ad5a;
+}
+
+/* line 233, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(even) img {
+  border: 3px solid #3d2c32;
+}
+
+/* line 237, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(even) h2 {
+  color: #3d2c32;
+}
+
+/* line 241, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.main .style2 .card:nth-child(even) h3 {
+  color: black;
+}
+
+/* line 248, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+h3 {
+  color: white;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: initial;
+  text-align: justify;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+}
+
+/* line 263, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.h3align {
+  text-align: center;
+  font-size: x-large;
+}
+
+/* line 268, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+.abouimg {
+  width: 400px;
+}
+
+/* line 272, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+img {
+  width: 50%;
+  border: 3px solid #f9ad5a;
+  border-radius: 50px;
+}
+
+/* line 276, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+img:hover {
+  transform: scale(1.7);
+  background-color: blanchedalmond;
+}
+
+/* line 282, ../../Users/adelh/Documents/my Pages/sass-project/_sass/style.scss */
+footer {
+  background-color: #f9ad5a;
+  color: #3d2c32;
+  font-size: 150%;
+  padding-top: 0.1em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+@media screen and (max-width: 525px) {
+  /* line 4, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  /* line 11, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .home h1 {
+    width: 100%;
+    font-size: 300%;
+  }
+  /* line 16, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .home .imghome {
+    width: 90%;
+    margin: auto;
+  }
+  /* line 21, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .home a {
+    width: 40%;
+  }
+  /* line 26, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+  }
+  /* line 33, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  header .div {
+    padding: 0;
+  }
+  /* line 38, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  /* line 43, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .main .style1,
+  .main .style2 {
+    width: 100%;
+    flex-direction: column;
+  }
+  /* line 48, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .main .style1 .card,
+  .main .style2 .card {
+    width: 100%;
+  }
+  /* line 55, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .aboutpage .abouimg {
+    width: 90%;
+    margin: auto;
+  }
+  /* line 60, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .aboutpage h1 {
+    font-size: 300%;
+    word-break: break-all;
+    width: 90%;
+    margin: auto;
+  }
+  /* line 67, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .aboutpage h3 {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 526px) {
+  /* line 77, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .aboutpage,
+  .contactpage {
+    margin-top: 50px;
+  }
+  /* line 83, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .main .style1,
+  .main .style2 {
+    width: 60%;
+    flex-direction: column;
+  }
+  /* line 88, ../../Users/adelh/Documents/my Pages/sass-project/_sass/_media.scss */
+  .main .style1 .card,
+  .main .style2 .card {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

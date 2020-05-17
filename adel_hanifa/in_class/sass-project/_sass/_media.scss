@@ -1,0 +1,93 @@
+// mobile phone 
+
+@media screen and (max-width: 525px) {
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    h1 {
+      width: 100%;
+      font-size: 300%;
+    }
+
+    .imghome {
+      width: 90%;
+      margin: auto;
+    }
+
+    a {
+      width: 40%;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+
+    .div {
+      padding: 0;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+
+    .style1,
+    .style2 {
+      width: 100%;
+      flex-direction: column;
+      
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  .aboutpage {
+    .abouimg {
+      width: 90%;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 300%;
+      word-break: break-all;
+      width: 90%;
+      margin: auto;
+    }
+
+    h3 {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+// tablet
+
+@media screen and (max-width: 768px) and (min-width: 526px) {
+  .aboutpage,
+  .contactpage {
+    margin-top: 50px;
+  }
+
+  .main {
+    .style1,
+    .style2 {
+      width: 60%;
+      flex-direction: column;
+      
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}

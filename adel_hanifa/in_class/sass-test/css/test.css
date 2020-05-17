@@ -1,0 +1,125 @@
+/*string type example*/
+/* line 12, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+body {
+  background-color: #a2b9bc;
+  color: black;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+/* line 29, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+h1 {
+  width: 25%;
+  font-size: 24px;
+  color: #a2b9bc;
+  background-color: black;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 16px;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+}
+
+/* line 47, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+h1:hover {
+  width: 80%;
+  color: #1C9349;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+/* line 57, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+p {
+  background-color: #D4E8DB;
+  color: #1C9349;
+  text-align: justify;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  font-size: 16px;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-property: font, color;
+}
+
+/* line 76, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+p b {
+  background-color: #993C11;
+}
+
+/* line 80, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+p:hover {
+  color: #993C11;
+  font-size: 24px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #993C11;
+  border-width: 8px;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* line 94, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+p:hover b {
+  background-color: #1C9349;
+}
+
+/* line 100, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+.div1 {
+  background-color: #1C9349;
+  color: #D4E8DB;
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  font-size: 8px;
+}
+
+/* line 108, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+.div2 {
+  background-color: #993C11;
+  color: #1C9349;
+  font-size: 24px;
+}
+
+/* line 114, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+nav {
+  margin-top: 24px;
+  background-color: #1C9349;
+  text-align: center;
+}
+
+/* line 118, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 122, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+nav ul li {
+  display: inline-block;
+}
+
+/* line 124, ../../Users/adelh/Documents/my Pages/sass test/_sass/test.scss */
+nav ul li a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  color: #993C11;
+}
+
+/*# sourceMappingURL=test.css.map */

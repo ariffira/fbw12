@@ -32,21 +32,22 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["May 19", "Jun 19", "Jul 19", "Aug 19", "Sep 19", "Oct 19", "Nov 19", "Dec 19", "Jan 20", "Feb 20", "Mar 20", "Apr 20"],
+    labels: ["15-Jan", "01-Feb", "15-Feb", "01-Mar", "15-Mar", "01-Apr", "15-Apr", "Now"],
     datasets: [{
-      label: "Earnings",
+      label: "Global Cases: ",
       lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
-      borderColor: "rgba(78, 115, 223, 1)",
+      backgroundColor: "",
+      borderColor: "#e74a3b",
+      borderWidth: 4,
       pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
-      pointHoverRadius: 3,
-      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      pointBackgroundColor: "#e74a3b",
+      pointBorderColor: "#e74a3b",
+      pointHoverRadius: 10,
+      pointHoverBackgroundColor: "#e74a3b",
+      pointHoverBorderColor: "#4e73df",
       pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+      pointBorderWidth: 4,
+      data: [555, 12040, 69029, 88338, 167715, 927762, 2026570, 3002303],
     }],
   },
   options: {
@@ -74,12 +75,10 @@ var myLineChart = new Chart(ctx, {
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 5,
-          padding: 10,
-          // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return '$' + number_format(value);
-          }
+          min: 0,
+          max: 3000000,
+          maxTicksLimit: 10,
+          padding: 50,
         },
         gridLines: {
           color: "rgb(234, 236, 244)",
@@ -110,7 +109,7 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + number_format(tooltipItem.yLabel);
         }
       }
     }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Test</title>
+</head>
+
+<body>
+    <h1>I learn Javascript</h1>
+
+    <h3>the result of 5 + 6 is: <button type="button" onclick="window.alert(5 + 6)">using window.alert</button> </h3>
+    <h3>the result of 5 + 6 is: <button type="button" onclick="console.log(5 + 6)">using console.log</button> </h3>
+    <h3>the result of 5 + 6 is: <button type="button" onclick="document.write(5 + 6)">using document.write</button>
+    </h3>
+    <h3>the result of 5 + 6 is: <b id="demo"></b> using innerHTML</h3>
+    <button onclick="window.print()">Print this page</button>
+
+    <br>
+    <hr>
+
+    <h1>Useing variable</h1>
+    <h3 id="0001"></h3>
+    <h3>the result of (x + y) is: <button type="button" onclick="window.alert(x + y)">clik here</button> </h3>
+    <h3>the result of (x - y) is: <button type="button" onclick="window.alert(x - y)">clik here</button> </h3>
+    <h3>the result of (x / y) is: <button type="button" onclick="window.alert(x / y)">clik here</button> </h3>
+    <h3>the result of (x * y) is: <button type="button" onclick="window.alert(x * y)">clik here</button> </h3>
+
+    <br>
+    <hr>
+
+    <h2>About me :</h2>
+    <p>My first Name is :<b id="0002"></b></p>
+    <p>My Family Name is :<b id="0003"></b></p>
+    <p>I am<b id="0004"></b>years old.</p>
+    <p>I live in<b id="0005"></b></p>
+    <p>My Phone Number is :<b id="0006"></b></p>
+
+    
+    <br>
+    <hr>
+
+    <h2>About me :<i>using Array</i></h2>
+    <p>My first Name is :<b id="a0002"></b></p>
+    <p>My Family Name is :<b id="a0003"></b></p>
+    <p>I am<b id="a0004"></b>years old.</p>
+    <p>I live in<b id="a0005"></b></p>
+    <p>My Phone Number is :<b id="a0006"></b></p>
+
+    <br>
+    <hr>
+
+    <h2>Add counter</i></h2>
+    <h3>Caunt viewer: 
+        <button type="button" onclick="console.log('counter was: '+count+' it is now : '+ (++count) )">view it</button> 
+    </h3>
+
+    <br>
+    <hr>
+
+    <h1>Useing Araay && object</h1>
+    <table id="array">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+    </table>
+
+
+    <script>
+        // alert('Here is my first JS page .....');
+        // alert('today is: 06/05/2020');
+        // alert('Here is some mathimatik:');
+        // alert('2*2='+(2+2));
+        // alert('1+1='+(1+1));
+        // alert('2*(205+15)-15+600/(4+2)='+(2*(205+15)-15+600/(4+2)));
+
+        // document.write('Hello' + ' <br>')
+        // document.write('I now that  250*2 is ' + (250 * 2))
+        // document.write('<h3>this "h3" is from JS </h3>');
+
+        // console.log('Hi I use console');
+        // console.log(2 + 2);
+        // console.log('<img src:"#">');
+
+        document.getElementById("demo").innerHTML += 5 + 6;
+
+
+        // variable
+        // variable: value data types
+        // left = right
+        // variable_name = value
+        // Strings/integer/text: in qotation
+
+
+        // var numbers 
+        var x = 50;
+        var y = 40;
+
+        document.getElementById("0001").innerHTML = 'x= ' + x + ' & ' + 'y= ' + y;
+
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x / y);
+        console.log(x * y);
+
+
+        // var Strings
+        var name1 = 'Adel';
+        var name2 = 'Hanifa';
+        console.log(name1 + ' ' + name2);
+
+
+        var firstName, secoundName, age, code, phoneNumber, city;
+        firstName = 'Adel';
+        secoundName = 'Hanifa';
+        age = '28';
+        city = 'Mönchengladbach'
+        code = '01590';
+        phoneNumber = 5844010;
+
+
+        document.getElementById("0002").innerHTML = ' ' + firstName;
+        document.getElementById("0003").innerHTML = ' ' + secoundName;
+        document.getElementById("0004").innerHTML = ' ' + age + ' ';
+        document.getElementById("0005").innerHTML = ' ' + city;
+        document.getElementById("0006").innerHTML = ' ' + code + '/' + phoneNumber;
+
+        // let 
+        let number1 = 100;
+        let string1 = '500';
+        console.log(number1+Number(string1));
+        console.log(string1+number1);
+
+        //var boolean: true/false (yes/no)
+        var isLogIn;
+        var logOut;
+        var x = 5, y = 10, z = 5;
+        console.log(isLogIn, logOut);
+
+        isLogIn = x == y;
+        logOut = x == z;
+
+        console.log(isLogIn, logOut);
+
+        // var array
+
+        var array = ['Adel', 'Hanifa', 28, 'Mönchengladbach', '01590', 5844010]
+
+        document.getElementById("a0002").innerHTML = ' ' + array[0];
+        document.getElementById("a0003").innerHTML = ' ' + array[1];
+        document.getElementById("a0004").innerHTML = ' ' + array[2] + ' ';
+        document.getElementById("a0005").innerHTML = ' ' + array[3];
+        document.getElementById("a0006").innerHTML = ' ' + array[4] + '/' + array[5];
+
+
+        // objects(blueprint/map of data): list of data values with key:value pair
+        var myFirstObject;
+        myFirstObject = {
+            my_name_is : "Adel", 
+            i_am : 28, 
+            i_live_in : "Mönchengladbach"
+        };
+        console.log(myFirstObject);
+
+        // counter 
+        var count=0;
+
+
+        // Araay && object
+        var user1 = ['Adel', 'Hanifa', 28];
+        var user2 =['Arif', 'Islam', 28];
+        var user3 = ['Asreen', 'Ilyas',  age = 28];
+
+        var users = {
+            u1 : user1, 
+            u2 : user2, 
+            u3 : user3
+        };
+
+            document.getElementById("array").innerHTML +=
+            '<tr><td>'+users.u1[0]+'</td><td>'+users.u1[1]+'</td><td>'+users.u3[2]+'</td></tr>';
+            document.getElementById("array").innerHTML +=
+            '<tr><td>'+users.u2[0]+'</td><td>'+users.u2[1]+'</td><td>'+users.u3[2]+'</td></tr>';
+            document.getElementById("array").innerHTML +=
+            '<tr><td>'+users.u3[0]+'</td><td>'+users.u3[1]+'</td><td>'+users.u3[2]+'</td></tr>';
+            
+
+
+    </script>
+
+</body>
+
+</html>

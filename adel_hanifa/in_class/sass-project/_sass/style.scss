@@ -1,0 +1,296 @@
+$color_1: #3d2c32;
+$color_2: #f9ad5a;
+$color_3: black;
+$color_4: blanchedalmond;
+$font-1: "Dancing Script", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$font-2: "Arial Narrow", Arial, sans-serif;
+
+// mixin
+
+@mixin width {
+    width: 100%;
+}
+
+@mixin border($color, $width) {
+    border: $width solid $color;
+}
+
+// extend
+
+.a {
+    font-size: 150%;
+    background-color: $color_2;
+    @include border($color_2, 1px);
+    display: table-cell;
+    color: $color_1;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    padding: {
+        top: 10px;
+        left: 20px;
+        right: 20px;
+        bottom: 10px;
+    }
+    &:hover {
+        background-color: $color_1;
+        color: $color_2;
+        @include border($color_1, 1px);
+    }
+
+    &.aktiv {
+        background-color: $color-3;
+        color: $color_4;
+        @include border($color_4, 1px);
+    }
+}
+
+//  main scss
+
+body {
+    background-color: $color_1;
+    @include width;
+    display: flex;
+    flex-direction: column;
+    margin: {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+header {
+    @include width;
+    background-color: $color_2;
+    color: $color_1;
+    position: fixed;
+    z-index: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+
+    .div {
+        padding: {
+            top: 0;
+            left: 30px;
+            right: 10px;
+            bottom: 0;
+        }
+    }
+
+    .logo {
+        width: 25px;
+        border-radius: 50%;
+        background: {
+            image: url(../photos/111.png);
+            size: contain;
+        }
+        padding: {
+            top: 22px;
+            left: 15px;
+            right: 15px;
+            bottom: 22px;
+        }
+    }
+
+    a {
+        @extend .a;
+    }
+}
+
+div {
+    padding: {
+        top: 5%;
+        left: 0;
+        right: 0;
+        bottom: 5%;
+    }
+
+    .imghome {
+        width: 40%;
+        @include border($color_2, 5px);
+        border-radius: 4px;
+
+        &:hover {
+            transform: unset;
+        }
+    }
+
+    h1 {
+        color: $color_2;
+        text-align: center;
+        font: {
+            family: $font-1;
+            size: 500%;
+        }
+    }
+
+    a {
+        @extend .a;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    @include width;
+    padding-top: 100px;
+    justify-content: space-around;
+    align-content: space-between;
+
+    .left {
+        height: 100%;
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        a {
+            @extend .a;
+        }
+    }
+
+    .style1,
+    .style2 {
+        order: 1;
+        display: flex;
+        width: 80%;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        .card {
+            width: 30%;
+            @include border($color_4, 1px);
+
+            .container {
+                padding: 2px 16px;
+                margin-top: 20px;
+
+                h2 {
+                    font-family: $font-1;
+                    text-align: left;
+                    padding: {
+                        top: 0;
+                        left: 10px;
+                        right: 10px;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .style1 {
+        .card:nth-child(even) {
+            img {
+                @include border($color_2, 3px);
+            }
+
+            h2 {
+                color: $color_2;
+            }
+
+            h3 {
+                color: $color_4;
+            }
+        }
+        .card:nth-child(odd) {
+            background-color: $color_2;
+
+            img {
+                @include border($color_1, 3px);
+            }
+
+            h2 {
+                color: $color_1;
+            }
+
+            h3 {
+                color: $color_3;
+            }
+        }
+    }
+
+    .style2 {
+        .card:nth-child(odd) {
+            img {
+                @include border($color_2, 3px);
+            }
+
+            h2 {
+                color: $color_2;
+            }
+
+            h3 {
+                color: $color_4;
+            }
+        }
+        .card:nth-child(even) {
+            background-color: $color_2;
+
+            img {
+                @include border($color_1, 3px);
+            }
+
+            h2 {
+                color: $color_1;
+            }
+
+            h3 {
+                color: $color_3;
+            }
+        }
+    }
+}
+
+h3 {
+    color: white;
+    font: {
+        family: $font-2;
+        size: initial;
+    }
+    text-align: justify;
+    padding: {
+        top: 0;
+        left: 10px;
+        right: 10px;
+        bottom: 0;
+    }
+}
+
+.h3align {
+    text-align: center;
+    font-size: x-large;
+}
+
+.abouimg {
+    width: 400px;
+}
+
+img {
+    width: 50%;
+    @include border($color_2, 3px);
+    border-radius: 50px;
+    &:hover {
+        transform: scale(1.7);
+        background-color: $color_4;
+    }
+}
+
+footer {
+    background-color: $color_2;
+    color: $color_1;
+    font-size: 150%;
+    padding: {
+        top: 0.1em;
+        left: 0.1em;
+        right: 0.1em;
+        bottom: 0.1em;
+    }
+}
+
+// add media quere
+
+@import "_media";

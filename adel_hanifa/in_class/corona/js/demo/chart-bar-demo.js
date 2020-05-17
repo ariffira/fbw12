@@ -34,7 +34,7 @@ var myBarChart = new Chart(ctx, {
   data: {
     labels: ["United States", "Spain", "	Italy", "Germany", "United Kingdom", "France", "Turkey", "Russia", "Iran", "China"],
     datasets: [{
-      label: "Revenue",
+      label: "Cases: ",
       backgroundColor: "#e74a3b",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#e74a3b",
