@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: linear-gradient(35deg,red 20%, blue 40%, green 60%, yellow 80%, orange 100%);
+            color: snow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 15rem;
+        }
+
+        header > h1 {
+            max-width: 100%;
+            line-height: 15rem;
+            text-align: center;
+            text-shadow: -2px 0 black, 0 2px black, 0 -2px black, 2px 0 black;
+            animation: skew 2s infinite linear alternate;
+        }
+
+        main{
+            width: 1200px;
+            text-align: center;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: crimson 0 0 8px;
+        }
+
+        #userChoice {
+            animation: move 2s infinite linear alternate;
+        }
+
+        @keyframes move {
+            from {transform: translateX(150px); color: crimson;}
+            to {transform: translateX(-150px); color: chocolate;}
+        }
+
+        @keyframes skew {
+            from {transform: skew(-60deg) scaleY(1); letter-spacing: 0; color: tomato;}
+            to {transform: skew(60deg) scaleY(1.5); letter-spacing: 10px;}
+        }
+
+        .container {
+            background-color: #bdb76b77;
+            border: crimson ridge 2rem;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 80px 70px 15px 20px rgba(32, 178, 171, 0.527);
+            filter: drop-shadow(0 0 18px rgb(63, 139, 0));
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10rem;
+            background-color: #bdb76b77;
+            border: crimson ridge 2rem;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 0px 0px 12px rgba(32, 178, 171, 0.26);
+            filter: drop-shadow(0 0 12px #3f8b006b);
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: rgba(220, 20, 60, 0.507);
+            padding: 2rem 0;
+            font-weight: bolder;
+            font-size: xx-large;
+            color: #9e6700;
+            text-shadow: -2px 0 gold, 0 2px gold, 0 -2px gold, 2px 0 gold;;
+            border-bottom: 1px solid crimson;
+        }
+
+        th + th,
+        td + td {
+            border-left: 1px solid crimson;
+        }
+
+        td {
+            padding: 20px;
+            text-shadow: -2px 0 crimson, 0 2px crimson, 0 -2px crimson, 2px 0 crimson;
+        }
+
+        footer {
+            padding: 2rem;
+            margin-top: 10rem;
+            height: 5em;
+            background-color: black;
+            color: #fffafaad;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Test JavaScript If ~ Else If ~ Else</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 id="userChoice"></h2>
+            <img width="615" height="410" id="imageMonth" src="">
+        </div>
+
+        <table>
+            <thead>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Task</th>
+                <th>Notes</th>
+            </thead>
+            <tbody id="tasks">
+
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Designed by Giampaolo</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="test.js"></script>
+</body>
+
+</html>
