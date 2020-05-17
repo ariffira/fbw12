@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: chocolate;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1 {
+            font-size: 12em;
+        }
+
+        table {
+            border: 10px ridge black;
+            border-collapse: collapse;
+            background-color: rgba(134, 7, 7, 0.507);
+            width: 50em;
+            margin: auto;
+            line-height: 3em;
+        }
+
+        tr:nth-child(even) {
+            background-color: brown;
+        }
+
+        th {
+            font-size: xx-large;
+            text-shadow: -1px 0 goldenrod, 0 1px goldenrod, 0 -1px goldenrod, 1px 0 goldenrod;
+            background-color: indigo;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        td+td {
+            border-left: 1px black solid;
+        }
+
+        td:first-child {
+            color: khaki;
+            font-size: x-large;
+            text-shadow: -1px 0 goldenrod, 0 1px goldenrod, 0 -1px goldenrod, 1px 0 goldenrod;
+        }
+
+        td:nth-child(4) {
+            background-color: rgba(0, 0, 0, 0.342);
+            color: gray;
+        }
+
+        td:nth-child(5) {
+            background-color: rgba(81, 255, 0, 0.342);
+            color: chartreuse;
+        }
+
+        td:nth-child(3) {
+            background-color: rgba(255, 0, 0, 0.342);
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 12.05.20</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Infections</th>
+                <th>Deaths</th>
+                <th>Recovery</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="deCountry"></td>
+                <td id="deCity"></td>
+                <td id="deInfections"></td>
+                <td id="deDeaths"></td>
+                <td id="deRecovery"></td>
+            </tr>
+            <tr>
+                <td id="spCountry"></td>
+                <td id="spCity"></td>
+                <td id="spInfections"></td>
+                <td id="spDeaths"></td>
+                <td id="spRecovery"></td>
+            </tr>
+            <tr>
+                <td id="usCountry"></td>
+                <td id="usCity"></td>
+                <td id="usInfections"></td>
+                <td id="usDeaths"></td>
+                <td id="usRecovery"></td>
+            </tr>
+            <tr>
+                <td id="ruCountry"></td>
+                <td id="ruCity"></td>
+                <td id="ruInfections"></td>
+                <td id="ruDeaths"></td>
+                <td id="ruRecovery"></td>
+            </tr>
+            <tr>
+                <td id="itCountry"></td>
+                <td id="itCity"></td>
+                <td id="itInfections"></td>
+                <td id="itDeaths"></td>
+                <td id="itRecovery"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="table">
+        
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

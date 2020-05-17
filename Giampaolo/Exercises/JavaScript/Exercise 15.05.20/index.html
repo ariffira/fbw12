@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: dimgrey;
+            color: snow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 15rem;
+        }
+
+        header > h1 {
+            max-width: 100%;
+            line-height: 15rem;
+            text-align: center;
+            text-shadow: -2px 0 black, 0 2px black, 0 -2px black, 2px 0 black;
+            animation: skew 2s infinite linear alternate;
+        }
+
+        main{
+            width: 1200px;
+            text-align: center;
+            margin: auto;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: crimson 0 0 8px;
+        }
+
+        #userChoice {
+            animation: move 2s infinite linear alternate;
+        }
+
+        @keyframes move {
+            from {transform: translateX(150px); color: crimson;}
+            to {transform: translateX(-150px); color: chocolate;}
+        }
+
+        @keyframes skew {
+            from {transform: skew(-60deg) scaleY(1); letter-spacing: 0; color: tomato;}
+            to {transform: skew(60deg) scaleY(1.5); letter-spacing: 10px;}
+        }
+
+        .container {
+            background-color: #bdb76b77;
+            border: crimson ridge 2rem;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        footer {
+            padding: 2rem;
+            margin-top: 2rem;
+            height: 5em;
+            background-color: black;
+            color: #fffafaad;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Test JavaScript If ~ Else If ~ Else</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 id="userChoice"></h2>
+            <img id="imageMonth" src="">
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed by Giampaolo</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- <script src="main.js"></script> -->
+    <script src="test.js"></script>
+</body>
+
+</html>

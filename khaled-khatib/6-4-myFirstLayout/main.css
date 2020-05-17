@@ -1,0 +1,78 @@
+body {
+    background-color: grey;
+}
+.container {
+    position: relative;
+    background-color: honeydew;
+    color: black;
+    margin: 5%;
+}
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+.website-name {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 30%;
+    font-size: 12px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: brown;
+    border: 1px solid brown;
+}
+nav li:hover {
+    color: black;
+    background-color: brown;
+    border: 1px solid brown;
+}
+nav ul {
+    padding-inline-start: 2px;
+}
+nav ul li {
+    list-style-type: none;
+    border: 1px solid white;
+    background-color: black;
+}
+.no-border {
+    border: none;
+}
+main {
+    display: flex;
+    margin-top: 5px;
+}
+
+aside {
+   width: 20%; 
+   margin-right: 5px;
+}
+section {
+    width: 80%;
+    height: auto;
+}
+footer {
+    margin-top: 5px;
+    background-color: burlywood;
+    font-size: 8px;
+    width: 100%;
+    height: 40px;
+}
+footer>p {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+

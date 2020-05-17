@@ -50,7 +50,7 @@ body {
     background-color: goldenrod;
     border-radius: 20px;
     border: outset 5px gold;
-    height: fit-content;
+    height: max-content;
 }
 
 .main-content {

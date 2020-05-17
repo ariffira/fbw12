@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    animation-name: day;
+    animation-duration: 24s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes day{
+    0%{background-color: skyblue;}
+    100%{background-color: darkslategray;}
+}
+
+.down {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.green {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.cloud1  {
+    width: 250px;
+    position: absolute;
+    top: 2px;
+    right: 0px; 
+    animation-name: cloud1;
+    animation-duration: 48s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes cloud1{
+    0%{right: 0px; }
+    25%{right: 25%;}
+    50%{right: 50%;}
+    75%{right: 75%;}
+    100%{right: 100%;}
+}
+.cloud2 {
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    left: 0px; 
+    animation-name: cloud2;
+    animation-duration: 48s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes cloud2{
+    0%{left: 0px; }
+    25%{left: 25%;}
+    50%{left: 50%;}
+    75%{left: 75%;}
+    100%{left: 100%;}
+}
+.sun {
+    width: 150px;
+    position: absolute;
+    left: 0px;
+    top: 420px;
+    animation: sm 24s both linear infinite;
+}
+
+.moon {
+    width: 150px;
+    position: absolute;
+    left: 0px;
+    top: 420px;
+    animation: sm 24s 12s both linear infinite;
+}
+
+@keyframes sm{
+    0%{left: 0px; top: 420px;}
+    25%{left: 50%; top: 20px;}
+    50%{left: 100%; top: 420px;}
+    75%{left: 50%; top: 620px;}
+    100%{left: 0px; top: 420px;}
+}

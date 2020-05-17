@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: tan;
+            font-family: fantasy;
+        }
+
+        #userListTeacher {
+            font-weight: bold;
+        }
+
+        .exercise1 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .exercise1 ul,
+        .exercise1 ol {
+            font-size: larger;
+        }
+
+        .exercise1 li::first-letter {
+            font-size: xx-large;
+            color: rgb(0, 0, 0);
+        }
+
+        .card > ul {
+            list-style-type: none;
+            padding: 0;
+            line-height: 2em;
+        }
+
+        .card {
+            box-sizing: border-box;
+            margin: 2em;
+            padding: 1em;
+            border: 15px ridge goldenrod;
+            border-radius: 15px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        h1,
+        h2 {
+            color: red;
+        }
+
+        #exercise2 {
+            display: flex;
+        }
+
+        .list-title li {
+            line-height: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 11.05.20</h1>
+
+    <div class="flex">
+
+        <!-- EXERCISE 1 -->
+        <!-- Array list -->
+        <div class="exercise1">
+            <h2>UserList (Array):</h2>
+            <ol>
+                <li id="userListTeacher"></li>
+                <li id="userList1"></li>
+                <li id="userList2"></li>
+                <li id="userList3"></li>
+                <li id="userList4"></li>
+                <li id="userList5"></li>
+                <li id="userList6"></li>
+                <li id="userList7"></li>
+                <li id="userList8"></li>
+                <li id="userList9"></li>
+                <li id="userList10"></li>
+                <li id="userList11"></li>
+                <li id="userList12"></li>
+            </ol>
+        </div>
+
+        <!-- Object -->
+        <div class="exercise1">
+            <h2>Course (Object):</h2>
+            <ul>
+                <li id="course1"></li>
+                <li id="course2"></li>
+                <li id="course3"></li>
+                <li id="course4"></li>
+                <li id="course5"></li>
+                <li id="course6"></li>
+                <li id="course7"></li>
+                <li id="course8"></li>
+            </ul>
+        </div>
+
+        <!-- EXERCISE 2 -->
+        <!-- Array -->
+        <div id="exercise2">
+            <div class="card">
+                <h2>User Array</h2>
+                <ul>
+                    <li id="userArray1"></li>
+                    <li id="userArray2"></li>
+                    <li class="list-title"><b>Favorite Movies:</b>
+                        <ul>
+                            <li id="userArray3"></li>
+                            <li id="userArray4"></li>
+                            <li id="userArray5"></li>
+                        </ul>
+                    </li>
+                    <li class="list-title"><b>Favorite Food:</b>
+                        <ul>
+                            <li id="userArray6"></li>
+                            <li id="userArray7"></li>
+                            <li id="userArray8"></li>
+                        </ul>
+                    </li>
+                    <li id="userArray9"></li>
+                    <li id="userArray10"></li>
+                    <li id="userArray11"></li>
+                    <li id="userArray12"></li>
+                    <li id="userArray13"></li>
+                </ul>
+            </div>
+
+            <!-- Object -->
+            <div class="card">
+                <h2>User Object</h2>
+                <ul>
+                    <li id="userObject1"></li>
+                    <li id="userObject2"></li>
+                    <li class="list-title"><b>Favorite Movies:</b>
+                        <ul>
+                            <li id="userObject3"></li>
+                            <li id="userObject4"></li>
+                            <li id="userObject5"></li>
+                        </ul>
+                    </li>
+                    <li class="list-title"><b>Favorite Food:</b>
+                        <ul>
+                            <li id="userObject6"></li>
+                            <li id="userObject7"></li>
+                            <li id="userObject8"></li>
+                        </ul>
+                    </li>
+                    <li id="userObject9"></li>
+                    <li id="userObject10"></li>
+                    <li id="userObject11"></li>
+                    <li id="userObject12"></li>
+                    <li id="userObject13"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
