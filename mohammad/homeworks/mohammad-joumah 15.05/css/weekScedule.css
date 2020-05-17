@@ -1,0 +1,23 @@
+#task {
+    margin-left: 33%;
+    margin-top: 5%;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 400px;
+}
+
+#task h3 {
+    background-color: gray;
+    color: white;
+    text-shadow: 1px 2px black;
+    padding: 2%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#task img {
+    width: 400px;
+}
