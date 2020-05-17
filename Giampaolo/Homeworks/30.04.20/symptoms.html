@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CoronaProjekt - Symptoms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/coronavirus.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Animations -->
+    <img class="animated lg-only" src="images/bacteria.png" alt="Corona">
+    <img class="animated2 lg-only" src="images/bacteria.png" alt="Corona">
+    
+    <!-- Header -->
+    <div class="jumbotron text-center m-0">
+        <h1>Projekt Corona Website</h1>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-red sticky">
+        <!-- Logo -->
+        <a href="" class="navbar-brand">
+            <img src="images/coronavirus.png" alt="Logo">
+            Corona
+        </a>
+
+        <!-- Scroll button for smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items that will be collapsed -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+
+                <!-- Home -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Updates -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coronaNews" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Updates
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="coronaNews">
+                        <a class="dropdown-item" href="news.html">News</a>
+                        <a class="dropdown-item" href="statistics.html">Statistics</a>
+                    </div>
+                </li>
+
+                <!-- Hints -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="hints" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hints
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hints">
+                        <a class="dropdown-item" href="hints.html">Articles</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="outside.html">Hygene Outside</a>
+                        <a class="dropdown-item" href="inside.html">Hygene at Home</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="stayathome.html">What to do at Home</a>
+                    </div>
+                </li>
+
+                <!-- Important Infos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="important" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Important Infos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="important">
+                        <a class="dropdown-item active" href="symptoms.html">Symptoms</a>
+                        <a class="dropdown-item" href="infected.html">If you are Infected</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="emergency.html">Emergency Numbers</a>
+                    </div>
+                </li>
+
+                <!-- About Us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+            <!-- Search button -->
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <!-- Navbar Ends -->
+    </nav>
+
+
+    <!-- Main content starts -->
+    <div class="container-lg">
+
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card bg-blacktrans mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center my-5">How to recognise the virus</h3>
+                        <p class="card-text">With reports about the novel coronavirus (COVID-19) dominating the news
+                            cycle, you may be worried about getting sick. Fortunately, you can take steps to protect
+                            yourself to reduce your risk of illness. However, it’s important to take your symptoms
+                            seriously if you think you might be sick. If you’re worried you have COVID-19, stay home and
+                            contact your doctor virtually to find out if you need testing and treatment. </p>
+                    </div>
+                </div>
+
+
+                <div class="card bg-blacktrans card-outline-secondary my-4">
+                    <div class="card-header">
+                        <h3>Watching for Symptoms</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+
+                            <!-- Step 1 -->
+                            <li class="media">
+                                <img src="images/cough.png" class="mr-3" alt="coughing">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">1. Check for respiratory symptoms such as a cough.</h5>
+                                    <p>Since COVID-19 is a respiratory infection, a cough, with or without mucus, is a
+                                        common symptom. However, a cough could also be a symptom of allergies or a
+                                        different respiratory infection, so try not to worry. Call your doctor if you
+                                        think your cough might be caused by COVID-19.</p>
+                                    <ul>
+                                        <li>Consider if you’ve been around someone who was sick. If so, you’re more
+                                            likely to have contracted what they had. However, do your best to stay away
+                                            from sick people.</li>
+                                        <li>If you’re coughing, keep your distance from people who have decreased immune
+                                            systems or have high risks for complications, such as those over
+                                            65-years-old, newborns, children, pregnant women, and those who are on
+                                            immunosuppressants. </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 2 -->
+                            <li class="media my-4">
+                                <img src="images/fever.png" class="mr-3" alt="temperature">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">2. Take your temperature to see if you have a fever.</h5>
+                                    <p>Since fever is a common symptom of COVID-19, always check your temperature if
+                                        you're worried you contracted the virus. A fever over 100.4 °F (38.0 °C) could
+                                        be a sign that you have COVID-19 or another infection. If you have a fever,
+                                        call your doctor to discuss your symptoms.</p>
+                                    <ul>
+                                        <li>If you have a fever, you’re likely contagious, so avoid contact with other
+                                            people.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 3 -->
+                            <li class="media my-4">
+                                <img src="images/doctor.png" class="mr-3" alt="doctor">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">3. Get medical care if you have breathing problems or
+                                        shortness of breath.</h5>
+                                    <p>COVID-19 can cause trouble breathing, which is always a serious symptom. Contact
+                                        your doctor immediately or get emergency medical care if you’re having
+                                        difficulty breathing. You may have a serious infection, such as COVID-19.</p>
+                                    <ul>
+                                        <li>You may need additional treatments for breathing problems, so always consult
+                                            your doctor for shortness of breath.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 4 -->
+                            <li class="media my-4">
+                                <img src="images/coronavirus-nose.png" class="mr-3" alt="symptoms">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">4. Recognize that a sore throat and runny nose may indicate a
+                                        different infection. </h5>
+                                    <p>While COVID-19 is a respiratory infection, it doesn’t usually cause a sore throat
+                                        or runny nose. Its most common symptoms are cough, fever, and shortness of
+                                        breath. Other symptoms of a respiratory infection likely indicate that you have
+                                        another illness, like the common cold or the flu. Call your doctor to be sure.
+                                    </p>
+                                    <ul>
+                                        <li>It’s understandable that you’d be nervous about COVID-19 if you're feeling
+                                            sick. However, you probably don’t need to worry if you’re having symptoms
+                                            other than fever, cough, and shortness of breath.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main content ends -->
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-black mt-5">
+        <div class="row p-5">
+            <div class="col-sm-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="#">Impressum</a>
+                    </li>
+                     <p>Address:<br>
+          Duisburgerstraße 34, 40504<br>
+          Germany</p>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 my-4">Copyright 2020 Giampaolo</div>
+
+
+            <div class="col-sm-5 brands">
+                <h3>Share it on:</h3>
+                <hr>
+                <div class="d-flex justify-content-around" style="font-size: xxx-large; line-height: 2em;">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i title="Facebook" style="color: #3b5998;" class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #55acee;" class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #ff4301;" class="fab fa-reddit"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #cc181e;" class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #bc2a8d;" class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+
+    <script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-active.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+
+    <script src="https://kit.fontawesome.com/d30f23d271.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

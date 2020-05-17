@@ -1,0 +1,261 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c2a45;
+  color: #fffafa;
+  text-shadow: 0 0 8px #cf0000;
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background: linear-gradient(to bottom, #5d7dbe, transparent);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+  border-top: 1px solid goldenrod;
+  border-left: 1px solid goldenrod;
+  border-right: 1px solid goldenrod;
+  border-image: linear-gradient(to bottom, #9e7203, transparent) 1 1%;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #daa520;
+  padding: 1em;
+}
+
+nav > a:hover {
+  background: linear-gradient(to bottom, #1a2f5a, transparent);
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    background-color: #1c2a45;
+  }
+}
+
+section {
+  box-sizing: border-box;
+  border-bottom: 1px ridge goldenrod;
+}
+
+.med-section {
+  height: 30em;
+}
+
+.big-section {
+  height: 50em;
+}
+
+@media only screen and (max-width: 500px) {
+  .med-section {
+    height: max-content;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-c {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-align-c {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.push-end {
+  align-self: flex-end;
+}
+
+.gridrow {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-col-1 {
+  grid-area: 1 / 1 / 2 / 6;
+  padding: 2em 5em;
+}
+
+.grid-col-2 {
+  grid-area: 1 / 6 / 2 / 13;
+  padding: 2em;
+}
+
+.grid-box {
+  height: 100%;
+  border: 2px ridge goldenrod;
+}
+
+@media only screen and (max-width: 500px) {
+  .gridrow {
+    grid-template-rows: repeat(10, 2fr);
+    grid-template-columns: 1fr;
+  }
+  .grid-col-1 {
+    grid-area: 5 / 1 / 11 / 2;
+    padding: 1em;
+  }
+  .grid-col-2 {
+    grid-area: 1 / 1 / 5 / 2;
+    padding: 1em;
+  }
+}
+
+.rounded {
+  border-radius: 1em;
+}
+
+.bord-1 {
+  border-left: 1px solid silver;
+}
+
+.bord-1:nth-child(2) {
+  border-left: none;
+}
+
+.low-opacity {
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.ab-c {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  transform: translateY(100px);
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.pr-1 {
+  padding-right: 1em;
+}
+
+.pr-1:last-child {
+  padding: 0;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.s-only {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .s-only {
+    display: flex;
+  }
+  .h-100 {
+    height: unset;
+  }
+  .lg-only {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #101e3a;
+  padding: 2em;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: unset;
+  margin: unset;
+}
+
+footer ul li {
+  margin: 1em 0;
+}
+
+footer ul li a {
+  color: #daa520;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.bg-title {
+  background-image: url(../images/Valoran.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-map {
+  background-image: url(../images/Map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-end {
+  background-image: url(../images/Runeterra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title, #end-title {
+  font-size: 500%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #daa520;
+}
+
+h2 {
+  font-size: 250%;
+}
