@@ -76,7 +76,7 @@ else if (chooseMonth == 12) {
 }
 
 else {
-    alert('This is not a Month.please give between 1-12');
+    alert('This is not a Month. Please give a number between 1-12');
 };
 
 let maxDay = 7, minDay = 1;
