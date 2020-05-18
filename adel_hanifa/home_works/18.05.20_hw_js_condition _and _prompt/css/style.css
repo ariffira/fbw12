@@ -18,6 +18,8 @@ body {
     justify-content: space-around;
     align-items: center;
     box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.68);
+    background: linear-gradient(135deg, rgb(119, 174, 211) 25%, rgb(172, 218, 133) 75%);
+
 }
 
 #month img {
@@ -43,6 +45,8 @@ body {
     justify-content: space-around;
     align-items: center;
     box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.68);
+    background: linear-gradient(135deg, rgb(119, 174, 211) 25%, rgb(172, 218, 133) 75%);
+
 
 }
 

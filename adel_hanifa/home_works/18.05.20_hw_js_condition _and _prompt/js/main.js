@@ -3,10 +3,10 @@
 
 //add 4 img 
 let fourSeasons = [
-  '<img src="../img/winter.jpg">',
-  '<img src="../img/autumn.jpg">',
-  '<img src="../img/summer.jpg">',
-  '<img src="../img/spring.jpg">'
+  '<img src="img/winter.jpg">',
+  '<img src="img/autumn.jpg">',
+  '<img src="img/summer.jpg">',
+  '<img src="img/spring.jpg">'
 ]
 
 // add the name of each months with an image for which season
@@ -31,11 +31,11 @@ let monthNr = prompt('Enter a number betwen 1 and 12');
 // check the number  if it not between 1 and 12
 if (monthNr < 1) {
   alert('wrong month refresh your page.................!')
-  document.getElementById("month").innerHTML += '<h1>You entered an error number.<br> Please refresh your page .......... </h1>'+'<img src="../img/error.jpg">';
+  document.getElementById("month").innerHTML += '<h1>You entered an error number.<br> Please refresh your page .......... </h1>'+'<img src="img/error.jpg">';
 }
 else if (monthNr > 12) {
   alert('wrong month refresh your page.................!')
-  document.getElementById("month").innerHTML += '<h1>You entered an error number.<br> Please refresh your page .......... </h1>'+'<img src="../img/error.jpg">';
+  document.getElementById("month").innerHTML += '<h1>You entered an error number.<br> Please refresh your page .......... </h1>'+'<img src="img/error.jpg">';
 }
 else {
   // if the number between 1 and 12 then write the line below
@@ -103,7 +103,7 @@ else if (dayNr == dayNrcheck[12] || dayNr == dayNrcheck[13]){
 }
 else {
   alert('wrong day refresh your page.................!')
-  document.getElementById("week").innerHTML += '<h1>You entered a wrong day<br>Please refresh your page .......... </h1>'+'<img src="../img/error02.jpg">';
+  document.getElementById("week").innerHTML += '<h1>You entered a wrong day<br>Please refresh your page .......... </h1>'+'<img src="img/error02.jpg">';
 }
 
 
