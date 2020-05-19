@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            background-color: burlywood;
+        }
+
         #calculator {
             border-radius: 20px;
-            background-color: azure;
+            background-color: rgb(0, 0, 0);
             position: absolute;
             top: 2rem;
             left: 20rem;
@@ -19,7 +23,8 @@
             text-align: center;
         }
 
-        #calculator button {
+        #calculator button,
+        #calculator input[type="button"] {
             width: 70px;
             height: 50px;
             text-align: center;
@@ -29,7 +34,7 @@
             margin-top: 15px;
         }
 
-        #display > input {
+        #display>input {
             width: 314px;
             height: 50px;
             font-size: xx-large;
@@ -132,43 +137,47 @@
     </div>
 
 
-
     <!-- * Calculator -->
     <div id="calculator">
-        <div id="display">
-            <input type="text"><br>
-            <input id="calcResult" type="text" disabled>
-        </div>
-        <hr>
-        <div id="inputs">
+        <!--Form Name-->
+        <form name="calc">
 
-            <div id="numbers">
-                <button id="erase" onclick="eraseAll()">CE</button>
-                <button>C</button>
-                <button id="eraseNumber" onclick="eraseNumber()">B</button>
-                <hr>
-                <button id="get1" value="1" onclick="addNumber1()">1</button>
-                <button id="get2" value="2" onclick="addNumber2()">2</button>
-                <button id="get3" value="3" onclick="addNumber3()">3</button>
-                <button id="get4" value="4" onclick="addNumber4()">4</button>
-                <button id="get5" value="5" onclick="addNumber5()">5</button>
-                <button id="get6" value="6" onclick="addNumber6()">6</button>
-                <button id="get7" value="7" onclick="addNumber7()">7</button>
-                <button id="get8" value="8" onclick="addNumber8()">8</button>
-                <button id="get9" value="9" onclick="addNumber9()">9</button>
-                <button id="get0" value="0" onclick="addNumber0()">0</button>
+            <div id="display">
+                <input type="text" placeholder="0" value="0" name="displayResult" disabled> <!--This is the display, all numbers that we add will end up here that-->
             </div>
-            <div id="signals">
-                <button>=</button>
-                <hr>
-                <button>+</button>
-                <button>-</button>
-                <button>/</button>
-                <button>*</button>
-                <button>%</button>
+            <hr>
+
+            <div id="inputs">
+                <div id="numbers">
+                    <input type="button" value="CE" onclick="erase()">
+                    <input type="button" value="C" onclick="">
+                    <input type="button" value="B" onclick="remove(displayResult.value)">
+                    <hr>
+                    <input type="button" name="n1" value="1" onClick="calcNumbers(parseInt(n1.value))"> <!-- n1 takes the name of the HTML element (or the ID); .value takes the "value" attribute that is inside the HTML selected -->
+                    <input type="button" name="n2" value="2" onClick="calcNumbers(parseInt(n2.value))">
+                    <input type="button" name="n3" value="3" onClick="calcNumbers(parseInt(n3.value))">
+                    <input type="button" name="n4" value="4" onClick="calcNumbers(parseInt(n4.value))">
+                    <input type="button" name="n5" value="5" onClick="calcNumbers(parseInt(n5.value))">
+                    <input type="button" name="n6" value="6" onClick="calcNumbers(parseInt(n6.value))">
+                    <input type="button" name="n7" value="7" onClick="calcNumbers(parseInt(n7.value))">
+                    <input type="button" name="n8" value="8" onClick="calcNumbers(parseInt(n8.value))">
+                    <input type="button" name="n9" value="9" onClick="calcNumbers(parseInt(n9.value))">
+                    <input type="button" name="n0" value="0" onClick="calcNumbers(parseInt(n0.value))">
+                </div>
+                <div id="signals">
+                    <input type="button" value="=" onClick="displayResult.value = eval(displayResult.value)">
+                    <hr>
+                    <input type="button" name="add" value="+" onClick="calcNumbers(add.value)">
+                    <input type="button" name="sub" value="-" onClick="calcNumbers(sub.value)">
+                    <input type="button" name="div" value="/" onClick="calcNumbers(div.value)">
+                    <input type="button" name="mul" value="*" onClick="calcNumbers(mul.value)">
+                    <input type="button" name="per" value="%" onClick="calcNumbers(per.value)">
+                </div>
             </div>
-        </div>
+        </form>
     </div>
+
+
     <!-- JavaScript -->
     <script src="main.js"></script>
 </body>
