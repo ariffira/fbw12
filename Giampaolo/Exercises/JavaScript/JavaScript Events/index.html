@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: snow;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: 1s;
+        }
+
+        .image-box {
+            width: 512px;
+            height: 512px;
+            margin: auto;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: x-large;
+            margin-left: 2em;
+            border: 15px ridge goldenrod;
+            border-radius: 25px;
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+
+        button:active {
+            position: relative;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-box">
+        <img id="image" src="">
+    </div>
+
+    <br>
+    <button onmouseover="on()" onmouseout="off()">On/off mouse</button>
+    <button onclick="on()">Turn On</button>
+    <button onclick="off()">Switch Off</button>
+    
+    <!-- * JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

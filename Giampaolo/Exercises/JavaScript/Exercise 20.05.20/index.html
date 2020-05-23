@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .inputBox {
+            margin: auto;
+            width: max-content;
+        }
+
+        .box {
+            margin: auto;
+            width: max-content;
+        }
+
+        input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 15px;
+            font-weight: 900;
+        }
+
+        ul {
+            line-height: 2rem;
+            list-style-type: none;
+            font-size: larger;
+        }
+
+        nav {
+            margin: 5px auto;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inputBox">
+        <input type="text" id="userInput" placeholder="!Important - First letter in capital">
+        <button onclick="check(userInput.value)">Search</button>
+    </div>
+
+    <nav>
+        <button id="de" value="Germany" onclick="select(de.value)">Germany</button>
+        <button onclick="select('Italy')">Italy</button>
+        <button onclick="select('Australia')">Australia</button>
+        <button onclick="select('UK')">United Kingdom</button>
+        <button onclick="select('USA')">United States of America</button>
+        <button onclick="select('Japan')">Japan</button>
+        <button onclick="select('Brazil')">Brazil</button>
+        <button onclick="select('Canada')">Canada</button>
+        <button onclick="select('China')">China</button>
+        <button onclick="select('Turkey')">Turkey</button>
+    </nav>
+
+    <div class="box">
+        <img id="countryFlag" src="">
+        <div id="output"></div>
+        <ul id="data">
+
+        </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
