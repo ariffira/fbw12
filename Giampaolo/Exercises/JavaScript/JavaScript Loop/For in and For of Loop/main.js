@@ -182,5 +182,5 @@ for(let x in myList) {
         for(let y in myList[x].favoriteMovie) {
             document.getElementsByClassName('movie')[x].innerHTML += `<li>${myList[x].favoriteMovie[y]}</li>`
         */
-};
+    };
 };
