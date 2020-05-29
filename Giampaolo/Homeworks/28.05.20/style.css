@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    background-image: url(images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: orange;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card {
+    background-color: #000000a6;
+}
+
+.btn-custom {
+	color: #b30000;
+	background-color: #ffae00;
+	border-color: #ff6600;
+}
+.btn-custom > a {
+    color: #b30000;
+}
+
+.btn-custom > a:hover {
+    color: #ff0000;
+}
+.btn-custom:hover {
+	color: #ff0000;
+	background-color: #c28400;
+	border-color: #ff6600;
+}
+
+li.media {
+        display: flex;
+        align-items: center;
+}
+
+.text-muted {
+	color: #b0b0b0 !important;
+}
+
+.input-group-text {
+    background-color: #ffae00;
+}
