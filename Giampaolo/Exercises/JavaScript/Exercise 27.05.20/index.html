@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: coral;
+            color: snow;
+            text-shadow: 0 0 3px darkblue;
+            font-weight: 500;
+            font-family: fantasy;
+        }
+
+        input,
+        button,
+        select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 5px outset darkblue;
+            background-color: darkcyan;
+            color: snow;
+            font-size: large;
+            font-weight: 500;
+        }
+
+        button:active {
+            box-shadow: 0 0 12px darkblue;
+            background-color: rgb(0, 165, 165);
+            transform: scale(0.95);
+            transition: 0.1s;
+        }
+
+        span {
+            font-weight: 700;
+            color: greenyellow;
+            text-align: center;
+        }
+
+        #exponentInput,
+        #exponentInput2 {
+            width: 400px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-item,
+        .flex>span {
+            flex: 0 0 15%;
+        }
+
+        #loopResult4 {
+            text-align: start;
+            display: block;
+            height: 280px;
+            letter-spacing: 15px;
+            font-size: x-large;
+            text-shadow: -2px 0 black, 0 2px black, 0 -2px black, 2px 0 black;
+        }
+
+        #multi1,
+        #multi2 {
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Exercise 1 -->
+    <h2>Power Function</h2>
+    <input id="powInput" type="text" placeholder="Number to evalue">
+    <br>
+    <input id="powInput2" type="text" placeholder="Time to evalue">
+    <br>
+    <button onclick="pow2(powInput.value, powInput2.value)">Execute</button>
+    <span>The result is: </span>
+    <span id="resultPow"></span>
+    <hr>
+
+    <!-- Exercise 2 -->
+    <h2>Fuctorial Function</h2>
+    <input id="input" type="text">
+    <button onclick="fuctorial(input.value)">Execute</button>
+    <span>The result is: </span>
+    <span id="result"></span>
+    <hr>
+
+    <!-- Exercise 3 -->
+    <h2>Exponent Function</h2>
+    <input id="exponentInput" type="text" placeholder="Write the number that you want to evalue">
+    <br>
+    <input id="exponentInput2" type="text" placeholder="How many time it should evalue">
+    <br>
+    <button onclick="exponent(exponentInput.value, exponentInput2.value)">Execute</button>
+    <span>The result is: </span>
+    <span id="resultExponent"></span>
+    <hr>
+
+    <!-- Exercise 4 -->
+    <h2>Loop Function</h2>
+    <div class="flex">
+        <div class="flex-item">
+            <h2>Loop 1</h2>
+            <input id="loopInput" type="text">
+            <br>
+            <button onclick="loopTest(loopInput.value)">Execute</button>
+        </div>
+
+        <div class="flex-item">
+            <h2>Loop 2</h2>
+            <input id="loopInput2" type="text">
+            <br>
+            <button onclick="loopTest2(loopInput2.value)">Execute</button>
+        </div>
+
+        <div class="flex-item">
+            <h2>Loop 3</h2>
+            <input id="loopInput3" type="text">
+            <br>
+            <button onclick="loopTest3(loopInput3.value)">Execute</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Exercise 5 -->
+    <div class="flex" style="height: 220px;">
+        <span id="loopResult"></span>
+        <span id="loopResult2"></span>
+        <span id="loopResult3"></span>
+    </div>
+
+    <hr>
+
+    <!-- Exercise 6 -->
+    <h2>Matrix Function</h2>
+    <button onclick="loopTest4()">Execute</button>
+    <br>
+    <span id="loopResult4">
+
+    </span>
+
+    <hr>
+
+    <!-- Exercise 7 -->
+    <h2>Operations</h2>
+    <input id="multi1" type="text" maxlength="2">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input id="multi2" type="text" maxlength="2">
+    <button onclick="multi(multi1.value, multi2.value, operator.value)">=</button>
+    <span id="multiRes"></span>
+
+    <hr>
+
+    <!-- Exercise 8 -->
+    <div class="col">
+        <h2>User Selection</h2>
+        <select id="userSelection">
+            <option value="0">Giampaolo</option>
+            <option value="1">Arif</option>
+            <option value="2">Adel</option>
+            <option value="3">Khaled</option>
+            <option value="4">Jessica</option>
+        </select>
+        <button onclick="user(userSelection.value)">See user</button>
+        <h3 id="userName"></h3>
+        <span id="userCountry"></span>
+        <span id="userCity"></span>
+        <span id="userClass"></span>
+    </div>
+
+    <!-- <table>
+        <thead id="tabName">
+            <th colspan="2">name</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>wrwe</td>
+                <td>werwer</td>
+            </tr>
+            <tr>
+                <td>weerw</td>
+                <td>ewrerw</td>
+            </tr>
+            <tr>
+                <td>were</td>
+                <td>wewer</td>
+            </tr>
+            <tr>
+                <td>werewr</td>
+                <td>weerw</td>
+            </tr>
+            <tr>
+                <td>werwer</td>
+                <td>weerw</td>
+            </tr>
+            <tr>
+                <td colspan="2">werwewer</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
