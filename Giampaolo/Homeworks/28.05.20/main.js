@@ -66,7 +66,6 @@ let login = (mail, pwd) => {
     } else {
         for (let check = 0; check < person.length; check++) {
             if (mail == person[check].email && pwd == person[check].password) {
-                    console.log('fail');
                     console.log('Loop is running for ' + check + ' times.');
                     document.getElementsByTagName("body")[0].innerHTML = `
                     <div class="container">
