@@ -1,4 +1,4 @@
-//* Exercide 1
+//* Exercise 1
 
 for (let i = 0; i <= 100; i = i + 2) {
     result.innerHTML += i + ' ';
@@ -18,7 +18,7 @@ function check(input) {
     }
 };
 
-//* Exercide 2
+//* Exercise 2
 let x = 0;
 
 for (let n = 0; n < 100; n++) {
@@ -28,7 +28,7 @@ for (let n = 0; n < 100; n++) {
     test.innerHTML += n + ' ';
 };
 
-//* Exercide 3
+//* Exercise 3
 
 let value, a = 0, b = 1;
 
