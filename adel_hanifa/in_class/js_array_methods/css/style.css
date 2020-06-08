@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, rgb(151, 220, 193) 30%, rgb(39, 200, 212) 70%);
+}
+
+#id_001, #id_002 {
+    width: 98%;
+    margin: auto;
+}
+
+#id_001 .button{
+    width: 150px;
+    margin: auto;
+}
+
+.firsttable th,.firsttable td{
+    border: 1px solid black;
+    padding: 3px;
+   text-align: center;
+}
+
+.firsttable th {
+    font-size: larger;
+    background-color: chocolate;
+}
+
+.firsttable img {
+    width: 125px;
+}
+
+.firsttable {
+        margin: auto;
+        border: 2px dashed black;
+        padding: 2px;
+        width: 85%;
+}
+
+.firsttable caption{
+    font-size: xx-large;
+    margin: 20px;
+    font-family: cursive;
+    font-weight: bolder;
+    color: chocolate;
+    text-shadow: 4px 4px 22px rgb(70, 29, 29);
+}
+
+.firsttable .list{
+    text-align: left;
+}
+
