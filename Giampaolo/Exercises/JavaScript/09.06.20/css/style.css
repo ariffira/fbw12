@@ -105,8 +105,11 @@ select {
 	animation: scaleIn 1s linear forwards;
 }
 
-.dropdown-menu {
+#chartPanelMain {
+	padding: 5px;
+	position: absolute;
 	width: max-content;
+	background-color: #00000086;
 }
 
 .dropdown-item img {

@@ -19,13 +19,13 @@
     </div>
 
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse"
+            aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">Navbar</a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse" id="navCollapse">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -45,14 +45,14 @@
                     <li class="nav-item">
                         <div class="dropdown show">
                             <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="chartList"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-toggle="collapse" data-target="#chartPanelMain" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-shopping-cart"></i> Chart <span id="chart" class="badge badge-dark"></span>
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="chartList">
+                            <div id="chartPanelMain" class="collapse" aria-labelledby="chartList">
                                 <div id="chartPanel"></div>
                                 <hr>
-                                <div class="dropdown-item" href="#">Total Price: € <span>0.00</span></div>
+                                <div href="#">Total Price: € <span>0.00</span></div>
                             </div>
                         </div>
                     </li>
