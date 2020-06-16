@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <table>
+        <caption>Employees Table</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="main">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="table-head">Total Salaries:</th>
+                <td colspan="5" id="totalSalary"></td>
+            </tr>
+            <tr>
+                <th class="table-head" colspan="5">Show Details</th>
+            </tr>
+            <tr>
+                <th><button id="showOlder">Employees over 60:</button></th>
+                <td colspan="5" id="olderEmployees"></td>
+            </tr>
+            <tr>
+                <th><button id="showYounger">Emploeeys under 30:</button></th>
+                <td colspan="5" id="youngerEmployees"></td>
+            </tr>
+            <tr>
+                <th><button id="showHigSalary">Emploeeys' salary over € 60000:</button></th>
+                <td colspan="5" id="biggerSalary"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, darkblue 20%, lightgreen 60%, orange 90%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -2px 0 black, 0 2px black, 0 -2px black, 2px 0 black;
+    font-size: large;
+}
+
+table {
+	border: ridge #dc143cb6 20px;
+	border-collapse: collapse;
+	float: right;
+	width: 1000px;
+	margin: 50px;
+	background-color: #00000075;
+	color: snow;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px black solid;
+    text-align: center;
+}
+
+th:first-child, td:first-child {
+    width: 120px;
+    text-align: center;
+}
+
+.table-head, thead {
+    color: #ff0000;
+    font-size: x-large;
+}
+
+button {
+	border-radius: 20px;
+	padding: 5px;
+	font-weight: bold;
+	background-color: burlywood;
+	border: 5px outset darkorange;
+}
+
+button:active {
+    background-color: #b4966f;
+	border: 5px inset darkorange;
+}
+
+th:nth-child(2), td:nth-child(2) {
+	width: 150px;
+}
+
+td[ colspan="5" ] {
+    text-align: left;
+}
+
+caption {
+    margin-bottom: 40px;
+    color: orangered;
+    font-size: 60px;
+}
+
+#totalSalary::before {
+    content: "€ ";
+}
