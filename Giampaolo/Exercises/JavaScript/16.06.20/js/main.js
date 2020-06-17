@@ -104,15 +104,24 @@ let salaryCalc = (total, item) => {
 }
 
 let oldEmp = () => {
-    olderEmployees.innerHTML = employee.sort(compare).filter((item) => { return item.age >= 60 }).map(item => `<b style="color: darkred;">#${item.id}</b> ${item.name}`).join(", ");
+    if (olderEmployees.innerHTML != '') {
+        olderEmployees.innerHTML = ''
+    } else
+        olderEmployees.innerHTML = employee.sort(compare).filter((item) => { return item.age >= 60 }).map(item => `<b style="color: darkred;">#${item.id}</b> ${item.name}`).join(", ");
 }
 
 let youngEmp = () => {
-    youngerEmployees.innerHTML = employee.sort(compare).filter((item) => { return item.age < 30 }).map(item => `<b style="color: darkred;">#${item.id}</b> ${item.name}`).join(", ");
+    if (youngerEmployees.innerHTML != '') {
+        youngerEmployees.innerHTML = ''
+    } else
+        youngerEmployees.innerHTML = employee.sort(compare).filter((item) => { return item.age < 30 }).map(item => `<b style="color: darkred;">#${item.id}</b> ${item.name}`).join(", ");
 }
 
 let higEmp = () => {
-    biggerSalary.innerHTML = employee.sort(compare).filter((item) => { return item.salary > 60000 }).map(item => `<b style="color: darkred;">#${item.id}</b> ${item.name}`).join(", ");
+    if (biggerSalary.innerHTML != '') {
+        biggerSalary.innerHTML = ''
+    } else
+        biggerSalary.innerHTML = employee.sort(compare).filter((item) => { return item.salary > 60000 }).map(item => `<b style="color: darkred;">#${item.id}</b> ${item.name}`).join(", ");
 }
 
 showOlder.addEventListener("click", oldEmp);
@@ -121,3 +130,76 @@ showHigSalary.addEventListener("click", higEmp);
 
 employee.sort(compare).map(showEmployee);
 employee.reduce(salaryCalc, 0);
+
+// Calculator callBack functions
+
+let add = (a, b) => {
+    a = Number(a);
+    b = Number(b);
+    return Number(a + b);
+}
+
+let sub = (a, b) => {
+    return Number(a - b);
+}
+
+let div = (a, b) => {
+    return Number(a / b);
+}
+
+let mult = (a, b) => {
+    return Number(a * b);
+}
+
+let per = (a, b) => {
+    return Number((a / 100) * b);
+}
+
+let calculator = (a, b, callBack) => {
+    if (callBack == "add") {
+        return output.value = add(a, b);
+    } else if (callBack == "sub") {
+        return output.value = sub(a, b);
+    } else if (callBack == "div") {
+        return output.value = div(a, b);
+    } else if (callBack == "mult") {
+        return output.value = mult(a, b);
+    } else if (callBack == "per") {
+        return output.value = per(a, b);
+    } else {
+        return "Wrong Operation";
+    };
+}
+
+let remove = (value) => {
+    inputX.value = (value.substring(0, value.length - 1));
+};
+
+// console.log(calculator(10, 25, "sub"));
+
+//* Clock
+
+let today = new Date()
+let mins = today.getMinutes();
+let secs = today.getSeconds();
+let hours = today.getUTCHours();
+
+setInterval(() => {
+    secs++;
+
+    if (secs > 59) {
+        secs = 0;
+        mins++;
+    };
+
+    if (mins > 59) {
+        mins = 0;
+        hours++;
+    };
+
+    if (hours > 23) {
+        hours = 0;
+    };
+
+    clockID.innerHTML = today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getYear() + " " + eval(hours + 2) + ':' + mins + ':' + secs;
+}, 1000);

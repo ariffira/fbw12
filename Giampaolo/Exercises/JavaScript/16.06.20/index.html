@@ -9,6 +9,58 @@
 </head>
 
 <body>
+
+    <div style="float: left;">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <h2>First type</h2>
+            <input id="inputA" type="text"><br>
+            <select id="operand">
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="div">/</option>
+                <option value="mult">*</option>
+                <option value="per">%</option>
+            </select><br>
+            <input id="inputB" type="text"><br>
+            <button id="executor" onclick="calculator(inputA.value, inputB.value, operand.value)">Execute =</button><br>
+            <input id="output" type="text" disabled>
+        </div>
+
+        <div class="calculator">
+            <h2>Second type</h2>
+            <input id="inputX" type="text" disabled>
+            <input id="inputY" type="text" disabled>
+            <br>
+            <input id="output2" type="text" disabled>
+            <hr>
+            <div class="grid">
+                <button class="per" value="per">%</button>
+                <button onclick="inputX.value = ''; inputY.value = ''; output2.value = '';">CE</button>
+                <button onclick="inputX.value = ''; inputY.value = '';">C</button>
+                <button onclick="remove(inputX.value)"><-</button>
+                <button onclick="inputX.value += this.value" class="num7" value="7">7</button>
+                <button onclick="inputX.value += this.value" class="num8" value="8">8</button>
+                <button onclick="inputX.value += this.value" class="num9" value="9">9</button>
+                <button class="sub" value="sub">-</button>
+                <button onclick="inputX.value += this.value" class="num4" value="4">4</button>
+                <button onclick="inputX.value += this.value" class="num5" value="5">5</button>
+                <button onclick="inputX.value += this.value" class="num6" value="6">6</button>
+                <button class="div" value="div">/</button>
+                <button onclick="inputX.value += this.value" class="num1" value="1">1</button>
+                <button onclick="inputX.value += this.value" class="num2" value="2">2</button>
+                <button onclick="inputX.value += this.value" class="num3" value="3">3</button>
+                <button class="mul" value="mult">*</button>
+                <button onclick="execute()" id="executor2">=</button>
+                <button onclick="inputX.value += this.value" class="num0" value="0">0</button>
+                <button onclick="inputX.value += this.value" class="comma" value=".">.</button>
+                <button class="add" value="add">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="clockID">0</div>
+
     <table>
         <caption>Employees Table</caption>
         <thead>
