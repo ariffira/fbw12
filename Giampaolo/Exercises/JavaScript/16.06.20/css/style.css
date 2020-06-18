@@ -42,6 +42,7 @@ button, input, select {
 	background-color: burlywood;
     border: 5px outset darkorange;
     margin: 2px 0;
+    appearance:none;
 }
 
 button:active {
@@ -91,10 +92,13 @@ caption {
     'exe num0 comma add';
 }
 
-#clockID {
-	position: absolute;
+#container {
+    position: absolute;
 	top: 550px;
 	left: 50px;
+}
+
+#clockID {
 	border: 10px ridge crimson;
 	padding: 5px;
 	height: 20px;

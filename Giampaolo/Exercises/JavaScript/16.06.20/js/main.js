@@ -71,6 +71,17 @@ let employee = [
     }
 ];
 
+let listPack = JSON.stringify(employee);
+localStorage.setItem("employeesList", listPack);
+
+// console.log(listPack)
+
+if (localStorage.getItem("employeesList")) {
+    console.log("online")
+} else {
+    console.log("offline")
+}
+
 let showEmployee = (item) => {
     main.innerHTML += `
     <tr>
@@ -179,10 +190,13 @@ let remove = (value) => {
 
 //* Clock
 
-let today = new Date()
-let mins = today.getMinutes();
-let secs = today.getSeconds();
-let hours = today.getUTCHours();
+let currentDate = new Date();
+let today = currentDate.getDate();
+let year = currentDate.getFullYear();
+let month = currentDate.getMonth();
+let mins = currentDate.getMinutes();
+let secs = currentDate.getSeconds();
+let hours = currentDate.getHours();
 
 setInterval(() => {
     secs++;
@@ -201,5 +215,7 @@ setInterval(() => {
         hours = 0;
     };
 
-    clockID.innerHTML = today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getYear() + " " + eval(hours + 2) + ':' + mins + ':' + secs;
+    if(secs < 10) {secs = '0' + secs}
+
+    clockID.innerHTML = `${today}/${month + 1}/${year} ${hours}:${mins}:${secs}`;
 }, 1000);
