@@ -1,0 +1,222 @@
+body {
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: snow;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: darkred;
+}
+
+nav a {
+    color: snow !important;
+}
+
+.bg-darkred {
+    background-color: rgba(139, 0, 0, 0.4);
+}
+
+.bg-red,
+.active {
+    background-color: darkred !important;
+}
+
+.bg-blacktrans {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.font-54 {
+    font-size: 54px;
+}
+
+.font-h3 {
+    font-size: 1.75rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.dropdown-menu {
+    background-color: brown;
+}
+
+.dropdown-item:hover {
+    background-color: darkred !important;
+}
+
+.dropdown-item:active {
+    background-color: #490000;
+}
+
+.navbar-nav .active {
+    font-weight: bolder;
+    text-shadow: silver 0 0 12px;
+}
+
+.list-group-item.active {
+    border: rgb(105, 0, 0);
+}
+
+.page-link {
+	background-color: black;
+	border: 1px solid darkred;
+}
+
+.page-link:hover {
+    background-color: darkred;
+    border: 1px solid red;
+}
+
+.page-item.active .page-link {
+	z-index: 3;
+	color: #fff;
+	background-color: red;
+	border-color: red;
+}
+
+.page-item.disabled .page-link {
+	color: #6c757d;
+	background-color: black;
+	border: 1px solid darkred;
+}
+
+.page-link {
+	color: #fff;
+	background-color: black;
+	border: 1px solid darkred;
+}
+
+.page-link:hover {
+    color: snow;
+}
+
+/* Searchbar */
+.card input,
+nav .form-control {
+    color: snow !important;
+    background-color: rgba(139, 0, 0, 0.4) !important;
+    border-color: rgb(0, 0, 0);
+}
+
+.card input,
+nav .form-control:focus {
+    border-color: red;
+    box-shadow: darkred 0 0 12px;
+}
+
+.card input,
+nav .form-control::placeholder {
+    color: rgb(167, 167, 167);
+}
+
+/* Contact-form CSS */
+.contact .form-control {
+    color: snow !important;
+    background-color: rgba(139, 0, 0, 0.4) !important;
+}
+
+.contact .form-control:focus {
+    border-color: darkred;
+    box-shadow: darkred 0 0 12px;
+}
+
+.contact .form-control::placeholder {
+    color: rgb(167, 167, 167);
+}
+
+.contact input:invalid {
+    border: 2px red solid;
+}
+
+.contact option {
+    background-color: brown;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+	z-index: 1;
+	color: white;
+	text-decoration: none;
+	background-color: #800000;
+}
+
+.list-group-item {
+    color: snow;
+    background-color: rgba(139, 0, 0, 0.4);
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url(images/jumbotron.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-small {
+    font-size: small;
+}
+
+.brands i:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 1050px) {
+    body {
+        background-image: none;
+        background-color: rgb(73, 73, 73);
+    }
+
+    .lg-only {
+        display: none;
+    }
+}
+
+.animated {
+    position: fixed;
+    z-index: -1;
+    animation: moves 60s linear infinite alternate both;
+}
+
+@keyframes moves {
+    0% {transform: translate(50px, 300px) rotateY(0deg) scale(1);}
+    10% {transform: translate(300px, 450px) rotateY(360deg) scale(0.2);}
+    20% {transform: translate(700px, 350px) rotateY(0deg) scale(0.5);}
+    30% {transform: translate(300px, 650px) rotateY(360deg) scale(0.8);}
+    40% {transform: translate(550px, 150px) rotateY(0deg) scale(0.3);}
+    50% {transform: translate(700px, 350px) rotateY(360deg) scale(0.1);}
+    60% {transform: translate(1000px, 850px) rotateY(0deg) scale(0.6);}
+    70% {transform: translate(1400px, 350px) rotateY(360deg) scale(1);}
+    80% {transform: translate(1300px, 950px) rotateY(0deg) scale(0.2);}
+    90% {transform: translate(800px, 350px) rotateY(360deg) scale(0.7);}
+    100% {transform: translate(200px, 150px) rotateY(0deg) scale(0.2);}
+}
+
+.animated2 {
+    position: fixed;
+    z-index: -1;
+    animation: moves2 50s linear infinite alternate both;
+}
+
+@keyframes moves2 {
+    0% {transform: translate(1050px, 700px) rotateY(0deg) scale(1);}
+    10% {transform: translate(1300px, 950px) rotateY(360deg) scale(0.2);}
+    20% {transform: translate(900px, 350px) rotateY(0deg) scale(0.5);}
+    30% {transform: translate(200px, 250px) rotateY(360deg) scale(0.8);}
+    40% {transform: translate(950px, 650px) rotateY(0deg) scale(0.3);}
+    50% {transform: translate(400px, 50px) rotateY(360deg) scale(0.1);}
+    60% {transform: translate(1300px, 150px) rotateY(0deg) scale(0.6);}
+    70% {transform: translate(400px, 550px) rotateY(360deg) scale(1);}
+    80% {transform: translate(600px, 450px) rotateY(0deg) scale(0.2);}
+    90% {transform: translate(1800px, 150px) rotateY(360deg) scale(0.7);}
+    100% {transform: translate(100px, 250px) rotateY(0deg) scale(0.2);}
+}

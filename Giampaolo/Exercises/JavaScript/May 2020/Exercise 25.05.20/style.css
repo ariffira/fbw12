@@ -1,0 +1,32 @@
+body {
+    background-color: yellowgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: xxx-large;
+    color: darkgreen;
+}
+
+button {
+    background-color: darkorange;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+button:active {
+    position: relative;
+    top: 2px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 5px outset goldenrod;
+    background-color: green;
+}

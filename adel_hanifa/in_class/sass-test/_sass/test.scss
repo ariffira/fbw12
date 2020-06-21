@@ -1,0 +1,138 @@
+$font-color: black;
+$body_bg_color:#a2b9bc;
+$color_1: #1C9349;
+$color_2: #D4E8DB;
+$color_3: #993C11;
+
+/*string type example*/
+$f-name: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+$f-size_1: 8px;
+$f-size_2: 16px;
+$f-size_3: 24px;
+body{
+    background-color: $body_bg_color;
+    color: $font-color;
+    margin: {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    padding: {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+}
+h1 {
+    width: 25%;
+    font-size: $f-size_3;
+    color: $body_bg_color;
+    background-color: $font-color;
+    text-align: center;
+    margin: {
+        top: 10px;
+        left: auto;
+        right: auto;
+        bottom: 10px;
+    }
+    padding: $f-size_2;
+    transition: {
+        duration: 4s;
+        timing-function: linear;
+    }    
+}
+h1:hover {
+    width: 80%;
+    color: $color_1;
+    margin: {
+        top: 25px;
+        left: auto;
+        right: auto;
+        bottom: 25px;
+    }
+}
+p {
+    background-color: $color_2;
+    color: $color_1;
+    text-align: justify;
+    padding: {
+        top: 5px;
+        left: 10px;
+        right: 10px;
+        bottom: 5px;
+    }
+    font: {
+        family: $f-name;
+        size: $f-size_2;
+    }
+    transition: {
+        duration: 2s;
+        timing-function: linear;
+        property: font, color;
+    }
+    b {
+        background-color: $color_3;
+    }
+}
+p:hover {
+    color: $color_3;
+    font: {
+        size: $f-size_3;
+        weight: bold;
+    }
+    border: {
+        style: solid;
+        color: $color_3;
+        width: $f-size_1;
+        radius: 5%;
+    }
+    padding: 10px;
+    margin: 5px;
+    b {
+         background-color: $color_1;
+
+    }
+
+}
+.div1 {
+    background-color: $color_1;
+    color: $color_2;
+    font: {
+        family: $f-name;
+        size: $f-size_1;
+    }
+}
+.div2 {
+    background-color: $color_3;
+    color: $color_1;
+    font-size: $f-size_3;
+}
+
+nav {
+    margin-top: $f-size_3;
+    background-color: $color_1;
+    text-align: center;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                display: block; 
+                padding: 6px 12px;
+                text: {
+                    decoration: none;
+                    align: center;
+                }
+                font-size: $f-size_3;
+                color: $color_3;
+            }
+        }
+    }
+}
+    
+

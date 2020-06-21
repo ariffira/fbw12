@@ -1,0 +1,63 @@
+.rounded {
+    border-radius: 5px;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.my-2 {
+    margin: 2em 0;;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.text-center,
+header {
+    text-align: center;
+}
+
+.box,
+.button-box,
+#javaTest {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 5px solid black;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    line-height: 30px;
+    font-size: large;
+}
+
+i {
+    font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    color: red;
+}

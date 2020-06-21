@@ -1,0 +1,103 @@
+ /* ----  START global rules  --------------- */
+ * {
+    box-sizing: border-box;
+}
+ /* ----------------end global rules-------------------- */
+
+
+
+/* ------------------START HEADER------------------------------- */
+.header{
+    background: url(/imeg/photo-1528459801416-a9e53bbf4e17.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+.header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    background-color: rgba(136, 71, 127, 0.5);
+}
+.header .overlay h1{
+    font-size: 60px;
+    margin-top: 100px;
+}
+.header .overlay .plan{
+    border: 4px solid red;
+    font-size: 25px;
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .header .overlay .plan{
+    float: none;
+    font-size: 22px;   
+    margin: 0 auto 20px ;
+}
+}
+ /* --------------END-HEADER--------------- */
+
+
+
+
+ 
+ @media only screen and (max-width: 768px) {
+    .container{
+        margin: auto;
+      
+    }
+}
+
+
+
+ 
+@media only screen and (min-width: 768px) {
+    .container{
+        width: 700;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: center;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .container{
+        width: 900;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container{
+        width: 1070;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .header .overlay h1{
+        font-size: 25px;
+        margin-top: 60px;
+    }
+    .header .overlay .plan{
+        float: none;
+        font-size: 12px;   
+        
+}
+ /* -------START MY FRAMEWORK--------- */
+
+.text-center{
+    text-align: center;
+}
+.container{
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+  /* -------END MY FRAMEWORK--------- */

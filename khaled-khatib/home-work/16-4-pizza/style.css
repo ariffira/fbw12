@@ -1,0 +1,60 @@
+
+/* ------------------------------ */
+.uper-bar{
+    background-color: #08526d;
+    font-size: 25px;
+    color: antiquewhite;
+}
+/*-------------------- navbar -------------------------------- */
+
+.navbar-brand span:first-child{
+    color: #08526d;
+}
+.navbar-brand span:last-child{
+    color: #08526d;
+}
+
+.navbar-brand span {
+    color:#ec1c23;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-link{
+font-size: 25px;
+margin-left: 20px;
+}
+#navbarSupportedContent{
+    margin-left: 100px;
+
+}
+
+.navbar-nav .active > .nav-link{
+    color:#ec1c23 !important;
+}
+
+         /* LEFT MENU */
+.left-menu{
+    padding-left: 30px;
+    background-color: #e7edf0;
+    width: 250px;
+    height: 80%;
+   
+    display: flex;
+    
+}
+                    /* content */
+.col-lg- a{
+    color: brown;
+    font-size: 25px;
+    font-weight: bold;
+  
+}
+.col-lg- ul li{
+    padding-top: 40px;
+}
+table img{
+    width: 80px;
+    height: 80px;
+}
+
+ 

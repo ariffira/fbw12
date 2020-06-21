@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightsalmon;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #shopping-list-items {
+            flex: 4;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        .image-box {
+            padding: 5px;
+            border: 5px outset darkgreen;
+            background-color: lightgreen;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container-box {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shopping List</h1>
+
+    <div class="container">
+
+        <div class="container-box">
+            <h2>List</h2>
+            
+            <ul id="shopping-list">
+            </ul>
+        </div>
+
+
+        <div id="shopping-list-items">
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="exercise.js"></script>
+</body>
+
+</html>

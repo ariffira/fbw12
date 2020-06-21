@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CoronaProjekt - If you got infected</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/coronavirus.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Animations -->
+    <img class="animated lg-only" src="images/bacteria.png" alt="Corona">
+    <img class="animated2 lg-only" src="images/bacteria.png" alt="Corona">
+
+    <!-- Header -->
+    <div class="jumbotron text-center m-0">
+        <h1>Projekt Corona Website</h1>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-red sticky">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">
+            <img src="images/coronavirus.png" alt="Logo">
+            Corona
+        </a>
+
+        <!-- Scroll button for smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items that will be collapsed -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+
+                <!-- Home -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Updates -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coronaNews" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Updates
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="coronaNews">
+                        <a class="dropdown-item" href="news.html">News</a>
+                        <a class="dropdown-item" href="statistics.html">Statistics</a>
+                    </div>
+                </li>
+
+                <!-- Hints -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="hints" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Hints
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="hints">
+                        <a class="dropdown-item" href="hints.html">Articles</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="outside.html">Hygene Outside</a>
+                        <a class="dropdown-item" href="inside.html">Hygene at Home</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="stayathome.html">What to do at Home</a>
+                    </div>
+                </li>
+
+                <!-- Important Infos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="important" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Important Infos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="important">
+                        <a class="dropdown-item" href="symptoms.html">Symptoms</a>
+                        <a class="dropdown-item active" href="infected.html">If you are Infected</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="emergency.html">Emergency Numbers</a>
+                    </div>
+                </li>
+
+                <!-- About Us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+            <!-- Search button -->
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <!-- Navbar Ends -->
+    </nav>
+
+
+    <!-- Main content starts -->
+    <div class="container-lg">
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card bg-blacktrans mt-4">
+                    <img class="card-img-top img-fluid" src="images/influenza-156098_1280.png" alt="Flu">
+                    <div class="card-body">
+                        <h3 class="card-title">In case that you got Corona</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta
+                            fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi
+                            pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+                    </div>
+                </div>
+
+
+                <div class="card bg-blacktrans card-outline-secondary my-4">
+                    <div class="card-header">
+                        <h3>Instructions</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+
+                            <!-- Step 1 -->
+                            <li class="media my-4">
+                                <img src="images/stay-home.png" class="mr-3" alt="StayAtHome">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">1. Stay home so you won’t risk infecting others.</h5>
+                                    <p> If you have respiratory symptoms, you may be contagious, so don’t leave your
+                                        home
+                                        while you’re feeling ill. Make yourself comfortable at home while you recover
+                                        from your illness. Additionally, tell people that you’re sick so they won’t
+                                        visit.</p>
+                                    <ul>
+                                        <li>If you go to the doctor, wear a face mask to prevent spreading the virus.
+                                        </li>
+                                        <li>Check with your doctor to find out when it’s safe for you to return to your
+                                            normal routine. You may be contagious for up to 14 days.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 2 -->
+                            <li class="media my-4">
+                                <img src="images/sleep.png" class="mr-3" alt="rest">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">2. Rest so your body can recover.</h5>
+                                    <p> The best thing you can do for yourself is to rest
+                                        and relax while your body fights the infection. Lie down on your bed or your
+                                        couch with your upper body propped up on pillows. Additionally, keep a blanket
+                                        with you in case you get cold.</p>
+                                    <ul>
+                                        <li>Raising your upper body will help you avoid coughing fits. If you don’t have
+                                            enough pillows, use folded blankets or towels to prop yourself up.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 3 -->
+                            <li class="media">
+                                <img src="images/painkiller.png" class="mr-3" alt="Pils">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">3. Take over-the-counter pain and fever reducers.</h5>
+                                    <p> COVID-19 often causes body aches
+                                        and fever. Fortunately, an over-the-counter medicine like ibuprofen (Advil,
+                                        Motrin), naproxen (Aleve), or acetaminophen (Tylenol) will help. Check with your
+                                        doctor to make sure it’s safe for you to take an over-the-counter pain reliever.
+                                        Then, take your medication as directed on the label.</p>
+                                    <ul>
+                                        <li>Do not give aspirin to children or teens under 18 since it can cause a
+                                            potentially fatal condition called Reye’s Syndrome.</li>
+                                        <li>Don’t take more medication than the label says is safe, even if you’re not
+                                            feeling better.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 4 -->
+                            <li class="media">
+                                <img src="images/humidifier.png" class="mr-3" alt="humidifier">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">4. Use a humidifier to soothe your airways and thin out mucus.
+                                    </h5>
+                                    <p> You’ll likely have mucus drainage, and a humidifier can help. The mist from the
+                                        humidifier will moisten your throat and airways, which can help thin out your
+                                        mucus.</p>
+                                    <ul>
+                                        <li>Follow the directions on your humidifier to use it safely.</li>
+                                        <li>Wash your humidifier thoroughly with soap and water between uses so you
+                                            don’t accidentally get mildew in it.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Step 5 -->
+                            <li class="media">
+                                <img src="images/soup.png" class="mr-3" alt="Soup">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">5. Consume lots of fluids to help your body heal.</h5>
+                                    <p> Fluids help your body fight off the infection and thin out your mucus. Drink
+                                        water, hot water, or tea to help keep you hydrated. Additionally, eat
+                                        broth-based soups to increase your fluid intake.</p>
+                                    <ul>
+                                        <li>Warm fluids are your best bet and may also help soothe your sore throat. Try
+                                            hot water or tea with a squeeze of lemon and a spoonful of honey.</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main content ends -->
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-black mt-5">
+        <div class="row p-5">
+            <div class="col-sm-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="#">Impressum</a>
+                    </li>
+                     <p>Address:<br>
+          Duisburgerstraße 34, 40504<br>
+          Germany</p>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 my-4">Copyright 2020 Giampaolo</div>
+
+
+            <div class="col-sm-5 brands">
+                <h3>Share it on:</h3>
+                <hr>
+                <div class="d-flex justify-content-around" style="font-size: xxx-large; line-height: 2em;">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i title="Facebook" style="color: #3b5998;" class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #55acee;" class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #ff4301;" class="fab fa-reddit"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #cc181e;" class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i style="color: #bc2a8d;" class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+
+    <script src="js/chart.js/Chart.min.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-active.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+
+    <script src="https://kit.fontawesome.com/d30f23d271.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

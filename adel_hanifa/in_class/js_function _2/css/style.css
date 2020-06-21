@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(136deg, rgb(195, 223, 140) 30%, rgb(90, 202, 227) 70%);
+    display: flex;
+    flex-direction: column;
+}
+
+.users{
+    text-align: center;
+    width: 100%;
+}
+
+.users label {
+    font-size: large;
+    margin: 0 10px; 
+}
+
+.users button {
+    background-color: chocolate;
+    font-size: large;
+    color: cornsilk;
+}
+
+.users select {
+    font-size: large;
+    width: 200px;
+}
+
+table {
+    margin: auto;
+    margin-top: 10px;
+    width: 500px;
+    border: 1px solid black;
+    font-size: large;
+}
+
+th[colspan] {
+    background-color: brown;
+    font-size: xx-large;
+    text-align: center;
+    color: cornsilk;
+}
+
+td, th {
+    border-top: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    width: 200px;
+}
+td {
+    width: 300px;
+}
+
+td img{
+    width: 400px;
+    padding: 0 50px;
+}

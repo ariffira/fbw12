@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(136deg, rgb(195, 223, 140) 30%, rgb(90, 202, 227) 70%);
+}
+
+#product div{
+    display: grid;
+    grid-template-areas: 
+    'img h2'
+    'img p'
+    'img price';
+    width: 900px;
+    margin: auto;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+h2 {
+    grid-area: h2;
+    color: orangered;
+
+}
+img {
+    width: 250px;
+    grid-area: img;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+p {
+    grid-area: p;
+    width: 100%;
+}
+span {
+    grid-area: price;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    background-color: orangered;
+}
+
+th {
+    width: 240px;
+    text-align: left;
+    padding: 10px 0;
+}
+
+td{
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+}

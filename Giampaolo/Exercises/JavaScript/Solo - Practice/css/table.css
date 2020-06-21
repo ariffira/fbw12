@@ -1,0 +1,29 @@
+table {
+    padding: 5px;
+    border: 15px outset darkorange;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 15px;
+    border: 2px solid black;
+}
+
+th {
+    font-weight: bolder;
+    background-color: #8b0000ab;
+}
+
+td:first-child::before {
+    content: '#';
+}
+
+td:first-child {
+    background-color: #8b00005e;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+tr:nth-child(even) {
+    background-color: #8b00005e;
+}

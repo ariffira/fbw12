@@ -1,0 +1,56 @@
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+a[href="#home"]{
+  background-color: chartreuse;
+  color: crimson;
+}
+input[type="text"]{
+  color: green;
+  font-style: italic;
+  font-size: 18px;
+}
+input[type="tel"]{
+  color: rgba(22, 222, 144, 555);
+  border: 2px solid rgba(22, 222, 144, 555);
+}
+input[type="file"]{
+  color: blueviolet;
+  border: 2px solid blueviolet;
+}
+input[type="tel"]{
+  color: darkorange;
+  border: 2px solid darkorange;
+}
+ul li:{
+  color: blue;
+}
+
+/* -------------------------------------------------------------------------- */
+p{
+  user-select: all;
+}
+
+p::first-letter{
+  font-size: 37px;
+  color: brown;
+}
+p::first-line{
+  font-size: 22px;
+  
+}
+p::selection{
+  color: green;
+}
+p{
+  user-select: all;
+}
+p::after{
+  content: url("/1.png");
+}
+
+/* ------------------------------------------------ */

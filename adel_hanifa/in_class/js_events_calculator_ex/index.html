@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div class="style">
+        <div class="button">
+            <button onmouseover="on()" onmouseout="off()">On/off mouse</button>
+            <button onclick="on()" >Click to on</button>
+            <button onclick="off()">Click to off</button>
+        </div>
+        <div id="onoff"><img src="img/offlight.jpg"></div>
+    </div>
+<br>
+    <div class="style2">
+        <div class="grid">
+            <p id="numbers"></p>
+
+            <button class="num0" onclick="num0()">0</button>
+            <button class="num1" onclick="num1()">1</button> 
+            <button class="num2" onclick="num2()">2</button> 
+            <button class="num3" onclick="num3()">3</button>
+            <button class="num4" onclick="num4()">4</button> 
+            <button class="num5" onclick="num5()">5</button> 
+            <button class="num6" onclick="num6()">6</button>
+            <button class="num7" onclick="num7()">7</button> 
+            <button class="num8" onclick="num8()">8</button> 
+            <button class="num9" onclick="num9()">9</button>
+
+            <button class="coma" onclick="coma()">,</button>
+            
+            <button class="add" onclick="add()">+</button>
+            <button class="sub" onclick="sub()">-</button>  
+            <button class="mul" onclick="mul()">x</button>
+            <button class="div" onclick="div()">/</button>
+            <button class="equ" onclick="equ()">=</button>
+
+            <button class="ce" onclick="ce()">AC</button>
+            <button class="del" onclick="del()">del</button>
+ 
+        </div>
+    </div>
+
+    <h1>JS Calculator</h1>
+    <div class="CalDiv">
+        Number 1:
+        <input type="text" id="number1">
+        <br>
+        Number 2:
+        <input type="text" id="number2">
+        <br>
+        <br>
+        <button onclick="addtion()">
+            ADD(+)
+        </button>
+        <br>
+        <div id="resultId"></div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

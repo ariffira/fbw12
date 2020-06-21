@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>More testing Function</h1>
+    <div id="0001">
+        <h2>Power function</h2>
+        <label>Enter a number</label>
+        <input type="number" placeholder="Enter a number" id="number" value="1">
+        <label>Enter a power</label>
+        <input type="number" placeholder="Enter a power" id="power" min="0" value="1">
+        <button onclick="powResult(number.value, power.value)">Get the result</button>
+        <span id="numPow"></span>
+        <br>
+        <hr>
+    </div>
+
+
+    <div id="0002">
+        <h2>Factorial function</h2>
+        <label>Enter a number</label>
+        <input type="number" placeholder="Enter a number" id="numberFact" value="1" min="1">
+        <button onclick="factResult(numberFact.value)">Get the result</button>
+        <span id="fact"></span>
+        <br>
+        <hr>
+    </div>
+
+
+
+    <div id="0003">
+        <h2>Recursive function</h2>
+        <label>Enter a number</label>
+        <input type="number" placeholder="Enter a number" id="numberAdd" value="1" min="1">
+        <button onclick="addResult(numberAdd.value)">Get the result</button>
+        <span id="addId"></span>
+        <br>
+        <hr>
+    </div>
+
+
+
+    <div id="0004">
+        <h2>Exercise 08</h2>
+        <p style="float: left; margin: 0 20px;" id="0004_1"></p>
+        <p style="float: left; margin: 0 20px;" id="0004_2"></p>
+        <p style="float: left; margin: 0 20px;" id="0004_3"></p>
+
+    </div>
+
+    <div id="0005">
+        <br>
+        <hr>
+        <h2>Exercise 09</h2>
+        <br>
+        <input type="number" placeholder="Enter a number" id="numMatrix" value="1" min="1">
+        <button onclick="matrixResult(numMatrix.value)">Get the result </button>
+        <br>
+        <p id="matrixId" style="margin-left: 15px;"></p>
+
+        <hr>
+    </div>
+
+    <div id="0006">
+        <h2>Arrow function</h2>
+        <label>Enter a number</label>
+        <input type="number" placeholder="Enter a 1st number" id="arrowNumber1" value="1">
+        <label>Enter a secound number</label>
+        <input type="number" placeholder="Enter a 2nd number" id="arrowNumber2" min="0" value="1">
+        <button onclick="arrowResult(arrowNumber1.value, arrowNumber2.value)">Get the result</button>
+        <p id="numArrow"></p>
+        <br>
+        <hr>
+    </div>
+
+    <div id="0007" class="users">
+        <h2>Display an users which array of objects</h2>
+
+        <label>Chose a user</label>
+        <label id="addUserButton"></label>
+        <br><br>
+        <label>Or select a user</label>
+        <select id="selectUser"></select>
+        <button onclick="userDisplay(selectUser.value)">send</button>
+
+        <table id="userID"></table>
+        <br>
+        <button onclick="userAdd()">Add user</button>
+        <br>
+        <br>
+        <div id="addUserList">
+           
+        </div>
+        <br>
+        <hr>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

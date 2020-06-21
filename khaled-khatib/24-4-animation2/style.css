@@ -1,0 +1,111 @@
+
+html, body{
+    background-color: rgb(97, 106, 189);
+    height: 100%;
+    width:100%;
+    margin: 0;
+}
+img{
+    width: 200px;
+    height:200px;
+}
+
+/* -------------------------------------- */
+.first{
+    height: 40%;
+    background: rgb(86, 172, 206);
+}
+.secound{
+    height: 80%;
+    width: 82%;
+    background: rgb(32, 114, 67); 
+    position: relative;
+    animation-name: color-ch;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+
+}
+@keyframes color-ch{
+    from{background: rgb(32, 114, 67); }
+    to{background: rgb(120, 236, 12); }
+}
+.water{
+    background-image: url(/img/kisspng.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+
+    float:right;
+}
+.birds{
+
+    height: 7px;
+    width: 77px;
+    background: rgb(24, 23, 23);
+    border-radius: 50%;
+    transform: translate(210px,210px);
+}
+.tree{
+    transform: translate(200px,200px);
+    width: 200px;
+    height:200px;
+}
+.sun{
+    height: 100px;
+    width: 100px;
+    background: rgb(240, 186, 11);
+    border-radius: 50%;
+    transform: translate(200px,200px);
+    animation-name: sun;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3ms;
+    animation-iteration-count: infinite
+}
+
+
+@keyframes sun{
+    from{transform: translatey(200);}
+   
+    to{transform: translatey(0px);}
+
+}
+
+
+.sun:hover{
+    background-color: rgba(204, 75, 52, 0.705);
+}
+
+/* --------------animation ---------- */
+.Wolf{
+    position: absolute;
+    left: 10px;
+    animation-name: kill;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 4ms;
+    animation-iteration-count: infinite;
+}
+.Leila{
+    position: absolute;
+    left: 150px;
+   animation-name: kill;
+   animation-duration: 3s; 
+   animation-fill-mode: forwards;
+   animation-delay:3ms;
+   animation-iteration-count: infinite;
+   
+}
+/*// KEYFRAMES //*/
+
+@keyframes kill{
+    from{transform: translate(0);}
+   
+    to{transform: translate(1090px);}
+}
+

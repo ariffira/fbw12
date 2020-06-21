@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Form -->
+    <div class="container">
+        <div class="row">
+            <h1 class="col-m-12 text-center">Create your Profile</h1>
+
+            <form class="form-horizontal">
+                <!-- First Name -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="first-Name">First Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="First-Name" placeholder="Enter your First Name"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Last Name: -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="last-Name">Last Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="last-Name" placeholder="Enter your Last Name" required>
+                    </div>
+                </div>
+
+                <!-- Birthday -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="birthday">Birthday:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="birthday" placeholder="Enter your Birthday"
+                            max="2002-04-20" min="1920-04-20" required>
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="gender">Gender:</label>
+                    <div class="col-sm-10">
+                        <input class="col-sm-1" type="radio" name="gender" id="gender" required>
+                        <p class="col-sm-1">Male</p>
+                        <input class="col-sm-1" type="radio" name="gender" id="gender" required>
+                        <p class="col-sm-1">Female</p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="image">Select an Image:</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" id="image" name="image"
+                            placeholder="Chose an Image for your Profile">
+                    </div>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="age">Age:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="age" placeholder="Enter your Age" min="18"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter Your Password" required>
+                    </div>
+                </div>
+
+                <!-- Country -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="country">Country:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="country" required>
+                            <option value="" disabled selected>Chose your Country</option>
+                            <option>Germany</option>
+                            <option>Austria</option>
+                            <option>Switzerland</option>
+                            <option>Holland</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address">Address:</label>
+                    <div class="col-sm-10">
+                        <!-- Street & Haus NR: -->
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="address-street" placeholder="Street"
+                                    required>
+                            </div>
+                            <div class="col-sm-3" style="padding-left: 0;">
+                                <input type="text" class="form-control" id="address-nr" placeholder="Haus_NR." required>
+                            </div>
+                        </div>
+                        <!-- PLZ & City -->
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-sm-3">
+                                <input type="number" class="form-control" id="address-plz" placeholder="Zip / PLZ" min="0" pattern="[0-9]{5}" minlength="5"
+                                    required>
+                            </div>
+                            <div class="col-sm-9" style="padding-left: 0;">
+                                <input type="text" class="form-control" id="address-city" placeholder="City" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone-number">Phone Number:</label>
+                    <div class="col-sm-2"> 
+                        <!-- country_code -->
+                        <select class="form-control" id="country_code" required>
+                            <option value="" disabled selected>country code</option>
+                            <option>+49</option>
+                            <option>+43</option>
+                            <option>+41</option>
+                            <option>+33</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-8" style="padding-left: 0;">
+                        <input type="tel" class="form-control" id="phone-number"
+                            placeholder="Enter your Phone Number" min="0" required>
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="about-me">About-me:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" type="text" id="about-me" rows="10"
+                            placeholder="Write something about you" required></textarea>
+                    </div>
+                </div>
+
+                <!-- Remember me -->
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox">Remember me</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- buttons -->
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Send Data</button>
+                        <button type="reset" class="btn btn-default">Clear the Form</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

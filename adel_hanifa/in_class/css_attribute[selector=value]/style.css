@@ -1,0 +1,89 @@
+body {
+    background-color: skyblue;
+}
+
+label {
+    min-width: 200px;
+
+    text-align: end;
+}
+input[type=text]{
+    color: green;
+    border: 2px solid green;
+}
+
+input[type=text]::placeholder{
+    color: greenyellow;
+}
+
+input[type=date]{
+    color: red;
+    border: 2px solid red;
+}
+
+input[type=number]{
+    color: blue;
+    border: 2px solid blue;
+}
+
+input[type=email]{
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+input[type=password]{
+    color: darkorchid;
+    border: 2px solid darkorchid;
+}
+
+input[type=tel]{
+    color: gold;
+    border: 2px solid gold;
+}
+
+textarea[type=text]{
+    color: darkkhaki;
+    border: 2px solid darkkhaki;
+}
+
+button[type=submit]{
+    color: rosybrown;
+    border: 2px solid rosybrown;
+}
+
+button[type=reset]{
+    color: brown;
+    border: 2px solid brown;
+}
+
+ol>li:nth-child(even){
+    color: blue;
+}
+
+ol>li:nth-child(odd){
+    color: brown;
+}
+
+div :not(p){
+    color: tomato;
+}
+
+body>p:hover::after {
+    content: " - It`s worked";   
+}
+
+
+body>p::first-letter, body>p:hover::first-letter{
+    font-size: 200%;
+    color: tomato;
+}
+
+div::first-line {
+    background-color: darkkhaki;
+}
+
+
+::selection {
+    color: red;
+    background: yellow;
+}

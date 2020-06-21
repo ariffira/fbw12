@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(120deg, rgb(90, 174, 250) 30%, rgb(30, 246, 133) 70%);
+}
+
+#id01,
+#id02,
+#id03,
+#circleID {
+    width: 95%;
+    margin: auto;
+}
+
+#id01 p {
+    width: 50%;
+    text-align: justify;
+}
+
+h3 {
+    color: chocolate;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.circle {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 140px;
+    color: rgb(230, 230, 230);
+    font-weight: bolder;
+    text-shadow: 0px 2px 0px rgba(30, 30, 30, 0.8);
+    background: linear-gradient(0deg, rgb(210, 20, 20) 27%, rgb(250, 20, 20) 70%);
+    box-shadow: 0px 2px 20px rgba(50, 50, 50, 0.75);
+}

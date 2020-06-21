@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+/* 721 to 1080 */
+@media only screen 
+and (max-width: 1080px) 
+and (min-width: 721px)
+{
+    body {
+        background-color: red;
+        color: blanchedalmond;
+    }
+
+}
+
+
+/* 481 to 720 */
+@media only screen 
+and (max-width: 720px) 
+and (min-width: 481px)
+{
+    body {
+        background-color: blue;
+        color: blanchedalmond;
+    }
+
+}
+
+/* 361 to 480 */
+@media only screen 
+and (max-width: 480px) 
+and (min-width: 361px)
+{
+    body {
+        background-color: brown;
+        color: blanchedalmond;
+    }
+
+}
+
+/* 241 to 360 */
+@media only screen 
+and (max-width: 360px) 
+and (min-width: 241px)
+{
+    body {
+        background-color: cornflowerblue;
+        color: blanchedalmond;
+    }
+
+}
+
+/* 145 to 240 */
+@media only screen 
+and (max-width: 240px) 
+and (min-width: 145px)
+{
+    body {
+        background-color: chartreuse;
+        color: blanchedalmond;
+    }
+
+}
+
+/* 1 to 144 */
+@media only screen 
+and (max-width: 144px) 
+and (min-width: 1px)
+{
+    body {
+        background-color: coral;
+        color: blanchedalmond;
+    }
+
+}
