@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback function</title>
+    <style>
+        body {
+            background: linear-gradient(to top, lightgreen, lightblue);
+        }
+
+        #myDiv {
+            position: relative;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 100px;
+            height: 70px;
+            background-color: rgb(134, 163, 3);
+            border: 2px ridge white;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            padding-top: 20px;
+
+        }
+
+        #seeResult {
+           
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            background-color: cornflowerblue;
+            color: rgb(48, 36, 36);
+            margin-top: 20px;
+            /* animation: move 10s linear 1s infinite forwards ease-in-out; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <button onclick="moveDiv(callbackfunc)">Move Me</button>
+        <button onclick="moveDiv(callbackfunc2)">Back Me</button>
+        <button onclick="moveDiv(callbackfunc3)">rotate 180 deg</button>
+        <button onclick="moveDiv(change)">rotate 270 deg</button>
+        <div id="myDiv"> Wait for 1 seconds </div>
+    </section>
+    <section>
+        <input type="number" placeholder="enter num 1" id="num1" min='1'>
+        <input type="number" placeholder="enter num 2" id="num2" min='1'>
+        <button onclick="calculator(num1.value,num2.value,this.value)" value="add">add</button>
+        <button onclick="calculator(num1.value,num2.value,this.value)" value="subtract">subtract</button>
+        <button onclick="calculator(num1.value,num2.value,this.value)" value="mult">mult</button>
+        <button onclick="calculator(num1.value,num2.value,this.value)" value="divid">divid</button>
+        <button onclick="calculator(num1.value,num2.value,this.value)" value="power">power</button>
+        <br>
+        <div id="seeResult"></div>
+    </section>
+ 
+    <script src="callbackfunction.js"></script>
+</body>
+
+</html>
