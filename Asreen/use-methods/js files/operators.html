@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Function</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(28, 29, 20);
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        * {
+            color: rgb(43, 96, 139);
+            font-size: 16pt;
+            text-shadow: 2px 3px 10px rgb(252, 213, 213), 2px 3px 20px rgb(80, 65, 65), 2px 3px 30px rgb(160, 19, 19);
+
+        }
+
+        #text {
+            border-radius: 30%;
+            border: 3px solid white;
+            color: rgb(222, 236, 236);
+            background-color: rgb(13, 53, 44);
+            width: 50%;
+            height: 200px;
+            text-align: center;
+            padding: 100px 50px;
+            text-shadow: 2px 3px 10px rgb(252, 213, 213), 2px 3px 20px rgb(80, 65, 65), 2px 3px 30px rgb(160, 19, 19);
+        }
+
+        .btn,button {
+            margin: 10px 10px;
+            color: rgb(29, 3, 3);
+            font-size: 20px;
+            padding: 20px;
+            text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            background: rgb(21, 95, 40);
+            background: -moz-linear-gradient(90deg, rgb(149, 154, 172) 95%, rgb(110, 179, 142) 93%);
+            background: -webkit-linear-gradient(90deg, rgb(149, 154, 172) 95%, rgb(110, 179, 142) 93%);
+            background: -o-linear-gradient(90deg, rgb(149, 154, 172) 95%, rgb(110, 179, 142) 93%);
+            background: -ms-linear-gradient(90deg, rgb(149, 154, 172) 95%, rgb(110, 179, 142) 93%);
+            background: linear-gradient(0deg, rgb(149, 154, 172) 95%, rgb(110, 179, 142) 93%);
+            -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+            box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+
+        }
+        hr{
+            color :rgb(189, 31, 52);
+        }
+        .div{
+            box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+            border:3px double black ;
+            border-radius: 10%;
+            background-color: rgb(204, 235, 204);
+        }
+        .section1 {
+            
+            border-radius: 5%;
+            display: flex;
+            justify-content: space-around;
+        }
+        h1{
+            text-align: center;
+        }
+        #season>img {
+            width:600px;
+            height: 500px;
+            border-radius: 20%;
+        }
+        #picture>img{
+            width:400px;
+            height: 200px;
+        }
+        .events{
+            display:flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Test-Function</h1>
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+    <section>
+        <div id="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nisi commodi reiciendis est
+            deleniti blanditiis qui sequi nulla esse id. Libero consectetur quasi deleniti voluptatem, voluptate eveniet
+            nisi? Praesentium, molestias.</div>
+        <button id="btn" onclick="changeStyle()"> Change </button>
+    </section>
+    <br> <br>
+    <hr>
+    <section class="section1">
+        <div class="div">
+            <h1>Subtract 2 numbers</h1>
+            <p>Click the button to calculate .</p>
+            <button onclick="sub_number()" class="btn">Try it</button> <br>
+            <br>
+            <br>
+            Enter First Number:
+            <input type="text" id="Text1" name="TextBox1"><br>
+            Enter Second Num:
+            <input type="text" id="Text2" name="TextBox2"> <br>
+
+            <p id="result">Result is:</p>
+        </div>
+        <div class="div">
+
+            <h1>Add 2 numbers</h1>
+            <p>Click the button to calculate .</p>
+            <button onclick="add_number()" class="btn">Try it</button>
+            <br>
+            <br>
+            Enter First number:
+            <input type="text" id="txt1" name="text1"> <br>
+            Enter Second num:
+            <input type="text" id="txt2" name="text2">
+            <p id="demo">Result is :</p>
+        </div>
+        <div class="div">
+            <h1>Multiply 2 numbers</h1>
+            <p>Click the button to calculate .</p>
+            <button onclick="multiply_number()" class="btn">Try it</button> <br>
+            <br>
+            <br>
+            Enter First Number:
+            <input type="text" id="Text3" name="TextBox1"><br>
+            Enter Second Num:
+            <input type="text" id="Text4" name="TextBox2"> <br>
+
+            <p id="multiply">Result is:</p>
+        </div>
+
+    </section>
+    <hr> <br> <br>
+    <section class="section1">
+       
+       
+
+    </section>
+    <br> <br>
+    <section class="section1">
+        <div class="div">
+
+            <h1>Divid 2 numbers</h1>
+            <p>Click the button to calculate .</p>
+            <button onclick="div_number()" class="btn">Try it</button>
+            <br>
+            <br>
+            Enter First number:
+            <input type="text" id="txt5" name="text1"> <br>
+            Enter Second  num:
+            <input type="text" id="txt6" name="text2">
+            <p id="division">Result is :</p>
+        </div>
+        <div class="div">
+            <h1>Increment a number </h1>
+            <p>Click the button to calculate .</p>
+            <button onclick="incrementNumber()" class="btn">Try it</button>
+            <br>
+            <br>
+            Enter First number :
+            <input type="text" id="txt9" name="text1"> <br>
+            Enter  any  Number :
+            <input type="text" id="txt10" name="text2">
+            <p id="increment">Result is :</p>
+        </div>
+        <div class="div">
+            <h1>Decrement a number</h1>
+            <p>Click the button to calculate .</p>
+            <button onclick="decrementNumber()" class="btn">Try it</button>
+            <br>
+            <br>
+            Enter First number      :
+            <input type="text" id="txt11" name="text1"> <br>
+            Enter  any  Number :
+            <input type="text" id="txt12" name="text2">
+            <p id="decrement"> Result is :</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="div">
+        <h1>Reminder </h1>
+        <p>Click the button to calculate .</p>
+        <button onclick="rem_number()" class="btn">Try it</button>
+        <br>
+        <br>
+        Enter First number:
+        <input type="text" id="txt7" name="text1"> <br>
+        Enter Second  num:
+        <input type="text" id="txt8" name="text2">
+        <p id="reminder">Result is :</p>
+    </div>
+    <p id="greeting">Click the button to get a time-based greeting:</p>
+    <button onclick="myFunction()">Get greeting</button>
+    <div id='season'></div>
+<section class='events'>
+    <div id='picture' style='width:400px;height: 200px;'></div>    
+</section> 
+<button id="btn" onclick="on()">click me!</button>
+<button onclick="on()">On click</button>
+<button onclick="off()">off click</button>
+<button onmouseover="on()" onmouseout="off()">On/Off Click</button>
+<button onclick="this.getElementById('demo1').innerHTML = Date()" id="demo1">The time is?</button>
+
+ <script src="function.js"></script>
+</body>
+
+</html>

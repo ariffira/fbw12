@@ -1,0 +1,38 @@
+body{
+    background-color: limegreen;
+    text-align: center;
+
+}
+#div1,#div2,#div3{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+#ss4>i {
+    background-color: rgb(41, 226, 17);
+}
+.fa-apple{
+    background-color: rgb(193, 228, 188);
+}
+#ss5>i{
+    background-color: mediumaquamarine;
+}
+#div4{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.fa-arrow-alt-circle-right{
+    background-color: rgb(149, 20, 182)!important; 
+}
+button{
+    width:100px;
+    background-color: mediumblue;
+    color:white;
+}
+#btn1,#btn3{
+    margin-left: 200px;
+}
+#btn2{
+    margin-left: 36px;
+}
