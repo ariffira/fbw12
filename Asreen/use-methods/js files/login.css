@@ -1,0 +1,52 @@
+body{color:white;
+    background-image: url('/images/background.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#form{
+    box-shadow:8px -4px 7px 0px rgba(50, 23, 255, 0.86);
+    background-image: linear-gradient(blue,lightblue);
+    height: 500px;
+    margin: 40px 470px;
+    width:500px;
+    border:2px solid white;
+    border-radius: 5%;
+    text-align: center;
+    
+}
+input{
+    margin: 20px 130px;
+    width:250px!important;
+    text-align: center;
+}
+small{
+    color:black!important;
+}
+label{
+    margin-top: 20px;
+}
+#exampleCheck1{
+    margin-top: 27px;
+}
+section{
+    background-image: linear-gradient(blue,lightblue);
+    color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width:500px;
+    margin: 40px 450px;
+}
+img{
+    align-self: center;
+    width:100px;
+    height: 100px;
+}
+h2{
+    padding-top: 10px;
+    text-shadow: -6px 1px 3px rgba(150, 150, 150, 1);
+    color:rgb(8, 12, 8);
+}

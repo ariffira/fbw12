@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- 
+    <div id="calculator">
+      
+        <form name="calc">
+            <div id="display">
+                <input type="text" placeholder="0" value="0" name="displayResult" disabled> 
+            </div>
+            <hr>
+            <div id="inputs">
+                <div id="numbers">
+                    <input type="button" value="CE" onclick="erase()">
+                    <input type="button" value="C">
+                    <input type="button" value="B">
+                    <hr>
+                    <input type="button" name="n1" value="1" onClick="calcNumbers(n1.value)"> 
+                    <input type="button" name="n2" value="2" onClick="calcNumbers(n2.value)">
+                    <input type="button" name="n3" value="3" onClick="calcNumbers(n3.value)">
+                    <input type="button" name="n4" value="4" onClick="calcNumbers(n4.value)">
+                    <input type="button" name="n5" value="5" onClick="calcNumbers(n5.value)">
+                    <input type="button" name="n6" value="6" onClick="calcNumbers(n6.value)">
+                    <input type="button" name="n7" value="7" onClick="calcNumbers(n7.value)">
+                    <input type="button" name="n8" value="8" onClick="calcNumbers(n8.value)">
+                    <input type="button" name="n9" value="9" onClick="calcNumbers(n9.value)">
+                    <input type="button" name="n0" value="0" onClick="calcNumbers(n0.value)">
+                </div>
+                <div id="signals">
+                    <input type="button" value="=" onClick="displayResult.value = eval(displayResult.value)">
+                    <hr>
+                    <input type="button" name="add" value="+" onClick="calcNumbers(add.value)">
+                    <input type="button" name="sub" value="-" onClick="calcNumbers(sub.value)">
+                    <input type="button" name="div" value="/" onClick="calcNumbers(div.value)">
+                    <input type="button" name="mul" value="*" onClick="calcNumbers(mul.value)">
+                    <input type="button" name="per" value="%" onClick="calcNumbers(per.value)">
+                </div>
+            </div>
+        </form>
+    </div>  
+  -->
+<h1 class="text">The Calculation is funny :)</h1>
+    <form id="calculator" name="calc">
+        <h3 id="caption">My Calculator</h3>
+        <input  type="text" placeholder="result" id="result" name="displayResult" disabled>
+        <button type="button" name="n1" onclick="calculate(n1.value)" value="1">1</button>
+        <button type="button" name="n2" onclick="calculate(n2.value)" value="2">2</button>
+        <button type="button" name="n3" onclick="calculate(n3.value)" value="3">3</button>
+        <button type="button" name="n4" onclick="calculate(n4.value)" value="4">4</button>
+        <button type="button" name="n5" onclick="calculate(n5.value)" value="5">5</button>
+        <button type="button" name="n6" onclick="calculate(n6.value)" value="6">6</button>
+        <button type="button" name="n7" onclick="calculate(n7.value)" value="7">7</button>
+        <button type="button" name="n8" onclick="calculate(n8.value)" value="8">8</button>
+        <button type="button" name="n9" onclick="calculate(n9.value)" value="9">9</button>
+        <button type="button" name="n0" onclick="calculate(n0.value)" value="0">0</button>
+        <button type="button" name="mul" onclick="calculate(mul.value)" value="*">*</button>
+        <button type="button" name="add" onclick="calculate(add.value)" value="+">+</button>
+        <button type="button" name="sub" onclick="calculate(sub.value)" value="-">-</button>
+        <button type="button" name="div" onclick="calculate(div.value)" value="/">/</button>
+        <button type="button" onclick="displayResult.value=eval(displayResult.value)">=</button>
+        <button type="button" name="rem" value="%" onclick="calculate(rem.value)">%</button>
+        <button type="button" name="symbol" value="**" onclick="calculate(symbol.value)">**</button>
+        <button type="button" name="braket1" value=")" onclick="calculate(braket1.value)">)</button>
+        <button type="button" name="braket2" value="(" onclick="calculate(braket2.value)">(</button>
+        <button type="button" name="del" onclick="remove(displayResult.value)">del</button>
+        <button type="button" name="delete" id="erase" onclick="erase()">Reset</button>
+    </form>
+    
+
+     <script src="index.js"></script>
+
+</body >
+ </html >

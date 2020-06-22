@@ -1,0 +1,46 @@
+body{
+    background-image:linear-gradient(to bottom,lightblue,rgb(39, 54, 73)) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+th,td:hover{
+   
+ background-color: cornflowerblue;
+}
+caption{
+    text-align: center;
+    color: rgb(29, 36, 29);
+}
+button{
+    margin: 10px 45px;
+}
+button:hover{
+    background-color: rgb(13, 15, 13);
+    color:white;
+}
+.d-flex{
+    justify-content: space-around;
+}
+#showInfo,
+#showInfo2,
+#showInfo3,
+#showInfo4{
+    justify-self: center;
+    color:blue;
+    font-size: 16px;
+}
+table {
+    border:#b7d31b 20px ridge!important;
+}
+h4{
+    font-family: sans-serif ;
+    color:rgb(134, 98, 98);
+    text-shadow: 4px 4px 3px rgb(175, 49, 15);
+}
