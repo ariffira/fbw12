@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Family Tree!</title>
+</head>
+
+<body>
+
+    <div class="tree container">
+        <h1>My Family Tree!</h1>
+        <ul>
+            <li>
+                <div class="family">
+                    <div class="person child male">
+                        <div class="name" onclick="modalInfo()">Grandfather</div>
+                        <p id="gID"></p>
+                    </div>
+                    <div class="parent">
+                        <div class="person female">
+                            <div class="name">Grandmother</div>
+                            <p id="gM"></p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="family" style="width: 172px">
+                                    <div class="person child male">
+                                        <div class="name">Uncle</div>
+                                        <p id="uId"></p>
+                                    </div>
+                                    <div class="parent">
+                                        <div class="person female">
+                                            <div class="name">Wife of Uncle</div>
+                                            <p id="uwId"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="family" style="width: 172px">
+                                    <div class="person child female">
+                                        <div class="name">Aunt</div>
+                                        <p id="aId"></p>
+                                    </div>
+                                    <div class="parent">
+                                        <div class="person male">
+                                            <div class="name">Husband of Aunt</div>
+                                            <p id="ahId"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="family" style="width: 344px">
+                                    <div class="person child female">
+                                        <div class="name">Mother</div>
+                                        <p id="mId"></p>
+                                    </div>
+                                    <div class="parent">
+                                        <div class="person male">
+                                            <div class="name">Father</div>
+                                            <p id="fId"></p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="person child male">
+                                                    <div class="name">Me</div>
+                                                    <p id="aryId"></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="person child female">
+                                                    <div class="name">Brother</div>
+                                                    <p id="andyId"></p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="person spouse male">
+                                        <div class="name">Spouse</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--Modal-->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        See More Infos
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">My Family's Informations</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id='seeInfo'>
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
