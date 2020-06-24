@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ex 17 Array methods</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="id01">
+        <h1>JS exercise 17: Array methods</h1>
+        <hr><br>
+    </div>
+
+    <div id="id02" class="container">
+        <h1> show all employee data </h1>
+        <div class="row clearfix">
+            <div class="col float-left"><!-- Search by -->
+                <!-- Salary -->
+                <label>Search by Salary:</label>
+                <select name="empSalary" id="empSalaryTD" onchange="selectEmpSalary()">
+                    <option value="all">All</option>
+                    <option value="<40"><40</option>
+                    <option value="40000">40</option>
+                    <option value="45000">45</option>
+                    <option value="50000">50</option>
+                    <option value="55000">55</option>
+                    <option value="60000">60</option>
+                    <option value="65000">65</option>
+                    <option value="70000">70</option>
+                </select>
+                <label>,000 €</label>
+                <!-- Age -->
+                <label class="ml-3">Search by Age:</label>
+                <select name="empAge" id="empAgeTD" onchange="selectEmpAge()">
+                    <option value="all">All</option>
+                    <option value="<18"><18</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                    <option value="26">26</option>
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                </select>
+                <!-- ID -->
+                <label class="ml-3">Search by ID:</label>
+                <select name="empId" id="empIdTD" onchange="selectEmpId()">
+                    <option value="all">All</option>  
+                </select>
+            </div>
+            
+            <div class="col col-lg-3 text-right mr-4 float-right"><!-- Sort by -->
+
+                <label>Sort by:</label>
+                <select name="sortBy" id="sortByTD" onchange="sortByEmp()">
+                    <option value="d" disabled selected>defult</option>
+                    <option value="i0">ID 0-9</option>
+                    <option value="i9">ID 9-0</option>
+                    <option value="n0">NAME A-Z</option>
+                    <option value="n9">NAME Z-A</option>
+                    <option value="a0">AGE 0-9</option>
+                    <option value="a9">AGE 9-0</option>
+                    <option value="s0">SALARY 0-9</option>
+                    <option value="s9">SALARY 9-0</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="row table-responsive">
+            <table class="table table-striped" >
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Nr.</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">AGE</th>
+                        <th scope="col">SALARY</th>
+                        <th scope="col">IMAGE</th>
+                    </tr>
+                </thead>
+                <tbody id="showAll">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row"><!-- TOTAL -->
+            <div class="col col-lg-2">
+                <button onclick="totalSalary()" class="btn btn-dark mb-2">Get TOTAL Salary</button>
+            </div>
+            <div class="col">
+                <h4><span id="totalSalaryID" class="badge badge-warning"></span></h4>
+            </div>
+        </div>
+
+        <div class="row"><!-- MAX -->
+            <div class="col col-lg-2">
+                <button onclick="maxSalary()" class="btn btn-dark mb-2">Get MAX Salary</button>
+            </div>
+            <div class="col">
+                <h4><span id="maxSalaryID" class="badge badge-success"></span></h4>
+            </div>
+        </div>
+
+        <div class="row"><!-- MIN -->
+            <div class="col col-lg-2">
+                <button onclick="minSalary()" class="btn btn-dark mb-2">Get MIN Salary</button>
+            </div>
+            <div class="col">
+                <h4><span id="minSalaryID" class="badge badge-danger"></span></h4>
+            </div>
+        </div>
+
+        <br><br>
+    </div>
+
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

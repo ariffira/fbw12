@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back Function</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Call Back Function</h1>
+
+    <div id="id01">
+        <h3>Exercise 18: Callback Calculators</h3>
+        <input type="number" id="num1" value="1">
+        <select name="calc" id="calcWay">
+            <option value="add"><b>+</b></option>
+            <option value="minus"><b>-</b></option>
+            <option value="multiply"><b>*</b></option>
+            <option value="divid"><b>/</b></option>
+            <option value="reminder"><b>%</b></option>
+        </select>
+        <input type="number" id="num2" value="1">
+        <button onclick="calcResult()">get result</button>
+        <label> </label>
+        <label id="calcID"></label>
+        <br><br><hr>
+    </div>
+
+    <div id="id02">
+        <h3>More Callback Functions</h3>
+        <div>
+            <label>To calculate the area of a </label>
+            <select name="select" id="selectID" onchange="selectFun()">
+                <option selected disabled><b>please chose one....</b></option>
+                <option value="circle"><b>Circle</b></option>
+                <option value="square"><b>Square</b></option>
+                <option value="rectangle"><b>Rectangle</b></option>
+            </select>
+            <label>you need to :</label>
+        </div>
+        <br>
+        <div id="displayOption">
+            
+        </div>
+        <br><br><hr>
+    </div>
+
+    <div id="id03">
+        <h3>Exercise 19: Make a digital Clock using callback function</h3>
+       
+        <div class="clock">
+            <span class="back">88:88:88</span>
+            <span class="front" id="clockID">
+            </span>
+            <div class="btnGroup">
+                <button style="background-color: black;" onclick="clockID.style.color = 'black'"></button>
+                <button style="background-color: red;" onclick="clockID.style.color = 'red'"></button>
+                <button style="background-color: blue;" onclick="clockID.style.color = 'blue'"></button>
+                <button style="background-color: green;" onclick="clockID.style.color = 'green'"></button>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
