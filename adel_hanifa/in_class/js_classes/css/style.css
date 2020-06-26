@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(120deg, rgb(90, 174, 250) 30%, rgb(30, 246, 133) 70%);
+}
+
+#id01 {
+    width: 95%;
+    margin: auto;
+}
