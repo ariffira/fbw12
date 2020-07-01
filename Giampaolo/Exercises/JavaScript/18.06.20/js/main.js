@@ -41,6 +41,12 @@
 
 // checkList();
 
+
+
+
+
+
+
 let taskArray = [];
 
 function addData(newTask) {
@@ -144,3 +150,95 @@ display()
 //         alert('Please input a task.')
 //     }
 // }
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //creat the first file in localStorage
+let initialFile = localStorage.getItem('taskFile'); // "breakfast","dinner"
+​
+localStorage.removeItem('taskFile');
+​
+//export the data file and covert it to JS array.
+let dataJS = JSON.parse(initialFile); // ["breafast","dinner"]
+​
+//initial page loading action
+function checkList(){
+    if (dataJS){
+        if(typeof(dataJS)== "object"){
+            dataJS.map((item)=>{
+                displayList.innerHTML += `<li>${item}</li>`; // breakfast
+            })    
+        }
+        else{
+            displayList.innerHTML += `<li>${dataJS}</li>`;
+        }
+    }
+​
+    else{
+        displayList.innerHTML = 'No task at this moment.'
+    }
+}
+​
+checkList();
+​
+let jsDataContainer = [];
+​
+//when add button is clicked
+function addTaskF(x){
+    if (x){
+​
+        //get file
+        let checkStorage = localStorage.getItem('taskFile'); // "breakfast"
+​
+        //Covert JSON array: checkStorage to JS array
+        let oldDataJS = JSON.parse(checkStorage); // ["breakfast"] or "breakfast"??
+        
+​
+        if (oldDataJS){
+​
+            if (typeof(oldDataJS)=="object"){
+                oldDataJS.push(x);
+                console.log(oldDataJS,x);
+​
+                //save new data in localStorage
+                let newTaskJSON = JSON.stringify(oldDataJS);
+                localStorage.setItem('taskFile', newTaskJSON); 
+                
+                //print out all items from JS array: oldDataJS
+                displayList.innerHTML = '';
+                oldDataJS.map((item)=>{
+                displayList.innerHTML += `<li>${item}</li>`;})
+            }
+​
+            else{
+                console.log(oldDataJS,x);
+                jsDataContainer.push(oldDataJS,x);
+                console.log(jsDataContainer);
+                let newTaskJSON = JSON.stringify(jsDataContainer);
+                localStorage.setItem('taskFile', newTaskJSON);
+                displayList.innerHTML = '';
+                jsDataContainer.map((item)=>{
+                    displayList.innerHTML += `<li>${item}</li>`;})
+            }
+​
+        }
+​
+        else{
+        console.log(oldDataJS,x);
+        //save new data in localStorage
+        let newTaskJSON = JSON.stringify(x);
+        localStorage.setItem('taskFile', newTaskJSON);
+​
+        //print out the first task
+        displayList.innerHTML = `<li>${x}</li>`;
+​
+        }     
+    }
+​
+    else{
+        alert('Please input a task.')
+    }
+}
