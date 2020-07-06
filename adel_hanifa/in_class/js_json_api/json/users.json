@@ -1,0 +1,18 @@
+[
+    {
+        "username":"AdelHanifa",
+        "age":28,
+        "adminCustomer":true,
+        "country":"syria",
+        "email":"adel@hanifa.com",
+        "password":"12345678"
+    },
+    {
+        "username":"HanifaAdel",
+        "age":28,
+        "adminCustomer":false,
+        "country":"syria",
+        "email":"adel@hanifa.de",
+        "password":"12345678"
+    }
+]
