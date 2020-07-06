@@ -1,0 +1,186 @@
+$colorw:white;
+$colorb:black;
+$bg-color: #555;
+
+/* Style the navigation bar */
+ .navbar {
+    width: 100%;
+    background-color: $bg-color;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: rgb(52, 155, 158);
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+  }
+  /* main content*/
+  .maintext{
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+      animation:text 10s infinite 1s normal;
+      text-align: center;
+     
+  }
+   @keyframes text{
+      0%{ text-shadow:0.01em 0.01em 0.01em rgb(239, 240, 245),0.01em 0.01em 0.01em rgb(90, 114, 218) ;font-size:larger;}
+      50%{ text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;}
+      100%{ text-shadow:0.01em 0.01em 0.01em rgb(30, 53, 54),0.01em 0.01em 0.01em rgb(158, 59, 84) ;font-size:smaller; }
+    }
+    /*gallery-page*/
+    .gallery-container{
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    .gallery-img{
+        border-radius: 10%;
+        height: 200px;
+        width:350px;
+        margin:10px;
+              
+    }
+    .gallery-img:hover{
+      transform:rotateY(180deg);
+      border-radius: 20%;
+    }
+  
+    /*about*/
+    .maintext1{
+        text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+        color: white;
+        font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+       text-align: center;
+         
+      }
+      .text-about{
+        font-family: 'Noto Serif', serif;
+          text-align: center;
+          float:right;
+          font-size: large;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .maincontent1{
+          display:block;
+          float: right;
+      }
+      /*i want to use @extend*/
+     
+      @media screen and (max-width: 500px) {
+        .flex{
+          display: flex;
+          flex-direction: column;
+        }
+         div .text-about{
+              float:none;
+              font-size: smaller;
+              /* @extend */
+              @extend .flex;
+              flex-shrink: 1fr;
+
+             
+          }
+          .maincontent1{
+              float:none;
+              @extend .flex;
+              justify-items: center;
+              font-size: smaller;
+          }
+         .gallery-container {
+              @extend .flex;
+              justify-items: center;
+          }
+        div .gallery-img{
+          justify-self: center;
+              width: 100%;
+              margin:1px;
+          }
+
+      }
+     
+       /*contact page*/
+       @mixin bordered($color: rgb(80, 80, 182), $width: 1px) {
+        border: $width solid $color;
+      }
+      h3:hover{
+        @include bordered(grey,2px );
+        width: 30%;
+        text-align: center;
+      }
+
+      /*i style the tmg in contact page*/
+      @import "_img";
+      .contact-img{
+        width:$width;
+        height:$height;
+      }
+      @mixin input-text {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+     
+      input[type=text], select, textarea {
+        @include input-text;
+      
+      }
+      
+      input[type=submit] {
+        background-color: rgb(116, 146, 211);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      @media screen and (max-width: 768px) and (min-width:501px){
+        .gallery-container{
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
+        }
+      }
+     
+     
+      
+

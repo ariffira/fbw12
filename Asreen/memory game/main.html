@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Memory game</title>
+</head>
+
+<body>
+
+
+    <!-- Codepen may block images :/ -->
+    <!-- End message -->
+    <div id="win-block">
+        <div class="block-content">
+            <h1>Pretty easy for you</h1>
+            <hr>
+            <p>
+                <b>Your time: </b><span id="finaltime"></span>
+            </p>
+            <h2><a href="" onclick="reset()">Restart</a></h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Follow Me</h4>
+                </div>
+                <div class="col-md-3 col-md-offset-3">
+                    <a href="https://github.com/luiscislaghi" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.linkedin.com/in/luis-cislaghi" target="_blank">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End message -->
+
+    <div class="row info-block">
+        <div class="col-md-4">
+            <p><span id="hours"></span><span id="minutes"></span><span id="seconds">0s</span></p>
+        </div>
+        <div class="col-md-4">
+            <a href="" onclick="reset()">Restart</a>
+        </div>
+        <div class="col-md-4">
+            <p>Remaining Pairs: <span id="remainingPairs"></span></p>
+        </div>
+    </div>
+    <!-- Game -->
+    <div class="wrapper">
+        <!-- Cards -->
+        <div class="item">
+            <div id="1" class="card" onclick="flip(this)" par="1">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="img/dog2.jpg"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="2" class="card" onclick="flip(this)" par="2">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="img/dog3.jpg"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="3" class="card" onclick="flip(this)" par="3">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="img/dog4.jpg"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="4" class="card" onclick="flip(this)" par="1">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="https://gdurl.com/XAzW"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="5" class="card" onclick="flip(this)" par="2">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="https://gdurl.com/XY2U"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="6" class="card" onclick="flip(this)" par="3">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/d0Ts"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="7" class="card" onclick="flip(this)" par="4">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/8UHE"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="8" class="card" onclick="flip(this)" par="5">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/wfFX"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="9" class="card" onclick="flip(this)" par="6">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/olxK"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="10" class="card" onclick="flip(this)" par="4">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/8UHE"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="11" class="card" onclick="flip(this)" par="5">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/wfFX"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="12" class="card" onclick="flip(this)" par="6">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/olxK"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="13" class="card" onclick="flip(this)" par="7">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/YwGB"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="14" class="card" onclick="flip(this)" par="8">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/a-Jf"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="15" class="card" onclick="flip(this)" par="9">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/h80h"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="16" class="card" onclick="flip(this)" par="7">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/YwGB"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="17" class="card" onclick="flip(this)" par="8">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/a-Jf"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="18" class="card" onclick="flip(this)" par="9">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/h80h"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="19" class="card" onclick="flip(this)" par="10">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/ikG8"></div>
+            </div>
+        </div>
+        <div class="item">
+            <div id="20" class="card" onclick="flip(this)" par="10">
+                <div class="front"><img src="img/dog12.jpg"></div>
+                <div class="back"><img src="http://gdurl.com/ikG8"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
