@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Promise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>JS Promise</h1>
+    <div>
+        <label>Do you whant to get married ??</label>
+        <select id="choiseID" onchange="promiseFun (eval(choiseID.value))">
+            <option selected disabled>choose one</option>
+            <option value="true">yes</option>
+            <option value="false">no</option>
+        </select>
+        <br>
+        <p id="resultId"></p>
+    </div>
+
+    <div>
+        <hr>
+        <h1>Exercise 22: Promise example</h1>
+        <div>
+            <select id="producktChoiseID" onchange="producktDisplayFun (producktChoiseID.value)">
+                <option selected disabled>Please choose one product to see all details</option>
+            </select>
+        </div>
+        <br>
+        <div id="producktDisplayID"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
