@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Console Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Console Shop</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapse"
+            aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <div class="collapse navbar-collapse" id="navCollapse">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="chartList"
+                                data-toggle="collapse" data-target="#chartPanelMain" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fas fa-shopping-cart"></i> Chart <span id="chart"
+                                    class="badge badge-dark"></span>
+                            </a>
+
+                            <div id="chartPanelMain" class="collapse" aria-labelledby="chartList">
+                                <div id="chartPanel"></div>
+                                <hr>
+                                <div href="#">Total Price: € <span>0.00</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div id="formButtonsWebSite">
+                    <button id="userButton" type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop" onclick="restoreForm()">
+                        <i class="fas fa-sign-in-alt"></i> Sign Up/In
+                    </button> 
+                </div>
+                
+
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign-Up Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="emailId">Email address</label>
+                            <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="passwordId">Password</label>
+                            <input type="password" class="form-control" id="passwordId" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="usernameId">User Name</label>
+                            <input type="text" class="form-control" id="usernameId" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="confirmPasswordId">Confirm-Password</label>
+                            <input type="password" class="form-control" id="confirmPasswordId" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="ageId">Age</label>
+                            <input type="text" class="form-control" id="ageId" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="countryId">Country</label>
+                            <input type="password" class="form-control" id="countryId" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="roleId"> User Role:</label>
+                            <select class="form-control" id="roleId">
+                                <option disabled selected value="''"> Select one role</option>
+                                <option value="admin">Admin</option>
+                                <option value="customer">Customer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-danger" onclick="createUser()">Create
+                                Account</button><br>
+                            <small>
+                                <a href="#" onclick="loginModal()">Do you already have an account?</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Log Out -->
+    <div class="modal fade" id="logOut" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="logOutLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logOutLabel">Sign-Up Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="logOutCard" class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <p>Do you want to Log Out?</p>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <button type="button" class="btn btn-danger" onclick="logOut()">Admin Panel</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div id="myOutput">
+
+        </div>
+    </div>
+
+    <a id="toTop" href="#navbar">To top</a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/d30f23d271.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

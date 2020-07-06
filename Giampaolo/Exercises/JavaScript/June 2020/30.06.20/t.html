@@ -1,0 +1,119 @@
+Solution:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 22</title>
+</head>
+
+<body>
+
+    <select id="selectId" onchange="searchResult()">
+        <option> select</option>
+        <option value="1">Iphone</option>
+        <option value="2">Samsung</option>
+    </select>
+
+    <div id="resultId"></div>
+
+    <script>
+
+        /*
+          JS Promise
+          - use keyword new Promise();
+          - new Promise(function(resolve, reject){...})
+          - resolve(1st arg): when successful then callback resolve
+          - reject(2nd arg): when failed then callback reject
+          - promise always give back something
+          - using dot then(.then()) we can chain many callback functions in promise
+          - all callbacks runs parallely
+        */
+        let products = [
+            {
+                id: 1,
+                name: 'iphone 11',
+                price: 1500,
+                image: ''
+            },
+            {
+                id: 2,
+                name: 'Xiomi Red',
+                price: 1000,
+                image: ''
+            },
+            {
+                id: 3,
+                name: 'Samsung 9',
+                price: 700,
+                image: ''
+            },
+            {
+                id: 4,
+                name: 'HTC 1',
+                price: 100,
+                image: ''
+            },
+
+        ];
+
+        // display everything from array
+        // read the array and display all value
+        products.map(displayArray);
+        function displayArray(item) {
+            resultId.innerHTML +=
+                `
+        Product Id : ${item.id}<br>
+        Name: Id: ${item.name}<br>
+        Price: ${item.price}<br>              
+        `;
+        }
+
+        function searchResult() {
+            //alert(1)
+            // check selection value
+            let selectValue = Number(selectId.value);
+            console.log(selectValue);
+            products.map(displayArray);
+            function displayArray(item) {
+                if (selectValue == item.id) {
+                    // if price is more>500 euro than show discount also
+                    let findDiscount = new Promise(function (resolve, reject) {
+                        resolve(item.price)
+                        reject('No result for this products');
+                    });
+
+                    function discount(price) {
+                        let discount = '';
+                        if (price > 500) {
+                            discount = price * 0.95;
+                            return discount;
+                        }
+                        else {
+                            return 'No Discount'
+                        }
+                    }
+
+                    findDiscount
+                        .then(discount)
+                        .then(function (data) {
+                            resultId.innerHTML =
+                                `
+                Product Id : ${item.id}<br>
+                Name: Id: ${item.name}<br>
+                Price: ${item.price}<br>  
+                Discount ${data}            
+                `;
+                        })
+
+                }
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

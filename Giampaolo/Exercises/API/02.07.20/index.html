@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-dark">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>E-mail</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>Website</th>
+                <th>Tasks</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+        <table id="tableUser" class="table table-dark">
+            <legend id="showName"></legend>
+            <tbody id="selectedUser">
+            </tbody>
+        </table>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Task List</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="tasks" class="list-group">
+                            <li class="list-group-item list-group-item-success"></li>
+                            <li class="list-group-item list-group-item-danger"></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(data => data.json())
+            .then(user => {
+                console.log(user), user.map(item =>
+                    tableBody.innerHTML += `
+            <tr>
+                <td><a href="#selectedUser" onclick="findUser(${item.id})">${item.id}</a></td>
+                <td>${item.name}</td>
+                <td>${item.username}</td>
+                <td>${item.email}</td>
+                <td>${item.phone}</td>
+                <td>
+                    <ul>
+                        <li>${item.address.street}</li>
+                        <li>${item.address.suite}</li>
+                        <li>${item.address.city}</li>
+                        <li>${item.address.zipcode}</li>
+                    </ul>
+                </td>
+                <td>${item.website}</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>
+                </td>
+            </tr>
+            `
+                )
+            })
+
+        let findUser = (id) => {
+            fetch('https://jsonplaceholder.typicode.com/users/' + id)
+                .then(data => data.json())
+                .then(item => {
+                    showName.innerHTML = item.name
+                    selectedUser.innerHTML = `
+            <tr>
+                <td><a href="#" onclick="findUser(${item.id})">${item.id}</a></td>
+                <td>${item.name}</td>
+                <td>${item.username}</td>
+                <td>${item.email}</td>
+                <td>${item.phone}</td>
+                <td>
+                    <ul>
+                        <li>${item.address.street}</li>
+                        <li>${item.address.suite}</li>
+                        <li>${item.address.city}</li>
+                        <li>${item.address.zipcode}</li>
+                    </ul>
+                </td>
+                <td>${item.website}</td>
+            </tr>
+            `
+                })
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Get data from REST API
+        // fetch('https://jsonplaceholder.typicode.com/users')
+        //     .then(getResponse)
+        //     .then((users) => {
+        //         console.log(users);
+        //         // display users information in html table
+        //         users.map(displayUsers);
+        //         function displayUsers(user) {
+        //             resultId.innerHTML +=
+        //                 `
+        //       <tr>
+        //         <td>
+        //             <a href="#" onclick="findUser(${user.id})" data-toggle="modal" data-target="#userDetail">
+        //                 ${user.id}
+        //             </a>
+        //         </td>
+        //         <td>${user.name}</td>
+        //         <td>${user.username}</td>
+        //         <td>${user.email}</td>
+        //         <td>${user.address.street}, ${user.address.zipcode}, ${user.address.city}</td>
+        //         <td>${user.phone}</td>
+        //         <td>${user.website}</td>
+        //         <td>${user.company.name}</td>
+        //       </tr>
+        //       `;
+        //         }
+        //     });
+        // // get fetch response
+        // function getResponse(response) {
+        //     console.log(response);
+        //     // get the json data only
+        //     return response.json(); // json() method can get JSON data
+        // }
+        // // find one user by his Id
+        // function findUser(userId) {
+        //     console.log(userId);
+        //     fetch('https://jsonplaceholder.typicode.com/users/' + userId)
+        //         .then(getResponse)
+        //         .then((user) => {
+        //             console.log(user)
+        //             userDetailId.innerHTML =
+        //                 `
+        //        User Name: ${user.name}
+        //        `;
+        //         });
+        // }
+        // // getting data from user.json in my computer
+        // fetch('user.json')
+        // .then(getResponse)
+        // // .then(response=> response.json())
+        // .then(function(jsonData) {
+        //     console.log(jsonData);
+        // })
+    </script>
+</body>
+
+</html>

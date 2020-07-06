@@ -245,8 +245,7 @@ let show = () => {
 };
 
 let showHobbys = (item) => {
-    return result = `
-    <li>${item}</li>`;
+    return result = `<li>${item}</li>`;
 };
 
 let showItem = (item) => {
