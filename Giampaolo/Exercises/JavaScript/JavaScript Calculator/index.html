@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        #calculator {
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 2rem;
+            left: 20rem;
+            border: 2px solid black;
+            width: 20rem;
+            height: 30rem;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #calculator button,
+        #calculator input[type="button"] {
+            width: 70px;
+            height: 50px;
+            text-align: center;
+        }
+
+        #display {
+            margin-top: 15px;
+        }
+
+        #display>input {
+            width: 314px;
+            height: 50px;
+            font-size: xx-large;
+        }
+
+        #inputs {
+            display: flex;
+        }
+
+        #numbers {
+            flex: 3;
+        }
+
+        #signals {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Calculator</h1>
+    <div class="CalDiv">
+        <h2>Addition</h2>
+        Number 1:
+        <input type="text" id="number1">
+        <br>
+        Number 2:
+        <input type="text" id="number2">
+        <br>
+        <br>
+        <button onclick="add()">
+            ADD(+)
+        </button>
+        <br>
+        <div id="resultId"></div>
+    </div>
+
+    <div class="CalDiv">
+        <h2>Subtraction</h2>
+        Number 1:
+        <input type="text" id="subNumber1">
+        <br>
+        Number 2:
+        <input type="text" id="subNumber2">
+        <br>
+        <br>
+        <button onclick="sub()">
+            SUB(-)
+        </button>
+        <br>
+        <div id="subResultId"></div>
+    </div>
+
+    <div class="CalDiv">
+        <h2>Multiplication</h2>
+        Number 1:
+        <input type="text" id="multiNumber1">
+        <br>
+        Number 2:
+        <input type="text" id="multiNumber2">
+        <br>
+        <br>
+        <button onclick="multi()">
+            Multiply(*)
+        </button>
+        <br>
+        <div id="multiResultId"></div>
+    </div>
+
+    <div class="CalDiv">
+        <h2>Division</h2>
+        Number 1:
+        <input type="text" id="divNumber1">
+        <br>
+        Number 2:
+        <input type="text" id="divNumber2">
+        <br>
+        <br>
+        <button onclick="div()">
+            DIV(/)
+        </button>
+        <br>
+        <div id="divResultId"></div>
+    </div>
+
+    <div class="CalDiv">
+        <h2>Percentage</h2>
+        Number 1:
+        <input type="text" id="proCentNumber1">
+        <br>
+        Number 2:
+        <input type="text" id="proCentNumber2" placeholder="%">
+        <br>
+        <br>
+        <button onclick="proCent()">
+            Per(%)
+        </button>
+        <br>
+        <div id="proCentResultId"></div>
+    </div>
+
+
+    <!-- * Calculator -->
+    <div id="calculator">
+        <!--Form Name-->
+        <form name="calc">
+
+            <div id="display">
+                <input type="text" placeholder="0" value="0" name="displayResult" disabled> <!--This is the display, all numbers that we add will end up here that-->
+            </div>
+            <hr>
+
+            <div id="inputs">
+                <div id="numbers">
+                    <input type="button" value="CE" onclick="erase()">
+                    <input type="button" value="C" onclick="">
+                    <input type="button" value="B" onclick="remove(displayResult.value)">
+                    <hr>
+                    <input type="button" name="n1" value="1" onClick="calcNumbers(parseInt(n1.value))"> <!-- n1 takes the name of the HTML element (or the ID); .value takes the "value" attribute that is inside the HTML selected -->
+                    <input type="button" name="n2" value="2" onClick="calcNumbers(parseInt(n2.value))">
+                    <input type="button" name="n3" value="3" onClick="calcNumbers(parseInt(n3.value))">
+                    <input type="button" name="n4" value="4" onClick="calcNumbers(parseInt(n4.value))">
+                    <input type="button" name="n5" value="5" onClick="calcNumbers(parseInt(n5.value))">
+                    <input type="button" name="n6" value="6" onClick="calcNumbers(parseInt(n6.value))">
+                    <input type="button" name="n7" value="7" onClick="calcNumbers(parseInt(n7.value))">
+                    <input type="button" name="n8" value="8" onClick="calcNumbers(parseInt(n8.value))">
+                    <input type="button" name="n9" value="9" onClick="calcNumbers(parseInt(n9.value))">
+                    <input type="button" name="n0" value="0" onClick="calcNumbers(parseInt(n0.value))">
+                </div>
+                <div id="signals">
+                    <input type="button" value="=" onClick="displayResult.value = eval(displayResult.value)">
+                    <hr>
+                    <input type="button" name="add" value="+" onClick="calcNumbers(add.value)">
+                    <input type="button" name="sub" value="-" onClick="calcNumbers(sub.value)">
+                    <input type="button" name="div" value="/" onClick="calcNumbers(div.value)">
+                    <input type="button" name="mul" value="*" onClick="calcNumbers(mul.value)">
+                    <input type="button" name="per" value="%" onClick="calcNumbers(per.value)">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

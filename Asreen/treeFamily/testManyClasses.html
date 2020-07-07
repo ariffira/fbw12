@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test classes</title>
+</head>
+
+<body>
+    <canvas width="300px" height="300" id="canvas"></canvas>
+ <button type="button" >Click Me</button>
+
+
+    <script>
+
+        class fruits {
+            constructor(type, color) {
+                this.type = type;
+                this.color = color;
+            }
+            get anotherColor() {
+                {return this.color2;}
+            }
+            set anotherColor(x){
+                this.color2 = x;
+              
+            }
+
+        }
+        let myFruit = new fruits('Apple', 'red');
+        myFruit.color2 = 'yellow';
+        console.log(myFruit);
+        let fruit = new fruits('Grapes', 'green');
+        fruit.color2 = 'red';
+        console.log(fruit);
+
+        console.log('********************************');
+
+        class Animal {
+            constructor(name,color) {
+                this.name = name;
+                this.color=color;
+            }
+            eat() {
+                console.log('eat');
+            }
+        }
+
+        class Bird extends Animal {
+            constructor(name,color, numWings) {
+                super(name,color);
+                this.numWings = numWings;
+            }
+        }
+        const bird = new Bird('Joe','purple', 2);
+        console.log(bird.name+'  '+bird.color+'  '+bird.numWings);
+        bird.eat();
+
+
+        class Animal2 {
+            eat() {
+                console.log(`${this.name} eats`);
+            }
+        };
+        console.log('********************************');
+
+        class Base {
+            baseFn() {
+                console.log('baseFn called');
+            }
+        }
+        let classAMixin = Base => class extends Base {
+            a() {
+                console.log('classAMixin called');
+            }
+        };
+        let classBMixin = Base => class extends Base {
+            b() {
+                console.log('classBMixin called');
+            }
+        };
+        class Bar extends classAMixin(classBMixin(Base)) { }
+        const bar = new Bar();
+        bar.baseFn()
+        bar.a()
+        bar.b()
+        console.log('********************************');
+        //example 
+
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+        }
+
+        class Employee extends Person {
+            constructor(name) {
+                super(name); // call the super class constructor and pass in the name parameter
+            }
+            info() {
+                console.log(`The Employee Name is: ${this.name}`);
+            }
+        }
+
+        let epl = new Employee('Max Müller');
+        epl.info();
+
+
+    //     class Bubble {
+    //         constructor(x, y, r) {
+    //             this.x = x;
+    //             this.y = y;
+    //             this.r = r;
+    //         }
+    //         move() {
+    //             this.x = x + random(-5, 5);
+    //             this.y = y + random(-5, 5);
+    //         }
+    //         show() {
+    //             stroke(255);
+    //             strokeWeiht(4);
+    //             noFill();
+    //             ellipse(this.x, this.y, this.r * 2);
+
+    //         }
+    //     }
+    //     let c = document.getElementById('canvas');
+    //     let bubble;
+    //     let radius=100;
+    //    showMe=new Bubble.show()
+
+    </script>
+</body>
+
+</html>

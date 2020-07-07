@@ -1,0 +1,31 @@
+
+.choice {
+    width: 100px;
+}
+
+.choiceBtn {
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.firstimg, .secoundimg {
+    width: 100px;
+}
+
+.firstimg{
+    animation: first 1s ease-out forwards;
+}
+
+.secoundimg{
+    animation: secound 1s ease-out forwards;
+}
+
+@keyframes first {
+    0% { transform: rotate(180deg) translateX(-50px);}
+    100% { transform: rotate(0) translateX(0);}
+}
+
+@keyframes secound {
+    0% { transform: rotate(-180deg) translateX(50px);}
+    100% { transform: rotate(0) translateX(0);}
+}

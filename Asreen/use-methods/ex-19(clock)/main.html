@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Emploee Site!</title>
+</head>
+
+<body>
+  <div class="container">
+    <!------------------- navigation bar------------------>
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <!----------------------- Header---------------------->
+    <div class="card mb-3">
+      <img src="photos/employees.jpg" class="card-img-top" alt="photo">
+      <div class="card-body">
+        <h5 class="card-title">Our Employees</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, perspiciatis!</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <!----------- table ----------->
+    <caption>The Employees List</caption>
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Salary</th>
+          <th scope="col">Profile-Image</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+      </tbody>
+    </table>
+    <div class="container">
+      <button class="btn btn-success" id="btn1" onclick="ageLessThan30()">Less than 30</button>
+      <button class="btn btn-success" id="btn2" onclick="lessOrEqual60()">Less or equal 60</button>
+      <button class="btn btn-success" id="btn4" onclick="salaryMore60000()">Salary>60000</button>
+      <button class="btn btn-success" id="btn5" onclick="totalCost()">total cost</button>
+      
+        <select id='selectItem' onchange="findEmployee(this.value)">
+          <!-- <button class="btn btn-success" id="btn6" onclick="findEmployee(selectItem.value)">Search </button> -->
+          <option id='employeeName' value="Jan">Jan</option>
+          <option id='employeeName' value="John">John</option>
+          <option id='employeeName' value="Antoni">Antoni</option>
+          <option id='employeeName' value="Amira">Amira</option>
+          <option id='employeeName' value="Ahmed">Ahmed</option>
+          <option id='employeeName' value="Max">Max</option>
+          <option id='employeeName' value="Sonia">Sonia</option>
+          <option id='employeeName' value="Sandra">Sandra</option>
+          <option id='employeeName' value="Jaimy">Jaimy</option>
+          <option id='employeeName' value="Samer">Samer</option>
+          <option id='employeeName' value="Cameron">Cameron</option>
+          <option id='employeeName' value="Daivd">Daivd</option>
+        </select>
+     
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body d-flex">
+        <p class="card-text">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Employee who is less than 30 years old</div>
+          <div class="card-body">
+            <p class="card-text" id="showInfo"></p>
+          </div>
+        </div>
+        </p>
+        <p class="card-text">
+        <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header">Employee who is more than 60 or equal years old</div>
+          <div class="card-body">
+            <p class="card-text" id="showInfo2"></p>
+          </div>
+        </div>
+        </p>
+        <p class="card-text">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+          <div class="card-header">Show employee whose salary is more than 60000</div>
+          <div class="card-body">
+            <p class="card-text" id="showInfo3"></p>
+          </div>
+        </div>
+        </p>
+        <p class="card-text">
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">The total cost of company for the employee</div>
+          <div class="card-body">
+            <p class="card-text" id="showInfo4"></p>
+          </div>
+        </div>
+        </p>
+        <p class="card-text">
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Search result</div>
+            <div class="card-body">
+              <p class="card-text" id="showInfo5"></p>
+            </div>
+          </div>
+          </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

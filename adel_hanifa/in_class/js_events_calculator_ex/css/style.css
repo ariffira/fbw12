@@ -1,0 +1,128 @@
+.style {
+    border-style: dotted;
+    width: 40%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.68);
+    background: linear-gradient(135deg, rgb(119, 174, 211) 25%, rgb(172, 218, 133) 75%);
+}
+
+.style img {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.style .button{
+    text-align: center;
+    float: left;
+}
+
+.style2 {
+    border-style: dotted;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.68);
+    background: linear-gradient(135deg, rgb(119, 174, 211) 25%, rgb(172, 218, 133) 75%);
+}
+
+.style2 button{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.style2 button:hover{
+    background-color: teal;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.grid {
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 90px 60px 60px 60px 60px 60px;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "ce  ce del mul"
+    "num7 num8 num9 div"
+    "num4 num5 num6 sub"
+    "num1 num2 num3 add"
+    "num0 num0 coma equ" ;
+}
+
+.style2 p{
+    grid-area: dis;
+    background-color: white;
+    opacity: 0.8;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+
+.num1 {
+    grid-area: num1;
+}
+.num2 {
+    grid-area: num2;
+}
+.num3 {
+    grid-area: num3;
+}
+.num4 {
+    grid-area: num4;
+}
+.num5 {
+    grid-area: num5;
+}
+.num6 {
+    grid-area: num6;
+}
+.num7 {
+    grid-area: num7;
+}
+.num8 {
+    grid-area: num8;
+}
+.num9 {
+    grid-area: num9;
+}
+.num0 {
+    grid-area: num0;
+}
+.coma {
+    grid-area: coma;
+}
+.add {
+    grid-area: add;
+}
+.sub {
+    grid-area: sub;
+}
+.mul {
+    grid-area: mul;
+}
+.div {
+    grid-area: div;
+}
+.equ {
+    grid-area: equ;
+}
+.ce {
+    grid-area: ce;
+}
+.del {
+    grid-area: del;
+}

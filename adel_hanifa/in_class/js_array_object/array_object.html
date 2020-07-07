@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Exercise *(Array Object)*</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #info2 {
+            width: 100%;
+        }
+
+        #info2 td,
+        #info2 th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #info2 th {
+            background-color: cornflowerblue;
+        }
+
+        li {
+            float: left;
+            margin: 0 20px;
+        }
+
+        #infoarray {
+            width: 80%;
+            text-align: left;
+            margin: auto;
+            font-size: larger;
+            box-shadow: 10px 10px 14px 0px rgba(140, 140, 140, 1);
+        }
+
+        #infoarray td,
+        #infoarray th {
+            padding: 5px;
+        }
+
+        #infoarray tr:nth-child(even) {
+            background-color: slateblue;
+        }
+
+        #infoarray tr:nth-child(odd) {
+            background-color: green;
+        }
+
+        #infoarray tr:nth-child(2) {
+            text-align: center;
+        }
+
+        #infoObject {
+            width: 80%;
+            text-align: left;
+            margin: auto;
+            font-size: larger;
+            color: blanchedalmond;
+            box-shadow: 10px 10px 14px 0px rgba(140, 140, 140, 1);
+        }
+
+        #infoObject td,
+        #infoObject th {
+            padding: 5px;
+        }
+
+        #infoObject tr:nth-child(even) {
+            background-color: brown;
+        }
+
+        #infoObject tr:nth-child(odd) {
+            background-color: coral;
+        }
+
+        #infoObject tr:nth-child(2) {
+            text-align: center;
+        }
+
+
+        .dci table th {
+            background-color: cornflowerblue;
+            width: 50%;
+            border: 1px solid black;
+        }
+        .dci table {
+            width: 100%;
+        }
+        .dci table td {
+            width: 50%;
+            border: 1px solid black;
+            background-color: rgb(235, 235, 235);
+
+        }
+
+        .dci {
+            width: 17%;
+            float: left;
+            margin-left: 2.5%;
+        }
+        .dci h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body style="width: 99%;">
+
+
+    <div style="width: 100%; margin-bottom: 20px; ">
+        <h1>Class Exercise 1</h1>
+        <div>
+            <h2>Class Info</h2>
+            <p id="info"></p>
+        </div>
+        <div>
+            <h2>Students Names:</h2>
+            <p id="names"></p>
+        </div>
+    </div>
+
+
+    <div style="width: 100%; margin-bottom: 20px;">
+        <hr>
+        <h1>Class Exercise 1 anthor way</h1>
+
+        <div>
+            <h2>Class Info</h2>
+            <table id="info2">
+            </table>
+        </div>
+        <div>
+            <h2>Students Names:</h2>
+            <ol id="names2"></ol>
+        </div>
+    </div>
+    
+    
+    <div style="width: 100%; margin-bottom: 20px;">
+        <hr>
+        <h1>Class Exercise 2</h1>
+
+        <div style="float: left; width: 50%;">
+            <h2 style="text-align: center;">My Info using Array</h2>
+            <table id="infoarray"></table>
+        </div>
+        <div style="float: right; width: 50%;">
+            <h2 style="text-align: center;">My Info using Object</h2>
+            <table id="infoObject"></table>
+        </div>
+    </div>
+
+    
+    <div style="width: 100%; margin-bottom: 20px;">
+        <hr>
+        <h1>Multi- D Array</h1>
+
+        <div style="width: 90%;  background-color: cornflowerblue; margin: auto;">
+            <h1 style="width: 100%; text-align: center;" id="company">The Institute </h1>
+            
+            <div class="dci" id="allinfo1"></div>
+            <div class="dci" id="allinfo2"></div>
+            <div class="dci" id="allinfo3"></div>
+            <div class="dci" id="allinfo4"></div>
+            <div class="dci" id="allinfo5"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/array_object.js"></script>
+</body>
+
+</html>

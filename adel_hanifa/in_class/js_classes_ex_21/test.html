@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>class test</title>
+    <style>
+        div {
+            border-radius: 10%;
+            text-align: center;
+            width: 400px;
+        }
+        #grandParentId {
+            background-color: burlywood;
+        }
+        #parentId {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    City:<input type="text" id="cityId"><br>
+    Country: <input type="text" id="countryId"><br>
+    Name: <input type="text" id="nameId"><br>
+    <button type="submit" onclick="updateData()">Update Data</button>
+    <div id="personId"></div>
+    <script>
+       let person = {
+           firstName: 'Arif',
+           lastName: 'Islam',
+           city: 'Essen',
+           country: 'Germany',
+        //    get fullname() {
+        //        return 'Fullname:' + this.firstName + ' ' +  this.lastName;
+        //    },
+        //    set fullname(newName) {
+        //        let nameArray = newName.split(' ');
+        //        this.firstName = nameArray[0];
+        //        this.lastName = nameArray[1];
+        //    }
+       }
+       display();
+       function updateData() {
+            let nameArray = nameId.value.split(' ');
+            person.firstName = nameArray[0];
+            person.lastName = nameArray[1];
+           person.city = cityId.value;
+           person.country = countryId.value;
+
+           display();
+       }
+       
+       function display() {
+        personId.innerHTML = `
+       <h1>Person Data </h1>
+       <h5>First Name: ${person.firstName}</h5>
+       <h5>Last Name: ${person.lastName}</h5>
+       <h5>Fullname: ${person.firstName} ${person.lastName}</h5>
+       <h5>City Name: ${person.city}</h5>
+       <h5>Country Name: ${person.country}</h5>
+       `;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 16 Shopping products</title>
+    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>My Online Store</h1>      
+    <p>products, products & products</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" onclick="showProductsPage()">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <!-- onclick="cartOnOff()" -->
+        <li><a href="#" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <sup class="badge badge-light" id="cartItem">0</sup> </a></li>
+      </ul>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="cartClass well" id="cartView">
+      </div>
+    </div>
+  </div>
+  
+</nav>
+
+
+<div class="container">    
+  <div class="row" id="categoryBar">
+    
+  </div>
+  <div class="row" id="containerID">
+    
+  </div>
+</div><br><br>
+
+
+
+<footer class="container-fluid text-center bg-info">
+  <p>Online Store Copyright</p>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+
+
+  <!-- Modal -->
+<div id="modalIdAll">
+
+  
+
+</div>
+
+
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
