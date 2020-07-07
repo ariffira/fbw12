@@ -1,0 +1,21 @@
+body {
+    background-image: url('https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920.jpg');
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 10%;
+}
+
+.container {
+    width: 40%;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+}

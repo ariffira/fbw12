@@ -1,0 +1,36 @@
+h2 {
+    width: 200px;
+    color: white;
+    text-shadow: 1px 2px black;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+p,
+#splText {
+    background-color: chartreuse;
+    border: 1px solid black;
+    padding: 2%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: chartreuse;
+}
+
+.card button {
+    padding: 2%;
+    background-color: blue;
+    color: white;
+    text-shadow: 1px 2px black;
+}
+
+#circle {
+    border: 1px solid black;
+    padding: 1%;
+    background-image: linear-gradient(rgb(177, 31, 31), red);
+    border-radius: 50%;
+    margin-left: 100px;
+}

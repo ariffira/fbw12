@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/exercise16.css">
+    <title>Shopping</title>
+
+</head>
+
+<body>
+    <!-- start header -->
+    <!-- class="header fixed-top" -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+            <!-- logo -->
+            <button type="button" class="navbar-brand logo btn" onclick="homePage()">Shopping</button>
+
+
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- end Logo -->
+
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div id="cart"></div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="fev"></div>
+                    </li>
+
+
+                </ul>
+
+
+
+                <!-- start Search Area -->
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
+                    <select class="form-control btn btn-light " id="sel1" name="sellist1">
+                        <option class="dropdown-item">All</option>
+                        <option class="dropdown-item">Pants</option>
+                        <option class="dropdown-item">Shirt</option>
+                        <option class="dropdown-item">SANDAL</option>
+                        <option class="dropdown-item">T-Shirt</option>
+                    </select>
+                    <button class="btn btn-success my-2 my-sm-0" type="button" onclick="search()">Search</button>
+                </form>
+
+                <!-- end Search Area -->
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main class="container">
+        <div class="row" id="view">
+
+        </div>
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="footer pt-11 pb-3 bg-dark text-base">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-2 col-md-4 col-6 ">
+                        <div class="mb-4">
+                            <h4 class="mb-4 text-white ">About</h4>
+                            <ul class="list-unstyled list-group">
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Meet Coach</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Press</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Social Feed</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link"> Help</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6  ">
+                        <div class="mb-4">
+                            <h4 class="mb-4 text-white  ">Blog</h4>
+                            <ul class="list-unstyled list-group ">
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Business Coaching</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Relationship</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Leadership</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Life Coaching</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Time Management</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 ">
+                        <div class="mb-4">
+                            <h4 class="mb-4 text-white  ">Resources</h4>
+                            <ul class="list-unstyled list-group ">
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Online Courses</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link"> Books Meditation</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link"> Podcast</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Albums</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Download App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 ">
+                        <div class="mb-4">
+                            <h4 class="mb-4 text-white  ">Follow Me</h4>
+                            <ul class="list-unstyled list-group">
+                                <li class="list-group-item bg-dark text-reset "><a href="#" class="list-group-item-link">Instagram</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link"> Facebook</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link"> LinkedIn</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">YouTube</a></li>
+                                <li class="list-group-item bg-dark text-reset"><a href="#" class="list-group-item-link">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="mt-8">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">© 2020 Coach, Inc.</li>
+                                <li class="list-inline-item"><a href="#" class="text-reset"> Privacy Policy </a></li>
+                                <li class="list-inline-item"><a href="#" class="text-reset"> Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- java script part -->
+    <script src="https://kit.fontawesome.com/7ec7cff205.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/exercise16.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+img {
+    width: 20%;
+}
+
+#selectId {
+    width: fit-content;
+}
+
+.choice {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}

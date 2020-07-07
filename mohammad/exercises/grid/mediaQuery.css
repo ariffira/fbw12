@@ -1,0 +1,53 @@
+/*  */
+
+
+/* media query format
+@media only|not media-type and (some size) {.....} */
+
+
+/* smart phone */
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    .container {
+        border: 1px solid orange;
+        color: white;
+        background-color: black;
+        margin: 5%;
+    }
+}
+
+
+/* taplet */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .container {
+        border: 1px solid red;
+        color: white;
+        background-color: green;
+        margin: 15%;
+    }
+}
+
+
+/* Desktops & laptops */
+
+@media only screen and (min-width: 1224px) {
+    .container {
+        border: 1px solid black;
+        color: white;
+        background-color: coral;
+        margin: 20%;
+    }
+}
+
+
+/* Larger Screens */
+
+@media only screen and (min-width: 1824px) {
+    .container {
+        border: 1px solid black;
+        color: black;
+        background-color: yellow;
+        margin: 20%;
+    }
+}

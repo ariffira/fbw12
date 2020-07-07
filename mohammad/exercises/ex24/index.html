@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://www.bluefinllc.com/wp-content/uploads/2019/08/AdobeStock_120884346_sm-e1566503899644.jpg');
+        }
+        
+        .card {
+            background-color: rgba(50, 50, 199, 0.5);
+        }
+        
+        .card-body {
+            margin: auto;
+        }
+    </style>
+    <title>wither</title>
+</head>
+
+<body>
+
+    <!-- search part -->
+    <div class="input-group mb-3 col-5 container">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Writ the City</span>
+        </div>
+        <input type="text" class="form-control" id="city" placeholder="Username">
+        <button class="btn btn-secondary" onclick="temp()">Show</button>
+    </div>
+
+    <!-- showing the results -->
+    <div id="result"></div>
+
+
+    <!-- javascript Part -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/7ec7cff205.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        // image Array to show the weather condtion
+
+        let wither = ['https://46.media.tumblr.com/3716721951212d7704fa1c9fe2c27604/tumblr_o4nravMJAP1rxpqewo1_500.gif',
+            'https://i.gifer.com/1KL8.gif',
+            'https://sofiaglobe.com/wp-content/uploads/2012/07/hot-sun-photo-Nate-Brelsford-sxc-hu-e1342276621276.jpg'
+        ];
+
+
+        // API Key
+
+        let API_Key = '7682f63c1fd8591547a646519d26b1db';
+
+
+        // geting weather from API
+
+        function temp() {
+            let cityTemp = city.value,
+                apiCity = `http://api.openweathermap.org/data/2.5/weather?q=${cityTemp}&APPID=${API_Key}`;
+            fetch(apiCity)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    return data;
+                }).then(showinfo)
+
+
+            //show the Information
+
+            function showinfo(data) {
+                result.innerHTML =
+                    `
+                    <div class="card-group">
+                        <div class="card container">
+                            <div class="card-body">
+                                <h1>${data.name}</h1>
+                                <h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
+                                ${(data.main.temp-273.15).toFixed(0)}<sup>o</sup>C<br>${(data.main.temp_max-273.15).toFixed(0)}/${(data.main.temp_min-273.15).toFixed(0)}<sup>o</sup>C</h2>
+                                <h3><i class="fas fa-thermometer-quarter"></i> feeling: ${(data.main.feels_like-273.15).toFixed(0)}<sup>o</sup>C</h3>
+                                <h3><i class="fas fa-file-medical-alt"></i> ${data.weather[0].description}</h3>
+                                <h3><i class="fas fa-tint"></i> Humidity: ${data.main.humidity}%</h3>
+                                <h3><span class="iconify" data-icon="mdi-weather-sunset-up" data-inline="false"></span> sun rise: ${getTime(data.sys.sunrise)}</h3>
+                                <h3><span class="iconify" data-icon="mdi-weather-sunset-down" data-inline="false"></span> sun set: ${getTime(data.sys.sunset)}</h3>
+                                <img src="${getImage(data.weather[0].main)}" style="width: 500px;height: 350px;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    `
+            }
+
+        }
+
+
+        // geting time and convert it
+
+        function getTime(time) {
+            // time is in seconds and in js we need to make in millisecond
+            let newTime = new Date(time * 1000).toLocaleTimeString();
+            return newTime;
+        }
+
+
+        // chose the image wich discr the weather
+
+        function getImage(weather) {
+            console.log(weather)
+            switch (weather) {
+                case "Clouds":
+                    return wither[1]
+                    break;
+
+                case "Rain":
+                    return wither[0]
+                    break;
+
+                default:
+                    return wither[2]
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

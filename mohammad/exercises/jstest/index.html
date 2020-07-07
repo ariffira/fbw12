@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Test</title>
+</head>
+
+<body>
+
+    <h1>Welcome to JavaScript learning</h1>
+
+    <p id="resultId"></p>
+
+
+    <!-- JavaScript -->
+    <script>
+        document.write('Hello JavaScript')
+            // variable: place where u can put something;
+        var x = 100;
+        var y = 400;
+        // operators +, -, /, *
+        console.log(x + y); //500
+        console.log(x - y); //-300
+        console.log(x / y); //100/400=1/4=0.25
+        console.log(x * y); //40000
+        var name1 = 'Arif';
+        var name2 = 'Islam';
+        console.log(name1 + name2); //Arif islam
+        console.log(x - name1); //NaN
+        console.log(name1 + 100); //Arif100
+
+        // way to write variable
+        // not allowed in first letter: numbers, special character, sign
+        // operators are not allowed(+,-,*,/,%)
+        // no space
+        // allowed in first letter: characters(a-z), Hiphen(_), dollar sign($)
+        // use camelCase
+        // js variable is case sensetive
+        var firstName, last_name, age, phone;
+        firstName = 'Mohammad ';
+        last_name = 'Joumah';
+        age = 29;
+        phone = '015723456789'
+        console.log('My First name: ' + firstName, last_name + '\n Iam ' + age + 'years old\n My phone is ' + phone);
+        document.write('<p>My First name: ' + firstName, last_name + '<br> Iam ' + age + 'years old <br> My phone is ' + phone + '</p>');
+
+        // Array: list of data values
+        var myFirstArray;
+        myFirstArray = ['Mohammad', 'Joumah', 29, 'Computer engineering']; //array of mix
+        console.log(myFirstArray);
+
+
+        // objects(blueprint/map of data): list of data values with key:value pair
+        var myFirstObject, font;
+        myFirstObject = {
+            name: 'Mohammad Joumah',
+            age: 29
+        };
+        document.write('<p>' + myFirstObject.name + '<br>' + myFirstObject.age + '</p>');
+
+        let number1 = 100;
+        let string1 = '500';
+        console.log(number1 + Number(string1)); // 400
+        document.getElementById('resultId').innerHTML += (number1 + Number(string1)) + '<br>';
+        console.log(string1 + number1); //400
+        document.getElementById('resultId').innerHTML += (string1 + number1) + '<br>';
+        // increment add extra 1 with old value
+        let viewers = 100;
+        ++viewers; // viewers = viewers + 1; 101
+        ++viewers;
+        102
+        ++viewers;
+        ++viewers;
+        104
+        console.log(viewers);
+    </script>
+</body>
+
+</html>

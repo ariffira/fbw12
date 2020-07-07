@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7ec7cff205.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="choice">
+        <select name="chose" id="selectId" class="form-control">
+            <option value="0"><i class="fas fa-hand-rock"></i>rock</option>
+            <option value="1"><i class="fas fa-hand-paper"></i>paper</option>
+            <option value="2"><i class="fas fa-hand-scissors"></i>scissors</option>
+        </select>
+        <button type="submit" class="btn btn-primary" onclick="showRsult()">Submit</button>
+
+        <div id="result"></div>
+
+        <div id="drow"></div>
+        <div class="row" id="score"><span id="User" class="col-3"></span><span id="computer" class="col-3"></span></div>
+    </div>
+    <!-- <div class="container">
+
+        <div class="form-check-inline">
+            <label class="form-check-label" for="radio1">
+          <input type="radio" class="form-check-input"  name="optradio" value="rock" onclick="showRsult()"> <i class="fas fa-hand-rock"></i> rock
+        </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" for="radio2">
+          <input type="radio" class="form-check-input"  name="optradio" value="paper" onclick="showRsult()"> <i class="fas fa-hand-paper"></i> paper
+        </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" for="radio3">
+          <input type="radio" class="form-check-input"  name="optradio" value="scissors" onclick="showRsult()"> <i class="fas fa-hand-scissors"></i> scissors
+        </label>
+        </div> -->
+    <!-- <button type="submit" class="btn btn-primary" onclick="showRsult()">Submit</button> -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

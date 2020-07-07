@@ -1,0 +1,24 @@
+/* header */
+
+
+/* logo */
+
+.logo {
+    font-family: 'Metal Mania', cursive;
+}
+
+.price {
+    position: relative;
+}
+
+.price b {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.price i {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
