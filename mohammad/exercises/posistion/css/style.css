@@ -1,0 +1,59 @@
+body {
+    margin: 5%;
+    color: black;
+    font-size: 1.7rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+}
+
+a,
+a:checked,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.tollbar {
+    bottom: 8%;
+    left: 40%;
+    position: fixed;
+}
+
+.slidelook {
+    width: 60%;
+    height: 75%;
+    position: relative;
+    left: 17.5%;
+    margin-bottom: 40%;
+    padding: 3%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.myphoto {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    float: left;
+}
+
+ul li {
+    list-style: none;
+}
+
+.conectlinks {
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.sendmassage {
+    width: 30%;
+    position: relative;
+    left: 35%;
+    border: solid 1px darkblue;
+    border-radius: 2%;
+}

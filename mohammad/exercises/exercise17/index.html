@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exercise17.css">
+    <title>Exercise17</title>
+</head>
+
+<body>
+
+    <table>
+        <caption>employees</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Profile picture</th>
+        </tr>
+        <tbody id="employeesTable"></tbody>
+        <tr>
+            <td><button onclick="less30Y()">less than 30 years old</button></td>
+            <td><button onclick="more60Y()">more than 60 or equal years old</button></td>
+            <td><button onclick="salaryMore60K()">salary is more than 60000</button></td>
+            <td><button onclick="totalCost()">total cost </button></td>
+            <td><span id="cost"></span></td>
+        </tr>
+
+
+    </table>
+
+    <script src="js/exercise17.js"></script>
+</body>
+
+</html>

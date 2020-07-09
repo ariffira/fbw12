@@ -1,0 +1,9 @@
+.price {
+    position: relative;
+}
+
+.price b {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}

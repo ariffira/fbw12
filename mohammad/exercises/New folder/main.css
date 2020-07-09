@@ -1,0 +1,106 @@
+label[for=fname] {
+    color: yellow;
+}
+
+input[name=fname] {
+    color: darkolivegreen;
+    background-color: darkgoldenrod;
+}
+
+label[for=lname] {
+    color: peru;
+}
+
+input[name=lname] {
+    color: white;
+    background-color: darkgreen;
+}
+
+form[action] {
+    background-color: black;
+}
+
+div[lang] {
+    background-color: brown;
+    color: darkblue;
+}
+
+ul>li:first-child {
+    color: tomato;
+}
+
+ul>li:last-child {
+    color: hotpink;
+}
+
+ul>li:nth-child(2) {
+    color: indigo;
+}
+
+ul>li:nth-child(3) {
+    color: lightblue;
+}
+
+ul>li:nth-child(4) {
+    color: blue;
+}
+
+ul>li:nth-child(5) {
+    color: red;
+}
+
+ol>li:nth-child(odd) {
+    color: yellow;
+}
+
+ol>li:nth-child(even) {
+    color: red;
+}
+
+ul::before {
+    content: url(https://img.icons8.com/material/4ac144/256/clock.png);
+}
+
+ol::after {
+    content: url(https://image.flaticon.com/icons/svg/1612/1612968.svg);
+}
+
+.container {
+    background-color: chocolate;
+}
+
+.container::after {
+    content: url(https://img.icons8.com/material/4ac144/256/clock.png);
+}
+
+.write {
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
+}
+
+.image {
+    width: 40%;
+    background-color: darkblue;
+    position: relative;
+}
+
+p::first-letter {
+    font-size: 5rem;
+}
+
+p::first-line {
+    background-color: yellow;
+}
+
+p::selection {
+    background-color: red;
+    color: white;
+}
+
+.background {
+    background-color: rgb(226, 175, 81);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Retro-flower-ornaments.svg);
+    background-position: center;
+    background-size: 100% 100%;
+}

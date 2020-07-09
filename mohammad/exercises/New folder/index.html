@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            padding: 51px;
+        }
+        
+        h1 {
+            z-index: -1;
+            top: 50px;
+            right: 0;
+            background-image: linear-gradient(white, green);
+            background-clip: padding-box;
+            background-repeat: no-repeat;
+            background-size: 100px 80px;
+            background-color: red;
+            opacity: 0.3;
+            transform: rotateX(150deg);
+            transition-delay: 0.5s;
+            position: relative;
+            animation-delay: 1s;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+        
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+            25% {
+                background-color: blue;
+                left: 0;
+                top: 200px;
+            }
+            50% {
+                background-color: green;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: yellow;
+                left: 200px;
+                top: 0;
+            }
+            100% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+        p {
+            background-image: linear-gradient(white, green);
+            overflow: scroll;
+            font: 20px italic "verdana";
+            text-align: right;
+            border-radius: 25px;
+            border: 1px solid transparent;
+            border-image: url("border.png") 30 stretch;
+        }
+        
+        p::before,
+        p::after {
+            background-image: url("smiley.gif");
+        }
+        
+        [title] {
+            border: hsl(0, 100%, 50%);
+        }
+        
+        th,
+        td {
+            border: 2px solid green;
+            border-collapse: collapse;
+        }
+        
+        ul li {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image">
+
+        <p class="write">Lorem, ipsum dolor.</p>
+
+        <img src="https://img.icons8.com/material/4ac144/256/clock.png">
+    </div>
+
+    <audio src=""></audio>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ol>
+
+
+    <div class="container">
+        Div container
+    </div>
+
+
+    <form action="#">
+        <label for="fname">First name:</label><br>
+        <input type="text" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="lname">
+
+    </form>
+    <div class="background">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae vitae dicta eius doloribus fuga fugit sapiente possimus enim consequatur, corrupti dolorum dignissimos id. Eligendi veniam dolorem commodi quod cum ab inventore? Ipsum voluptate facere
+            distinctio. Rerum quas sit distinctio error delectus reiciendis a recusandae rem libero, magni, ipsam iusto provident voluptatum optio tempore! Alias error ut modi eligendi aut nostrum cupiditate placeat ducimus dignissimos, laborum, delectus,
+            hic cumque libero quidem officia? Quasi odio ad similique excepturi expedita fugit illum ipsa ducimus, incidunt fuga dolorem eos quas culpa itaque molestiae, modi quod magni obcaecati sunt tempore aspernatur necessitatibus asperiores accusamus!
+            Aut dolorem, laborum perspiciatis fuga ad odio dignissimos, beatae nam sequi accusantium itaque natus eaque vero impedit. Magni fugit, beatae porro hic impedit nisi consequatur aliquam ipsa quae quibusdam non eum corporis in dicta libero modi
+            voluptates vitae rerum eius quos commodi. Quaerat reiciendis aliquam facilis incidunt, iure atque! Maxime veniam quidem dolores autem impedit tempora vero rerum culpa cum, odit a similique earum et nisi harum atque praesentium cupiditate iusto
+            quia maiores animi doloremque. Fugit ab earum reiciendis ipsam a nulla tempora repellendus, dolores dolorem accusantium minus, facere optio nesciunt et. A deserunt odit porro ad facilis, sequi quibusdam repellendus!
+        </p>
+    </div>
+</body>
+
+</html>

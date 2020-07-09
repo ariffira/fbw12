@@ -1,0 +1,145 @@
+/* line 1, ../../../Documents/sass project/sass/main.scss */
+body {
+  background-color: #a2b9bc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 5, ../../../Documents/sass project/sass/main.scss */
+body ul {
+  width: 25%;
+}
+
+/* line 7, ../../../Documents/sass project/sass/main.scss */
+body ul li {
+  padding: 1%;
+  list-style-type: none;
+  display: inline;
+}
+
+/* line 13, ../../../Documents/sass project/sass/main.scss */
+body a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* line 17, ../../../Documents/sass project/sass/main.scss */
+body a:hover {
+  color: green;
+}
+
+/* line 22, ../../../Documents/sass project/sass/main.scss */
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+}
+
+/* line 28, ../../../Documents/sass project/sass/main.scss */
+header div {
+  width: 25%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 33, ../../../Documents/sass project/sass/main.scss */
+header div img {
+  width: 100px;
+  height: 50px;
+}
+
+/* line 40, ../../../Documents/sass project/sass/main.scss */
+header ul li a {
+  font-family: 'Dancing Script', cursive;
+  font-size: large;
+}
+
+/* line 44, ../../../Documents/sass project/sass/main.scss */
+header ul li a:hover {
+  background-color: gray;
+}
+
+/* line 51, ../../../Documents/sass project/sass/main.scss */
+main {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 55, ../../../Documents/sass project/sass/main.scss */
+main aside {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 60, ../../../Documents/sass project/sass/main.scss */
+main section {
+  width: 80%;
+}
+
+/* line 61, ../../../Documents/sass project/sass/main.scss */
+main section .welcome {
+  position: relative;
+}
+
+/* line 63, ../../../Documents/sass project/sass/main.scss */
+main section .welcome img {
+  width: 100%;
+}
+
+/* line 66, ../../../Documents/sass project/sass/main.scss */
+main section .welcome h2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+/* line 73, ../../../Documents/sass project/sass/main.scss */
+main section .gridGalery {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 2%;
+}
+
+/* line 77, ../../../Documents/sass project/sass/main.scss */
+main section .gridGalery img {
+  width: 100%;
+}
+
+/* line 81, ../../../Documents/sass project/sass/main.scss */
+main section table {
+  padding: 5%;
+  background-color: green;
+  border-radius: 30% 30px;
+}
+
+/* line 85, ../../../Documents/sass project/sass/main.scss */
+main section table .button, main section table .buttonSend, main section table .buttonReset {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+/* line 90, ../../../Documents/sass project/sass/main.scss */
+main section table .buttonSend {
+  background-color: khaki;
+}
+
+/* line 94, ../../../Documents/sass project/sass/main.scss */
+main section table .buttonReset {
+  background-color: red;
+}
+
+/* line 102, ../../../Documents/sass project/sass/main.scss */
+footer {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5%;
+}
+
+/*# sourceMappingURL=main.css.map */

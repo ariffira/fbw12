@@ -1,0 +1,27 @@
+div {
+    margin: 1%;
+}
+
+#main {
+    width: 90%;
+    height: 30%;
+    border: 1px solid lightblue;
+    display: flex;
+}
+
+#main div {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+div p {
+    width: 100%;
+}
+
+div~#test {
+    color: gray;
+}
+
+#test1+p {
+    background-color: red;
+}

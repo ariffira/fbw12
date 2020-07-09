@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promise</title>
+</head>
+
+<body>
+    <div id="resultId"></div>
+    <script>
+        /*
+                          JS Promise
+                          - use keyword new Promise();
+                          - new Promise(function(resolve, reject){...})
+                          - resolve(1st arg): when successful then callback resolve
+                          - reject(2nd arg): when failed then callback reject
+                          - promise always give back something
+                        */
+        let married = false;
+        // create promise
+        //promise for get married
+        let willGetMarried = new Promise(function(resolve, reject) {
+            if (married) {
+                let marriageTools = {
+                    dress: 'Suit, tie, pant',
+                    money: ' 5000 euro',
+                    ring: 'Diamond'
+                }
+                resolve(marriageTools); //Marriage is done
+            } else {
+                let problem = new Error('He is not Ready');
+                reject(problem); //Marriage is failed
+            }
+        });
+        // ask the girl
+        let askHer = function() {
+            // Call the promise
+            willGetMarried
+                .then(function(marriageTools) {
+                    resultId.innerHTML = `
+               My Name is Paolo. If i get married I will get these:
+               <ul>
+               <li>${marriageTools.dress}</li>
+               <li> ${marriageTools.money}</li>
+               <li> ${marriageTools.ring}</li>
+               </ul>
+               `;
+                })
+                .catch(function(problem) {
+                    console.log(problem)
+                    resultId.innerHTML = problem;
+                });
+        }
+        askHer();
+    </script>
+</body>
+
+</html>

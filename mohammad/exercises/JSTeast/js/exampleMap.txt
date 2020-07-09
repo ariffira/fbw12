@@ -1,0 +1,36 @@
+//Global variable: array type
+//let products = new Array();
+//let products;//variable which is undefined
+let products = [
+    {
+        id: 1213,
+        name: 'Tomatoes',
+        color: ['red', 'green', 'yellow'],
+        size: ['small', 'medium', 'large']
+    },
+    {
+        id: 112,
+        name: 'Potatoes',
+        color: ['brown'],
+        size: ['xl', 'XLL', 'XS']
+    }
+];
+console.log(products);
+function getList(myArray) {
+    let list = '';
+    for(let i=0; i<myArray.length; i++) {
+       list += `<li>${myArray[i]}</li>`
+    }
+    return list;
+}
+//array.map(functionName);
+products.map(productList);
+function productList(item) {
+   //console.log(item);
+   document.getElementById('productList').innerHTML +=
+   `<h1>${item.id}</h1>
+    <h2>${item.name}</h2>
+    <ul>${getList(item.color)}</ul>
+    <ul>${getList(item.size)}</ul>
+   `;
+}

@@ -1,0 +1,170 @@
+.container {
+    display: grid;
+    /* grid template area:'value' 'value' */
+    grid-template-areas: 'header header header' 'left-menu main-content right-menu' 'footer footer footer';
+}
+
+
+/* start header */
+
+.header {
+    grid-area: header;
+    background-color: indianred;
+    display: grid;
+    grid-template-areas: 'home profile galery contact'
+}
+
+.home {
+    grid-area: home;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.galery {
+    grid-area: galery;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.header a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: red;
+    color: blue;
+}
+
+
+/* end header */
+
+
+/* start left menu */
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: goldenrod;
+}
+
+.left-menu li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.left-menu a {
+    color: crimson;
+}
+
+.left-menu li:hover,
+a:hover {
+    background-color: red;
+    color: blue;
+}
+
+
+/* end left menu */
+
+
+/* start content */
+
+.main-content {
+    grid-area: main-content;
+    background-color: indigo;
+}
+
+.artical {
+    display: grid;
+    grid-template-areas: 'head head' 'photo paragraph';
+}
+
+.artical1 {
+    display: grid;
+    grid-template-areas: 'head head' 'paragraph photo';
+}
+
+.head {
+    grid-area: head;
+    text-align: center;
+}
+
+.photo {
+    grid-area: photo;
+    width: 200px;
+    height: 150px;
+    margin: 0 0 2% 2%;
+}
+
+.paragraph {
+    grid-area: paragraph;
+    text-align: center;
+}
+
+
+/* end content */
+
+
+/* start right menu */
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: khaki;
+    display: grid;
+    grid-template-areas: 'card' 'five' 'parmind';
+}
+
+.card {
+    grid-area: card;
+}
+
+.five {
+    grid-area: five;
+}
+
+.parmind {
+    grid-area: parmind;
+}
+
+
+/* end right menu */
+
+
+/* start footer */
+
+.footer {
+    grid-area: footer;
+    background-color: gray;
+    display: grid;
+    grid-template-areas: 'left right';
+}
+
+.footer li {
+    margin-right: 1%;
+    display: inline;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+
+/* end footer */
+
+
+/* smart phone */
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    .container {
+        display: grid;
+        grid-template-areas: 'header header header' 'left-menu' 'main-content' 'right-menu' 'footer footer footer';
+    }
+}
