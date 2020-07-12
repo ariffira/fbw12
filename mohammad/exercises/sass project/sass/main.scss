@@ -1,0 +1,107 @@
+body {
+    background-color: #a2b9bc;
+    display: flex;
+    flex-direction: column;
+    ul {
+        width: 25%;
+        li {
+            padding: 1%;
+            list-style-type: none;
+            display: inline;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    a:hover {
+        color: green;
+    }
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    div {
+        width: 25%;
+        margin-left: 1%;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 100px;
+            height: 50px;
+        }
+    }
+    ul {
+        li {
+            a {
+                font-family: 'Dancing Script', cursive;
+                font-size: large;
+            }
+            a:hover {
+                background-color: gray;
+            }
+        }
+    }
+}
+
+main {
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-evenly;
+    aside {
+        width: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        .welcome {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            h2 {
+                position: absolute;
+                top: 45%;
+                left: 45%;
+            }
+        }
+        width: 80%;
+        .gridGalery {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 2%;
+            img {
+                width: 100%;
+            }
+        }
+        table {
+            padding: 5%;
+            background-color: green;
+            border-radius: 30% 30px;
+            .button {
+                width: 50px;
+                height: 40px;
+                border-radius: 10px;
+            }
+            .buttonSend {
+                @extend .button;
+                background-color: khaki;
+            }
+            .buttonReset {
+                @extend .button;
+                background-color: red;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+}

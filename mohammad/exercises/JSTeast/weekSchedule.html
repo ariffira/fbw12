@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/weekScedule.css">
+</head>
+
+<body>
+    <!-- <button onclick="ptwn()">click</button> -->
+    <div id="task" class="card">
+        <div>
+            <button onmouseover="on()" onmouseout="off()">On/off mouse</button>
+            <button onclick="on()">On</button>
+            <button onclick="off()">off </button>
+        </div>
+        <div id="light"></div>
+    </div>
+    <div class="card CalDiv ">
+        <h1>JS Calculator</h1>
+        <div>
+            Number 1:
+            <input type="text" id="number1">
+            <br><br> Number 2:
+            <input type="text" id="number2">
+            <br>
+            <br>
+            <button onclick="add()">
+                ADD(+)
+            </button>
+            <button onclick="sub()">
+                Sub(-)
+            </button>
+            <button onclick="mull()">
+                Mull(*)
+            </button>
+            <button onclick="div()">
+                Div(/)
+            </button>
+            <button onclick="rem()">
+                Rem
+            </button>
+            <button onclick="inc()">
+                Inc(++)
+            </button>
+            <button onclick="dec()">
+                Decr(--)
+            </button>
+            <br>
+            <div id="resultId"></div>
+        </div>
+    </div>
+
+
+    <script src="js/weekSchedule.js"></script>
+</body>
+
+</html>

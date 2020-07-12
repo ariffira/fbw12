@@ -1,0 +1,26 @@
+body {
+    background-color: chocolate;
+}
+
+.box {
+    background-image: linear-gradient(45deg, lightgreen, whitesmoke);
+    width: 40%;
+    padding: 5%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#result1 {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    background-color: brown;
+    color: white;
+    text-shadow: 1px 1px black;
+}

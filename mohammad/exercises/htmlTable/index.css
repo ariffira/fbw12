@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    padding: 0% 33%;
+}
+
+table {
+    background-color: lightblue;
+    border: 2px solid black;
+    align-content: center;
+}
+
+thead {
+    background-color: blue;
+    color: burlywood;
+}
+
+td {
+    border: 1px solid black;
+}
+
+img {
+    align-items: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+i {
+    color: brown;
+}

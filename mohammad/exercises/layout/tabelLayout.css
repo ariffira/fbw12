@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+    border: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.head {
+    background-color: blue;
+}
+
+.head td {
+    text-align: center;
+    padding: 10px;
+}
+
+.head td:hover {
+    background-color: skyblue;
+}
+
+.aside {
+    background-color: blue;
+}
+
+.aside ul li {
+    margin-bottom: 20%;
+    list-style-type: none;
+}
+
+.aside ul li:hover {
+    background-color: skyblue;
+}
+
+.content {
+    padding: 5%;
+}
+
+.foot ul li {
+    margin-right: 2%;
+    padding-left: 2%;
+}

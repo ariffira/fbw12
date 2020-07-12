@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    margin-top: 5%;
+    padding: 1%;
+    width: 450px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 400px;
+}
+
+#task {
+    margin-left: 10%;
+}
+
+#task h3 {
+    background-color: gray;
+    color: white;
+    text-shadow: 1px 2px black;
+    padding: 2%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#task img {
+    width: 400px;
+}
+
+.CalDiv {
+    background-image: linear-gradient(45deg, yellow, green);
+}
+
+button[onmouseover]:hover {
+    background-color: yellow;
+}
+
+button[onmouseover] {
+    background-color: gray;
+}
+
+button[onclick="on()"]:hover {
+    background-color: yellow;
+}
+
+button[onclick="off()"]:hover {
+    background-color: gray;
+}
+
+#resultId {
+    background-color: gray;
+    color: white;
+}

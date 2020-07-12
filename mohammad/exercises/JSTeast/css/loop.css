@@ -1,0 +1,31 @@
+/* #box {
+    margin-left: 20%;
+    width: 60%;
+    border: 1px solid black;
+}
+
+#pic {
+    display: flex;
+    overflow-x: scroll;
+}
+
+#pic div {
+    width: 100%;
+    margin-left: 45%;
+    padding: 2%;
+} */
+
+
+/* img {
+    width: 90%;
+    height: 60%;
+} 
+
+
+/* p {
+    margin: 40% 3%;
+} */
+
+div {
+    margin-bottom: 2%;
+}

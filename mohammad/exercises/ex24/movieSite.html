@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(37, 31, 31);
+        }
+        
+        .fas {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Give a Movie Title:" aria-label="Input group example" aria-describedby="btnGroupAddon" id="titleId">
+            <div class="input-group-prepend mr-1 ml-1">
+                <button type="submit" class="input-group-text" onclick="findMovie(titleId.value)">Search One</button>
+            </div>
+            <div class="input-group-prepend">
+                <button type="submit" class="input-group-text" onclick="findMovieMany(titleId.value)">Search Many</button>
+            </div>
+
+        </div>
+
+
+        <div id="movieData"></div>
+        <div id="movieDataAll"></div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/7ec7cff205.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        // API key for omdb site
+        let API_KEY = "89459220";
+
+        function findMovie(title) {
+            /*
+                Search Movie by title
+            */
+            fetch(`http://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    movieData.innerHTML =
+                        `
+                        <div class="col-md-10 mt-4">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+           
+                <strong class="d-inline-block mb-2 text-primary d-flex justify-content-between"><span>${data.Title}</span> <span><i class="fas fa-star"></i>${data.imdbRating}</span></strong>
+                <h3 class="mb-0 text-light">Director by: ${data.Director}</h3>
+                <div class="mb-1 text-muted">${data.Released}</div>
+                <p class="card-text text-light mb-auto">${data.Plot}</p>
+                
+            </div>
+            <div class="col-auto d-lg-block">
+                <img src="${data.Poster}" alt="movie poster" style="width: 200px;height: 100%;">
+            </div>
+        </div>
+    </div>
+                    `;
+                });
+        }
+
+
+        // Search Many movies
+        function findMovieMany(title) {
+            /*
+                Search Movie by title of many movies
+            */
+            movieData.innerHTML = '';
+            fetch(`http://www.omdbapi.com/?s=${title}&apikey=${API_KEY}`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    data.Search.map(function(movie) {
+
+                        movieData.innerHTML +=
+                            `
+                            
+                            <div class="col-md-9 mt-4" onclick="findMovie('${movie.Title}')">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+           
+                <strong class="d-inline-block mb-2 text-primary d-flex justify-content-between"><span>${movie.Title}</span> </strong>
+                
+                <div class="mb-1 text-muted">${movie.Year}</div>
+                
+                
+            </div>
+            <div class="col-auto d-lg-block">
+                <img src="${movie.Poster}" alt="movie poster" style="width: 200px;height: 100%;">
+            </div>
+        </div>
+    </div>
+                    `;
+
+                    });
+                });
+        }
+    </script>
+</body>
+
+</html>

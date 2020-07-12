@@ -1,0 +1,15 @@
+#clockId {
+    border: 2px solid black;
+    padding: 2%;
+    /* width: 270px; */
+    width: fit-content;
+    margin-left: 35%;
+    background-color: blue;
+    color: whitesmoke;
+    font-size: 90px;
+}
+
+h3 {
+    background-color: black;
+    color: blanchedalmond;
+}

@@ -1,0 +1,55 @@
+     /*
+ media query format
+ @media only|not media-type and (some size) { ....}
+    */
+     /* common code */
+     
+     @media all {
+         .container {
+             background-color: lightgrey;
+             color: black;
+         }
+         .top-menu {
+             background-color: chocolate;
+         }
+         .top-menu a {
+             border: 1px solid black;
+         }
+         a {
+             border: 1px solid black;
+             text-decoration: none;
+             color: white;
+             background-color: chocolate;
+         }
+         ul {
+             padding-inline-start: 0px;
+         }
+         li {
+             list-style-type: none;
+             margin: 0px;
+         }
+         h3 {
+             text-align: center;
+         }
+         a:hover {
+             background-color: hotpink;
+             color: white;
+         }
+         li:hover {
+             background-color: hotpink;
+             color: white;
+         }
+         .photo {
+             border-radius: 50%;
+         }
+         .footer {
+             background-color: cornsilk;
+             color: gray;
+             font-size: 8px;
+             text-align: center;
+         }
+     }
+     
+     @media only screen and (min-width: 1824px) {
+         /* your code */
+     }
