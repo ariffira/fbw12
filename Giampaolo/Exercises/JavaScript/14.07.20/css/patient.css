@@ -1,0 +1,27 @@
+table {
+	border: 25px ridge #ff8c00;
+	padding: 10px;
+    line-height: 30px;
+    background-color: #db9e4ede;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 25px;
+}
+
+td {
+    padding: 5px;
+    border-left: 1px solid black;
+    color: #ffffff;
+    text-shadow: 0 1px black, -1px 0 black, 1px 0 black, 0 -1px black;
+    font-size: larger;
+}
+
+th {
+    text-align: left;
+    width: 25%;
+    font-size: larger;
+}
+
+tr:nth-child(even) {
+    background-color: #e5ff0036;
+}

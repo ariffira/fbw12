@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to bottom, blue 25%, coral 50%, green 75%, violet 100%);
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+fieldset {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    border: outset 2px black;
+    background-color: #deb887de;
+}
+
+label {
+    font-size: larger;
+}
+
+legend {
+    font-size: xx-large;
+    color: #000000;
+    text-shadow: 0 1px crimson, -1px 0 crimson, 1px 0 crimson, 0 -1px crimson;
+}
+
+input, textarea {
+    width: -moz-available;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: inset 2px black;
+    background-color: lightsalmon;
+    font-size: medium;
+}
+
+input[type = radio] {
+    width: initial;
+}
+
+input:focus, input:active, textarea:focus, textarea:active {
+    background-color: #ff743d;
+    transition: 0.4s;
+    box-shadow: 0 0 4px 2px #91ff00;
+}
+
+#medicineYes, #label1, #allergieYes, #label2 {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: xxx-large;
+    color: #ff9100;
+    text-shadow: 0 1px black, -1px 0 black, 1px 0 black, 0 -1px black;
+    text-shadow: 0 0 4px snow;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:10px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Georgia;
+	font-size:20px;
+	font-weight:bold;
+	padding:9px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<object type="application/x-shockwave-flash" id="flashContent"
+    data="https://s9-it.tanoth.gameforge.com:443/webroot/client_7302/Game.swf" width="1024" height="716"
+    style="visibility: visible;">
+    <param name="bgcolor" value="#000000">
+    <param name="allowFullScreen" value="true">
+    <param name="wmode" value="transparent">
+    <param name="flashvars"
+        value="sessionID=mw2f69dvjiag&amp;language=it&amp;serverpath=https://s9-it.tanoth.gameforge.com:11409/&amp;forumLink=https://forum.tanoth.gameforge.com/&amp;servertime=1594363510&amp;basepath=https://s9-it.tanoth.gameforge.com:443/webroot/client_7302/&amp;logoutRedirect=https://s9-it.tanoth.gameforge.com:443/&amp;paymentLink=https%3A%2F%2Fpurchase.gamepay.de%2Fxml%2Fpurchase.it%2Fjumpin%3Fgame_id%3Dlegend%26user_id%3D413%26server%3D9%26username%3DArthos%26email%3Dgiampaololocascio%2540gmail.com%26lang%3Dit%26product_id%3Dlegend-c-curren%26display%3Dselectpm%26checksum%3Deab2dd38918ef1cac4a6f204828c5344&amp;chatserverPort=10409&amp;isTestserver=false&amp;showGameEvent=false">
+</object>
+
+
+
+<div id="showPictures">
+
+</div>
+
+<body>
+
+    <!-- JavaScript -->
+    <script>
+        // With .split()
+        // let strings = 'Giampaolo, 27, Duisburg, Student'
+        // let [name, age, city, role] = strings.split(', ')
+        // console.log(name, age, city, role)
+        // console.log(age)
+        let API_KEY = '0154b0277c2c1c0b60de248181611c6b', server = 'eu'
+
+        fetch(`https://api.worldoftanks.${server}/wot/account/list/?application_id=${API_KEY}&search=arthos`)
+            .then(data => data.json())
+            .then(response => {
+
+                // response.data.map(item => {
+                //      let {nickname, account_id} = item;
+                //      console.log(typeof item);
+                //      console.log(item);
+                //      console.log(nickname);
+                //      console.log(account_id)
+                //  });
+
+                let { data: [{ nickname: id, account_id }] } = response;
+                console.log(typeof response);
+                console.log(response);
+                console.log(id);
+                console.log(account_id)
+            })
+            .catch(err => {
+                console.log(err);
+            });
+
+        let print = () => {
+            for (i = 0; i < 200; i++) {
+                showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/item/boots/item_boots${i}.png">`
+            }
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/DONKEY.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/FLYINGDRAGON.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/HELLHORSE.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/HORSE.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/SHADOWWOLF.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/MULE.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/GIANTEAGLE.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/WYRM.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/DONKEY.png">`
+            // showPictures.innerHTML += `<img src="https://s9-it.tanoth.gameforge.com/webroot/flashdata/gfx/animal/DONKEY.png">`
+        }
+
+        print()
+    </script>
+</body>
+
+</html>
