@@ -14,6 +14,8 @@ fieldset {
 
 label {
     font-size: larger;
+    font-style: italic;
+    line-height: 35px;
 }
 
 legend {
