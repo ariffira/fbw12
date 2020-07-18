@@ -38,25 +38,39 @@ myForm.addEventListener('submit', function (e) {
   let bloodP = data.bloodP.value;
   let inputZip1 = data.inputZip.value;
   let l = document.getElementsByName('allergy');
+  //list of disease from html select all options
+  let problems = [];
+  let diseases = data.disease;
+  console.log(diseases.length,problems.length);
+  for (let i = 0; i < diseases.length; i++) {
+    console.log(diseases[i].selected);// true=select an option
+    if (diseases[i].selected) {
+      problems.push(diseases[i].value);
+    }
+    console.log(problems.length);
+  }
+  console.log(problems);
+  localStorage.setItem('problems', problems);
   console.log(l)
   var checkedValues = [];
   var inputElements = document.getElementsByName('allergy');
-  for (var i = 0; i<inputElements.length; ++i) {
+  for (var i = 0; i < inputElements.length; ++i) {
     console.log(inputElements[i].checked)
     if (inputElements[i].checked) {
-      checkedValues.push(inputElements[i].value) ;
+      checkedValues.push(inputElements[i].value);
     }
   }
   //let adress = [city1, inputState1, inputZip1];
   console.log(firstName, lastName, age1, city1, inputZip1);
   let arr = [firstName, lastName, age1, gender, city1, inputZip1, city1, inputState1, inputZip1, diabetics, when, bloodP, rMedicine];
-   localStorage.setItem('allergyArr',checkedValues);
+  localStorage.setItem('allergyArr', checkedValues);
   console.log(arr);
   localStorage.setItem('myArr', arr);
   // save data inside local storage
   //result.innerHTML = fname.value;
 });
 
-function goLoc(){
-  window.location.href='info.html';
+function goLoc() {
+  window.location.href = 'info.html';
 }
+// disease
