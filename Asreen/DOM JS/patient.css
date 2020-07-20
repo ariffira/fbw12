@@ -1,0 +1,21 @@
+body {  
+    width:100%;
+    margin: 0;
+    background: linear-gradient(135deg,  #a9e4f7 20%,#0fb4e7 30%,#788831 50%); /* W3C */ 
+  }
+    #myForm
+    {margin:0 auto;
+     margin-top: 70px;
+     margin-bottom: 100px;
+    width: 800px;
+    background-color: rgba(128, 128, 128, 0.616)!important;
+    border: 1px solid gray;
+    box-shadow: 3px 0px 20px #333;
+    padding: 10px;
+  }
+  h1{
+    text-align: center; 
+    color: rgb(41, 17, 17);
+    font-weight: 900; 
+    text-shadow: 3px 3px 4px rgba(224, 38, 5, 0.671);
+}

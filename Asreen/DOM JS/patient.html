@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="patient.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+
+  <title>PreventDefault!</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Exercise 26 preventDefault()!</h1>
+    <h1>Medical History Form </h1>
+    <form id="myForm">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="fname"><i class="fas fa-user"></i> First name</label>
+          <input type="text" class="form-control" id="fname" name="fname">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="sname"><i class="fas fa-user-tie"></i> Sure name</label>
+          <input type="text" class="form-control" id="sname" name="sname">
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-around">
+        <div class="form-group  col-md-6">
+          <label for="jobTitle"><i class="fas fa-user-graduate"></i> Job Title</label>
+          <input type="text" class="form-control " id="jobTitle" name="jobTitle" placeholder="job Title">
+        </div>
+        <div class="form-group col-md-6">
+          <label id="age"><i class="fas fa-user-secret"></i> Age</label>
+          <input type="number" class="form-control" id="ageId" placeholder="Age" name='age'>
+        </div>
+      </div>
+      <div class="form-group" style="display:flex;justify-content:space-around;">
+        <label for="gender"><i class="fas fa-venus-mars"></i> Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputCity"><i class="fas fa-city"></i> City</label>
+          <input type="text" class="form-control" id="inputCity" name="city">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState"><i class="fas fa-flag-usa"></i> State</label>
+          <select id="inputState" class="form-control" name='inputState'>
+            <option selected>Germany</option>
+            <option>Iraq</option>
+            <option>Spain</option>
+            <option>UAE</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputZip"><i class="fas fa-microchip"></i>Zip</label>
+          <input type="text" class="form-control" id="inputZip" name="inputZip">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check d-flex justify-content-around">
+          <lable for="diabetics">Do you have diabetics?</lable>
+          <label for="diabetics">No</label><br>
+          <input type="radio" id="no" name="diabetics" value="no">
+          <label for="yesdiabetics">Yes</label><br>
+          <input type="radio" id="male" name="diabetics" value="yes">
+          <label for="when">When?</label>
+          <input type="text" class="form-control col-md-4" id="when" name="when" placeholder="If yes,when? ">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <h3><i class="fas fa-pump-medical"></i>Blood pressure info</h3>
+          <label for="bloodP">Blood pressure</label> <br>
+          <input type="radio" name="bloodP" value="high"><strong>High</strong> STAGE 1 130 – 139 or 80 – 89 <br>
+          <input type="radio" name="bloodP" value="normal"><strong>Normal</strong> LESS THAN 120 and LESS THAN 80 <br>
+          <input type="radio" name="bloodP" value="elevated"><strong>Elevated</strong> 120 – 129 and LESS THAN 80 <br>
+        </div>
+      </div>
+      <div class="form-group ">
+        <div class="form-row col-md-12">
+          <label for="medicine"><strong class="font-weight-bolder"><i class="fas fa-pills"></i>Do you take a regular medicine</strong></label>
+          <label for="medicine">No </label>
+          <input type="radio" id="no" name="medicine" value="no">
+          <label for="medicine">Yes</label>
+          <input type="radio" id="male" name="medicine" value="yes">
+          <label for="which">Which one,if yes?</label>
+          <input type="text" class="form-control col-md-2" id="when" name="which">
+        </div>
+      </div>
+      <strong><i class="fas fa-allergies"></i>Do you have Allergy</strong>
+      <div class="form-group d-flex justify-content-around">
+        <input type="checkbox" id="allergy1" name="allergy" value="Drug Allergy">
+        <label for="allergy">Drug Allergy</label><br>
+        <input type="checkbox" id="allergy2" name="allergy" value="Food Allergy">
+        <label for="allergy">Food Allergy</label><br>
+        <input type="checkbox" id="allergy3" name="allergy" value=" Insect Allergy">
+        <label for="allergy">Insect Allergy</label><br>
+        <input type="checkbox" id="allergy4" name="allergy" value="Latex Allergy">
+        <label for="allergy"> Latex Allergy</label><br>
+        <input type="checkbox" id="allergy5" name="allergy" value="Mold Allergy">
+        <label for="allergy">Mold Allergy</label><br>
+        <input type="checkbox" id="allergy6" name="allergy" value="Pet Allergy">
+        <label for="allergy">Pet Allergy</label><br>
+        <input type="checkbox" id="allergy7" name="allergy" value="Pollen Allergy">
+        <label for="allergy">Pollen Allergy</label>
+      </div>
+      <div>
+        <select class="form-control" name="disease" multiple>
+          <option value="fever">Fever</option>
+          <option value="preg">Pregnancy</option>
+          <option value="headache">Headache</option>
+          <option value="tumor">Tumor</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-warning" onclick="goLoc()">Info page</button>
+    </form>
+    
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <script src="patient.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

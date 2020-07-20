@@ -1,0 +1,98 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, darkorange 50%, crimson 100%) fixed;
+    color: #ffffff !important;
+    text-shadow: 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;
+}
+
+a.btn {
+    text-shadow: none !important;
+}
+
+.d-flex-low {
+    display: flex;
+}
+
+.mh-450 {
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.bg-transp {
+    background-color: transparent !important;
+}
+
+.bg-transp-black {
+    background-color: #0000008f !important;
+}
+
+.bg-radiant {
+    background: radial-gradient(circle at 90%, transparent 20%, #ff0062 65%, #8b0000 85%) fixed !important ;
+}
+
+.card-body-cards {
+    -ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 1.25rem;
+    max-height: 150px;
+    min-height: 150px !important;
+}
+
+#movieDataAll, #movieData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mw-content {
+    max-width: max-content;
+}
+
+.form-control::placeholder {
+	color: #c5b29c !important;
+}
+
+.form-control {
+	color: #ffd000 !important;
+	background-color: #da830065 !important;
+	border: 1px solid #000000 !important;
+}
+
+.form-control:focus, .form-control:active {
+	color: #000000 !important;
+	background-color: #da830083 !important;
+    box-shadow: 0 0 4px crimson !important;
+}
+
+/* add raiting stars */
+.stars-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ccc;
+}
+
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f8ce0b;
+}

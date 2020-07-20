@@ -1,0 +1,64 @@
+{
+    "name": "arthos",
+    "account_id": 500244100,
+    "battles": {
+        "total": "8742",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "45"
+    },
+    "averageTier": {
+        "total": "6,14",
+        "last24h": "0,00",
+        "last7d": "0,00",
+        "last30d": "7,96"
+    },
+    "victories": {
+        "total": "4287",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "20"
+    },
+    "defeats": {
+        "total": "4353",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "24"
+    },
+    "draws": {
+        "total": "102",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "1"
+    },
+    "battlesSurvived": {
+        "total": "2400",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "12"
+    },
+    "kills": {
+        "total": "7352",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "28"
+    },
+    "tanksSpotted": {
+        "total": "7309",
+        "last24h": "0",
+        "last7d": "0",
+        "last30d": "10"
+    },
+    "wn7": {
+        "total": "1023,43",
+        "last24h": "0,00",
+        "last7d": "0,00",
+        "last30d": "739,02"
+    },
+    "wn8": {
+        "total": "1179,11",
+        "last24h": "0,00",
+        "last7d": "0,00",
+        "last30d": "1010,66"
+    }
+}

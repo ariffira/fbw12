@@ -1,0 +1,68 @@
+#myModal {
+    background-color: rgba(143, 123, 123, 0.658);
+    color:white;
+    width:auto!important;
+  }
+
+  #myTable2 {
+    border: 4px ridge yellow;
+  }
+
+  body {
+      background-image: url('live-score.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    /* margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 10s ease infinite;
+    animation: gradientBG 5s ease infinite; */
+  }
+  th{
+      background-color: rgba(157, 194, 24, 0.678);
+      text-shadow: 3px 3px 4px blue;
+      color:white;
+      font-weight: 500px;
+      font-size: 16px;
+  }
+
+  h1 {
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 3px 3px 4px #212121;
+  }
+
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
+  .myButton {
+    border-radius: 7px;
+    border: 4px ridge yellow;
+  }
+  #choiceNU{
+    background-color: rgba(157, 194, 24, 0.678);
+    color:white;
+  }
+  #btn1{
+    background-color:  rgba(243, 237, 150, 0.205);
+    color:white;
+animation: change 5s ease-in-out infinite forwards;
+  }
+  @keyframes change{
+      0%{background-color: rgb(50, 54, 42);}
+      50%{background-color: rgb(190, 255, 105);}
+      100%{background-color: khaki;}
+  }
+
+  /* #seePhotos {
+        width: 200px;
+        height: 300px;
+        background-color: aqua;
+      } */

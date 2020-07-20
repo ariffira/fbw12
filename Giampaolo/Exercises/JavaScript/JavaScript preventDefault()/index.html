@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prevent default method</title>
+</head>
+
+<body>
+    <a href="#">Profile Page</a>
+    <a href="https://www.facebook.com/" id="linkFacebook">Facebook Profile</a>
+    <span id="myResult"></span>
+    <form>
+        Give a name:
+        <input type="text" id="nameId">
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <div id="result2"></div>
+
+    <script>
+        //event.preventDefault(): this method can stop default action
+        // anchor example
+        let gotoFaceBook = (e) => {
+            e.preventDefault();// this line stop the execution of default action
+            console.log(event)
+            myResult.innerHTML = 'I can control my default action';
+        }
+
+        // form example
+        let getName = (e) => {
+            e.preventDefault();
+            console.log(e.target);
+            result2.innerHTML = nameId.value;
+        }
+
+        linkFacebook.addEventListener("click", gotoFaceBook)
+        submitBtn.addEventListener("click", getName)
+    </script>
+</body>
+
+</html>

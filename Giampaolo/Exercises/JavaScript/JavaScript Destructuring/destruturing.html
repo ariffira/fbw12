@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Array
+        let city = ["Berlin", "DCI", "Hüttenstrasse 100", 45130];
+        //    let city_name = city[0];
+        //    let company_name = city[1];
+        //destructuring array
+        let [city_name, company_name, address, zip] = city;
+        console.log(city_name);
+
+        let [name, age, country, salary] = ["Arif", 32, "BD", 65000]
+        console.log(name, age, country, salary);
+
+        // rest parameter: receive inside function
+        // rest parameter takes rest of the arguments as an array
+        function restFunc(...jessica) { // receive data
+            console.log(jessica);
+            let multi = 1;
+            for (let i = 0; i < jessica.length; i++) {
+                multi = multi * jessica[i]
+            }
+            console.log(multi);
+        }
+
+        restFunc(5, 3, 2); //30
+        restFunc(1, 4, 6, 8, 10, 14, 14, 15, 19)
+
+        // spread operator: send into function
+        function spreadFunc(a, b) {
+            console.log(a * b);
+        }
+
+        let array1 = [10, 5]
+        spreadFunc(...array1);// array1[0], array[1]
+
+    </script>
+</body>
+
+</html>
