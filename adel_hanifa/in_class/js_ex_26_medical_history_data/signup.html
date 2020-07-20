@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Medical history</h1>
+            <p> of a patient data</p>
+        </div>
+    </div>
+
+    <div class=" navbar-inverse" style=" color: white;">
+        <div class="container text-center">
+            <br>
+            <h1 style="font-size: 60px;" id="textid2">Please fill the form below:</h1><br>
+
+            <form class="form-horizontal" onsubmit="createPatientData(event)">
+
+                <!-- First Name -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="firstName">First Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="firstName" placeholder="Enter your First Name"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Last Name: -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="lastName" placeholder="Enter your Last Name"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Birthday -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="birthday">Birthday:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" name="birthday" placeholder="Enter your Birthday"
+                            max="2002-07-14" min="1920-07-14" required>
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="gender">Gender:</label>
+                    <div class="col-sm-10">
+                        <p class="col-sm-2"><input type="radio" name="gender" value="Male" required> Male</p>
+                        <p class="col-sm-2"><input type="radio" name="gender" value="Female" required> Female</p>
+                        <p class="col-sm-2"><input type="radio" name="gender" value="Other" required> Other</p>
+                    </div>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="age">Age:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="age" placeholder="Enter your Age" min="0"
+                            required>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Country -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="country">Country:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="country" placeholder="Enter Your Country name"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address">Address:</label>
+                    <div class="col-sm-10">
+                        <!-- Street & Haus NR: -->
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="addressStreet" placeholder="Street"
+                                    required>
+                            </div>
+                            <div class="col-sm-3" style="padding-left: 0;">
+                                <input type="text" class="form-control" name="addressNr" placeholder="Haus_NR."
+                                    required>
+                            </div>
+                        </div>
+                        <!-- PLZ & City -->
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-sm-3">
+                                <input type="number" class="form-control" name="addressPlz" placeholder="Zip / PLZ"
+                                    min="0" pattern="[0-9]{5}" minlength="5" required>
+                            </div>
+                            <div class="col-sm-9" style="padding-left: 0;">
+                                <input type="text" class="form-control" name="addressCity" placeholder="City" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phoneNumber">Phone Number:</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" name="phoneNumber" placeholder="Enter your Phone Number"
+                            min="0" required>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- job title -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="jobTitle">Job title:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="jobTitle" placeholder="Enter Your job title"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="emailID" name="email" placeholder="Enter your Email" required>
+                        <span id="emailERR"></span>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="password">Health card:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="healthCardID" name="password" placeholder="Enter Your Health card number: A123456789"
+                            required>
+                        <span id="healthCardERR"></span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- emergency contact -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="emergencyContact">Emergency contact:</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" type="text" name="emergencyContact" rows="1"
+                            placeholder="Write something to emergency contact...." required></textarea>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Blood -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="blood">Blood info:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="blood"
+                            placeholder="Enter Your Blood pressure info" required>
+                    </div>
+                </div>
+
+                <!-- diabetics -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="diabetics">Diabetics info:</label>
+                    <div class="col-sm-2">
+                        <!-- Yes or NO -->
+                        <select class="form-control" id="diabeticsID" name="diabeticsYN" required>
+                            <option disabled selected>Do you have diabetics</option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-8" style="padding-left: 0;">
+                        <input type="number" id="diabeticsTEXT" class="form-control" name="diabeticsYear"
+                            placeholder=" (If yes) Enter Since any year" min="1900" max="2020"  required>
+                    </div>
+                </div>
+
+                <!-- Allergy -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="allergy">Allergy info:</label>
+                    <div class="col-sm-2">
+                        <!-- Yes or NO -->
+                        <select class="form-control" id="allergyID" name="allergyYN" required>
+                            <option disabled selected>Do you have allergy</option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-8" style="padding-left: 0;">
+                        <input type="text" id="allergyTEXT" class="form-control" name="allergyWhich"
+                            placeholder=" (If yes) Which one?" disabled required>
+                    </div>
+                </div>
+
+                <!-- medicine -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="medicine">Regular Medicine info:</label>
+                    <div class="col-sm-2">
+                        <!-- Yes or NO -->
+                        <select class="form-control" id="medicineID" name="medicineYN" required>
+                            <option disabled selected>Do you take any Regular medicine</option>
+                            <option>yes</option>
+                            <option>no</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-8" style="padding-left: 0;">
+                        <input type="text" id="medicineTEXT" class="form-control" name="medicineWhich"
+                            placeholder=" (If yes) Which one?" disabled required>
+                    </div>
+                </div>
+
+                <!-- symptoms experiencing -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="other">Select all Genetic diseases in your family:</label>
+                    <div class="col-sm-10" id="allOptionID">
+                        <!-- Yes or NO -->
+                        <select multiple class="form-control" name="other" required>
+                            <option selected>If nothing select this one</option>
+                            <option>Asthma</option>
+                            <option>Cancer</option>
+                            <option>Cardiac disease</option>
+                            <option>Diabetes</option>
+                            <option>Hypertension</option>
+                            <option>Psychiatric disorder</option>
+                            <option>Epilepsy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- your symptoms -->
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="symptoms">Check all your symptoms:</label>
+                    <div class="col-sm-10 text-left">
+                        <div class="row" id="allCheckID">
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Chest pain"> Chest pain</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Respiratory"> Respiratory</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Cardiac disease"> Cardiac disease</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Hematologic"> Hematologic</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Lymphatic"> Lymphatic</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Neurological"> Neurological</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Psychiatric"> Psychiatric</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Gastrointestinal"> Gastrointestinal</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Genitourinary"> Genitourinary</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Weight gain"> Weight gain</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Weight loss"> Weight loss</span>
+                            <span class="col-sm-4"><input type="checkbox" name="symptoms" value="Musculoskeletal"> Musculoskeletal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- buttons -->
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Send Data</button>
+                        <button type="reset" class="btn btn-danger">Clear the Form</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center bg-info footerHome">
+        <p>Medical history of a patient data Copyright</p>
+    </footer>
+
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+  }
+
+  
+  /* Remove the jumbotron's default bottom margin */ 
+   .jumbotron {
+    margin-bottom: 0;
+  }
+ 
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+
+
+
+.homecontainer h1 {
+  color: white;
+  font-size: 80px;
+}
+
+.homecontainer p {
+  color: white;
+  font-size: 35px;
+}
+
+.footerHome {
+  margin-top: 30px;
+}
+
+.homecontainer {
+  height: 340px;
+  color: white;
+}
+
+#healthCardERR, #emailERR{
+  position: absolute;
+  top: 8px;
+  font-weight: bolder;
+  color: red;
+}

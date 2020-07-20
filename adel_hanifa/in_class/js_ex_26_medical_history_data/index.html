@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>LOG IN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Medical history</h1>
+      <p> of a patient data</p>
+    </div>
+  </div>
+
+  <div class=" navbar-inverse">
+    <div class="container text-center homecontainer">
+      <br>
+      <h1 style="font-size: 60px;" id="textid">Enter patient login data:</h1><br>
+
+      <form class="form-horizontal col-sm-offset-3 col-sm-6" onsubmit="signIn(event)">
+        <div class="form-group ">
+          <input type="email" class="form-control" name="userEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="userPassword" placeholder="Health card">
+        </div>
+        <div class="form-group text-right row">
+          <button type="button" class="btn btn-danger" onclick="signup()">Sign up</button>
+          <button type="submit" class="btn btn-success">Log in</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  
+  <footer class="container-fluid text-center bg-info footerHome">
+    <p>Medical history of a patient data Copyright</p>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>
