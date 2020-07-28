@@ -35,10 +35,12 @@
   </div>
   <!-- Optional JavaScript -->
   <script>
+    let disease=localStorage.getItem('problems');
+    let diseases=disease.split(',');
     let myArr = localStorage.getItem('myArr');
     let checkedValues= localStorage.getItem('allergyArr');
     console.log(myArr);
-    console.log(typeof (myArr));
+    console.log(myArr,typeof (myArr),disease, typeof (disease));
     console.log(typeof (checkedValues));
     let arr = myArr.split(',');
     let checkedValues1= checkedValues.split(',');
@@ -103,6 +105,10 @@
     <tr>
       <th scope="row">Allergy</th>
       <td>${allergyA}</td>
+    </tr>
+    <tr>
+      <th scope="row">Diseases</th>
+      <td>${diseases}</td>
     </tr>
   </tbody>
 </table>`;
