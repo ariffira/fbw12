@@ -1,0 +1,57 @@
+#animateID {
+    margin: 0 auto;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(43, 139, 14);
+    /* opacity: 0.1; */
+  }
+  @keyframes move{
+      0%{transform: translatex(500px);} 
+     10%{transform: translatex(100px);} 
+     15%{transform: translatey(200px);} 
+     25%{transform: translatex(100px);}
+     75%{transform: translatey(500px);}
+      100%{transform: translatex(500px);}
+  }
+  * {
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+body {
+    background-origin: padding-box;
+    background-image: radial-gradient(circle, blue, rgb(161, 194, 15));
+
+}
+.container{
+  margin:10px auto;
+  padding:100px 400px;
+  color:lavender;
+  width:70%;
+ 
+}
+h1{
+  margin:0 auto;
+  font-size:35px;
+  font-weight: 900;
+  color:orange;
+  padding:20px 100px;
+}
+a{
+  margin:20px 20px;
+  padding:20px 20px;
+  font-size:20px;
+  font-weight: 900;
+  color:white;
+}
+article{
+    padding-top: 15px;
+    text-shadow: 2px 3px 10px rgb(252, 213, 213) , 2px 3px 20px rgb(204, 140, 140) , 2px 3px 30px rgb(160, 19, 19);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin:0 auto;
+}

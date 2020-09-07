@@ -1,0 +1,71 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+ * {
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*background-color: #7EC855;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+
+ body {
+  padding-top: 56px;
+}
+.thirdImg{
+  height: 200px!important;
+  width:100%!important;
+}
+.img-fluid{
+  height: 370px!important;
+  max-width: 100%;
+}
+#search-input{
+  border-radius: 7px;
+  background-color: burlywood;
+}
+.myCard{
+margin-bottom: 20px;  
+}
+
+ .card-img-top{
+  height: 370px;
+} 
+#proImage{
+  width:260px;
+  height: 270px;
+  text-align: center;
+}
+#proImage:hover{
+  width: 270px;
+}
+  
+#cartInfo{
+  display: none;
+  position: absolute;
+  padding:5px 10px;
+  top:65px;
+  right: 10px;
+  z-index: 1;
+  width:500px;
+  float: right;
+}
+#searchInfo{
+  display: none;
+  position: absolute;
+  padding:5px 10px;
+  top:40px;
+  right: 300px;
+  z-index: 1;
+  width:500px;
+  float: right;
+}
+

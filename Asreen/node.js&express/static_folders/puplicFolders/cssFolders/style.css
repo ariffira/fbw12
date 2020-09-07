@@ -1,0 +1,16 @@
+#animateID {
+    margin: 0 auto;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(43, 139, 14);
+    /* opacity: 0.1; */
+  }
+  @keyframes move{
+      0%{transform: translatex(500px);} 
+     10%{transform: translatex(100px);} 
+     15%{transform: translatey(200px);} 
+     25%{transform: translatex(100px);}
+     75%{transform: translatey(500px);}
+      100%{transform: translatex(500px);}
+  }

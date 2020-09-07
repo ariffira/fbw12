@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Express.js /abput page!</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+            cursor: pointer;
+        }
+
+        body {
+            background-origin: padding-box;
+            background-image: radial-gradient(circle, blue, rgb(161, 194, 15));
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="headerText">About page!<span>Hallo :) </span></h1>
+    <h1 class="text-center">About Page</h1>
+    <div class="contaiter">
+        <div class="container">
+            <div class="container">
+                <ul class="list-groub">
+                    <li class="list-item">Name:Asreen Ilyas</li>
+                    <li class="list-item">Adress: Musterstraße 12, 40680 Meerbusch</li>
+                    <li class="list-item">Learning at home</li>
+                    <li class="list-item">Web-Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOM javascript -->
+    <script>
+        console.dir(document);
+        console.log('domain is: ' + document.domain);
+        console.log('URL: ' + document.URL);
+        console.log(document.all)
+        console.log(document.all[5])
+        console.log(document.querySelector('.container'));
+        headerText.style.borderBottom = '3px ridge yellow';
+        let items = document.getElementsByClassName('list-item');
+        document.querySelector('li:nth-child(3)').addEventListener('mouseup',changeStyle2,true);
+        console.log(items)
+        items[1].textContent = 'the second item';
+        items[1].style.fontWeight = '700';
+        for (let i = 0; i < items.length; i++) {
+            items[i].addEventListener('mousedown', changeStyle,true);
+           
+        }
+
+        function changeStyle(e) {
+            let item = e.target;
+            item.textContent = 'event type ist mousedown';
+            item.style.backgroundColor = 'hotpink';
+        }
+
+        function changeStyle2(e) {
+            let item = e.target;
+            console.log(item, item.textContent);
+            item.innerText='When event mouseup';
+            item.style.backgroundColor = 'blue';
+        }
+        let odd = document.querySelectorAll('li:nth-child(odd)');
+        let even = document.querySelectorAll('li:nth-child(even)');
+        for(let i=0;i<odd.length;i++){
+            odd[i].style.backgroundColor='lightblue';
+            even[i].style.backgroundColor='#f4f4f4';
+        }
+
+
+
+
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
