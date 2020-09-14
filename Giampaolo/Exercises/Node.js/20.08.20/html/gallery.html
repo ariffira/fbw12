@@ -5,13 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .jumbotron {
+            background-color: darkgray !important;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Gallery</h1>
-    <a href="/">Homepage</a>
-    <a href="/aboutme">About Me</a>
-    <a href="/gallery">Gallery</a>
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container">
+            <h1 class="display-4">Gallery</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="" loading="lazy">
+            Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutme">About Me</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/gallery">Gallery</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fandrejtarfila.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fdsc_9510_hdr1_p2-2_p3_p-400x400.jpg&f=1&nofb=1" alt="Nature.pic"></div>
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F39%2F97%2F76%2F399776a24daec5f2e9028941cb5ffd94.jpg&f=1&nofb=1" alt="Nature.pic"></div>
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimage.blingee.com%2Fimages17%2Fcontent%2Foutput%2F000%2F000%2F000%2F64a%2F553650356_765517.gif%3F4&f=1&nofb=1" alt="Nature.pic"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fturismocaravaca.com%2Fimages%2Fnuestra-tierra%2Fnt-naturaleza.jpg&f=1&nofb=1" alt="Nature.pic"></div>
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.sDrUXKpgXIBbgH94fdjksQAAAA%26pid%3DApi&f=1" alt="Nature.pic"></div>
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7ihVdRAHeEPYXE-MybcN8QAAAA%26pid%3DApi&f=1" alt="Nature.pic"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qjJyEJYkgt8FZyQAGSRLPAAAAA%26pid%3DApi&f=1" alt="Nature.pic"></div>
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.SZNIt4q1-j49hSlOuaGcEAAAAA%26pid%3DApi&f=1" alt="Nature.pic"></div>
+            <div class="col-sm-4"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhike.rwinters.com%2Fimages%2Fnature%2FProspectHill-WildGeranium-5-19-02-JB.jpg&f=1&nofb=1" alt="Nature.pic"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

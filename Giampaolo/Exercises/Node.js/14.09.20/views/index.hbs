@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Personal Website</th>
+            <th scope="col">Company Infos</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each user}}
+        <tr>
+            <th scope="row">{{id}}</th>
+            <td><a href="/user/{{id}}">{{name}}</a></td>
+            <td>{{username}}</td>
+            <td>{{email}}</td>
+            <td>{{address.street}}<br>{{address.suite}}<br>{{address.city}} {{address.zipcode}}</td>
+            <td>{{phone}}</td>
+            <td>{{website}}</td>
+            <td><b>{{company.name}}</b><br>{{company.catchPhrase}}<br><b>{{company.bs}}</b></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

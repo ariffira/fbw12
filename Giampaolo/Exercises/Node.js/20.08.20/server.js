@@ -37,19 +37,15 @@ http.createServer((req, res) => {
         break;
 
         default:
-            res.write('404 Not Found')
+            fs.readFile('html/404.html', (err, data) => {
+                if (err) throw err;
+                res.writeHead(404, { 'Content-type': 'text/html' });
+                res.write(data);
+                res.end();
+            })
         break;
     }
 
-    // let q = url.parse(req.url, true)
-    // console.log(typeof q)
-    // console.log(q)
-    // console.log(q.query)
-
-    // let webpage = '.' + q.pathname;
-    // console.log(webpage);
-
-
 }).listen(PORT, host, () => {
-    console.log(`The server is running on ${host}:${PORT}`)
-})
+    console.log(`The server is running on ${host}:${PORT}`);
+});
