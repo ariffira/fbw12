@@ -17,7 +17,7 @@ const PORT = 8000;
 const host = 'localhost';
 
 // MongoDB Database
-const database = 'mongodb+srv://Arthos:qXV92J5cFaucVX8@cluster0.yurbd.mongodb.net/test';
+const database = 'mongodb+srv://Arthos:<password>@cluster0.yurbd.mongodb.net/test';
 
 // Static Folder - Settings
 app.use(express.static(__dirname + '/public'));
