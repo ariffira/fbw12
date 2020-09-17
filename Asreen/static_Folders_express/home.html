@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/cssFolders/style.css">
+  <title>main page</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Some of my work</h1>
+    <a href="/home">HOME PAGE</a>
+    <a href="page1">Page1</a>
+    <a href="page2">Page1</a>
+  </div>
+  <form onsubmit="event.preventDefault();">
+    <select name="flags" id="flags">
+      <option value="egypt">egypt</option>
+      <option value="greece">greece</option>
+      <option value="france">france</option>
+      <option value="bangladesh">egypt</option>
+      <option value="india">india</option>
+      <option value="russia">russia</option>
+      <option value="iraq">iraq</option>
+      <option value="china">china</option>
+      <option value="italy">italy</option>
+      <option value="germany">germany</option>
+    </select>
+    <button id='btnId' onclick="changeFlage()">Show the flage</button>
+  </form>
+  <img class="logo" src="http://localhost:3000/images/Heading.png" alt="My_Logo">
+  <article>
+    <div class="card" id="showPic">
+    </div>
+  </article>
+  <script src="jsFolders/home.js"></script>
+</body>
+
+</html>

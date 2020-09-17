@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+            color: lavender;
+            margin: 50px 50px;
+        }
+
+        .bigBorder {
+            border: 5px inset lightblue;
+        }
+
+        .fa {
+            font-size: 30px;
+            padding: 15px 15px;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            padding-left: 13px;
+            border-radius: 50%;
+            background-color: lightyellow;
+        }
+
+        .picClass {
+            border: 5px ridge rgb(250, 252, 127);
+            height: 300px !important;
+            transition: transform 2s ease, filter 1.5s ease-in-out;
+            transform-origin: center center;
+            filter: brightness(50%);
+        }
+
+        .picClass:hover {
+            border: 4px inset lightblue;
+            transform: scale(1.5);
+            filter: brightness(100%);
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin:50px 50px;
+        }
+
+        .list li {
+             flex: 1; /* The flex property is a shorthand property for:flex-grow flex:0; flex-shrink flex:1; flex-basis flex: auto; */
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: inherit;
+            padding-top: 1rem;
+            display: block;
+            text-align: center;
+            overflow: hidden;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .list li a span {
+            display: block;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0.5rem;
+            font-size: 22px;
+            margin-top: 1rem;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .list {
+              display: block;
+              width:100%;
+              margin:0 auto;
+            }
+        }
+
+        @media (hover: hover) {
+            .list li a span {
+                transform: translateY(100px);
+                transition: 0.2s;
+            }
+
+            .list:hover span {
+                transform: translateY(0);
+            }
+
+            .list li:nth-child(1) span {
+                transition-delay: 0.0s;
+            }
+
+            .list li:nth-child(2) span {
+                transition-delay: 0.05s;
+            }
+
+            .list li:nth-child(3) span {
+                transition-delay: 0.1s;
+            }
+
+            .list li:nth-child(4) span {
+                transition-delay: 0.15s;
+            }
+
+            .list li:nth-child(5) span {
+                transition-delay: 0.2s;
+            }
+
+            .list li:nth-child(6) span {
+                transition-delay: 0.25s;
+            }
+        }
+
+        .list li:nth-child(1) {
+            background: #333435;
+        }
+
+        .list li:nth-child(2) {
+            background: #303a3b;
+        }
+
+        .list li:nth-child(3) {
+            background: #3c5e3d;
+        }
+
+        .list li:nth-child(4) {
+            background: #838b3b;
+        }
+
+        .list li:nth-child(5) {
+            background: #c0b128;
+        }
+
+        .list li:nth-child(6) {
+            background: #e3fc01;
+        }
+        .container2{
+            margin-top:30px!important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container bigBorder" style="background-color: rgba(0, 0, 0, 0.575);"> -->
+
+    <div style="background-color: rgba(0, 0, 0, 0.445);">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="mt-4 container2">
+                    <a href="#" class="mt-4"><img src="https://i1.wp.com/looks-awesome.com/wp-content/uploads/2019/04/How-to-Write-an-Engaging-About-Me-Page-for-a-WordPress-Website.jpg?fit=810%2C400&ssl=1" class="img-responsive pt-4" style="height: 400px; width:100%;"></a>
+                    <h1 class="main-title" style="color: orange;"><span class="thin">About</span> Me</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active text-warning"><a href="main.html">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="btn"><a href="aboutme.html"><span
+                                class="glyphicon glyphicon-log-in text-warning"></span>
+                            More Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="text-bold text-large" style="color: orange;">My Certificats</h3><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <p>Bachelor-certificate in German 1 </p>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-design-template-6741de5d3b2cad112151535be3583b90.jpg?ts=1578626190" class="img-responsive picClass"
+                    style="width:100%;height: 300px;" alt="Image">
+            </div>
+            <div class="col-sm-3 ">
+                <p> Bachelor-certificate in German 2</p>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-design-template-6741de5d3b2cad112151535be3583b90.jpg?ts=1578626190" class="img-responsive picClass"
+                    style="width:100%; height: 300px;" alt="Image">
+            </div>
+            <div class="col-sm-3 ">
+                <p> Orientation-Course in DCI </p>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-design-template-6741de5d3b2cad112151535be3583b90.jpg?ts=1578626190" class="img-responsive picClass"
+                    style="width:100%;height: 300px;" alt="Image">
+            </div>
+            <div class="col-sm-3 ">
+                <p class="text-bold">C1-level in German in 2019 </p>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-design-template-6741de5d3b2cad112151535be3583b90.jpg?ts=1578626190" class="img-responsive picClass" style="width:100%;height: 300px; "
+                    alt="Image">
+            </div>
+        </div>
+
+        <br> <br>
+        <div class="container-fluid  text-center">
+            <ul class="list  container-fluid  text-center">
+                <li class="col-lg-2 col-md-6"><a href="#">① <span>This 🚫</span></a></li>
+                <li class="col-lg-2 col-md-6"><a href="#">② <span>is ⏳</span></a></li>
+                <li class="col-lg-2 col-md-6"><a href="#">③ <span>Asreen 🎀</span></a></li>
+                <li class="col-lg-2 col-md-6"><a href="#">④ <span>Ilyas 📝</span></a></li>
+                <li class="col-lg-2 col-md-6"><a href="#">⑤ <span>Web 🎫</span></a></li>
+                <li class="col-lg-2 col-md-6"><a href="#">⑥ <span>Developer 🤩</span></a></li>
+            </ul>
+        </div>
+    </div><br>
+
+
+    <div class="container-fluid text-center ">
+        <!-- footer and social media icons-->
+        <div style="margin-bottom: 0px;" class="mt-5 mb-5">
+            <div class="ic flex-column" style="border-color:none; margin-bottom: 5px;">
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook text-primary icon"></a>
+                <a href="#" class="fa fa-twitter text-large icon"></a>
+                <a href="#" class="fa fa-google text-light icon"></a>
+                <a href="#" class="fa fa-linkedin text-info icon"></a>
+                <a href="#" class="fa fa-instagram text-danger icon"></a>
+            </div>
+        </div>
+        <p style="z-index: 1;">
+        <h5 class="text-center m-4 text-bold" style="font-size:20px;">Asreen-Mein Portfolio 2020</h5>
+        </p>
+    </div>
+    <!-- </div> -->
+    <!-- bootstrap script links-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

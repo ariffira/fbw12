@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+</head>
+
+<body>
+    <h1>Form</h1>
+
+    <div class="main-container">
+        <form action="submitted.html" method="post" name="form">
+            <div class="container">
+                <fieldset id="mainInfo">
+                    <legend>Main Data</legend>
+
+                    <label for="">Name</label><br>
+                    <input type="text" name="Name" id="firstName" required><br>
+                    <label for="">Surname</label><br>
+                    <input type="text" name="Surname" id="lastName" required><br>
+                    <label for="">Age</label><br>
+                    <input type="number" name="Age" id="age" required>
+
+                    <fieldset id="genderInfo">
+                        <legend>Gender</legend>
+                        <input type="radio" id="male" name="Gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="Gender" value="Female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="Gender" value="Other" required>
+                        <label for="other">Other</label>
+                    </fieldset>
+
+                    <label for="">Country</label><br>
+                    <input type="text" name="Country" id="country" required><br>
+                    <label for="">Job</label><br>
+                    <input type="text" name="Job" id="jobTitle" required>
+
+                </fieldset>
+
+                <fieldset id="diabeteInfo">
+                    <legend>Diabetics Informations</legend>
+
+                    <label for="">Do you have diabete?</label><br>
+                    <input type="radio" id="positive" name="Diabete" value="Positive" required onchange="disableForm()">
+                    <label for="positive">Yes</label>
+                    <input type="radio" id="negative" name="Diabete" value="Negative" required onchange="disableForm()">
+                    <label for="negative">No</label><br>
+
+                    <label for="symptomsDate">From when?</label><br>
+                    <input type="date" name="SymptomsStarted" id="symptomsDate" disabled><br>
+
+                    <label for="">Your blood pressure:</label><br>
+                    <input type="radio" id="low" name="Blood" value="Low pressure < 90/60 mmHg" required>
+                    <label for="low">< 90/60 mmHg</label><br>
+                    <input type="radio" id="negative" name="Blood" value="Normal pressure < 115/75 mmHg" required>
+                    <label for="negative">< 115/75 mmHg</label><br>
+                    <input type="radio" id="negative" name="Blood" value="High pressure 130-139 / 85-89 mmHg" required>
+                    <label for="negative">130-139 / 85-89 mmHg</label><br>
+
+                    <label>Do you take any medicine regularly?</label><br>
+                    <input type="radio" id="taking" name="Medicines" value="Taking" required onchange="disableFormMedicine()">
+                    <label for="taking">Yes</label>
+                    <input type="radio" id="notTaking" name="Medicines" value="Not taking" required onchange="disableFormMedicine()">
+                    <label for="notTaking">No</label><br>
+
+                    <label for="medicineYes" id="label1">Which medicines are you taking?</label>
+                    <textarea name="RegularMedicines" id="medicineYes" cols="30" rows="3" placeholder="Write which medicnes are you normally taking"></textarea>
+
+                    <label for="">Do you have any allergies?</label><br>
+                    <input type="radio" id="allergie" name="Allergies" value="Allergic" required onchange="disableFormAllergie()">
+                    <label for="allergie">Yes</label>
+                    <input type="radio" id="negative" name="Allergies" value="Not allergic" required onchange="disableFormAllergie()">
+                    <label for="negative">No</label><br>
+
+                    <label for="allergieYes" id="label2">Which allergies do you have?</label>
+                    <textarea name="AllergiesPositive" id="allergieYes" cols="30" rows="3" placeholder="Describe your allergies."></textarea>
+
+                </fieldset>
+            </div>
+
+
+            <fieldset id="accountInfo">
+
+                <legend>Account Informations</legend>
+
+                <label for="">E-Mail</label><br>
+                <input type="email" name="Email" id="email" required><br>
+                <label for="">Password</label><br>
+                <input type="password" name="Password" id="password" required><br>
+                <label for="">Emergency contact</label><br>
+                <input type="tel" name="EmergencyNumber" id="sosTel" required>
+                <br>
+                <button class="myButton" type="submit" id="submitButton">Submit</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

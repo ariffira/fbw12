@@ -1,0 +1,14 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "my first Node.js -express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "asreen ilyas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

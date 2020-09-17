@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  
+  <style>
+    *{
+    scroll-behavior: smooth;
+    cursor: pointer;
+    color:lavender;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Nanum+Gothic+Coding&display=swap');/* google-font */
+body{
+    background-color: #292929;
+}
+.myName{
+    transition: all 0.3s ease ;
+    /* transition: all 0.5s ease-out 0.4s ; */
+}
+.myName:hover{
+ height: 50px; width: 150px;
+    background-color: #be0a0a;
+    color:black;
+    
+}
+.text-main , .text1{
+ font-weight: 700;
+ font-size: 50px;
+ color: lavender;
+ /* font-family: 'Bungee', cursive; */
+}
+.text2{
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-justify:justify ;
+    color: lavender;
+    /* background-color: rgb(255, 255, 0); */
+}
+.aboutMe{
+    background-color: rgba(37, 39, 27, 0.178);
+}
+
+i .fas{
+    padding-left:10px;
+}
+p.text4{
+font-weight: 600;
+font-size: 20pt;
+}
+p.text4::first-letter{
+    color:red;
+}
+hr.line {
+    border: 2px solid rgb(253, 249, 10);
+    margin:150px;
+    border-radius: 5px;
+   
+  }
+  .myimg{
+      height: 300px;
+      border-radius: 10%;
+      border:10px inset red;
+      margin-left: 10px;
+  }
+  .myimg:hover{
+      background-image:url('images/I-love-my-work.jpg') ;
+      background-size: contain;
+  }
+
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  .image2 {
+    position: absolute;
+    opacity:0.5;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+    display: none;
+  }
+  textarea{
+      width: 893px;
+      color: blue;
+  }
+   /* skills */
+   .skills{
+       width:100%;
+       float:left;
+       /* padding:80px 0px; */
+       background-color: #353535;
+   }
+   .skills .skills-content{
+       float:left;
+       width:100%;
+   }
+   .skills .skills-content .card1{
+       width:50%;
+       padding: 0 15px;
+       margin-bottom: 50px;
+       float:left;
+   }
+
+   .skills .skills-content .card1 label{
+       font-weight: 900;
+       color:#ffffff;
+       font-size: 16px;
+       display:block;
+       text-align: left;
+       margin: 15px 0;
+   }
+   .skills .skills-content .card1 .progress1{
+       height: 12px;
+       border-radius: 4px;
+       background-color: #e0dfd2;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+       border-top-right-radius: 20px;
+       border-bottom-right-radius: 20px;
+
+   }
+   .skills .skills-content .card1 .progress1 .inner{
+       position: absolute;
+       top:0;
+       left:0;
+       height: 100%;
+
+   }
+   .skills .skills-content .card1 .progress1::before{
+       content:attr(data-text);
+       top:200;
+       position: relative;
+        float:right; 
+       color: #eb240a;
+       font-size: 18px;
+       font-weight: 600;
+   }
+
+   .progress1 { 
+	height: 10px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.progress1 > .inner {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(253, 229, 11);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(238, 49, 16) 37%,
+      rgb(240, 128, 84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress1 > .inner:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: linear-gradient(
+      -45deg, 
+      rgba(102, 15, 15, 0.2) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(119, 30, 30, 0.2) 50%, 
+      rgba(241, 136, 136, 0.2) 75%, 
+      transparent 75%, 
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+section{
+    margin-bottom: 20px;
+}
+.goUp{
+    margin:20px 200px ;
+}
+@media only screen and (max-width: 600px){
+  div .container-fluid,html{
+    /* width:100%!important; */
+    display: block;
+    margin: 0 auto;
+  }
+  div,.skills{
+    width:100%;
+    float:none;
+  }
+}
+  </style>
+  <title> Portfolio !</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <!-- navbar start -->
+      <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand text-large text-warning" href="#"><i class="fab fa-adn text-warning"></i><b
+              class="text-warning myName" id="myName" >Asreen Ilyas</b> </a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.html"><i class="fas fa-home text-warning"></i><b
+                  class="text-primary">Home</b><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fas fa-id-card-alt text-warning"></i><b
+                  class="text-primary">Contact</b> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b class="text-primary"><i
+                    class="fas fa-paste text-warning"></i>CV/Lebenslauf</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> <i class="far fa-address-card text-warning"></i><b
+                  class="text-primary">About me</b> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"><i class="fas fa-certificate text-warning"></i><b
+                  class="text-primary">Certificates</b></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <!-- start content about -->
+      <div class="card mb-3 aboutMe" style="max-width: 100%; margin-top:50px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJD3RYecyg70mBy3IiDqIv2zdvAooyUaShtw&usqp=CAU" class="card-img myImage" id="me" alt="me">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body myCard">
+              <h1 class="card-title text-main">Hi ! I AM <span class="text-danger">ASREEN</span></h1>
+              <h3 class="card-text text-warning textID text1">I AM AN <span class="text-danger">WEB</span> DEVELOPER.
+              </h3> <br>
+              <hr class="text-danger">
+              <div class="col-lg-12 align-self-stretch" id="aboutMe">
+                <p class="text-white-75  mb-5v text2">
+                  I'm a web developer. I can create a website as static HTML
+                  which are useful for supporting your site in any device. If you are looking for someone who can
+                  built a creativ web site Just let me know about your project & get it done!
+                  In this year ,i study by the DCI -Düsseldorf .I am learning the modern Web-Development technice
+                  in top quality user-friendly and responsive custom websites using HTML, CSS & Bootstrap,Javascript,
+                  Node js ,jquery,mongo DB ,React . <etc class="text-muted"> etc..</etc>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content about -->
+      <hr class="line">
+      <!-- start section 2 -->
+      <!-- About-->
+      <section class="page-section bg-warning" id="about">
+        <div class="container">
+          <div class="row justify-content-center rounded">
+            <div class="col-lg-8 text-center">
+              <h1 class="text-white mt-0 text-danger text-large">I've got what you need!</h1>
+              <hr class="divider light my-4" />
+              <p class="text-warning-50 mb-4 text4">I am a passionate learner. I <b
+                  class="text-danger text-bold">love</b> coding.I have a bachelor in  <b
+                  class="text-danger text-bold"> computer science</b>. I am studying Web-Development at DCI -Düsseldorf. I love the term learning by doing.During my study at DCI-Düsseldorf ,I worked some small projects to learn the modern functionality in web-development field.
+              </p>
+              <!--py padding top and bottom,my margin top and bottom px,mx , pl padding-left ,pr padding right size 0-5 and auto -->
+              <a class="btn btn-danger btn-xl js-scroll-trigger py-2 my-4" href="timeline.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="line">
+      <!-- Services-->
+      <section class="page-section" id="services">
+        <div class="container">
+          <h2 class="text-center mt-0 text-danger">At Your Service</h2>
+          <hr class="divider my-4" />
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Sturdy Sites</h3>
+                <p class="text-muted mb-0">Make the Page responsive for all devices!</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Up to Date</h3>
+                <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Ready to Publish</h3>
+                <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="mt-5">
+                <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Made with Love</h3>
+                <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Service -->
+      <hr class="line">
+      <!-- Portfolio-->
+      <div>
+        <h2 class="text-center mt-0 text-danger">Some of my work</h2>
+        <hr class="divider my-4" />
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg-4 col-sm-6 ">
+              <a class="portfolio-box" target="_blank" href="http://asreen.github.io/BBC/">
+                <img src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" class="img-fluid myimg image1 " alt="Image">
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Make a website</div>
+                  <div class="project-name">Project Name</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box parent" href="https://asreen.github.io/html-table/">
+                <img class="img-fluid myimg " src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="pic" />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Tables</div>
+                  <div class="project-name">Project Name</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/weather-API/weather-api.html">
+                <img class="img-fluid myimg myCard" src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="pic-portfolio"
+                  title="hover effect" />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Weather API</div>
+                  <div class="project-name">Project fetch api</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/live-score-api/">
+                <img class="img-fluid myimg " src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="score pic" />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Live-Score-API</div>
+                  <div class="project-name">Project fetch API</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/memory_game">
+                <img class="img-fluid myimg " src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="memory_game" />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Memory game</div>
+                  <div class="project-name">Project make a game</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/use-promise/ProductInfo.html">
+                <img class="img-fluid myimg" src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="pic" />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Discount-Price</div>
+                  <div class="project-js"></div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/treeFamily/main.html">
+                <img class="img-fluid myimg" src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="pic" />
+                <div class="portfolio-box-caption p-3">
+                  <div class="project-category text-white-50">tree family</div>
+                  <div class="project-name">Project test js-classes</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/javascript/ex-19(clock)/clock.html">
+                <img class="img-fluid myimg" src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="pic" />
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">Clock Date()</div>
+                  <div class="project-name">Project js</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" href="https://asreen.github.io/rock_paper_caesar/index.html">
+                <img class="img-fluid myimg" src="https://image.freepik.com/free-vector/my-work-desk-vector_23-2147497106.jpg" alt="pic" />
+                <div class="portfolio-box-caption p-3">
+                  <div class="project-category text-white-50">Rock-Paper-Caesar game</div>
+                  <div class="project-name">Project test js-classes</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="line">
+      <!-- Call to action-->
+      <section class="page-section text-warning text-white">
+        <div class="container text-center" style="font-weight: 400;">
+          <h2 class="mb-4 text-danger">More Information - Certificates !</h2>
+          <a class="btn btn-light btn-xl" href="gallery.html">My Certificates!</a>
+        </div>
+      </section>
+      <hr class="line">
+      <!-- start skills section -->
+      <section class="skills">
+        <div class="container">
+          <h2 class="title text-center text-danger">Skills</h2>
+          <div class="skills-content">
+            <div class="progress-box">
+              <div class="card1">
+                <label>HTML5</label>
+                <div class="progress1" data-text="80%">
+                  <div class="inner html5" style="width:80%;">
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>CSS3</label>
+                <div class="progress1" data-text="88%">
+                  <div class="inner css3" style="width:88%;">
+
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>Javascript</label>
+                <div class="progress1" data-text="75%">
+                  <div class="inner js" style="width:75%">
+
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>Bootstrap</label>
+                <div class="progress1" data-text="65%">
+                  <div class="inner bs" style="width:65%">
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>Jquery</label>
+                <div class="progress1" data-text="70%">
+                  <div class="inner jq" style="width:70%">
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>MongoDB</label>
+                <div class="progress1" data-text="50%">
+                  <div class="inner mdb" style="width:50%">
+
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>React</label>
+                <div class="progress1" data-text="60%">
+                  <div class="inner react" style="width:60%">
+
+                  </div>
+                </div>
+              </div>
+              <div class="card1">
+                <label>Wordpress</label>
+                <div class="progress1" data-text="90%">
+                  <div class="inner react" style="width:90%">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <hr class="line" style="margin-top:800px;">
+      <!-- end skills section -->
+      <!-- Contact-->
+      <div class="container-fluid">
+        <section class="page-section" id="contact">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <h2 class="mt-0 text-danger" id="contact">Let's Get In Touch!</h2>
+                <hr class="divider my-4 text-danger" />
+                <p class="text-muted mb-5">Ready to start your next project with us? Give me a call or send me an
+                  email and I will get back to you as soon as possible!</p>
+              </div>
+            </div>
+            <form>
+              
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label bg-danger rounded">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="message" class="col-sm-2 col-form-label bg-danger rounded">Your message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:60px" class="rounded ml-1"></textarea>
+              </div>
+              <label for='check'>I am interessted on your work</label>
+              <input type="checkbox" class="col-sm-2" name="check">
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary btn-secondary btn-lg sendBtn">Send</button>
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                <div>+1 (555) 123-4567</div>
+              </div>
+
+              <div class="col-lg-4 mr-auto text-center">
+                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                <a class="d-block" href="https://mail.google.com">asreen.ilyas44@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <!-- end contact section -->
+        </section>
+        
+      </div>
+      <!-- end contact  -->
+      <hr class="line">
+      <section class="container d-flex justify-content-center">
+        <a class="text-center mr-md-3" href="#myName"> <button class="btn btn-warning text-center goUp p-1 mr-md-3 ml-5 ">Go up</button></a> 
+      </section>
+      
+
+      <!-- Footer-->
+      <footer class="bg-danger py-5">
+        <div class="container">
+          <div class="text-center">Copyright © 2020 - Asreen-My Portfolio </div>
+        </div>
+      </footer>
+      <!-- end footer-->
+      <hr class="line">
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script>
+    let x = document.querySelectorAll('.nav-item');
+x.forEach(el => {
+    el.onmouseover = function () {
+        this.style.backgroundColor = "#fafc12";
+        this.style.borderRaduis = '10%'
+    }
+    el.onmouseleave = function () {
+        this.style.backgroundColor = "inherit";
+    }
+})
+setTimeout(moveTextUp, 2000);
+function moveTextUp() {
+    // $('.text2').slideUp();
+    // $('h3').hide('slow');
+    $('.teyt1').fadeOut(1000);
+    $('.text1').fadeIn('slow');
+}
+setTimeout(moveTextDown, 2000);
+function moveTextDown() {
+    $('.text1').fadeIn('slow');
+    $('text1').show('slow');
+}
+$('document').ready(function () {
+    $('.text1').fadeOut('slow');
+});
+$(document).ready(function () {
+    // Display alert message after slide toggling paragraphs
+    $(".text2").slideToggle(1000, function () {
+        // Code to be executed
+        $(".text2").slideDown('slow')
+    });
+    $('.myImage').mouseover(function () {
+        $(this).animate({ width: "toggle" }).show(2000)
+    });
+    $('myImage').mouseleave(function () {
+        $(this).show(2000);
+    });
+
+});
+//  hover and mouseleave picture
+$('.myCard').hover(function () {
+    var src1 = $(this).attr('src');
+      //console.log(src1)
+    $('.myCard').prop({ "src":"https://www.myskillsmywork.org/wp-content/themes/myskills-2014/images/myskills-logo-01.png"})
+    $(".myCard").mouseleave(function(){
+        $(this).prop('src',src1);
+    });
+
+})
+document.querySelector('.sendBtn').addEventListener('mouseover', function(e){
+e.preventDefault();
+//console.log(e);
+$(this).css({'width':'300px','backgroundColor':'orange'})
+})
+document.querySelector('.sendBtn').addEventListener('mouseleave', function(e){
+    e.preventDefault();
+    //console.log(e);
+    $(this).css({'width':'300px','backgroundColor':'lightblue','textAlign':'center','color':'blue'})
+    })
+
+  </script>
+</body>
+
+</html>

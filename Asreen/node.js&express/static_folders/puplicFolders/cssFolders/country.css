@@ -1,0 +1,58 @@
+#container{
+    box-shadow: 4px 5px 30px red;
+    width: 70%;
+    height: 640px;
+    margin: 50px 220px;
+}
+body{
+    background-color: rgb(133, 170, 158);
+}
+article{
+    padding-top: 15px;
+    text-shadow: 2px 3px 10px rgb(252, 213, 213) , 2px 3px 20px rgb(204, 140, 140) , 2px 3px 30px rgb(160, 19, 19);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+article>div:hover{
+    background-color: rgb(71, 85, 10);
+    border-radius: 10%;
+}
+.blue{
+    width:100px;
+    color: rgb(230, 230, 230);
+font-size: 10px;
+padding: 10px;
+text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+background: rgb(96, 92, 246);
+background: -moz-linear-gradient(90deg, rgb(96, 92, 246) 95%, rgb(117, 122, 135) 43%);
+background: -webkit-linear-gradient(90deg, rgb(96, 92, 246) 95%, rgb(117, 122, 135) 43%);
+background: -o-linear-gradient(90deg, rgb(96, 92, 246) 95%, rgb(117, 122, 135) 43%);
+background: -ms-linear-gradient(90deg, rgb(96, 92, 246) 95%, rgb(117, 122, 135) 43%);
+background: linear-gradient(0deg, rgb(96, 92, 246) 95%, rgb(117, 122, 135) 43%);
+-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+
+}
+#input{
+    text-shadow: 2px 3px 10px rgb(252, 213, 213) , 2px 3px 20px rgb(204, 140, 140) , 2px 3px 30px rgb(160, 19, 19);
+    margin-top: 50px;
+    right: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    top:300px;
+    font-size: 17px;
+}
+img{
+    margin-top: 50px;
+    width:300px;
+    height:200px;
+    margin: auto;
+}
