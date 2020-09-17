@@ -1,0 +1,10 @@
+pwd .....................  show the path
+ls............. list of file 
+cd .............. go inside a folder
+node filename ....................... to run the file in the terminal
+clear ................. clear terminal
+
+-------------------------------------------------
+npm
+npm install -g nodemon
+npm install node-fetch --save
