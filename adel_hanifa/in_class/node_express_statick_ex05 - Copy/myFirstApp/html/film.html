@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Classes ex 25</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1 class="text-center h1">Exercise 25: Omdb Movie site making</h1>
+    </div>
+
+    <div class="input-group col-6 offset-3 my-3 row">
+        <input type="text" class="form-control col-8" placeholder="Enter the name of the movie you want to show" id="moviNameId" required>
+        <select class="custom-select col-2" id="moviTypeId">
+            <option value="all">All</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+          </select>
+        <div class="input-group-append col-2 px-0">
+            <button style="border-left: 1px solid #ced4da;" class="btn btn-light" type="button" onclick="showMovis(moviNameId.value, moviTypeId.value)">Show</button>
+        </div>
+    </div>
+
+    <div class="container myContainer mb-4">
+        <div class="container">
+            
+            <div class="row" id="dAllMovies">
+
+                
+                
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main1.js"></script>
+</body>
+
+</html>

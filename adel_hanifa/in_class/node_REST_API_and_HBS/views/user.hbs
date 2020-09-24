@@ -1,0 +1,125 @@
+{{#with info}}
+<div class="container w-50">
+
+    <table class="table table-hover table-dark mt-5">
+        <tr>
+            <th colspan="2">
+                <h1 class="text-center">User Information</h1>
+            </th>
+        </tr>
+        <tr>
+            <th>id</th>
+            <td>{{id}}</td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <td>{{loud name}}</td>
+        </tr>
+        <tr>
+            <th>email</th>
+            <td>{{email}}</td>
+        </tr>
+        <tr>
+            <th>address</th>
+
+            <td>
+                <div class="row">
+                    {{#each address}}
+                    {{#ifEquals @key "geo"}}
+                    <b class="col-sm-2">{{@key}}:</b>
+                    <p class="col-sm-10 mb-0">
+                        {{#each this}}
+                        <b>{{@key}}:</b> &nbsp;&nbsp;&nbsp;&nbsp; {{this}}<br>
+                        {{/each}}
+                    </p>
+                    {{else}}
+                    <b class="col-sm-2">{{@key}}:</b>
+                    <p class="col-sm-10 mb-0">{{this}}</p>
+                    {{/ifEquals}}
+                    {{/each}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>phone</th>
+            <td>{{phone}}</td>
+        </tr>
+        <tr>
+            <th>website</th>
+            <td>{{website}}</td>
+        </tr>
+        <tr>
+            <th>company</th>
+            <td>
+                <div class="row">
+                    {{#each company}}
+                    <b class="col-sm-2">{{@key}}:</b>
+                    <p class="col-sm-10 mb-0">{{this}}</p>
+                    {{/each}}
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>
+{{/with}}
+
+
+
+<div class="container w-50">
+    <table class="table table-hover table-dark mt-5">
+        <tr>
+            <th colspan="2">
+                <h1 class="text-center">User Information</h1>
+            </th>
+        </tr>
+    {{#each info}}
+        {{#ifEquals @key "address"}}
+        <tr>
+            <th>{{@key}}</th> 
+            <td class="row">
+            {{#each this}}
+                {{#ifEquals @key "geo"}}
+                    <b class="col-sm-2">{{@key}}:</b>
+                    <p class="col-sm-10 mb-0">
+                        {{#each this}}
+                            <b>{{@key}}:</b> &nbsp;&nbsp;&nbsp;&nbsp; {{this}}<br>
+                        {{/each}}
+                    </p>
+                {{else}}
+                    <b class="col-sm-2">{{@key}}:</b>
+                    <p class="col-sm-10 mb-0">{{this}}</p>
+                {{/ifEquals}}
+            {{/each}}
+            </td>
+        </tr>
+        {{else}}
+        {{#ifEquals @key "company"}}
+        <tr>
+            <th>{{@key}}</th> 
+            <td class="row">
+            {{#each this}}
+                    <b class="col-sm-2">{{@key}}:</b>
+                    <p class="col-sm-10 mb-0">{{this}}</p>
+            {{/each}}
+            </td>
+        </tr>
+        {{else}}
+        {{#ifEquals @key "name"}}
+        <tr>
+            <th>{{@key}}</th>
+            <td>{{loud this}}</td>
+        </tr>
+        {{else}}
+        <tr>
+            <th>{{@key}}</th>
+            <td>{{this}}</td>
+        </tr>
+        {{/ifEquals}}
+        {{/ifEquals}}
+        {{/ifEquals}}
+
+    {{/each}}
+        
+    </table>
+</div>
