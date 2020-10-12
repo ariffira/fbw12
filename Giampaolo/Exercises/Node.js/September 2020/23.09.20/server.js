@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
 
 // Routes
 const index = require('./route/index')
@@ -9,6 +10,9 @@ const index = require('./route/index')
 // Port Settings
 const PORT = 8088;
 const host = 'localhost';
+
+app.use(cookieParser());
+app.use(session({secret: "Nothing"}));
 
 // View Settings
 app.set('view engine', 'hbs')
