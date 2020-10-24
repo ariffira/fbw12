@@ -1,0 +1,35 @@
+<div class="container mt-4">
+
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>username</th>
+            <th>email</th>
+            <th>address</th>
+            <th>phone</th>
+            <th>website</th>
+            <th>company</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            {{#with this}}
+                <td><a href="/user/{{id}}">{{id}}</a></td>
+                <td>{{name}}</td>
+                <td>{{username}}</td>
+                <td>{{email}}</td>
+                <td>{{address.street}}<br>{{address.suite}}<br>{{address.city}}</td>
+                <td>{{phone}}</td>
+                <td>{{website}}</td>
+                <td>{{company.name}}</td>
+            {{/with}}
+        </tr>
+        {{/each}}
+    </tbody>
+
+</table>
+
+</div>

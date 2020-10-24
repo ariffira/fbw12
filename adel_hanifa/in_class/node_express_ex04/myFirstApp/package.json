@@ -1,0 +1,14 @@
+{
+  "name": "myfirstapp",
+  "version": "1.0.0",
+  "description": "My first mode js website",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "AdelHanifa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

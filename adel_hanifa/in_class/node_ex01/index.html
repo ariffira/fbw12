@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Classes ex 24</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-image: url(https://adelhanifa.github.io/fbw12/js_json_api_ex_24/img/bg-img.png);
+            background-size: cover;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: blanchedalmond;
+            text-shadow: 2px 3px 5px rgba(0, 0, 0, 1);
+        }
+
+        .myContainer {
+            width: 75%;
+            margin: auto;
+            background-color: rgba(106, 98, 126, 0.7);
+            border-radius: 35px;
+        }
+
+        #dCityName {
+            font-size: 3.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Exercise 24: Weather API test</h1>
+        <br>
+    </div>
+
+    <div class="container myContainer">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="input-group col-6 offset-3 my-3">
+                    <input type="text" class="form-control"
+                        placeholder="Enter the name of the city you want to display weather" id="cityNameId">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary btn-light" type="button"
+                            onclick="showWeather(cityNameId.value)">Show</button>
+                    </div>
+                </div>
+
+
+                <div class="col-10">
+                    <h1 id="dCityName"></h1>
+                </div>
+                <div class="col-2 text-center" id="dMoreInfo0"></div>
+
+                <div class="col-4 text-center" id="dTempWether"></div>
+                <div class="col-4" id="dMoreInfo1"></div>
+                <div class="col-4" id="dMoreInfo2"></div>
+
+            </div>
+
+            <div class="row" id="dDailyID">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let apiKey = '63b255f1c71fc57000f933b2def47a10';
+
+        showWeather('mönchengladbach');
+
+        function showWeather(x) {
+            console.log(x)
+            var link = `http://api.openweathermap.org/data/2.5/weather?q=${x}&appid=${apiKey}`;
+            console.log(link)
+            fetch(link)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+
+                    var countryImgSrc = 'http://openweathermap.org/images/flags/' + data.sys.country.toLowerCase() + '.png';
+                    //console.log(countryImgSrc)
+                    var weatherImgSrc = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png'
+
+                    dCityName.innerHTML = `
+            ${data.name} / ${data.sys.country} <img src="${countryImgSrc}" style="height: 24px">
+            `;
+
+                    dTempWether.innerHTML = `
+            <h1><img src="${weatherImgSrc}"> ${toCelsius(data.main.temp)}<h1>
+            <h4>${toCelsius(data.main.temp_max)} /${toCelsius(data.main.temp_min)} | Feeling: ${toCelsius(data.main.feels_like)}</h4>
+            <h1 title="${data.weather[0].description}">${data.weather[0].main}</h1>
+            `;
+
+                    dMoreInfo1.innerHTML = `<br>
+            <h3>Pressure: ${data.main.pressure} hpa</h3>
+            <h3>Wind speed: ${data.wind.speed} m/s</h3>
+            <h3>Clouds: ${data.clouds.all} %</h3>
+            <h3>Sun rise: ${toTime(data.sys.sunrise).toLocaleTimeString()}</h3>
+            `;
+
+                    dMoreInfo2.innerHTML = `<br>
+            <h3>Humidity: ${data.main.humidity} %</h3>
+            <h3>Wind degrees: ${data.wind.deg}\xB0</h3>
+            <h3>Rain: ${checkRain()} m/h</h3>
+            <h3>Sun set: ${toTime(data.sys.sunset).toLocaleTimeString()}</h3>
+            `;
+
+                    function checkRain() {
+                        if (data.rain)
+                            return data.rain["1h"];
+                        else
+                            return '0';
+
+                    }
+
+                    let urlDaily = `https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&exclude=hourly,minutely&appid=${apiKey}`;
+                    showDailyWether(urlDaily);
+                });
+        }
+
+        function showDailyWether(x) {
+            console.log(x);
+            fetch(x)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+
+                    dMoreInfo0.innerHTML = `
+            <h5>${toTime(data.current.dt).toDateString()}</h5>
+            `;
+                    dDailyID.innerHTML = ``;
+                    for (let i = 1; i < 7; i++) {
+                        var weatherImgSrc = 'https://openweathermap.org/img/wn/' + data.daily[i].weather[0].icon + '@2x.png'
+
+
+                        dDailyID.innerHTML += `
+                <div class="col-2 text-center my-3">
+                <h5>${toTime(data.daily[i].dt).toDateString()}</h5>
+                <h5><img src="${weatherImgSrc}"><h5>
+                <h5>${toCelsius(data.daily[i].temp.max)} /${toCelsius(data.daily[i].temp.min)}</h5>
+                <h5 title="${data.daily[i].weather[0].description}">${data.daily[i].weather[0].main}</h5>
+                </div>
+                `;
+
+                    }
+                });
+
+        }
+
+        function toCelsius(x) {
+            return Math.round(x - 273.15) + '\xB0C';
+        }
+        function toTime(x) {
+            return new Date(x * 1000);
+        }
+    </script>
+</body>
+
+</html>
