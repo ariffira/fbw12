@@ -1,0 +1,188 @@
+<!-- banner -->
+<div class="inner_page-banner one-img">
+</div>
+<!--//banner -->
+<!-- short -->
+<div class="using-border py-3">
+  <div class="inner_breadcrumb  ml-4">
+    <ul class="short_ls">
+      <li>
+        <a href="/">Home</a>
+        <span>/ /</span>
+      </li>
+      <li>Insert an Item</li>
+    </ul>
+  </div>
+</div>
+<br>
+<!-- //short-->
+<div class="container account">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Include the above in your HEAD tag -->
+  {{#if msg}}
+  <div class="text-center">
+    <h1 class="alert aler-success">{{msg}}</h1>
+  </div>
+  {{/if}}
+  <div class="firmalar w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-12">
+          <div class="firma-card row">
+            <div class="col-md-5 img-padding-no">
+              <div class="firma-resim">
+                <a href="#">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              {{#with user}}
+              <div class="firma-aciklama card-body">
+                <h2 class="text-info text-lg"><span>
+                    <img src="/{{imagePath}}" style="width:60px;height:60px;border-raduis:50%;"></span> {{uFname}}
+                  {{uSname}}</h2>
+                <ul class="yacht-info__list space-2">
+                  <li>
+                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
+                    <h4 class="vertical-align-mid text-info">{{email}}</h4>
+                  </li>
+                  <li>
+                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
+                    <span class="vertical-align-mid">you joined us in 16/04/2010</span>
+                  </li>
+                  <li>
+                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
+                    <span class="vertical-align-mid text-success">Account Active</span>
+                  </li>
+                  <li>
+                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
+                    <span class="vertical-align-mid">If you want to add Item or sale Item click the button +Add
+                      Item for sale/buy</span>
+                  </li>
+                  <li>
+                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
+                    <span class="vertical-align-mid text-danger">Teaddy Bear Team🐻</span>
+                  </li>
+                </ul>
+                <div class="container d-flex">
+                  <a href="/updateUser/{{_id}}" class="btn btn-info">Update your Profile</a>
+                  <button type="button" class="btn btn-primary m-auto" data-toggle="modal"
+                    data-target=".bd-example-modal-lg">+Add Item for sale/buy</button>
+                </div>
+              </div>
+              {{/with}}
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <hr>
+  <br><br />
+</div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content" style="background-color: rgba(211, 231, 224, 0.979);">
+
+      <form action="/newItem" method="POST" class="w-75 m-auto" enctype="multipart/form-data">
+        <label class="col-md-2 label-txt">Buy / Sale </label>
+        <select type="text" value="sale" name="saleBuy" class="col col-md-8">
+          <option value="sale">sale</option>
+          <option value="buy">buy</option>
+        </select>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        <div class="form-group">
+          <label class="col col-md-2 label-txt" for="newItem">Item's Images</label>
+          <input type="file" placeholder="choose some pictures" name='newItem' class="col col-md-8">
+          <div class="line-box">
+            <div class="line"></div>
+          </div>
+        </div>
+        <label class="col col-md-2 label-txt">Category</label>
+        <select id="category" value='Dolls' name="category" class="col col-md-8">
+          <option value="Dolls">Dolls</option>
+          <option value="Action figures">Action figures</option>
+          <option value="Games">Games</option>
+          <option value="Animals">Animals</option>
+          <option value="Model building">Model building</option>
+          <option value="Sound toys">Sound toys</option>
+          <option value="Spinning toys">Spinning toys</option>
+          <option value="Wooden toys">Wooden toys</option>
+          <option value="Science and optical">Science and optical</option>
+          <option value="Puzzle/assembly">Puzzle/assembly</option>
+          <option value="Physical activity and dexterity">Physical activity and dexterity</option>
+          <option value="Food-related toys">Food-related toys</option>
+          <option value="Executive toys">Executive toys</option>
+          <option value="Creative toys">Creative toys</option>
+          <option value="Cars and radio controlled">Cars and radio controlled</option>
+          <option value="other">other</option>
+        </select>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+
+        <div>
+          <label class="col col-md-2 label-txt">Item name</label>
+          <input type="text" id="proName" placeholder="enter the Item name" name='proName' class="col col-md-8">
+        </div>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        <div>
+          <label class="col col-md-2 label-txt">Item Status</label>
+          <select name='ItemStatus' class="col col-md-8">
+            <option value="New">New</option>
+            <option value="Used-like new">Used-like new</option>
+            <option value="Used-good">Used-good</option>
+          </select>
+        </div>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        <div>
+          <label class="col col-md-2 label-txt">Price</label>
+          <input type="text" id="price" placeholder="enter the price" name='price' class="col col-md-8">
+        </div>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        <div>
+          <label class="col col-md-2 label-txt">Description</label>
+          <textarea type="text" id="description" placeholder="description" name='description' col="800"
+            class="col col-md-8"></textarea>
+        </div>
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+        <div class="m-auto">
+          <button type="submit" class="btn btn-lg btn-info m-3">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+
+    $('.input').focus(function () {
+      $(this).parent().find(".label-txt").addClass('label-active');
+    });
+
+    $(".input").focusout(function () {
+      if ($(this).val() == '') {
+        $(this).parent().find(".label-txt").removeClass('label-active');
+      };
+    });
+  });
+</script>

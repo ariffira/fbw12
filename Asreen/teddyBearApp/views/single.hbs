@@ -1,0 +1,107 @@
+<!-- banner -->
+<div class="inner_page-banner one-img">
+</div>
+<!--//banner -->
+<!-- short -->
+<div class="using-border py-3">
+   <div class="inner_breadcrumb  ml-4">
+      <ul class="short_ls">
+         <li>
+            <a href="/">Home</a>
+            <span>/ /</span>
+         </li>
+         <li>Single Page</li>
+      </ul>
+   </div>
+</div>
+<!-- //short-->
+<!--//banner -->
+<!--/shop-->
+{{#with toy}}
+<section class="banner-bottom py-lg-5 py-3">
+   <div class="container">
+      <div class="inner-sec-shop pt-lg-4 pt-3">
+         <div class="row">
+            <div class="col-lg-4 single-right-left ">
+               <div class="grid images_3_of_2">
+                  <div class="flexslider1">
+                     <ul class="slides">
+                        <li data-thumb="/images/f2.jpg">
+                           <div class="thumb-image"> <img src="/{{imagePath}}" data-imagezoom="true" class="img-fluid"
+                                 alt="toy"> </div>
+                        </li>
+                     </ul>
+                     <div class="clearfix"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-8 single-right-left simpleCart_shelfItem">
+               <h1 class="text-uppercase text-danger">{{proName}}</h1>
+               <h3><span class="item_price">Price</span>
+                  <b class="text-warning">{{price}}€</b>
+               </h3>
+               <div class="rating1">
+                  <div class="stars d-block">
+                    <i class="text-lg"><b>Rating :</b> </i>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fas fa-star-half text-warning"></i>
+                    <i class="far fa-star"></i>       
+                  </div>
+               </div>
+               <div class="description ">
+                  <h5 class="text-info">Check delivery, payment options and charges at your location</h5>
+                  <form action="#" method="post">
+                     <input class="form-control" type="text" name="email" placeholder="Please enter..." required="">
+                     <input type="submit" value="Check">
+                  </form>
+               </div>
+               <div class="occasional">
+               </div>
+               <div class="clearfix"> </div>
+            </div>
+            {{!-- <div class="occasion-cart">
+               <div class="toys single-item singlepage">
+                  <form action="#" method="post">
+                     <input type="hidden" name="cmd" value="_cart">
+                     <input type="hidden" name="add" value="1">
+                     <input type="hidden" name="toys_item" value="Farenheit">
+                     <input type="hidden" name="amount" value="575.00">
+                     <button type="button" class="toys-cart ptoys-cart add" onclick="orderButton('{{proName}}')">
+                        Add to Cart
+                     </button>
+                  </form>
+               </div>
+            </div> --}}
+         </div>
+         <div class="clearfix"> </div>
+         <!--/tabs-->
+         <div class="responsive_tabs">
+            <div id="horizontalTab">
+                 <h6 class="text-danger">Reviews:</h6><b class="text-success">440</b>
+               </ul>
+               <div class="resp-tabs-container">
+                  <!--/tab_one-->
+                  <div class="tab1">
+                     <h3 class="text-danger">Description</h3>
+                     <div class="single_page">
+                        <h6>Lorem ipsum dolor sit amet</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl
+                           ullamcorper, molestie
+                           blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do
+                           eiusmod tempor incididunt
+                           ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                           ullamco. labore et dolore
+                           magna aliqua.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</section>
+{{/with}}

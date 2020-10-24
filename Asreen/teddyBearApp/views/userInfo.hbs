@@ -1,0 +1,55 @@
+<!-- banner -->
+<div class="inner_page-banner one-img">
+</div>
+<!--//banner -->
+<!-- short -->
+<div class="using-border py-3">
+    <div class="inner_breadcrumb  ml-4">
+        <ul class="short_ls">
+            <li>
+                <a href="/">Home</a>
+                <span>/ /</span>
+            </li>
+            <li>Insert an Item</li>
+        </ul>
+    </div>
+</div>
+<br>
+<!-- //short-->
+<div class="container w-100">
+    {{#with userData}}
+    <div class="row  w-100 m-auto">
+        <div class="col-sm-12 p-2 mt-4">
+            <form action="/updateUser/{{_id}}" method="POST" enctype="multipart/form-data">
+                <div class="card m-auto" style="width: 100%;">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="text-info">First Name</label>
+                            <input type="text" class="form-control" name="uFname" id="uFname" value="{{uFname}}">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-info">Last Name</label>
+                            <input type="text" class="form-control" name="uSname" id="uSname" value="{{uSname}}">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-info">user name</label>
+                            <input type="text" class="form-control" name="uname" id="uname" value="{{uname}}">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-info" for="role">user email:</label>
+                            <input type="text" class="form-control" name="email" id="quantity" value="{{email}}">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-info" for="file">image:</label>
+                            <input type="file" class="form-control" name="file" id="file">
+                        </div>
+
+                        <button type="submit" class="myButton3">Update</button>
+                        {{!-- <button type="submit" class="btn btn-primary">Update</button> --}}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    {{/with}}
+</div>

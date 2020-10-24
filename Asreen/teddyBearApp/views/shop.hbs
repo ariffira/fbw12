@@ -1,0 +1,338 @@
+<!-- banner -->
+<div class="inner_page-banner one-img">
+</div>
+<!--//banner -->
+<!-- short -->
+<div class="using-border py-3">
+   <div class="inner_breadcrumb  ml-4">
+      <ul class="short_ls">
+         <li>
+            <a href="/">Home</a>
+            <span>/ /</span>
+         </li>
+         <li>Shop Now</li>
+      </ul>
+   </div>
+</div>
+<!-- //short-->
+<!--show Now-->
+<section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+   <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Toys Shop</h3>
+      <div class="row">
+         <div class="side-bar col-lg-3">
+            <div class="search-hotel">
+               <h3 class="agileits-sear-head">Search Here..</h3>
+               <form action="#" method="post">
+                  <input type="search" placeholder="Product name..." name="search" required="">
+                  <button class="btn btn-success" type="submit">Submit</button>
+               </form>
+            </div>
+            <!-- price range -->
+            <div class="range">
+               <h3 class="agileits-sear-head">Price range</h3>
+               <ul class="dropdown-menu6">
+                  <li>
+                     <div id="slider-range"></div>
+                     <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+                  </li>
+               </ul>
+            </div>
+            <!-- //price range -->
+            <!--preference -->
+            <div class="left-side">
+               <h3 class="agileits-sear-head">Occasion</h3>
+               <ul>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">Gift</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">Kid Play</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">Dolls</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">Remot</span>
+                  </li>
+               </ul>
+            </div>
+            <!-- // preference -->
+            <!-- discounts -->
+            <div class="left-side">
+               <h3 class="agileits-sear-head">Discount</h3>
+               <ul>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">5% or More</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">10% or More</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">20% or More</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">30% or More</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">50% or More</span>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="checked">
+                     <span class="span">60% or More</span>
+                  </li>
+               </ul>
+            </div>
+            <!-- //discounts -->
+            <!-- reviews -->
+
+            <!-- //reviews -->
+            <!-- deals -->
+            <div class="deal-leftmk left-side">
+               <h4 class="agileits-sear-head">Teddy Bear's Products</h4>
+               <h5 class="agileits-sear-head">Special Deals</h5>
+               <div class="row special-sec1">
+                  <div class="col-xs-4 img-deals">
+                     <img src="/images/g1.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-xs-8 img-deal1">
+                     <h3>toys(barbie)</h3>
+                     <a href="/single">$575.00</a>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div class="row special-sec1">
+                  <div class="col-xs-4 img-deals">
+                     <img src="/images/g2.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-xs-8 img-deal1">
+                     <h3>toy(todos)</h3>
+                     <a href="/single">$480.00</a>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div class="row special-sec1">
+                  <div class="col-xs-4 img-deals">
+                     <img src="/images/g3.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-xs-8 img-deal1">
+                     <h3>toys (Grey)</h3>
+                     <a href="/single">$165.00</a>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div class="row special-sec1">
+                  <div class="col-xs-4 img-deals">
+                     <img src="/images/g2.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-xs-8 img-deal1">
+                     <h3>Soft teddy </h3>
+                     <a href="/single">$225.00</a>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div class="row special-sec1">
+                  <div class="col-xs-4 img-deals">
+                     <img src="/images/g4.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-xs-8 img-deal1">
+                     <h3>pink bear</h3>
+                     <a href="/single">$169.00</a>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+            </div>
+            <!-- //deals -->
+            {{!-- products/toys --}}
+         </div>
+         <div class="left-ads-display col-lg-9">
+            <div class="container py-5">
+               <div class="row">
+                  {{#each toySale}}
+                  <div class="card col-md-4 p-5 mb-3">
+                     <a href="/seeMoreInfo/{{_id}}"><img src="/{{imagePath}}" class="card-img-top"
+                           style="height: 300px;" alt="toy"></a>
+                     <div class="card-body">
+                        <h3 class="card-title text-danger text-bild text-uppercase" id="qty_{{_id}}">{{proName}}</h3>
+                        <h5 class="card-text text-info">Price: {{price}}€ (inkl. MwSt)</h5>
+                        <p class="card-text">Category:{{category}}</p>
+                        <p class="card-text text-danger">Sale/Buy:<b class="text-dark">{{saleBuy}}</b></p> 
+                        <p class="card-text"><b class="text-danger">Item status:</b>{{ItemStatus}}</p>
+                        <p class="card-text">Description :{{description}}</p>
+                        <button class="btn" id="favoriteButton_{{_id}}" onclick="addFavorite('{{_id}}','{{proName}}')"
+                           style="position:absolute; top: 0; right: 0; z-index: 10; color: grey; font-size: 1rem;">
+                           <i class="fas fa-heart"></i>
+                        </button>
+                        <a href="#" class="btn float-left"
+                           style="position:absolute; top: 0; left: 0; z-index: 10;color:rgb(24, 161, 207);"
+                           onclick="orderButton('{{proName}}')"><i class="fas fa-cart-plus"></i></a>
+                        <a href="/sendMsgProvider" class="btn btn-success m-1">contact with provider</a>
+                        <form action="/addComment/{{_id}}/{{proName}}" class="d-flex" method="POST">
+                           <textarea class="m-1" name="comment" id="comment" cols="20" rows="2"
+                              placeholder="Leave a comment"></textarea>
+                           <button class="btn" type="submit">submit</button>
+                        </form>
+                     </div>
+                  </div>
+                  {{/each}}
+               </div>
+            </div>
+         </div>
+         {{!-- item to buy --}}
+         <div class="left-ads-display row m-auto text-center">
+            <div class="container py-5 ">
+               <h1 class="text-info text-center">People looking for these toys or games</h1> <br>
+               <div class="row">
+                  {{#each toyBuy}}
+                  <div class="card col-md-4 p-5 mb-3">
+                     <a href="/seeMoreInfo/{{_id}}"><img src="/{{imagePath}}" class="card-img-top"
+                           style="height: 300px;" alt="toy"></a>
+                     <div class="card-body">
+                        <h3 class="card-title text-danger text-bild text-uppercase" id="qty_{{_id}}">{{proName}}</h3>
+                        <p class="card-text">Category:{{category}}</p>
+                        <p class="card-text text-danger">Sale/Buy:<b class="text-dark">{{saleBuy}}</b></p> 
+                        <p class="card-text"><b class="text-danger">Item status:</b>{{ItemStatus}}</p>
+                        <p class="card-text">Description :{{description}}</p>
+                        <a href="/sendMsgProvider" class="btn btn-success m-1">contact with the person</a>
+                        <form action="/addComment/{{_id}}/{{proName}}" class="d-flex" method="POST">
+                           <textarea class="m-1" name="comment" id="comment" cols="24" rows="2"
+                              placeholder="Leave a comment"></textarea>
+                           <button class="btn" type="submit">submit</button>
+                        </form>
+                     </div>
+                  </div>
+                  {{/each}}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<script src="/javascript/cart.js"></script>
+<!-- //show Now-->
+<h1 class="text-info text-center">coming soon </h1>
+<hr class="text-danger m-3" stayle="border:3px ridge blue;">
+<div class="container d-flex justify-content-around">
+
+   <div id="demo" class="carousel slide w-25 m-2" data-ride="carousel">  
+      <!-- 
+        Indicators -->
+        <ul class="carousel-indicators">    
+         <li data-target="#demo" data-slide-to="0" class="active"></li>    
+         <li data-target="#demo" data-slide-to="1"></li>
+             <li data-target="#demo" data-slide-to="2"></li>
+           </ul> 
+      <!-- 
+         The slideshow -->
+        <div class="carousel-inner"> 
+         <div class="carousel-item active">
+                  <img
+               src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSU7-6s-uh_bShe-7y-DfQuXN9MyoMURfdtEcexyUvz9qf_mz7UHGW7nwJQYa6imwlu3Kr4mLaUhdiRHzI-tTdn0cZc0WfsMpf3POU4Coa7HkLwXuA1BKHhKQ&usqp=CAE"
+               alt="toy1">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv7eN3bhKyDQUJMb7K87kAQgMOtPaGW1kqba6ZxWVJ5nZdsV-O3Z-U6uC04HlQ-oHkkXB10Ao&usqp=CAc"
+               alt="toy2">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQP3uMSn_7TfTdMuU3jWpCXYqYCzMem-P_xw29QSn5eCTRd6C5_bhSiWXvYda0SjAwDjlSlwHo&usqp=CAc"
+               alt="toy3">
+                </div>
+           </div> 
+   </div>
+   <div id="demo" class="carousel slide w-25 m-2" data-ride="carousel">  
+      <!-- 
+        Indicators -->
+        <ul class="carousel-indicators">    
+         <li data-target="#demo" data-slide-to="0" class="active"></li>    
+         <li data-target="#demo" data-slide-to="1"></li>
+             <li data-target="#demo" data-slide-to="2"></li>
+           </ul> 
+      <!-- 
+         The slideshow -->
+        <div class="carousel-inner"> 
+         <div class="carousel-item active">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSNyOc94RQB75pFnKXjdURuBGbbCJJWP_GKJFfYXns2yXF67oc7PQVcAoW0LRBd4fq5rCDa7wDoTJA5zdEvNr8PK6vLynmNTq98S-Gn-aaUjejv30yr5P_Z&usqp=CAE"
+               alt="toy1">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpqZ3y-Wd1fGBEN5Y3DVdBqbvO38YbgG1CKOv9esTFacYJV5b3Nuxsl1sYQI5ezSSzQ318wVk&usqp=CAc"
+               alt="toy2">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjPJ6-sdQqQWTpv0woJkWRAWNFmSBZw4vv_D0udClJ6t-mwtCgWshNxhShd-o0MtgiBQTOFXmW&usqp=CAc"
+               alt="toy3">
+                </div>
+           </div> 
+   </div>
+   <div id="demo" class="carousel slide w-25 m-2" data-ride="carousel">  
+      <!-- 
+        Indicators -->
+        <ul class="carousel-indicators">    
+         <li data-target="#demo" data-slide-to="0" class="active"></li>    
+         <li data-target="#demo" data-slide-to="1"></li>
+             <li data-target="#demo" data-slide-to="2"></li>
+           </ul> 
+      <!-- 
+         The slideshow -->
+        <div class="carousel-inner"> 
+         <div class="carousel-item active">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM_4zA9s8K6CpUhoKCnyq-SqXafxsPYVX9fIMmdSN8pwe5EEckQ-WAohCipB2xP1GvudKQG7c&usqp=CAc"
+               alt="toy1">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOPxYpJrIxVF87SjeTU9II2r6NMOd7B4_oSvxCxl1490kPUkSazuWRXl53nVM&usqp=CAc"
+               alt="toy2">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAadzSDop5-FtxZqqRbPX_IignxMSRZf8YHHiw-A6Mrh3ucqHJGp7LiihsAl5Jvfs5d6MQwpU&usqp=CAc"
+               alt="toy3">
+                </div>
+           </div> 
+   </div>
+   <div id="demo" class="carousel slide w-25 m-2" data-ride="carousel">  
+      <!-- 
+        Indicators -->
+        <ul class="carousel-indicators">    
+         <li data-target="#demo" data-slide-to="0" class="active"></li>    
+         <li data-target="#demo" data-slide-to="1"></li>
+             <li data-target="#demo" data-slide-to="2"></li>
+           </ul> 
+      <!-- 
+         The slideshow -->
+        <div class="carousel-inner"> 
+         <div class="carousel-item active">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1gOQfer_2nizuNzmZz2en4eArlvxmkqEwXgeO7orfT42dkP8yiahSR33LwdcgZ35kiXleaI1S&usqp=CAc"
+               alt="toy1">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOYCVnuLDiCHcwSTfq0XqJA4JcSFhQK2Y24T9Ew0v7pKlMnMEURlPoZt1VJCY&usqp=CAc"
+               alt="toy2">
+                </div>
+             <div class="carousel-item">
+                  <img
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToZv9apxBBIRPxwzwBx1RoK_Ccxzn_q031igWg85_l7MaPZDdtyV8CFud2wizLviieya1Ak2c&usqp=CAc"
+               alt="toy3">
+                </div>
+           </div> 
+   </div>
+</div>

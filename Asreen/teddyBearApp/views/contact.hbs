@@ -1,0 +1,113 @@
+
+      <!-- banner -->
+      <div class="inner_page-banner one-img">
+      </div>
+      <!--//banner -->
+      <!-- short -->
+      <div class="using-border py-3">
+         <div class="inner_breadcrumb  ml-4">
+            <ul class="short_ls">
+               <li>
+                  <a href="/">Home</a>
+                  <span>/ /</span>
+               </li>
+               <li>Contact</li>
+            </ul>
+         </div>
+      </div>
+      <!-- //short-->
+      <!--contact -->
+      <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            {{#if msg}}
+            <div class="alert alert-success">
+               <h2 class="text-dark">{{msg}}</h2>
+            </div>
+            {{/if}}
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Contact US</h3>
+            <div class="contact-list-grid">
+               <form action="/contact" method="post">
+                  <div class=" agile-wls-contact-mid">
+                     <div class="form-group contact-forms">
+                        <input type="text" class="form-control" placeholder="Name" name='name'>
+                     </div>
+                     <div class="form-group contact-forms">
+                        <input type="email" class="form-control" placeholder="Email" name="email">
+                     </div>
+                     <div class="form-group contact-forms">
+                        <input type="text" class="form-control" placeholder="Phone" name="phone">
+                     </div>
+                     <div class="form-group contact-forms">
+                        <textarea class="form-control" rows="3" name="message"></textarea>
+                     </div>
+                     <button type="submit" class="btn btn-block sent-butnn">Send</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <!--//contact-map -->
+      </section>   
+      <section class="sub-below-address py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Get In Touch Us</h3>
+            <div class="icons mt-4 text-center">
+               <ul>
+                  <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                  <li><a href="#"><span class="fas fa-envelope"></span></a></li>
+                  <li><a href="#"><span class="fas fa-rss"></span></a></li>
+                  <li><a href="#"><span class="fab fa-vk"></span></a></li>
+               </ul>
+               <p class="my-3">velit sagittis vehicula. Duis posuere 
+                  ex in mollis iaculis. Suspendisse tincidunt
+                  velit sagittis vehicula. Duis posuere 
+                  velit sagittis vehicula. Duis posuere 
+               </p>
+            </div>
+            <div class="email-sub-agile">
+               <form action="/sendContactEmail" method="post">
+                  <div class="form-group sub-info-mail">
+                     <input type="email" class="form-control email-sub-agile" placeholder="Email" name="email">
+                  </div>
+                  <div class="text-center">
+                     <button type="submit" class="btn subscrib-btnn">Subscribe</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!--//subscribe-->
+      <!-- Modal 1-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="register-form">
+                     <form action="#" method="post">
+                        <div class="fields-grid">
+                           <div class="styled-input">
+                              <input type="text" placeholder="Your Name" name="Your Name" required="">
+                           </div>
+                           <div class="styled-input">
+                              <input type="email" placeholder="Your Email" name="Your Email" required="">
+                           </div>
+                           <div class="styled-input">
+                              <input type="password" placeholder="password" name="password" required="">
+                           </div>
+                           <button type="submit" class="btn subscrib-btnn">Login</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+ 
