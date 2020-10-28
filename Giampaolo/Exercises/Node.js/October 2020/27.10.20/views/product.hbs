@@ -1,0 +1,72 @@
+<h1>Create products</h1>
+{{#if msg}}
+<div class="alert alert-primary" role="alert">
+    {{msg}}
+</div>
+{{/if}}
+<form action="/product/create" method="POST">
+    <div class="form-group">
+        <label for="product_name">Product Name</label>
+        <input type="text" name="product_name" class="form-control" id="product_name" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="price">Product price</label>
+        <input type="number" name="price" class="form-control" id="price" aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+<hr>
+{{#if data}}
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Added date</th>
+      <th scope="col">Adding time</th>
+      <th scope="col">Updated</th>
+      <th scope="col">Updated time</th>
+      <th scope="col">Price</th>
+      <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{_id}}</td>
+      <td>{{product_name}}</td>
+      <td>{{dateFormat created_at}}</td>
+      <td>{{timeFormat created_at}}</td>
+      <td>{{dateFormat updated_at}}</td>
+      <td>{{timeFormat updated_at}}</td>
+      <td>{{price}}</td>
+      <td>
+          <a href="/product/delete/{{_id}}">
+          <i class="fas fa-trash-alt"></i>
+          </a>
+          <a href="/product/detail/{{_id}}">
+          <i class="fas fa-info-circle"></i>
+          </a>
+          <a href="#" onclick="getDetail('{{_id}}')" data-toggle="modal" data-target="#productDetailId">
+          <i class="fas fa-circle"></i>
+          </a>
+          <a href="#" onclick="getUpdate('{{_id}}')" data-toggle="modal" data-target="#productUpdateId">
+          <i class="fas fa-edit"></i>
+          </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
+
+{{!-- modals --}}
+<!-- Modal -->
+<div class="modal fade" id="productDetailId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" id="resultId"></div>
+</div>
+
+<div class="modal fade" id="productUpdateId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" id="updateFormId"></div>
+</div>
+

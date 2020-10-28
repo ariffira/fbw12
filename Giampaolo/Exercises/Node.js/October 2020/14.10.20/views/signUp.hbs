@@ -1,0 +1,97 @@
+<div class="container" style="vertical-align: middle;">
+    <div class="row centered-form">
+        <div class="col-md-12 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+
+                {{! Sign Up Title }}
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please register account</h3>
+                </div>
+
+                {{! Form Area - Start }}
+                <div class="panel-body">
+                    <form action="/user/signUp" method="POST" role="form" autocomplete="on">
+
+                        {{! First Form Row: Username }}
+                        <div class="row">
+                            <div class="col-xs-5 col-sm-5 col-md-5">
+                                <div class="form-group">
+                                    <label for="text">Username</label>
+                                    <input type="text" name="userName" id="userName" class="form-control input-sm"
+                                        placeholder="Use your username">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{! Second Form Row: First Name / Last Name }}
+                        <div class="row">
+                            <div class="col-xs-5 col-sm-5 col-md-5">
+                                <div class="form-group">
+                                    <label for="email">First Name</label>
+                                    <input type="text" name="firstName" id="firstName" class="form-control input-sm"
+                                        placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-5">
+                                <div class="form-group">
+                                    <label for="email">Last Name</label>
+                                    <input type="text" name="lastName" id="lastName" class="form-control input-sm"
+                                        placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{! Third Form Row: E-Mail }}
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10">
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" name="email" id="email" class="form-control input-sm"
+                                        placeholder="example@email.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{! Fourth Form Row: Confirm E-Mail }}
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-10 col-md-10">
+                                <div class="form-group">
+                                    <label for="email">Confirm Email address</label>
+                                    <input type="email" name="confirmEmail" id="confirmEmail"
+                                        class="form-control input-sm" placeholder="example@email.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{! Fifth Form Row: Password }}
+                        <div class="row">
+                            <div class="col-xs-5 col-sm-5 col-md-5">
+                                <div class="form-group">
+                                    <label for="email">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control input-sm"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-sm-5 col-md-5">
+                                <div class="form-group">
+                                    <label for="email">Confirm Password</label>
+                                    <input type="password" name="passwordConfirmation" id="passwordConfirmation"
+                                        class="form-control input-sm" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                        </div>
+
+                        {{! Submit Button }}
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2">
+                                <input type="submit" value="Register" class="btn btn-info btn-block">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                {{! Form Area - End }}
+            </div>
+        </div>
+    </div>
+</div>

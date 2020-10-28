@@ -1,0 +1,28 @@
+{{#if error}}
+<div class="alert alert-danger" role="alert">
+    {{error}}
+</div>
+{{/if}}
+
+<form class="px-4 py-3" method="POST" role="form" autocomplete="on" action="/user/login">
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="check">
+                Remember me
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">New around here? Sign up</a>
+<a class="dropdown-item" href="#">Forgot password?</a>

@@ -1,6 +1,7 @@
 // Modules
 const express = require('express');
-const axios = require('axios');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
 const app = express();
 
 // Routes Modules
@@ -9,8 +10,9 @@ const indexGetFullName = require('./routes/getFullName');
 const indexApi = require('./routes/api');
 
 // Server URL
-const PORT = 8082;
+const PORT = process.env.PORT || 5000;
 const host = 'localhost';
+const DBLink = process.env.DBLink;
 
 // Server Settings
 app.set('view engine', 'hbs');
