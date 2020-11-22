@@ -1,0 +1,127 @@
+{{> header}}
+
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container text-center">
+
+
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+
+  <section id="blog" class="blog">
+    <div class="container">
+
+      {{#if msg}}
+        <div class="alert alert-warning" role="alert">
+          {{msg}}
+        </div>
+        {{/if}}
+        
+      <div class="row">
+        
+        <!-- ======= Post info ======= -->
+        <div class="col-lg-9 entries">
+          {{#with post}}
+          <article class="entry entry-single">
+
+            <div class="entry-img">
+              <img src="{{photo}}" alt="" class="img-fluid">
+            </div>
+
+            <h2 class="entry-title">
+              <a>{{title}}</a>
+            </h2>
+
+            <div class="entry-meta">
+              <ul>
+                <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i>
+                  <a><time>{{date}}</time></a></li>
+              </ul>
+            </div>
+
+            <div class="entry-content">
+              <p>
+                {{text}}
+              </p>
+            </div>
+          </article><!-- End blog entry -->
+
+
+          <div class="blog-comments">
+
+            <h4 class="comments-count">Comments</h4>
+            {{#each comments}}
+            <div class="comment clearfix">
+              <img src="{{photo}}" class="comment-img  float-left" alt="">
+              <h5><a href="">{{name}}</a></h5>
+              <time>{{date}}</time>
+              <p>
+                {{comment}}
+              </p>
+            </div>
+            {{/each}}
+
+            {{/with}}
+            <div class="reply-form">
+              <h4>Leave a Comment</h4>
+              <form action="/write-comment" method="POST">
+
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea name="comment" class="form-control" placeholder="Your Comment" required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Post Comment</button>
+
+              </form>
+
+            </div>
+
+          </div><!-- End blog comments -->
+
+        </div><!-- End blog entries list -->
+
+        <div class="col-lg-3">
+
+          <section class="team p-0">
+
+            {{#with user}}
+            <div class="d-flex align-items-stretch">
+              <div class="member">
+                <div class="member-img">
+                  <img src="{{photo}}" class="img-fluid" alt="">
+                </div>
+
+                <div class="member-info">
+                  <h4>Auter Info</h4>
+
+                  <span>
+                    <h5>{{name}}</h5>
+                  </span>
+                  <span><b>Email:</b> {{email}}</span>
+                  <span><b>Job:</b> {{job}}</span>
+
+                </div>
+              </div>
+            </div>
+        </div>
+        {{/with}}
+
+  </section>
+
+  </div><!-- End blog sidebar -->
+
+  </div>
+
+  </div>
+  </section><!-- End Blog Section -->
+
+</main><!-- End #main -->
+
+{{> footer}}

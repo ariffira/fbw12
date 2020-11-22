@@ -1,0 +1,25 @@
+{
+  "name": "mehn-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "adel_Hanifa",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "*",
+    "alert": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-session": "*",
+    "hbs": "*",
+    "mongoose": "*",
+    "multer": "*",
+    "mustache": "*"
+  }
+}

@@ -1,0 +1,148 @@
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">DEVNET</a></h1>
+      
+      <nav class="nav-menu d-none d-lg-block">
+        
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container text-center">
+
+      <h2>To enter our website you need to login or register your self</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <!-- ======= Blog Section ======= -->
+  <section id="blog" class="blog">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- ======= Register ======= -->
+        <div class="col-lg-8 entries">
+          <div class="blog-comments">
+            {{#if msg1}}
+            <div class="alert alert-warning" role="alert">
+              {{msg1}}
+            </div>
+            {{/if}}
+            <div class="reply-form">
+              <h4>Register form</h4>
+              <p>Fill the form below to create an account. All fields are required</p>
+
+              <div class="container contact">
+                <div class="mt-5 mt-lg-0">
+
+                  <form role="form" class="email-form" action="/sign-up" enctype="multipart/form-data" method="POST">
+
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Your Full Name"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                      <div class="validate"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email Address"
+                        data-rule="email" data-msg="Please enter a valid email" required>
+                      <div class="validate"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="password" placeholder="Your Password"
+                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of password" required>
+                      <div class="validate"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="file" class="form-control py-2" name="myimg" accept="image/*"
+                        placeholder="Upload your Image" data-msg="Please upload an Image" required>
+                      <div class="validate"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" name="job" class="form-control" placeholder="Your Job Title"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                      <div class="validate"></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+
+                    <div class="text-center"><button type="submit">Sign Up</button></div>
+
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- End blog entries list -->
+
+
+        <!-- ======= LOG IN ======= -->
+        <div class="col-lg-4">
+
+          <div class="blog-comments">
+            {{#if msg2}}
+            <div class="alert alert-danger" role="alert">
+              {{msg2}}
+            </div>
+            {{/if}}
+            <div class="reply-form">
+              <h4>Log in form</h4>
+              <p>Fill the form below to go to your account.</p>
+
+              <div class="container contact">
+                <div class="mt-5 mt-lg-0">
+
+                  <form action="/log-in" method="post" role="form" class="email-form">
+
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email Address"
+                        data-rule="email" data-msg="Please enter a valid email" required>
+                      <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="password" placeholder="Your Password"
+                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of password" required>
+                      <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Log IN</button></div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- End blog sidebar -->
+
+      </div>
+
+    </div>
+  </section><!-- End Blog Section -->
+
+</main><!-- End #main -->
+
+{{> footer}}

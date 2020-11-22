@@ -1,0 +1,81 @@
+{{> header}}
+
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container text-center">
+
+      <h2>to add new post
+        <a type="button" class="text-primary" data-toggle="modal" data-target="#staticBackdrop">
+          click here
+        </a>
+      </h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <!-- ======= Blog Section ======= -->
+  <section class="blog">
+    <div class="container">
+
+      <div class="row" id="allPostsID">
+
+        {{#if noIMG}}
+        <div class="col-md-12 alert alert-warning text-center my-4" role="alert">
+          <h4 class="alert-heading">Welcom to your posts page</h4>
+          <p>You don't have any posts in your profile</p>
+          <hr>
+          <p class="mb-0">{{noIMG}}</p>
+        </div>
+        {{/if}}
+
+
+      </div>
+
+    </div>
+  </section><!-- End Blog Section -->
+
+</main><!-- End #main -->
+
+{{> footer}}
+
+{{!-- modal  --}}
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add new post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="form" action="/upload-post" enctype="multipart/form-data" method="POST">
+
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Post title:</label>
+            <input type="text" class="form-control" name="title" placeholder="Enter post title" required>
+          </div>
+
+          <div class="form-group">
+            <label>Example file input</label>
+            <input type="file" class="form-control-file" name="postimg" accept="image/*" required>
+          </div>
+
+          <div class="form-group">
+            <label>Post message:</label>
+            <textarea class="form-control" name="text" placeholder="Enter some text" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Post now</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

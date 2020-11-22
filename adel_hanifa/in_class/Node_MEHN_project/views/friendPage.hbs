@@ -1,0 +1,115 @@
+{{> header}}
+
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container text-center">
+
+     
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <!-- ======= Blog Section ======= -->
+
+      <!-- ======= Post info ======= -->
+      <div class="col-lg-9 entries">
+        <section class="blog">
+
+          <div class="row" id="allPostsID">
+
+            {{#if msg}}
+            <div class="col-md-12 alert alert-warning text-center my-4" role="alert">
+              <h4 class="alert-heading">Welcom to {{user.name}} page</h4>
+              <p>this user don't have any posts in his profile</p>
+              <hr>
+              <p class="mb-0">{{msg}}</p>
+            </div>
+            {{/if}}
+
+
+          </div>
+        </section><!-- End Blog Section -->
+      </div>
+
+      <div class="col-lg-3">
+        <section class="team">
+
+          {{#with user}}
+          <div class="d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="{{photo}}" class="img-fluid" alt="">
+              </div>
+
+              <div class="member-info">
+                <h4>Friend Info</h4>
+
+                <span>
+                  <h5>{{name}}</h5>
+                </span>
+                <span><b>Email:</b> {{email}}</span>
+                <span><b>Job:</b> {{job}}</span>
+
+              </div>
+            </div>
+          </div>
+          {{/with}}
+
+        </section>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</main><!-- End #main -->
+
+{{> footer}}
+
+{{!-- modal  --}}
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add new post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="form" action="/upload-post" enctype="multipart/form-data" method="POST">
+
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Post title:</label>
+            <input type="text" class="form-control" name="title" placeholder="Enter post title" required>
+          </div>
+
+          <div class="form-group">
+            <label>Example file input</label>
+            <input type="file" class="form-control-file" name="postimg" accept="image/*" required>
+          </div>
+
+          <div class="form-group">
+            <label>Post message:</label>
+            <textarea class="form-control" name="text" placeholder="Enter some text" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Post now</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

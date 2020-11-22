@@ -1,0 +1,54 @@
+{{> header}}
+
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container text-center">
+
+      <h2>Profile Page</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <!-- ======= Blog Section ======= -->
+  <section class="team">
+    <div class="container">
+
+      <div class="row">
+        {{#with user}}
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <div class="member-img">
+              <img src="{{photo}}" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-6 d-flex align-items-stretch">
+          <div class="member w-100">
+            <div class="member-info">
+              <h4>Welcome <b>{{name}}</b> to your profile</h4>
+              <span>here are some Information about you:</span>
+              <div class="text-left my-2">
+                <h5><b>Address:</b> MusterStreet. 00, 12345 MusterCity</h5>
+                <h5><b>Email:</b> {{email}}</h5>
+                <h5><b>Birthday:</b> 12/12/1991</h5>
+                <h5><b>Job:</b> {{job}}</h5>
+                <h5><b>Phone:</b> 0123 123456789</h5>
+                <h5><b>Webpage:</b> {{web email}}</h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/with}}
+      </div>
+
+    </div>
+  </section><!-- End Blog Section -->
+
+</main><!-- End #main -->
+
+{{> footer}}
