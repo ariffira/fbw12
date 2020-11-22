@@ -1,0 +1,100 @@
+<main role="main">
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      {{#if noIMG}}
+      <div class="alert alert-warning text-center my-4" role="alert">
+        <h4 class="alert-heading">Welcom to your profile</h4>
+        <p>You don't have any images in your album</p>
+        <hr>
+        <p class="mb-0">{{noIMG}}</p>
+      </div>
+      {{/if}}
+
+      <div class="row">
+
+        {{#each data}}
+        {{#with this}}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="uploads/{{filename}}">
+
+            <div class="card-body">
+              <p class="card-text">
+                Original name: {{split originalname}}<br>
+                File type: {{split2 mimetype}}<br>
+                File size: {{round size}}
+              </p>
+
+              <div class="d-flex justify-content-between align-items-center">
+
+                <div class="btn-group">
+                  <a type="button" href="/edit/{{_id}}" class="btn btn-sm btn-outline-warning">Edit</a>
+                  <button type="button" class="btn btn-sm btn-outline-primary" data-toggle="modal"
+                    data-target="#exampleModal" value='{{_id}}' onclick="getData(this.value)">
+                    Edit
+                  </button>
+                  <a type="button" href="/delete/{{_id}}" class="btn btn-sm btn-outline-danger">Delete</a>
+                </div>
+
+                <small class="text-muted">{{date}}</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        {{/with}}
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Picture</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="imgID">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="uploads/">
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">
+          <form action="/update-info" method="POST">
+            <p>Original name: <input class="float-right" type="text" name="originalname" id="orginalNameID"required></p>
+            <p>File type: <input class="float-right" type="text" name="mimetype" id="fileTypeID" disabled></p>
+            <p>File size: <input class="float-right" type="text" name="size" id="fileSizeID" disabled></p>
+            <p>Upload date: <input class="float-right" type="text" name="date" id="fileDateID" disabled></p>
+            <button type="submit" class="btn btn-sm btn-outline-success">Update info</button>
+          </form>
+          </p>
+          <hr>
+          <div class="d-flex justify-content-between align-items-center">
+
+            <div class="btn-group">
+              <form action="/save-update" method="POST" enctype="multipart/form-data">
+                <p><input type="file" name="myimg" accept="image/*" required></p>
+                <button type="submit" class="btn btn-sm btn-outline-success">
+                  Upload image
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
