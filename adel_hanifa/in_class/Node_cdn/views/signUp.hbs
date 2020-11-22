@@ -1,0 +1,95 @@
+<h1>Welcome to my eSHop</h1>
+{{#if msg}}
+<div class="alert alert-primary" role="alert">
+  {{msg}}
+</div>
+{{/if}}
+<div class="container">
+    <h2 class="text-center">Registration Form</h2>
+
+    <form enctype="multipart/form-data" action="/user/sign-up" method="POST" >
+
+        <!-- Name -->
+        <div class="form-group row">
+            <input type="text" class="form-control col-sm-4" name="firstName" placeholder="Enter your First Name"  required onkeyup="checkFirstName(this.value)">
+            <input type="text" class="form-control col-sm-4" name="middleName" placeholder="Enter your Middle Name">
+            <input type="text" class="form-control col-sm-4" name="lastName" placeholder="Enter your Last Name" required onkeyup="checkLastName(this.value)">
+            <div class="col-sm-4 text-danger" id="firstNameMSG"></div>
+            <div class="col-sm-4 text-danger"></div>
+            <div class="col-sm-4 text-danger" id="lastNameMSG"></div>
+        </div>
+
+         <!-- age -->
+        <div class="form-group row">
+            <input type="number" class="form-control" name="age" placeholder="Enter your age" required min="16" max="70" onkeyup="checkAge(this.value)">
+            <div class="col-sm-4 text-danger" id="ageMSG"></div>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group row">
+            <p class="col-sm-6"><input type="radio" name="gender" value="true" required checked> Male</p>
+            <p class="col-sm-6"><input type="radio" name="gender" value="false" required> Female</p>
+        </div>
+
+        <!-- Email Password -->
+        <div class="form-group row">
+            <input type="email" class="form-control col-sm-6" name="email" placeholder="Enter your Email" required onkeyup="checkEmail(this.value)">
+            <input type="password" class="form-control col-sm-6" name="password" placeholder="Enter your password" required onkeyup="checkPassword(this.value)">
+            <div class="col-sm-6 text-danger" id="emailMSG"></div>
+            <div class="col-sm-6 text-danger" id="passwordMSG"></div>
+        </div>
+       
+        <!-- profile_pic -->
+        <div class="form-group row">
+            <input type="file" class="form-control" name="profile_pic" accept="image/*" placeholder="Enter your profile_pic" required >
+        </div>
+        
+        <!-- Address -->
+        <div class="form-group row">
+        <!-- Street & Haus NR: -->
+            <input type="text" class="form-control col-sm-9" name="street" placeholder="Enter your Street" required>
+            <input type="text" class="form-control col-sm-3" name="house_no" placeholder="Enter your Haus_NR." required>
+        
+        <!-- PLZ & City -->
+            <input type="number" class="form-control col-sm-3" name="zip" placeholder="Enter your Zip code" required>
+            <input type="text" class="form-control col-sm-9" name="city" placeholder="Enter your City" required>
+
+        </div>
+
+        {{!-- country  --}}
+        <div class="form-group row">
+            <input type="text" class="form-control col-sm-8" name="country" placeholder="Enter your Country Name"  required>
+            <select class="form-control col-sm-4" name="country_code" placeholder="Enter your Country Code" required>
+                <option selected disabled>select your Country Code</option>
+                <option value="de">DE</option>
+                <option value="en">EN</option>
+                <option value="sy">SY</option>
+                <option value="bd">BD</option>
+                <option value="in">IN</option>
+                <option value="iq">IQ</option>
+                <option value="other">other</option>
+            </select>
+        
+        </div>
+
+        <!-- role -->
+        <div class="form-group row">
+            <p class="col-sm-6"><input type="radio" name="role" value="admin" required> Admin</p>
+            <p class="col-sm-6"><input type="radio" name="role" value="customer" required checked> Customer</p>
+        </div>
+
+        <!-- buttons -->
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <button type="submit" class="btn btn-success w-100">Send Data</button>
+            </div>
+            <div class="col-sm-4">
+                <button type="reset" class="btn btn-danger w-100">Clear the Form</button>
+            </div>
+            <div class="col-sm-4">
+                <a href="/user/fake/signup" class="btn btn-warning w-100 text-white">Create a Faker account</a>
+            </div>
+        </div>
+
+    </form>
+</div>

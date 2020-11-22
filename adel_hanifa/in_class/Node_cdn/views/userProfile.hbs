@@ -1,0 +1,74 @@
+<h1>Welcome to my eSHop</h1>
+{{#if msg}}
+<div class="alert alert-primary text-center" role="alert">
+    {{msg}}
+</div>
+{{/if}}
+<div class="container w-50 mx-auto">
+    <h2 class="text-center">Profile Page</h2>
+{{#with user}}
+    <table class="table table-dark">
+        {{#if profile_pic.filename}}
+        <tr>  
+            <td colspan="2"><img src="/img/{{profile_pic.filename}}" class="rounded mx-auto d-block" alt="..."></td>
+        </tr>
+        {{/if}}
+        {{#if profile_url}}
+        <tr>  
+            <td colspan="2"><img src="{{profile_url}}" class="rounded mx-auto d-block" alt="..."></td>
+        </tr>
+        {{/if}}
+        <tr>
+            <th scope="col">name</th>
+            <td>{{name.firstName}} {{name.middleName}} {{name.lastName}}</td>
+        </tr>
+        <tr>
+            <th scope="col">email</th>
+            <td>{{email}}</td>
+        </tr>
+        <tr>
+            <th scope="col">age</th>
+            <td>{{age}}</td>
+        </tr>
+        <tr>
+            <th scope="col">gender</th>
+            <td>{{getGender gender}}</td>
+        </tr>
+        <tr>
+            <th scope="col">role</th>
+            <td>{{role}}</td>
+        </tr>
+        <tr>
+            <th scope="col">created_at</th>
+            <td>{{getDate created_at}}</td>
+        </tr>
+        <tr>
+            <th scope="col">adress</th>
+            <td>{{adress.street}} {{adress.house_no}}, {{adress.zip}} {{adress.city}}</td>
+        </tr>
+        <tr>
+            <th scope="col">country</th>
+            <td>{{country}} {{country_code}}</td>
+        </tr>
+        {{#if facebookID}}
+        <tr>
+            <th scope="col">facebookID</th>
+            <td>{{facebookID}}</td>
+        </tr>
+        {{/if}}
+        {{#if googleID}}
+        <tr>
+            <th scope="col">googleID</th>
+            <td>{{googleID}}</td>
+        </tr>
+        {{/if}}
+        <tr>
+            <td colspan="2" class="text-center">
+                <a class="btn btn-outline-warning" type="buttom" href="">Edit</a>
+                <a class="btn btn-outline-danger" type="buttom" href="/user/logOut">Log Out</a>
+            </td>
+        </tr>
+    </table>
+{{/with}}
+
+</div>

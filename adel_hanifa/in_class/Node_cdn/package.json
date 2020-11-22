@@ -1,0 +1,27 @@
+{
+  "name": "onlineshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "mai",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "*",
+    "connect-flash": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-session": "*",
+    "express-validator": "^6.6.1",
+    "faker": "^5.1.0",
+    "hbs": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "multer": "*",
+    "passport": "^0.4.1",
+    "passport-facebook": "*",
+    "passport-google-oauth20": "*"
+  }
+}
