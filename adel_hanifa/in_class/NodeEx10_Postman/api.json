@@ -1,0 +1,167 @@
+[
+    {
+        "shopName": "Lidl",
+        "area": "rüttenscheid",
+        "city": "berlin",
+        "toilet_tissue": "sold",
+        "rice": "available",
+        "sugar": "sold",
+        "coronaPrecaution": "available",
+        "card_use": ["bankcard", "amex", "visa"],
+        "cash": "not available"
+    },
+    {
+        "shopName": "Aldi",
+        "area": "Stadt-west",
+        "city": "Düsseldorf",
+        "toilet_tissue": "available",
+        "rice": "available",
+        "sugar": "sold",
+        "coronaPrecaution": "comming soon",
+        "card_use": ["bankcard", "Apple pay", "Google pay"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Rewe",
+        "area": "Zentrum",
+        "city": "Mönchengladbach",
+        "toilet_tissue": "available",
+        "rice": "sold",
+        "sugar": "available",
+        "coronaPrecaution": "sold",
+        "card_use": ["not available"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Netto",
+        "area": "Altona",
+        "city": "Hamburg",
+        "toilet_tissue": "available",
+        "rice": "available",
+        "sugar": "available",
+        "coronaPrecaution": "available",
+        "card_use": ["bankcard", "amex", "visa" , "Apple pay", "Google pay"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Real",
+        "area": "Langenhagen",
+        "city": "Hannover",
+        "toilet_tissue": "sold",
+        "rice": "comming soon",
+        "sugar": "sold",
+        "coronaPrecaution": "comming soon",
+        "card_use": ["bankcard"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Lidl",
+        "area": "rüttenscheid",
+        "city": "berlin",
+        "toilet_tissue": "sold",
+        "rice": "available",
+        "sugar": "sold",
+        "coronaPrecaution": "available",
+        "card_use": ["bankcard", "amex", "visa"],
+        "cash": "not available"
+    },
+    {
+        "shopName": "Aldi",
+        "area": "Stadt-west",
+        "city": "Düsseldorf",
+        "toilet_tissue": "available",
+        "rice": "available",
+        "sugar": "sold",
+        "coronaPrecaution": "comming soon",
+        "card_use": ["bankcard", "Apple pay", "Google pay"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Rewe",
+        "area": "Zentrum",
+        "city": "Mönchengladbach",
+        "toilet_tissue": "available",
+        "rice": "sold",
+        "sugar": "available",
+        "coronaPrecaution": "sold",
+        "card_use": ["not available"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Netto",
+        "area": "Altona",
+        "city": "Hamburg",
+        "toilet_tissue": "available",
+        "rice": "available",
+        "sugar": "available",
+        "coronaPrecaution": "available",
+        "card_use": ["bankcard", "amex", "visa" , "Apple pay", "Google pay"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Real",
+        "area": "Langenhagen",
+        "city": "Hannover",
+        "toilet_tissue": "sold",
+        "rice": "comming soon",
+        "sugar": "sold",
+        "coronaPrecaution": "comming soon",
+        "card_use": ["bankcard"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Lidl",
+        "area": "rüttenscheid",
+        "city": "berlin",
+        "toilet_tissue": "sold",
+        "rice": "available",
+        "sugar": "sold",
+        "coronaPrecaution": "available",
+        "card_use": ["bankcard", "amex", "visa"],
+        "cash": "not available"
+    },
+    {
+        "shopName": "Aldi",
+        "area": "Stadt-west",
+        "city": "Düsseldorf",
+        "toilet_tissue": "available",
+        "rice": "available",
+        "sugar": "sold",
+        "coronaPrecaution": "comming soon",
+        "card_use": ["bankcard", "Apple pay", "Google pay"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Rewe",
+        "area": "Zentrum",
+        "city": "Mönchengladbach",
+        "toilet_tissue": "available",
+        "rice": "sold",
+        "sugar": "available",
+        "coronaPrecaution": "sold",
+        "card_use": ["not available"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Netto",
+        "area": "Altona",
+        "city": "Hamburg",
+        "toilet_tissue": "available",
+        "rice": "available",
+        "sugar": "available",
+        "coronaPrecaution": "available",
+        "card_use": ["bankcard", "amex", "visa" , "Apple pay", "Google pay"],
+        "cash": "available"
+    },
+    {
+        "shopName": "Real",
+        "area": "Langenhagen",
+        "city": "Hannover",
+        "toilet_tissue": "sold",
+        "rice": "comming soon",
+        "sugar": "sold",
+        "coronaPrecaution": "comming soon",
+        "card_use": ["bankcard"],
+        "cash": "available"
+    }
+]

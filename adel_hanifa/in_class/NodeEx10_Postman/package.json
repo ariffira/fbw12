@@ -1,0 +1,23 @@
+{
+  "name": "postman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "adel",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "*",
+    "axios": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-session": "*",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "*",
+    "mongoose": "*",
+    "multer": "*"
+  }
+}
