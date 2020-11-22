@@ -1,0 +1,51 @@
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="breadcrumbs" data-aos="fade-in">
+    <div class="container">
+      <h2>Class Info</h2>
+      <p>Show or edit a Class</p>
+    </div>
+    <div class="btn-group mt-2">
+      <button class="btn btn-outline-light mx-1" type="button" data-toggle="modal" data-target="#staticBackdrop">Edit
+        Class</button>
+      <a href="/user-page" class="btn btn-outline-primary mx-1" type="button">Go back</a>
+      <a href="/log-out" class="btn btn-outline-danger mx-1" type="button">Log out</a>
+    </div>
+  </div><!-- End Breadcrumbs -->
+
+  <!-- ======= Contact Section ======= -->
+  <section class="container w-50 my-4">
+    <div class="container mb-4">
+      <table class="table">
+        <tr>
+          <th scope="row" colspan="4">
+            <h3 class="text-center">{{loud class.title}}</h3>
+          </th>
+        </tr>
+        <tr>
+          <th scope="row" class="w-25">Teacher:</th>
+          <td colspan="3">{{teacher}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="w-25">Start Date:</th>
+          <td>{{class.start}}</td>
+          <th scope="row" class="w-25">End Date:</th>
+          <td>{{class.end}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="w-25">Students:</th>
+          <td colspan="3">
+            <div class="row">
+              {{#each students}}
+              <div class="col-sm-6"><b>{{addOne @key}}-</b> {{this}}</div>
+              {{/each}}
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->

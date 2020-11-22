@@ -1,0 +1,58 @@
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+            <h2>Students List</h2>
+            <p>Add or edit a Teacher info</p>
+        </div>
+        <div class="btn-group mt-2">
+            <form class="col-auto" action="/student-list-find" method="POST">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="firstName" placeholder="Enter student's name.....">
+                    <div class="input-group-prepend">
+                        <button type="submit" class="input-group-text">&#128270;</button>
+                    </div>
+                </div>
+            </form>
+            <a href="/user-page" class="btn btn-outline-primary mx-1" type="button">Go back</a>
+            <a href="/log-out" class="btn btn-outline-danger mx-1" type="button">Log out</a>
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="container my-4">
+        
+        {{> tableOfUsers}}
+
+        {{#if msg}}
+        <div class="alert alert-danger " role="alert">
+            {{msg}}
+        </div>
+        {{/if}}
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Edit Student's Profile</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <form action="/edit-user-by-admin" method="POST" id="dispayUserInfo">
+
+
+
+            </form>
+        </div>
+    </div>
+</div>

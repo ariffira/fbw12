@@ -1,0 +1,151 @@
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+            <h2>Sign up</h2>
+            <p>Please sign up to create your account</p>
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="container">
+
+        <form class="form" action="/sign-up" enctype="multipart/form-data" method="POST">
+
+            <div class="col-sm-12 text-center">
+                <h1 style="font-size: 60px;" id="textid2">Please fill the form below:</h1><br>
+            </div>
+
+            <!-- First Name -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="firstName">First Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="firstName" placeholder="Enter your First Name"
+                        required>
+                </div>
+            </div>
+
+            <!-- Last Name: -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="lastName" placeholder="Enter your Last Name" required>
+                </div>
+            </div>
+
+            <!-- Birthday -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="birthday">Birthday:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" name="birthday" placeholder="Enter your Birthday"
+                        max="2015-09-09" min="1920-09-09" required>
+                </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="gender">Gender:</label>
+                <div class="col-sm-10 row">
+                    <p class="col-sm-2"><input type="radio" name="gender" value="Male" required> Male</p>
+                    <p class="col-sm-2"><input type="radio" name="gender" value="Female" required> Female</p>
+                </div>
+            </div>
+
+            <!-- Photo -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="lastName">Photo:</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control" name="myfile" placeholder="Enter your Last Name" required>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Country -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="country">Country:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="country" placeholder="Enter Your Country name"
+                        required>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="address">Address:</label>
+                <div class="col-sm-10">
+                    <!-- Street & Haus NR: -->
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="addressStreet" placeholder="Street" required>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="addressNr" placeholder="Haus_NR." required>
+                        </div>
+                    </div>
+                    <!-- PLZ & City -->
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" name="addressPlz" placeholder="Zip / PLZ" min="0"
+                                pattern="[0-9]{5}" minlength="5" required>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="addressCity" placeholder="City" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="phoneNumber">Phone Number:</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" name="phoneNumber" placeholder="Enter your Phone Number"
+                        min="0" required>
+                </div>
+            </div>
+
+            <hr>
+            <!-- User group -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="userGroup">User Group:</label>
+                <div class="col-sm-10 row">
+                    <p class="col-sm-2"><input type="radio" name="userGroup" value="Teacher" required> Teacher</p>
+                    <p class="col-sm-2"><input type="radio" name="userGroup" value="Student" required> Student</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="emailID" name="email" placeholder="Enter your Email"
+                        required>
+                    <span id="emailERR"></span>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="password">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" placeholder="Enter Your password"
+                        required>
+                </div>
+            </div>
+
+
+            <!-- buttons -->
+            <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success">Send Data</button>
+                    <button type="reset" class="btn btn-danger">Clear the Form</button>
+                </div>
+            </div>
+
+        </form>
+
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->

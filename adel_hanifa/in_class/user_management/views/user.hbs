@@ -1,0 +1,128 @@
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+            <h2>{{myUser.userGroup}} Page</h2>
+            <p>Wellcome to your profile</p>
+        </div>
+        <div class="btn-group mt-2">
+            {{#if adminsButton}}
+                <a href="/classes-page" class="btn btn-outline-light mx-1" type="button">Classes</a>
+                <a href="/teachers-list" class="btn btn-outline-light mx-1" type="button">Teachers</a>
+                <a href="/students-list" class="btn btn-outline-light m mx-1" type="button">Students</a>
+            {{/if}}
+                <button class="btn btn-outline-primary mx-1" type="button" data-toggle="modal" data-target="#staticBackdrop">Edit</button>
+                <a href="/log-out" class="btn btn-outline-danger mx-1"  type="button">Log out</a>
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="">
+
+        <div class="container w-50 ">
+            {{#with myUser}}       
+            <table class="table table-borderless mb-4">
+                <tr>
+                    <th scope="row">Name:</th>
+                    <td>{{loud firstName}} {{loud lastName}}</td>
+                    <td rowspan="3" style="width:200px;">
+                        <div>
+                            <img src={{photo}} class="img-thumbnail rounded" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Birthday:</th>
+                    <td>{{birthday}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gender:</th>
+                    <td>{{gender}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Country:</th>
+                    <td>{{country}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Address:</th>
+                    <td>{{addressStreet}} {{addressNr}}<br>{{addressPlz}} {{addressCity}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Phone:</th>
+                    <td>{{phoneNumber}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Email:</th>
+                    <td>{{email}}</td>
+                </tr>
+            </table>
+            {{/with}}
+        </div>
+
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Edit your Profile</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            {{#with myUser}}
+            <form action="/save-changes" method="POST">
+
+                <div class="modal-body row mx-3">
+                    <input value="{{_id}}" name="_id" class="d-none">
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Name:</h6>
+                    <div class="col-sm-9 row mx-0 px-0">
+                        <input class="form-control col-sm-6" value="{{firstName}}" name="firstName">
+                        <input class="form-control col-sm-6" value="{{lastName}}" name="lastName">
+                    </div>
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Birthday:</h6>
+                    <input class="form-control col-sm-9" value="{{birthday}}" name="birthday">
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Gender:</h6>
+                    <input class="form-control col-sm-9" value="{{gender}}" name="gender"></td>
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Country:</h6>
+                    <input class="form-control col-sm-9" value="{{country}}" name="country">
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Address:</h6>
+                    <div class="col-sm-9 row mx-0 px-0">
+                        <input class="form-control col-sm-9" value="{{addressStreet}}" name="addressStreet">
+                        <input class="form-control col-sm-3" value="{{addressNr}}" name="addressNr">
+                        <input class="form-control col-sm-3" value="{{addressPlz}}" name="addressPlz">
+                        <input class="form-control col-sm-9" value="{{addressCity}}" name="addressCity">
+                    </div>
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Phone:</h6>
+                    <input class="form-control col-sm-9" value="{{phoneNumber}}" name="phoneNumber">
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Email:</h6>
+                    <input class="form-control col-sm-9" value="{{email}}" name="email">
+
+                    <h6 class="col-sm-3 px-0 font-weight-bold">Password:</h6>
+                    <input class="form-control col-sm-9" value="{{password}}" name="password">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+
+            </form>
+            {{/with}}
+        </div>
+    </div>
+</div>
